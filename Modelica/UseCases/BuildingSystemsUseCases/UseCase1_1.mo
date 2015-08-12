@@ -50,8 +50,6 @@ BuildingSystems.Fluid.Movers.FlowControlled_dp
         extent={{-4,-4},{4,4}},
         rotation=-90,
         origin={-74,-20})));
-  Modelica.Blocks.Sources.Constant small(k=Modelica.Constants.small)
-    annotation (Placement(transformation(extent={{-98,-14},{-84,0}})));
   BuildingSystems.Fluid.Storage.ExpansionVessel exp(
     V_start=1,
     redeclare package Medium = BuildingSystems.Media.Water,
@@ -87,6 +85,10 @@ BuildingSystems.Fluid.Movers.FlowControlled_dp
     columns={2,3,4},
     fileName="./Resources/InnerLoads.txt")
     annotation (Placement(transformation(extent={{94,16},{74,36}})));
+  Modelica.Blocks.Math.Product product
+    annotation (Placement(transformation(extent={{-96,-14},{-82,0}})));
+  Modelica.Blocks.Sources.Constant nightRate(k=0.7)
+    annotation (Placement(transformation(extent={{-82,-32},{-96,-18}})));
 equation
   connect(temperatureSensor.T, PID.u_m) annotation (Line(
       points={{-12,-18},{0,-18},{0,-5.2}},
@@ -126,10 +128,6 @@ equation
       smooth=Smooth.None));
   connect(PID.y, simpleValve.y) annotation (Line(
       points={{6.6,2},{24,2},{24,-28.4}},
-      color={0,0,127},
-      smooth=Smooth.None));
-  connect(small.y, switch_dp.u3) annotation (Line(
-      points={{-83.3,-7},{-77.2,-7},{-77.2,-15.2}},
       color={0,0,127},
       smooth=Smooth.None));
   connect(exp.port_a, pump.port_a) annotation (Line(
@@ -181,6 +179,19 @@ equation
       smooth=Smooth.None));
   connect(combiTimeTable.y, thermalZone.internalGains) annotation (Line(
       points={{73,26},{48.6,26},{48.6,36.04}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(product.y, switch_dp.u3) annotation (Line(
+      points={{-81.3,-7},{-78,-7},{-78,-15.2},{-77.2,-15.2}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(dp_const.y, product.u1) annotation (Line(
+      points={{-83.3,39},{-78,39},{-78,54},{-100,54},{-100,-2},{-100,-2},{-98,
+          -2},{-97.4,-2},{-97.4,-2.8}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(nightRate.y, product.u2) annotation (Line(
+      points={{-96.7,-25},{-100,-25},{-100,-11.2},{-97.4,-11.2}},
       color={0,0,127},
       smooth=Smooth.None));
 annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
