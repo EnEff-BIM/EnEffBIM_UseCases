@@ -2,7 +2,6 @@
 
 // Set flags
 Advanced.AutoFormatting = false;
-Advanced.LogStartValuesForIterationVariables = true;
 Hidden.PrintFailureToDifferentiate = true;
 
 // Load libraries
@@ -20,4 +19,3 @@ cd("../..");
 
 // Load use cases
 openModel("UseCases/package.mo");
-cd("..");
