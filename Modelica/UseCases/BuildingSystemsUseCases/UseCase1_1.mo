@@ -1,29 +1,30 @@
 within UseCases.BuildingSystemsUseCases;
 model UseCase1_1
 
-BuildingSystems.Fluid.Movers.FlowMachine_dp pump(m_flow_nominal=7, redeclare
-      package Medium = BuildingSystems.Media.Water.Simple)
+BuildingSystems.Fluid.Movers.FlowControlled_dp
+                                            pump(m_flow_nominal=7, redeclare
+      package Medium = BuildingSystems.Media.Water)
     annotation (Placement(transformation(extent={{-82,-46},{-66,-30}})));
   BuildingSystems.Fluid.Actuators.Valves.TwoWayLinear simpleValve(
     m_flow_nominal=5,
     dpValve_nominal=1e4,
-    redeclare package Medium = BuildingSystems.Media.Water.Simple)
+    redeclare package Medium = BuildingSystems.Media.Water)
     annotation (Placement(transformation(extent={{16,-46},{32,-30}})));
   BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM flowPipe(
     m_flow_nominal=5,
     dp_nominal=1e4,
-    redeclare package Medium = BuildingSystems.Media.Water.Simple)
+    redeclare package Medium = BuildingSystems.Media.Water)
     annotation (Placement(transformation(extent={{-10,-46},{6,-30}})));
   BuildingSystems.Fluid.HeatExchangers.Radiators.RadiatorEN442_2 radiator(
     Q_flow_nominal=200,
-    redeclare package Medium = BuildingSystems.Media.Water.Simple,
+    redeclare package Medium = BuildingSystems.Media.Water,
     T_a_nominal=313.15,
     T_b_nominal=298.15)
     annotation (Placement(transformation(extent={{44,-46},{60,-30}})));
   BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM returnPipe(
     m_flow_nominal=5,
     dp_nominal(displayUnit="Pa") = 1e4,
-    redeclare package Medium = BuildingSystems.Media.Water.Simple)
+    redeclare package Medium = BuildingSystems.Media.Water)
     annotation (Placement(transformation(
         extent={{8,-8},{-8,8}},
         rotation=90,
@@ -53,7 +54,7 @@ BuildingSystems.Fluid.Movers.FlowMachine_dp pump(m_flow_nominal=7, redeclare
     annotation (Placement(transformation(extent={{-98,-14},{-84,0}})));
   BuildingSystems.Fluid.Storage.ExpansionVessel exp(
     V_start=1,
-    redeclare package Medium = BuildingSystems.Media.Water.Simple,
+    redeclare package Medium = BuildingSystems.Media.Water,
     p=500000)
     annotation (Placement(transformation(extent={{-96,-102},{-76,-82}})));
   Modelica.Blocks.Sources.Constant setTemp1(k=40 + 273.15)
@@ -61,7 +62,7 @@ BuildingSystems.Fluid.Movers.FlowMachine_dp pump(m_flow_nominal=7, redeclare
   BuildingSystems.Fluid.HeatExchangers.HeaterCooler_T boiler(
     m_flow_nominal=5,
     dp_nominal=1e4,
-    redeclare package Medium = BuildingSystems.Media.Water.Simple)
+    redeclare package Medium = BuildingSystems.Media.Water)
     annotation (Placement(transformation(extent={{-36,-46},{-22,-30}})));
   inner AixLib.HVAC.BaseParameters baseParameters(mu_Water=0.4e-3)
     annotation (Placement(transformation(extent={{-98,74},{-78,94}})));
@@ -186,5 +187,4 @@ annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}), graphics),
     experiment(StopTime=3.1536e+007, Interval=3600),
     __Dymola_experimentSetupOutput);
-
 end UseCase1_1;

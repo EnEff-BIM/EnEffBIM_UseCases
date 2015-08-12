@@ -19,3 +19,6 @@ stat
 status
 stop
 success
+
+# ignore BuildingSystems public Beta
+BSgithub_Beta/
