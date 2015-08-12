@@ -1,0 +1,23 @@
+// Script to load the libraries and use cases in Dymola 
+
+// Set flags
+Advanced.AutoFormatting = false;
+Advanced.LogStartValuesForIterationVariables = true;
+Hidden.PrintFailureToDifferentiate = true;
+
+// Load libraries
+openModel("AixLib/AixLib/package.mo");
+cd("../..");
+
+// openModel("modelica-buildings/Buildings/package.mo");
+// cd("../..");
+
+// openModel("BuildingSystems/BuildingSystems/package.mo");
+// cd("../..");
+
+// openModel("IDEAS/IDEAS/package.mo");
+// cd("../..");
+
+// Load use cases
+openModel("UseCases/package.mo");
+cd("..");
