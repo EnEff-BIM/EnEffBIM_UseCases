@@ -13,7 +13,9 @@ BuildingSystems.Fluid.Movers.FlowControlled_dp
   BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM flowPipe(
     m_flow_nominal=5,
     dp_nominal=1e4,
-    redeclare package Medium = BuildingSystems.Media.Water)
+    redeclare package Medium = BuildingSystems.Media.Water,
+    use_dh=true,
+    dh=0.02)
     annotation (Placement(transformation(extent={{-10,-46},{6,-30}})));
   BuildingSystems.Fluid.HeatExchangers.Radiators.RadiatorEN442_2 radiator(
     Q_flow_nominal=200,
@@ -24,7 +26,9 @@ BuildingSystems.Fluid.Movers.FlowControlled_dp
   BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM returnPipe(
     m_flow_nominal=5,
     dp_nominal(displayUnit="Pa") = 1e4,
-    redeclare package Medium = BuildingSystems.Media.Water)
+    redeclare package Medium = BuildingSystems.Media.Water,
+    use_dh=true,
+    dh=0.02)
     annotation (Placement(transformation(
         extent={{8,-8},{-8,8}},
         rotation=90,
