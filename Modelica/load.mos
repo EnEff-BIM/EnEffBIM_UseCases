@@ -8,14 +8,14 @@ Hidden.PrintFailureToDifferentiate = true;
 openModel("AixLib/AixLib/package.mo");
 cd("../..");
 
-// openModel("modelica-buildings/Buildings/package.mo");
-// cd("../..");
+openModel("modelica-buildings/Buildings/package.mo");
+cd("../..");
 
 openModel("BSgithub_Beta/BuildingSystems/package.mo");
 cd("../..");
 
-// openModel("IDEAS/IDEAS/package.mo");
-// cd("../..");
+openModel("IDEAS/IDEAS/package.mo");
+cd("../..");
 
 // Load use cases
 openModel("UseCases/package.mo");
