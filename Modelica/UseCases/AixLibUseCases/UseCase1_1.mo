@@ -26,16 +26,35 @@ model UseCase1_1
     columns={2,3,4},
     fileName="./Resources/InnerLoads.txt")
     annotation (Placement(transformation(extent={{94,16},{74,36}})));
-  AixLib.HVAC.Pumps.Pump pump(Head_max=3.9688)
-    annotation (Placement(transformation(extent={{-74,-48},{-54,-28}})));
-  AixLib.HVAC.Valves.SimpleValve valve(                Kvs=1.3391, dp(start=
-          100))
+  AixLib.Fluid.Movers.Pump
+                         pump(Head_max=3.9688,
+    redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
+
+    Head(start=3.9688),
+    m_flow_small=0)
+    annotation (Placement(transformation(extent={{-72,-48},{-52,-28}})));
+  AixLib.Fluid.Actuators.Valves.SimpleValve
+                                 valve(                Kvs=1.3391,
+    redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
+
+    m_flow_small=0,
+    dp(start=100))
     annotation (Placement(transformation(extent={{14,-48},{34,-28}})));
-  AixLib.HVAC.HeatGeneration.Boiler boiler(Q_flow_max=1589.1, Volume=0.0045469)
+  AixLib.Fluid.HeatExchangers.Boiler boiler(
+                                           Q_flow_max=1589.1, Volume=0.0045469,
+    redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
+
+    m_flow_nominal=0.01)
     annotation (Placement(transformation(extent={{-40,-48},{-20,-28}})));
-  AixLib.HVAC.Pipes.StaticPipe flowPipe(dp(start=100))
+  AixLib.Fluid.FixedResistances.StaticPipe
+                               flowPipe(
+    redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
+
+    m_flow_small=0,
+    dp(start=100))
     annotation (Placement(transformation(extent={{-14,-48},{6,-28}})));
-  AixLib.HVAC.Radiators.Radiator radiator(RadiatorType=
+  AixLib.Fluid.HeatExchangers.Radiators.Radiator
+                                 radiator(RadiatorType=
         AixLib.DataBase.Radiators.ThermX2_ProfilV_979W(
           NominalPower=885.94,
           T_flow_nom=56.719,
@@ -43,10 +62,17 @@ model UseCase1_1
           T_room_nom=18.601,
           Exponent=1.2273,
           VolumeWater=8.3906,
-          RadPercent=0.39922))
+          RadPercent=0.39922),
+    redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
+
+    m_flow_nominal=0.1)
     annotation (Placement(transformation(extent={{41,-48},{61,-28}})));
-  AixLib.HVAC.Pipes.StaticPipe returnPipe(dp(start=100))
-                                          annotation (Placement(transformation(
+  AixLib.Fluid.FixedResistances.StaticPipe
+                               returnPipe(
+    redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
+
+    m_flow_small=0,
+    dp(start=100))                        annotation (Placement(transformation(
         extent={{-10,-10},{10,10}},
         rotation=-90,
         origin={66,-54})));
@@ -67,7 +93,10 @@ model UseCase1_1
     annotation (Placement(transformation(extent={{-96,-19},{-82,-5}})));
   Modelica.Blocks.Sources.Constant flowTemp(k=331.82)
     annotation (Placement(transformation(extent={{-62,-18},{-50,-6}})));
-  AixLib.HVAC.Sources.Boundary_p expansionVessel annotation (Placement(
+  AixLib.Fluid.Sources.FixedBoundary
+                                 expansionVessel(nPorts=1, redeclare package
+      Medium = Modelica.Media.Water.ConstantPropertyLiquidWater)
+                                                 annotation (Placement(
         transformation(
         extent={{-6,-6},{6,6}},
         rotation=90,
@@ -92,7 +121,7 @@ equation
       color={0,0,127},
       smooth=Smooth.None));
   connect(pump.port_b, boiler.port_a) annotation (Line(
-      points={{-54,-38},{-40,-38}},
+      points={{-52,-38},{-40,-38}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(boiler.port_b, flowPipe.port_a) annotation (Line(
@@ -104,15 +133,15 @@ equation
       color={0,127,255},
       smooth=Smooth.None));
   connect(valve.port_b, radiator.port_a) annotation (Line(
-      points={{34,-38},{41.8,-38}},
+      points={{34,-38},{41,-38}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(radiator.port_b, returnPipe.port_a) annotation (Line(
-      points={{60.2,-38},{66,-38},{66,-44}},
+      points={{61,-38},{66,-38},{66,-44}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(pump.port_a, returnPipe.port_b) annotation (Line(
-      points={{-74,-38},{-82,-38},{-82,-70},{66,-70},{66,-64}},
+      points={{-72,-38},{-82,-38},{-82,-70},{66,-70},{66,-64}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(radiator.convPort, thermalZone.internalGainsConv) annotation (Line(
@@ -137,7 +166,7 @@ equation
       color={0,0,127},
       smooth=Smooth.None));
   connect(nightSignal.y, pump.IsNight) annotation (Line(
-      points={{-81.3,-12},{-64,-12},{-64,-27.8}},
+      points={{-81.3,-12},{-62,-12},{-62,-27.8}},
       color={255,0,255},
       smooth=Smooth.None));
   connect(thermalZone.internalGainsRad, radiator.radPort) annotation (Line(
@@ -149,14 +178,14 @@ equation
       points={{-49.4,-12},{-46,-12},{-46,-31},{-40.8,-31}},
       color={0,0,127},
       smooth=Smooth.None));
-  connect(pump.port_a, expansionVessel.port_a) annotation (Line(
-      points={{-74,-38},{-82,-38},{-82,-78}},
-      color={0,127,255},
-      smooth=Smooth.None));
   connect(weather.WeatherDataVector[1], thermalZone.infiltrationTemperature)
     annotation (Line(
       points={{-29.1267,66.7},{-29.1267,44.37},{22.25,44.37}},
       color={0,0,127},
+      smooth=Smooth.None));
+  connect(expansionVessel.ports[1], pump.port_a) annotation (Line(
+      points={{-82,-78},{-82,-38},{-72,-38}},
+      color={0,127,255},
       smooth=Smooth.None));
   annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}), graphics),
