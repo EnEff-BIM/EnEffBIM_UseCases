@@ -110,7 +110,7 @@ model UseCase_1_1
           rho=2400,
           epsLw=0.88,
           epsSw=0.55,
-          gas=false)})) "Fußboden"    annotation (Placement(transformation(
+          gas=false)})) "Fussboden"    annotation (Placement(transformation(
         extent={{-5,-10},{5,10}},
         rotation=90,
         origin={-85,58})));
@@ -274,11 +274,11 @@ model UseCase_1_1
     tableOnFile=true,
     tableName="InnerLoads",
     columns={2,3,4},
-    fileName="D:/workspaces/InnerLoads.txt")
+    fileName=Modelica.Utilities.Files.loadResource("modelica://UseCases/Resources/InnerLoads.txt"))
     annotation (Placement(transformation(extent={{140,-4},{158,14}})));
 equation
 
-  //Simulationsergebnisgrößen
+  //Simulationsergebnisse
 
   connect(window.iSolDir, zone.iSolDir) annotation (Line(
       points={{75,58},{90,58},{90,66}},
