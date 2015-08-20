@@ -19,21 +19,33 @@ model UseCase2_1
     annotation (Placement(transformation(extent={{-48,68},{-10,94}})));
   Modelica.Blocks.Sources.Constant infiltrationRate(k=0.0)
     annotation (Placement(transformation(extent={{0,27},{10,38}})));
-  AixLib.HVAC.HeatGeneration.HeatPump heatPump(tablePower=[0.0,273.15,283.15,288.15;
+  AixLib.Fluid.HeatExchangers.HeatPump heatPump(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+                                               tablePower=[0.0,273.15,283.15,288.15;
         308.15,203,212,217; 328.15,295,323,337], tableHeatFlowCondenser=[0.0,273.15,
         283.15,288.15; 308.15,885,1162,1300; 328.15,811,1060,1185])
     annotation (Placement(transformation(extent={{-28,-62},{-8,-42}})));
-  AixLib.HVAC.Pumps.Pump pump_hot(
+  AixLib.Fluid.Movers.Pump
+                         pump_hot(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
     Head_max=1,
     V_flow_max=0.1,
-    ControlStrategy=1)
+    ControlStrategy=1,
+    m_flow_small=0)
     annotation (Placement(transformation(extent={{16,-52},{30,-38}})));
-  AixLib.HVAC.Pumps.Pump pump_cold(
+  AixLib.Fluid.Movers.Pump
+                         pump_cold(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
     Head_max=1,
     V_flow_max=0.5,
-    ControlStrategy=1)
+    ControlStrategy=1,
+    m_flow_small=0)
     annotation (Placement(transformation(extent={{-32,-66},{-46,-52}})));
-  AixLib.HVAC.Pipes.Pipe pipe1(dp(start=1)) annotation (Placement(
+  AixLib.Fluid.FixedResistances.Pipe
+                         pipe1(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+    m_flow_small=0,
+    dp(start=1))                                                      annotation (Placement(
         transformation(
         extent={{10,10},{-10,-10}},
         rotation=-90,
@@ -46,13 +58,22 @@ model UseCase2_1
   Modelica.Blocks.Logical.OnOffController onOffController(bandwidth=1,
       pre_y_start=false)
     annotation (Placement(transformation(extent={{-36,-13},{-22,-27}})));
-  AixLib.HVAC.Sources.Boundary_p boundary_p(p=200000)
+  AixLib.Fluid.Sources.FixedBoundary
+                                 boundary_p(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+    nPorts=1,
+    p=200000)
     annotation (Placement(transformation(extent={{-98,-38},{-86,-26}})));
-  AixLib.HVAC.Sources.Boundary_p boundary_p1(p=200000)
+  AixLib.Fluid.Sources.FixedBoundary
+                                 boundary_p1(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,p=200000, nPorts=1)
     annotation (Placement(transformation(extent={{96,-81},{82,-67}})));
-  AixLib.HVAC.Sensors.TemperatureSensor Temp_hot_vorl
-    annotation (Placement(transformation(extent={{-4,-51},{8,-39}})));
-  AixLib.HVAC.Valves.SimpleValve simpleValve1
+  AixLib.Fluid.Sensors.Temperature      Temp_hot_vorl(redeclare package Medium
+      = Modelica.Media.Water.ConstantPropertyLiquidWater)
+    annotation (Placement(transformation(extent={{-14,-37},{-2,-25}})));
+  AixLib.Fluid.Actuators.Valves.SimpleValve
+                                 simpleValve1(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater, m_flow_small=0)
     annotation (Placement(transformation(extent={{-50,-54},{-60,-64}})));
   Modelica.Blocks.Logical.Not not1
     annotation (Placement(transformation(extent={{-30,-44},{-38,-36}})));
@@ -68,21 +89,27 @@ model UseCase2_1
     annotation (Placement(transformation(extent={{-70,-82},{-60,-72}})));
   Modelica.Blocks.Sources.BooleanConstant pump_floorheating_night(k=false)
     annotation (Placement(transformation(extent={{2,-30},{12,-20}})));
-  AixLib.HVAC.Pipes.StaticPipe
-                         Pipe_flow(
+  AixLib.Fluid.FixedResistances.StaticPipe
+                         Pipe_flow(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
     l=10,
     D=0.015,
+    m_flow_small=0,
     dp(start=100))
     annotation (Placement(transformation(extent={{34,-54},{54,-34}})));
-  AixLib.HVAC.Pipes.StaticPipe
-                         Pipe_return(
+  AixLib.Fluid.FixedResistances.StaticPipe
+                         Pipe_return(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
     l=10,
     D=0.015,
+    m_flow_small=0,
     dp(start=100))
     annotation (Placement(transformation(extent={{38,-69},{18,-49}})));
   Modelica.Blocks.Sources.Constant set_vorl_temp(k=308.15)
     annotation (Placement(transformation(extent={{-56,-29},{-46,-19}})));
-  AixLib.HVAC.Radiators.Radiator radiator(RadiatorType=
+  AixLib.Fluid.HeatExchangers.Radiators.Radiator
+                                 radiator(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,RadiatorType=
         AixLib.DataBase.Radiators.ThermX2_ProfilV_979W(
           NominalPower=885.94,
           T_flow_nom=56.719,
@@ -90,10 +117,14 @@ model UseCase2_1
           T_room_nom=18.601,
           Exponent=1.2273,
           VolumeWater=8.3906,
-          RadPercent=0.39922))
+          RadPercent=0.39922),
+    m_flow_nominal=0.1)
     annotation (Placement(transformation(extent={{79,-54},{99,-34}})));
-  AixLib.HVAC.Valves.SimpleValve valve(                Kvs=1.3391, dp(start=
-          100))
+  AixLib.Fluid.Actuators.Valves.SimpleValve
+                                 valve(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,                Kvs=1.3391,
+    m_flow_small=0,
+    dp(start=100))
     annotation (Placement(transformation(extent={{58,-53},{72,-35}})));
   Modelica.Blocks.Sources.Constant setTemp(k=293.5)
     annotation (Placement(transformation(extent={{-72,-2},{-60,10}})));
@@ -127,11 +158,6 @@ der(Year_Energy_Consumption)=heatPump.Power;
       color={191,0,0},
       smooth=Smooth.None));
 
-  connect(pipe1.port_b, boundary_p.port_a) annotation (Line(
-      points={{-78,-40},{-78,-32},{-86,-32}},
-      color={0,127,255},
-      smooth=Smooth.None));
-
   connect(not1.u, heatPump.OnOff) annotation (Line(
       points={{-29.2,-40},{-18,-40},{-18,-44}},
       color={255,0,255},
@@ -155,7 +181,7 @@ der(Year_Energy_Consumption)=heatPump.Power;
       color={255,0,255},
       smooth=Smooth.None));
   connect(simpleValve1.port_a, pump_cold.port_b) annotation (Line(
-      points={{-50,-59},{-48,-59},{-48,-59},{-46,-59}},
+      points={{-50,-59},{-46,-59}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(onOffController.y, heatPump.OnOff) annotation (Line(
@@ -166,21 +192,13 @@ der(Year_Energy_Consumption)=heatPump.Power;
       points={{-78,-6},{-48,-6},{-48,-3.2}},
       color={0,0,127},
       smooth=Smooth.None));
-  connect(heatPump.port_b_sink, Temp_hot_vorl.port_a) annotation (Line(
-      points={{-9,-45},{-4,-45}},
-      color={0,127,255},
-      smooth=Smooth.None));
-  connect(Temp_hot_vorl.signal, onOffController.u) annotation (Line(
-      points={{2,-39},{2,-36},{-16,-36},{-16,-12},{-40,-12},{-40,-15.8},{-37.4,-15.8}},
-      color={0,0,127},
-      smooth=Smooth.None));
 
   connect(set_vorl_temp.y, onOffController.reference) annotation (Line(
       points={{-45.5,-24},{-41.75,-24},{-41.75,-24.2},{-37.4,-24.2}},
       color={0,0,127},
       smooth=Smooth.None));
   connect(heatPump.port_a_sink, Pipe_return.port_b) annotation (Line(
-      points={{-9,-59},{4.5,-59},{4.5,-59},{18,-59}},
+      points={{-9,-59},{18,-59}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(pipe1.port_a, simpleValve1.port_b) annotation (Line(
@@ -195,10 +213,6 @@ der(Year_Energy_Consumption)=heatPump.Power;
     annotation (Line(
       points={{-29.1267,66.7},{-29.1267,44.37},{22.25,44.37}},
       color={0,0,127},
-      smooth=Smooth.None));
-  connect(Temp_hot_vorl.port_b, pump_hot.port_a) annotation (Line(
-      points={{8,-45},{16,-45}},
-      color={0,127,255},
       smooth=Smooth.None));
   connect(pump_hot.port_b, Pipe_flow.port_a) annotation (Line(
       points={{30,-45},{32,-45},{32,-44},{34,-44}},
@@ -217,7 +231,7 @@ der(Year_Energy_Consumption)=heatPump.Power;
       color={0,127,255},
       smooth=Smooth.None));
   connect(radiator.port_a, valve.port_b) annotation (Line(
-      points={{79.8,-44},{72,-44}},
+      points={{79,-44},{72,-44}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(PID.y, valve.opening) annotation (Line(
@@ -225,11 +239,7 @@ der(Year_Energy_Consumption)=heatPump.Power;
       color={0,0,127},
       smooth=Smooth.None));
   connect(radiator.port_b, Pipe_return.port_a) annotation (Line(
-      points={{98.2,-44},{98,-44},{98,-59},{38,-59}},
-      color={0,127,255},
-      smooth=Smooth.None));
-  connect(boundary_p1.port_a, Pipe_return.port_b) annotation (Line(
-      points={{82,-74},{18,-74},{18,-59}},
+      points={{99,-44},{98,-44},{98,-59},{38,-59}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(PID.u_s, setTemp.y) annotation (Line(
@@ -239,6 +249,26 @@ der(Year_Energy_Consumption)=heatPump.Power;
   connect(internalLoads.y, thermalZone.internalGains) annotation (Line(
       points={{69,26},{48.6,26},{48.6,36.04}},
       color={0,0,127},
+      smooth=Smooth.None));
+  connect(Temp_hot_vorl.T, onOffController.u) annotation (Line(
+      points={{-3.8,-31},{-3.8,-10},{-44,-10},{-44,-15.8},{-37.4,-15.8}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(heatPump.port_b_sink, pump_hot.port_a) annotation (Line(
+      points={{-9,-45},{16,-45}},
+      color={0,127,255},
+      smooth=Smooth.None));
+  connect(Temp_hot_vorl.port, heatPump.port_b_sink) annotation (Line(
+      points={{-8,-37},{-8,-45},{-9,-45}},
+      color={0,127,255},
+      smooth=Smooth.None));
+  connect(Pipe_return.port_b, boundary_p1.ports[1]) annotation (Line(
+      points={{18,-59},{14,-59},{14,-60},{8,-60},{8,-74},{82,-74}},
+      color={0,127,255},
+      smooth=Smooth.None));
+  connect(boundary_p.ports[1], pipe1.port_b) annotation (Line(
+      points={{-86,-32},{-78,-32},{-78,-40}},
+      color={0,127,255},
       smooth=Smooth.None));
   annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}), graphics),
