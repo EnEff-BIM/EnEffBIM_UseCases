@@ -7,7 +7,7 @@ model UseCase_1_2
   inner Modelica.Fluid.System system
     annotation (Placement(transformation(extent={{108,82},{124,98}})));
   Modelica.Thermal.HeatTransfer.Celsius.TemperatureSensor Sen_Room_Temp
-    annotation (Placement(transformation(extent={{48,80},{36,92}})));
+    annotation (Placement(transformation(extent={{72,62},{60,74}})));
   Buildings.Fluid.HeatExchangers.Radiators.RadiatorEN442_2 Radiator(
     redeclare package Medium =
         Modelica.Media.Water.ConstantPropertyLiquidWater,
@@ -77,29 +77,11 @@ model UseCase_1_2
     m_flow_nominal=0.05,
     dpValve_nominal=1000)
     annotation (Placement(transformation(extent={{14,44},{34,64}})));
-  Buildings.Controls.Continuous.LimPID conPID(Ti=300, Td=300)
-    annotation (Placement(transformation(extent={{-70,84},{-60,94}})));
   Modelica.Blocks.Sources.Constant pump_dp_set(k=5000)
     annotation (Placement(transformation(extent={{-30,72},{-42,84}})));
   Utilities.Buildings.MixedAir_VDI6020                       roo(redeclare
       package Medium = Buildings.Media.IdealGases.SimpleAir, lat=0.88784899048952)
     annotation (Placement(transformation(extent={{58,18},{98,58}})));
-  Buildings.Fluid.Sensors.Temperature senTem_vorl(redeclare package Medium =
-        Modelica.Media.Water.ConstantPropertyLiquidWater)
-    annotation (Placement(transformation(extent={{-54,62},{-66,74}})));
-  Modelica.Blocks.Sources.Constant max_vorl_temp(k=340)
-    annotation (Placement(transformation(extent={{-70,69},{-76,75}})));
-  Modelica.Blocks.Continuous.LimPID PID_boiler(
-    yMax=1,
-    yMin=0,
-    controllerType=Modelica.Blocks.Types.SimpleController.PID,
-    k=0.62,
-    Td=0.47,
-    Ti=10)
-    annotation (Placement(transformation(extent={{-80,68},{-88,76}})));
-  Modelica.Blocks.Sources.Constant max_vorl_temp1(
-                                                 k=340)
-    annotation (Placement(transformation(extent={{-100,84},{-90,93}})));
   Modelica.Blocks.Math.Gain          pers_rad(k=80/17.5)
     annotation (Placement(transformation(extent={{96,10},{106,20}})));
   Modelica.Blocks.Math.Sum sum1(nin=2)
@@ -192,8 +174,51 @@ model UseCase_1_2
         extent={{-6,-6},{6,6}},
         rotation=-90,
         origin={-50,-38})));
-  Buildings.Fluid.Actuators.Valves.ThreeWayEqualPercentageLinear val
+  Buildings.Fluid.Actuators.Valves.ThreeWayEqualPercentageLinear val(
+    redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
+
+    m_flow_nominal=0.1,
+    dpValve_nominal=0)
     annotation (Placement(transformation(extent={{-32,42},{-12,62}})));
+  Modelica.Blocks.Continuous.LimPID PID_boiler(
+    yMax=1,
+    yMin=0,
+    controllerType=Modelica.Blocks.Types.SimpleController.PID,
+    k=0.62,
+    Td=0.47,
+    Ti=10)
+    annotation (Placement(transformation(extent={{-88,81},{-78,91}})));
+  Modelica.Blocks.Logical.Hysteresis tank_warm_hysteresis(uLow=355, uHigh=360)
+    annotation (Placement(transformation(extent={{-150,41},{-140,51}})));
+  Modelica.Blocks.Logical.Not tank_not_warm
+    annotation (Placement(transformation(extent={{-134,41},{-124,51}})));
+  Modelica.Blocks.Logical.And and1
+    annotation (Placement(transformation(extent={{-120,41},{-110,51}})));
+  Modelica.Blocks.Math.BooleanToReal DHW_valve_set(realTrue=0, realFalse=1)
+    annotation (Placement(transformation(extent={{-40,91},{-30,100}})));
+  Modelica.Blocks.Logical.Hysteresis room_too_cold(uLow=0.1, uHigh=0.3)
+    annotation (Placement(transformation(extent={{5,-5},{-5,5}},
+        rotation=180,
+        origin={-131,16})));
+  Modelica.Blocks.Logical.Not room_warm_enough annotation (Placement(
+        transformation(
+        extent={{-5,-5},{5,5}},
+        rotation=0,
+        origin={-115,16})));
+  Buildings.Controls.Continuous.LimPID conPID(
+    k=10,
+    Ti=360,
+    Td=200)
+    annotation (Placement(transformation(extent={{12,75},{22,85}})));
+  Modelica.Blocks.Math.BooleanToReal room_temp_set(realTrue=21, realFalse=18)
+    annotation (Placement(transformation(extent={{-8,74},{4,86}})));
+  Modelica.Blocks.Sources.BooleanPulse nightSignal(
+    width=45.8,
+    period=86400,
+    startTime=64800)
+    annotation (Placement(transformation(extent={{-20,89},{-12,98}})));
+  Modelica.Blocks.Sources.Constant max_vorl_temp(k=340)
+    annotation (Placement(transformation(extent={{-110,80},{-96,93}})));
 equation
 
   // eigener Code
@@ -219,10 +244,6 @@ equation
       points={{34,54},{36,54},{36,46}},
       color={0,127,255},
       smooth=Smooth.None));
-  connect(conPID.u_m, Sen_Room_Temp.T) annotation (Line(
-      points={{-65,83},{-65,80},{-54,80},{-54,94},{30,94},{30,86},{36,86}},
-      color={0,0,127},
-      smooth=Smooth.None));
 
   connect(Radiator.heatPortRad, roo.heaPorRad) annotation (Line(
       points={{43.2,34},{60,34},{60,34.2},{77,34.2}},
@@ -234,7 +255,7 @@ equation
       smooth=Smooth.None));
 
   connect(Sen_Room_Temp.port, roo.heaPorAir) annotation (Line(
-      points={{48,86},{48,70},{68,70},{68,48},{77,48},{77,38}},
+      points={{72,68},{68,68},{68,48},{77,48},{77,38}},
       color={191,0,0},
       smooth=Smooth.None));
   connect(weaDat.weaBus, roo.weaBus) annotation (Line(
@@ -246,33 +267,9 @@ equation
       points={{-46.2,64},{-46.2,78},{-42.6,78}},
       color={0,0,127},
       smooth=Smooth.None));
-  connect(PID_boiler.u_s, max_vorl_temp.y) annotation (Line(
-      points={{-79.2,72},{-76.3,72}},
-      color={0,0,127},
-      smooth=Smooth.None));
-  connect(senTem_vorl.T, PID_boiler.u_m) annotation (Line(
-      points={{-64.2,68},{-68,68},{-68,64},{-84,64},{-84,67.2}},
-      color={0,0,127},
-      smooth=Smooth.None));
-  connect(PID_boiler.y, Boiler.y) annotation (Line(
-      points={{-88.4,72},{-92,72},{-92,60},{-88,60}},
-      color={0,0,127},
-      smooth=Smooth.None));
   connect(Boiler.port_b, Pump.port_a) annotation (Line(
       points={{-66,52},{-56,52}},
       color={0,127,255},
-      smooth=Smooth.None));
-  connect(senTem_vorl.port, Boiler.port_b) annotation (Line(
-      points={{-60,62},{-60,52},{-66,52}},
-      color={0,127,255},
-      smooth=Smooth.None));
-  connect(max_vorl_temp1.y, conPID.u_s) annotation (Line(
-      points={{-89.5,88.5},{-80.75,88.5},{-80.75,89},{-71,89}},
-      color={0,0,127},
-      smooth=Smooth.None));
-  connect(conPID.y, Valve.y) annotation (Line(
-      points={{-59.5,89},{24,89},{24,66}},
-      color={0,0,127},
       smooth=Smooth.None));
   connect(sum1.y,multiplex3_2. u2[1]) annotation (Line(
       points={{142.5,-7},{147,-7}},
@@ -358,6 +355,67 @@ equation
   connect(Pipe_Tank.port_a, val.port_3) annotation (Line(
       points={{-62,-16},{-64,-16},{-64,-2},{-22,-2},{-22,42}},
       color={0,127,255},
+      smooth=Smooth.None));
+  connect(Boiler.T, PID_boiler.u_m) annotation (Line(
+      points={{-65,60},{-60,60},{-60,66},{-83,66},{-83,80}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(PID_boiler.y, Boiler.y) annotation (Line(
+      points={{-77.5,86},{-64,86},{-64,78},{-62,78},{-62,70},{-94,70},{-94,60},
+          {-88,60}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(tank_warm_hysteresis.y,tank_not_warm. u) annotation (Line(
+      points={{-139.5,46},{-135,46}},
+      color={255,0,255},
+      smooth=Smooth.None));
+  connect(tank_not_warm.y,and1. u1) annotation (Line(
+      points={{-123.5,46},{-121,46}},
+      color={255,0,255},
+      smooth=Smooth.None));
+  connect(senTemp_Tank.T, tank_warm_hysteresis.u) annotation (Line(
+      points={{-96,-3},{-132,-3},{-132,-34},{-158,-34},{-158,46},{-151,46}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(DHW_valve_set.y, val.y) annotation (Line(
+      points={{-29.5,95.5},{-22,95.5},{-22,64}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(and1.y, DHW_valve_set.u) annotation (Line(
+      points={{-109.5,46},{-98,46},{-98,95.5},{-41,95.5}},
+      color={255,0,255},
+      smooth=Smooth.None));
+  connect(room_too_cold.y,room_warm_enough. u) annotation (Line(
+      points={{-125.5,16},{-121,16}},
+      color={255,0,255},
+      smooth=Smooth.None));
+  connect(room_warm_enough.y, and1.u2) annotation (Line(
+      points={{-109.5,16},{-100,16},{-100,30},{-121,30},{-121,42}},
+      color={255,0,255},
+      smooth=Smooth.None));
+  connect(conPID.y, Valve.y) annotation (Line(
+      points={{22.5,80},{24,80},{24,66}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(conPID.u_s, room_temp_set.y) annotation (Line(
+      points={{11,80},{4.6,80}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(conPID.u_m, Sen_Room_Temp.T) annotation (Line(
+      points={{17,74},{18,74},{18,68},{60,68}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(Sen_Room_Temp.T, room_too_cold.u) annotation (Line(
+      points={{60,68},{-162,68},{-162,16},{-137,16}},
+      color={0,0,127},
+      smooth=Smooth.None));
+  connect(room_temp_set.u, nightSignal.y) annotation (Line(
+      points={{-9.2,80},{-8,80},{-8,93.5},{-11.6,93.5}},
+      color={255,0,255},
+      smooth=Smooth.None));
+  connect(PID_boiler.u_s, max_vorl_temp.y) annotation (Line(
+      points={{-89,86},{-92,86},{-92,86.5},{-95.3,86.5}},
+      color={0,0,127},
       smooth=Smooth.None));
   annotation (
       Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{
