@@ -1,10 +1,10 @@
 [submodule "Modelica/AixLib"]
 	path = Modelica/AixLib
-	url = git@github.com:RWTH-EBC/AixLib.git
+	url = https://github.com/RWTH-EBC/AixLib.git
 [submodule "Modelica/IDEAS"]
 	path = Modelica/IDEAS
-	url = git@github.com:open-ideas/IDEAS.git
+	url = https://github.com/open-ideas/IDEAS.git
 	ignore = dirty
 [submodule "Modelica/modelica-buildings"]
 	path = Modelica/modelica-buildings
-	url = git@github.com:lbl-srg/modelica-buildings.git
+	url = https://github.com/lbl-srg/modelica-buildings.git
