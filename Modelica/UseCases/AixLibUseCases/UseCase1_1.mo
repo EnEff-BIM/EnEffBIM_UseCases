@@ -29,30 +29,30 @@ model UseCase1_1
   AixLib.Fluid.Movers.Pump
                          pump(Head_max=3.9688,
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     Head(start=3.9688),
     m_flow_small=0)
     annotation (Placement(transformation(extent={{-72,-48},{-52,-28}})));
+
   AixLib.Fluid.Actuators.Valves.SimpleValve
                                  valve(                Kvs=1.3391,
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     m_flow_small=0,
     dp(start=100))
     annotation (Placement(transformation(extent={{14,-48},{34,-28}})));
+
   AixLib.Fluid.HeatExchangers.Boiler boiler(
                                            Q_flow_max=1589.1, Volume=0.0045469,
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     m_flow_nominal=0.01)
     annotation (Placement(transformation(extent={{-40,-48},{-20,-28}})));
+
   AixLib.Fluid.FixedResistances.StaticPipe
                                flowPipe(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     m_flow_small=0,
     dp(start=100))
     annotation (Placement(transformation(extent={{-14,-48},{6,-28}})));
+
   AixLib.Fluid.HeatExchangers.Radiators.Radiator
                                  radiator(RadiatorType=
         AixLib.DataBase.Radiators.ThermX2_ProfilV_979W(
@@ -64,18 +64,18 @@ model UseCase1_1
           VolumeWater=8.3906,
           RadPercent=0.39922),
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     m_flow_nominal=0.1)
     annotation (Placement(transformation(extent={{41,-48},{61,-28}})));
+
   AixLib.Fluid.FixedResistances.StaticPipe
                                returnPipe(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     m_flow_small=0,
     dp(start=100))                        annotation (Placement(transformation(
         extent={{-10,-10},{10,10}},
         rotation=-90,
         origin={66,-54})));
+
   Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor temperatureSensor
     annotation (Placement(transformation(extent={{-24,-24},{-12,-12}})));
   Modelica.Blocks.Continuous.LimPID PID(
