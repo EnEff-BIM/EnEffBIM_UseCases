@@ -1,7 +1,7 @@
 within UseCases.BuildingsUseCases;
 model UseCase_1_2
 
-  Buildings.BoundaryConditions.WeatherData.ReaderTMY3 weaDat(filNam="D:/EnEff-BIM/UseCaseEnEffBIM/Utilities/Buildings/DEU_Koln.105130_IWEC.mos")
+  Buildings.BoundaryConditions.WeatherData.ReaderTMY3 weaDat(filNam=Modelica.Utilities.Files.loadResource("modelica://UseCases/Resources/DEU_Koln.105130_IWEC.mos"))
     annotation (Placement(transformation(extent={{60,76},{80,96}})));
   //room1 manuell
   inner Modelica.Fluid.System system
@@ -98,7 +98,7 @@ model UseCase_1_2
     tableOnFile=true,
     tableName="InnerLoads",
     columns={2,3,4},
-    fileName="InnerLoads.txt")
+    fileName=Modelica.Utilities.Files.loadResource("modelica://UseCases/Resources/InnerLoads.txt"))
     annotation (Placement(transformation(extent={{54,-14},{74,6}})));
   Buildings.Fluid.Storage.StratifiedEnhancedInternalHex Tank(
     redeclare package Medium =
