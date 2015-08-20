@@ -4,3 +4,7 @@ This repository uses submodules, so you have to use the switch `--recursive` whe
 ```
 git clone --recursive git@github.com:EnEff-BIM/EnEffBIM_UseCases.git
 ```
+
+The above command uses the git over ssh protocol (and not https!),
+so you will have to authenticate using ssh keys:
+https://help.github.com/articles/generating-ssh-keys/
