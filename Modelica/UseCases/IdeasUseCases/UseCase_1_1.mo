@@ -257,7 +257,14 @@ model UseCase_1_1
   Modelica.Blocks.Math.Sum sum1(nin=2)
     annotation (Placement(transformation(extent={{174,64},{154,84}})));
   inner IDEAS.SimInfoManager      sim(redeclare IDEAS.Climate.Meteo.Files.min60
-      detail, redeclare IDEAS.Climate.Meteo.Locations.Koeln city)
+      detail, city(
+      lat=49.5,
+      lon=8.5,
+      Tdes=273.03,
+      TdesGround=283.15,
+      DST=false,
+      yr=2010,
+      locNam="Koeln"))
     annotation (Placement(transformation(extent={{-94,12},{-74,32}})));
   Modelica.Blocks.Math.Gain pers(k=800/17.5)
     annotation (Placement(transformation(extent={{182,10},{192,20}})));
