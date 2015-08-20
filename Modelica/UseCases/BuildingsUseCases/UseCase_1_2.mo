@@ -176,10 +176,12 @@ model UseCase_1_2
         origin={-50,-38})));
   Buildings.Fluid.Actuators.Valves.ThreeWayEqualPercentageLinear val(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     m_flow_nominal=0.1,
-    dpValve_nominal=0)
+    l={0.01,0.01},
+    dpValve_nominal=0.1,
+    dpFixed_nominal={0.1,0.1})
     annotation (Placement(transformation(extent={{-32,42},{-12,62}})));
+
   Modelica.Blocks.Continuous.LimPID PID_boiler(
     yMax=1,
     yMin=0,
