@@ -191,7 +191,7 @@ model UseCase_1_1
     AWall=3.5,
     inc=IDEAS.Constants.Wall,
     azi=IDEAS.Constants.South,
-    redeclare UseCaseEnEffBIM.Utilities.IDEAS.Wall constructionType)
+    redeclare UseCases.Utilities.IDEAS.Wall constructionType)
                                annotation (Placement(transformation(
         extent={{-5,-10},{5,10}},
         rotation=90,
@@ -467,5 +467,4 @@ equation
     Icon(coordinateSystem(extent={{-100,-100},{220,100}})),
     experiment(StopTime=3.1536e+007, Interval=3600),
     __Dymola_experimentSetupOutput);
-
 end UseCase_1_1;
