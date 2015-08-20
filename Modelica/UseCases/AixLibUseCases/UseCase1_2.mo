@@ -26,24 +26,42 @@ model UseCase1_2
         origin={-55,85})));
   Modelica.Blocks.Sources.Constant infiltrationRate(k=0)
     annotation (Placement(transformation(extent={{4,29},{14,40}})));
-  AixLib.HVAC.Pumps.Pump pump
+  AixLib.Fluid.Movers.Pump
+                         pump(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater, m_flow_small=0)
     annotation (Placement(transformation(extent={{-7,-7},{7,7}},
         rotation=90,
         origin={-67,-43})));
-  AixLib.HVAC.Valves.SimpleValve valve(dp(start=1000))
+  AixLib.Fluid.Actuators.Valves.SimpleValve
+                                 valve(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+    m_flow_small=0,
+    dp(start=1000))
     annotation (Placement(transformation(extent={{21,-42},{41,-22}})));
-  AixLib.HVAC.HeatGeneration.Boiler boiler(Q_flow_max=1300, boilerEfficiencyB=
+  AixLib.Fluid.HeatExchangers.Boiler boiler(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+                                           Q_flow_max=1300, boilerEfficiencyB=
         AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition(
-        boilerEfficiency=[0,1; 1,1]))
+        boilerEfficiency=[0,1; 1,1]),
+    m_flow_nominal=0.1)
     annotation (Placement(transformation(extent={{-48,-42},{-28,-22}})));
-  AixLib.HVAC.Pipes.StaticPipe flowPipe(dp(start=100))
+  AixLib.Fluid.FixedResistances.StaticPipe
+                               flowPipe(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+    m_flow_small=0,
+    dp(start=100))
     annotation (Placement(transformation(extent={{-10,10},{10,-10}},
         rotation=0,
         origin={6,-32})));
-  AixLib.HVAC.Radiators.Radiator radiator
+  AixLib.Fluid.HeatExchangers.Radiators.Radiator
+                                 radiator(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater, m_flow_nominal=0.1)
     annotation (Placement(transformation(extent={{57,-42},{77,-22}})));
-  AixLib.HVAC.Pipes.StaticPipe returnPipe(dp(start=100))
-                                          annotation (Placement(transformation(
+  AixLib.Fluid.FixedResistances.StaticPipe
+                               returnPipe(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+    m_flow_small=0,
+    dp(start=100))                        annotation (Placement(transformation(
         extent={{-10,10},{10,-10}},
         rotation=-90,
         origin={92,-48})));
@@ -56,13 +74,16 @@ model UseCase1_2
     Td=200,
     controllerType=Modelica.Blocks.Types.SimpleController.P,
     k=0.4)  annotation (Placement(transformation(extent={{6,-4},{18,8}})));
-  AixLib.HVAC.Sources.Boundary_p expansionVessel(p=200000)
-                                                 annotation (Placement(
+  AixLib.Fluid.Sources.FixedBoundary
+                                 expansionVessel(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,          nPorts=2,
+    p=200000)                                    annotation (Placement(
         transformation(
         extent={{-6,-6},{6,6}},
         rotation=90,
         origin={-66,-66})));
-  AixLib.HVAC.Storage.Storage storage(
+  AixLib.Fluid.Storage.Storage storage(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
     n=6,
     d=0.71365,
     h=1,
@@ -74,24 +95,39 @@ model UseCase1_2
     k_HE=1500,
     A_HE=20)
     annotation (Placement(transformation(extent={{-46,-104},{-26,-84}})));
-  AixLib.HVAC.Valves.SimpleValve Valve_Radiator
+  AixLib.Fluid.Actuators.Valves.SimpleValve
+                                 Valve_Radiator(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater, m_flow_small=0)
     annotation (Placement(transformation(extent={{-22,-26},{-10,-38}})));
-  AixLib.HVAC.Valves.SimpleValve tankeValve annotation (Placement(
+  AixLib.Fluid.Actuators.Valves.SimpleValve
+                                 tankeValve(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater, m_flow_small=0)
+                                                          annotation (Placement(
         transformation(
         extent={{6,6},{-6,-6}},
         rotation=90,
         origin={-14,-74})));
-  AixLib.HVAC.Sources.Boundary_p waterSink(p=100000) annotation (Placement(
+  AixLib.Fluid.Sources.FixedBoundary
+                                 waterSink(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,          nPorts=1,
+    p=100000)                                        annotation (Placement(
         transformation(
         extent={{5,-5},{-5,5}},
         rotation=180,
         origin={-63,-78})));
-  AixLib.HVAC.Sources.Boundary_ph wateSource(h=33598, p=400000) annotation (
+  AixLib.Fluid.Sources.FixedBoundary
+                                  wateSource(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,h=33598,
+    nPorts=1,
+    p=400000)                                                   annotation (
       Placement(transformation(
         extent={{-4.5,-5},{4.5,5}},
         rotation=0,
         origin={-53.5,-109})));
-  AixLib.HVAC.Valves.SimpleValve valveDHW annotation (Placement(transformation(
+  AixLib.Fluid.Actuators.Valves.SimpleValve
+                                 valveDHW(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater, m_flow_small=0)
+                                          annotation (Placement(transformation(
         extent={{6,6},{-6,-6}},
         rotation=0,
         origin={-46,-78})));
@@ -125,12 +161,20 @@ model UseCase1_2
   Modelica.Blocks.Math.BooleanToReal radiatorValveSet(realTrue=0.000001,
       realFalse=0.1)
     annotation (Placement(transformation(extent={{-4,-51},{-12,-42}})));
-  AixLib.HVAC.Pipes.StaticPipe flowPipeStorage(dp(start=100)) annotation (
+  AixLib.Fluid.FixedResistances.StaticPipe
+                               flowPipeStorage(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+    m_flow_small=0,
+    dp(start=100))                                                      annotation (
       Placement(transformation(
         extent={{5,6},{-5,-6}},
         rotation=180,
         origin={-20,-85})));
-  AixLib.HVAC.Pipes.StaticPipe returnPipeStorage(dp(start=100)) annotation (
+  AixLib.Fluid.FixedResistances.StaticPipe
+                               returnPipeStorage(redeclare package Medium =
+        Modelica.Media.Water.ConstantPropertyLiquidWater,
+    m_flow_small=0,
+    dp(start=100))                                                      annotation (
       Placement(transformation(
         extent={{-5,6},{5,-6}},
         rotation=0,
@@ -182,10 +226,6 @@ equation
       color={95,95,95},
       pattern=LinePattern.None,
       smooth=Smooth.None));
-  connect(pump.port_a, expansionVessel.port_a) annotation (Line(
-      points={{-67,-50},{-67,-60},{-66,-60}},
-      color={0,127,255},
-      smooth=Smooth.None));
 
   connect(Valve_Radiator.port_b, flowPipe.port_a) annotation (Line(
       points={{-10,-32},{-4,-32}},
@@ -193,10 +233,6 @@ equation
       smooth=Smooth.None));
   connect(tankeValve.port_a, Valve_Radiator.port_a) annotation (Line(
       points={{-14,-68},{-14,-58},{-24,-58},{-24,-32},{-22,-32}},
-      color={0,127,255},
-      smooth=Smooth.None));
-  connect(waterSink.port_a, valveDHW.port_b) annotation (Line(
-      points={{-58,-78},{-52,-78}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(storage.port_b_consumer, valveDHW.port_a) annotation (Line(
@@ -244,10 +280,6 @@ equation
       color={255,0,255},
       smooth=Smooth.None));
 
-  connect(storage.port_a_consumer, wateSource.port_a) annotation (Line(
-      points={{-36,-104},{-36,-110},{-49,-110},{-49,-109}},
-      color={0,127,255},
-      smooth=Smooth.None));
   connect(tankValveSet.u, heatTank.y) annotation (Line(
       points={{6.8,-73.5},{42,-73.5},{42,-97},{38.5,-97}},
       color={255,0,255},
@@ -303,10 +335,6 @@ equation
       points={{-28,-32},{-22,-32}},
       color={0,127,255},
       smooth=Smooth.None));
-  connect(expansionVessel.port_a, returnPipe.port_b) annotation (Line(
-      points={{-66,-60},{92,-60},{92,-58}},
-      color={0,127,255},
-      smooth=Smooth.None));
   connect(tankeValve.opening, tankValveSet.y) annotation (Line(
       points={{-9.2,-74},{-6,-74},{-6,-73.5},{-2.4,-73.5}},
       color={0,0,127},
@@ -324,11 +352,27 @@ equation
       color={0,0,127},
       smooth=Smooth.None));
   connect(valve.port_b, radiator.port_a) annotation (Line(
-      points={{41,-32},{57.8,-32}},
+      points={{41,-32},{57,-32}},
       color={0,127,255},
       smooth=Smooth.None));
   connect(radiator.port_b, returnPipe.port_a) annotation (Line(
-      points={{76.2,-32},{92,-32},{92,-38}},
+      points={{77,-32},{92,-32},{92,-38}},
+      color={0,127,255},
+      smooth=Smooth.None));
+  connect(expansionVessel.ports[1], pump.port_a) annotation (Line(
+      points={{-67.2,-60},{-67.2,-50},{-67,-50}},
+      color={0,127,255},
+      smooth=Smooth.None));
+  connect(expansionVessel.ports[2], returnPipe.port_b) annotation (Line(
+      points={{-64.8,-60},{14,-60},{14,-58},{92,-58}},
+      color={0,127,255},
+      smooth=Smooth.None));
+  connect(waterSink.ports[1], valveDHW.port_b) annotation (Line(
+      points={{-58,-78},{-52,-78}},
+      color={0,127,255},
+      smooth=Smooth.None));
+  connect(wateSource.ports[1], storage.port_a_consumer) annotation (Line(
+      points={{-49,-109},{-36,-109},{-36,-104}},
       color={0,127,255},
       smooth=Smooth.None));
   annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
