@@ -191,7 +191,7 @@ model UseCase_1_1
     AWall=3.5,
     inc=IDEAS.Constants.Wall,
     azi=IDEAS.Constants.South,
-    redeclare UseCaseEnEffBIM.Utilities.IDEAS.Wall constructionType)
+    redeclare UseCases.Utilities.IDEAS.Wall constructionType)
                                annotation (Placement(transformation(
         extent={{-5,-10},{5,10}},
         rotation=90,
@@ -256,17 +256,15 @@ model UseCase_1_1
     annotation (Placement(transformation(extent={{72,-80},{52,-88}})));
   Modelica.Blocks.Math.Sum sum1(nin=2)
     annotation (Placement(transformation(extent={{174,64},{154,84}})));
-  inner Utilities.IDEAS.SimInfoManagerKoeln
-                                  sim(redeclare IDEAS.Climate.Meteo.Files.min60
+  inner IDEAS.SimInfoManager      sim(redeclare IDEAS.Climate.Meteo.Files.min60
       detail, city(
+      lat=49.5,
+      lon=8.5,
+      Tdes=273.03,
+      TdesGround=283.15,
       DST=false,
       yr=2010,
-      locNam="Koeln",
-      lat(displayUnit="deg") = 0.88784899048952,
-      lon(displayUnit="deg") = 0.12514010736799,
-      timZonSta=3600,
-      Tdes=261.15,
-      TdesGround=283.15))
+      locNam="Koeln"))
     annotation (Placement(transformation(extent={{-94,12},{-74,32}})));
   Modelica.Blocks.Math.Gain pers(k=800/17.5)
     annotation (Placement(transformation(extent={{182,10},{192,20}})));
@@ -467,5 +465,4 @@ equation
     Icon(coordinateSystem(extent={{-100,-100},{220,100}})),
     experiment(StopTime=3.1536e+007, Interval=3600),
     __Dymola_experimentSetupOutput);
-
 end UseCase_1_1;
