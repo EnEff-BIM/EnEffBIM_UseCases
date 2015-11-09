@@ -1,6 +1,9 @@
 [submodule "Modelica/AixLib"]
 	path = Modelica/AixLib
 	url = https://github.com/RWTH-EBC/AixLib.git
+[submodule "Modelica//BuildingSystems"]
+	path = Modelica//BuildingSystems
+	url = https://github.com/UdK-VPT/BuildingSystems.git
 [submodule "Modelica/IDEAS"]
 	path = Modelica/IDEAS
 	url = https://github.com/open-ideas/IDEAS.git

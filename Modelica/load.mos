@@ -11,7 +11,7 @@ cd("../..");
 openModel("modelica-buildings/Buildings/package.mo");
 cd("../..");
 
-openModel("BSgithub_Beta/BuildingSystems/package.mo");
+openModel("BuildingSystems/BuildingSystems/package.mo");
 cd("../..");
 
 openModel("IDEAS/IDEAS/package.mo");
