@@ -1,6 +1,7 @@
 // Script to load the libraries and use cases in Dymola 
 
 // Set flags
+Advanced.PreferWritingLatin1=false;
 Advanced.AutoFormatting = false;
 Hidden.PrintFailureToDifferentiate = true;
 
