@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://d-alchemy.com/schema/simxml/ResourcesGeometry/" xmlns:simgeom="http://d-alchemy.com/schema/simxml/ResourcesGeometry/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore/" xmlns:simres="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" elementFormDefault="qualified" attributeFormDefault="unqualified" >
+<xs:schema targetNamespace="http://www.lbl.gov/namespaces/Sim/ResourcesGeometry" xmlns:simgeom="http://www.lbl.gov/namespaces/Sim/ResourcesGeometry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://www.lbl.gov/namespaces/Sim/SimModelCore" xmlns:simres="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" elementFormDefault="qualified" attributeFormDefault="unqualified">
 
-    <xs:import namespace="http://d-alchemy.com/schema/simxml/SimModelCore/" schemaLocation="simcore.xsd"/>
-<xs:import namespace="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" schemaLocation="simres.xsd"/>
+    <xs:import namespace="http://www.lbl.gov/namespaces/Sim/SimModelCore" schemaLocation="simcore.xsd"/>
+<xs:import namespace="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" schemaLocation="simres.xsd"/>
 
 
 	<!-- Entity elements -->
@@ -336,6 +336,12 @@
 <xs:complexType name="SimFeatureAirFlowNetwork_Exhaust" abstract="true">
 <xs:complexContent>
 <xs:extension base="simgeom:SimFeatureAirFlowNetwork">
+<xs:sequence>
+<xs:element ref="simgeom:SimFeatureAirFlowNetwk_RefCrackCond" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimFeatureAirFlowNetwk_FanName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimFeatureAirFlowNetwk_AirMassFlowCoefWhenZoneExhFanfAtRefCond" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimFeatureAirFlowNetwk_AirMassFlowExptWhenZoneExhFanf" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1247,7 +1253,7 @@
 <xs:complexContent>
 <xs:extension base="simgeom:SimGeomVector_Vector">
 <xs:sequence>
-<xs:element ref="simgeom:Orientation.Reference" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:Orientation" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Magnitude" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
@@ -2126,6 +2132,10 @@
 <xs:element name="SimFeatureAirFlowNetwk_EffecLeakageArea"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_DischargeCoef"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_RefPressureDiff"  type="xs:double" nillable ="true"/>
+<xs:element name="SimFeatureAirFlowNetwk_RefCrackCond"  type="xs:IDREF"/>
+<xs:element name="SimFeatureAirFlowNetwk_FanName"  type="xs:IDREF"/>
+<xs:element name="SimFeatureAirFlowNetwk_AirMassFlowCoefWhenZoneExhFanfAtRefCond"  type="xs:double" nillable ="true"/>
+<xs:element name="SimFeatureAirFlowNetwk_AirMassFlowExptWhenZoneExhFanf"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_VentCntlMode"  type="xs:string"/>
 <xs:element name="SimFeatureAirFlowNetwk_VentCntlZoneTempSetpointSchedName"  type="xs:IDREF"/>
 <xs:element name="SimFeatureAirFlowNetwk_MinVentOpenFactor"  type="xs:double" nillable ="true"/>
@@ -2139,7 +2149,6 @@
 <xs:element name="SimFeatureAirFlowNetwk_ExternalNodeName"  type="xs:IDREF"/>
 <xs:element name="SimFeatureAirFlowNetwk_WndwDoorOpngFactorOrCrackFactor"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_AirMassFlowCoefAtRefCond"  type="xs:double" nillable ="true"/>
-<xs:element name="SimFeatureAirFlowNetwk_RefCrackCond"  type="xs:IDREF"/>
 <xs:element name="Airflow_MZone_RefCrackCond_Name"  type="xs:string"/>
 <xs:element name="Airflow_MZone_RefCrackCond_RefTemp"  type="xs:double" nillable ="true"/>
 <xs:element name="Airflow_MZone_RefCrackCond_RefBarometricPressure"  type="xs:double" nillable ="true"/>
@@ -2223,7 +2232,6 @@
 <xs:element name="AxisPosition"  type="xs:IDREF"/>
 <xs:element name="FbsmFaces"  type="xs:IDREFS"/>
 <xs:element name="SbsmBoundary"  type="xs:IDREFS"/>
-<xs:element name="Orientation.Reference"  type="xs:IDREF"/>
 <xs:element name="Magnitude"  type="xs:double" nillable ="true"/>
 <xs:element name="DirectionRatios"  type="simcore:doubleList"/>
 <xs:element name="PlacementLocation"  type="xs:IDREF"/>

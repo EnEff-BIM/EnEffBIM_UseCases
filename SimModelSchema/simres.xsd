@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" xmlns:simres="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore/" elementFormDefault="qualified" attributeFormDefault="unqualified" >
+<xs:schema targetNamespace="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" xmlns:simres="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://www.lbl.gov/namespaces/Sim/SimModelCore" elementFormDefault="qualified" attributeFormDefault="unqualified">
 
-    <xs:import namespace="http://d-alchemy.com/schema/simxml/SimModelCore/" schemaLocation="simcore.xsd"/>
+    <xs:import namespace="http://www.lbl.gov/namespaces/Sim/SimModelCore" schemaLocation="simcore.xsd"/>
 
 
 	<!-- Entity elements -->
@@ -113,27 +113,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimAppLanguageDefault">
-<xs:complexContent>
-<xs:extension base="simcore:SimAppDefault">
-<xs:sequence>
-<xs:element ref="simres:Language" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppLanguageDefault_AppLanguageDefault" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimAppLanguageDefault">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppLanguageDefault_AppLanguageDefault_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimAppLanguageDefault_AppLanguageDefault">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimAppLibraryDefault">
 <xs:complexContent>
 <xs:extension base="simcore:SimAppDefault">
@@ -167,60 +146,6 @@
 <xs:complexType name="SimAppLibraryDefault_AppLibraryDefault_UserLibrary">
 <xs:complexContent>
 <xs:extension base="simres:SimAppLibraryDefault_AppLibraryDefault">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults">
-<xs:complexContent>
-<xs:extension base="simcore:SimAppDefault">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Building">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_BuildingStory">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_CustomOpenings">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_CustomSpaces">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Glazing">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_OtherSettings">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Site">
-<xs:complexContent>
-<xs:extension base="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -306,12 +231,6 @@
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimAppObjNameDefault_DistributionSystem_RefrigerationLoop">
-<xs:complexContent>
-<xs:extension base="simres:SimAppObjNameDefault_DistributionSystem">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppObjNameDefault_DistributionSystem_ServiceHotWater">
 <xs:complexContent>
 <xs:extension base="simres:SimAppObjNameDefault_DistributionSystem">
 </xs:extension>
@@ -495,10 +414,8 @@
 <xs:complexContent>
 <xs:extension base="simcore:SimAppDefault">
 <xs:sequence>
-<xs:element ref="simres:CurrentUserInterfaceUnits" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:AutoSave" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:AutoSaveInterval" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:MaxAutoSaveFiles" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:MonthlyChargeIsDecimal" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:MinMonthlyChargeIsDecimal" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:EPlusInstalVersion" minOccurs="0" maxOccurs="1"/>
@@ -546,78 +463,6 @@
 <xs:complexType name="SimAppPreferences_AppPreferences_MonthlyChargeType">
 <xs:complexContent>
 <xs:extension base="simres:SimAppPreferences_AppPreferences">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdSbdDefaults">
-<xs:complexContent>
-<xs:extension base="simcore:SimAppDefault">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdSbdDefaults_AppStdSbdDefaults" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdSbdDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdSbdDefaults_AppStdSbdDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdSbdDefaults_AppStdSbdDefaults_ExceptionalConditions">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdSbdDefaults_AppStdSbdDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdSbdDefaults_AppStdSbdDefaults_NonComplyAnalysis">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdSbdDefaults_AppStdSbdDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdSbdDefaults_AppStdSbdDefaults_ProjectData">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdSbdDefaults_AppStdSbdDefaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdT24Defaults">
-<xs:complexContent>
-<xs:extension base="simcore:SimAppDefault">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdT24Defaults_AppStdT24Defaults" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdT24Defaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdT24Defaults_AppStdT24Defaults_DesignTeam">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdT24Defaults_AppStdT24Defaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdT24Defaults_AppStdT24Defaults_ExceptionalConditions">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdT24Defaults_AppStdT24Defaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdT24Defaults_AppStdT24Defaults_NonComplyAnalysis">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdT24Defaults_AppStdT24Defaults">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimAppStdT24Defaults_AppStdT24Defaults_ProjectData">
-<xs:complexContent>
-<xs:extension base="simres:SimAppStdT24Defaults_AppStdT24Defaults">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -781,12 +626,8 @@
 <xs:complexContent>
 <xs:extension base="simres:SimArrayParams">
 <xs:sequence>
-<xs:element ref="simres:ArrayAzimuth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:ArrayElementTiltFromHorizontal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:ArrayCountY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:ArrayMinSpacingY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:ArrayActualSpacingY" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:ArrayCountZ" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:ArrayMinSpacingZ" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:ArrayActualSpacingZ" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -891,11 +732,9 @@
 <xs:element ref="simres:FloorToFloorHeight" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:CeilingBottomElevation" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:FinishFloorTopElevation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SpaceConfigOccupied" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:PlenumConfiguration" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SpaceConfigAboveCeiling" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SpaceConfigBelowFloor" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:ZoneConfiguration" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:PerimeterZoneDepth" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:PlenumConfiguration" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:WallProfilePathType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:BldgStoryProfilePath" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:PerimeterZoneOutsidePath" minOccurs="0" maxOccurs="1"/>
@@ -1412,24 +1251,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimConnection_ServiceHotWaterFlow" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimConnection">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimConnection_ServiceHotWaterFlow_CrossSystem">
-<xs:complexContent>
-<xs:extension base="simres:SimConnection_ServiceHotWaterFlow">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimConnection_ServiceHotWaterFlow_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimConnection_ServiceHotWaterFlow">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimConnection_SteamFlow" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimConnection">
@@ -1714,28 +1535,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimControlScheme_AvailabilityManagerScheme_OptimumStart">
-<xs:complexContent>
-<xs:extension base="simres:SimControlScheme_AvailabilityManagerScheme">
-<xs:sequence>
-<xs:element ref="simres:SimCntrlSchm_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_ApplicSchedName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_FanSchedName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_CntlType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_CntlZoneName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_ZoneListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_MaxValueforOptStartTime" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_CntrlAlgorithm" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_ConstTempGradDuringCool" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_ConstTempGradDuringHeat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_InitTempGradDuringCool" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_InitTempGradDuringHeat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_ConstStartTime" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_NumofPrevDays" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimControlScheme_AvailabilityManagerScheme_Scheduled">
 <xs:complexContent>
 <xs:extension base="simres:SimControlScheme_AvailabilityManagerScheme">
@@ -1913,18 +1712,6 @@
 <xs:extension base="simres:SimControlScheme_ControlAndSequencingScheme">
 <xs:sequence>
 <xs:element ref="simres:SimCntrlSchm_EquipmentListName" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimControlScheme_ControlAndSequencingScheme_UserDefined">
-<xs:complexContent>
-<xs:extension base="simres:SimControlScheme_ControlAndSequencingScheme">
-<xs:sequence>
-<xs:element ref="simres:SimCntrlSchm_MainMdlProgCallingMngrName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_InitProgramCallingMgrName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_Eqmt_1_10_ObjectType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_Eqmt_1_10_Name" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -2124,9 +1911,9 @@
 <xs:complexContent>
 <xs:extension base="simres:SimControlScheme_ExternalInterfaceExport">
 <xs:sequence>
-<xs:element ref="simres:SimCntrlSchm_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimCntrlSchm_SchedTypeLimitsNames" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimCntrlSchm_InitVal" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimCntrlSchm_SchedName" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -2594,32 +2381,6 @@
 <xs:element ref="simres:SimCntrlSchm_CntlVar" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimCntrlSchm_SetpointNodeOrNodeListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimCntrlSchm_CntlZoneAirNodeName" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimControlScheme_SetpointManagerScheme_SingleZone_OneStageCooling">
-<xs:complexContent>
-<xs:extension base="simres:SimControlScheme_SetpointManagerScheme">
-<xs:sequence>
-<xs:element ref="simres:SimCntrlSchm_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_CntlZoneName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_SetpointNodeOrNodeListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_CoolStageOnSupplyAirSetptTemp" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_CoolStageOffSupplyAirSetptTemp" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimControlScheme_SetpointManagerScheme_SingleZone_OneStageHeating">
-<xs:complexContent>
-<xs:extension base="simres:SimControlScheme_SetpointManagerScheme">
-<xs:sequence>
-<xs:element ref="simres:SimCntrlSchm_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_CntlZoneName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_SetpointNodeOrNodeListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_HeatStageOnSupplyAirSetptTemp" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimCntrlSchm_HeatStageOffSupplyAirSetptTemp" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -3472,36 +3233,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimDistributionPort_DigitalControl_SHWLoop" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_DigitalControl_SHWLoop_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_In">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_InOrOut">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_Out">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimDistributionPort_DigitalControl_STMLoop" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimDistributionPort">
@@ -3751,36 +3482,6 @@
 <xs:complexType name="SimDistributionPort_RefrigerationFlowPort_Refrigeration_Out">
 <xs:complexContent>
 <xs:extension base="simres:SimDistributionPort_RefrigerationFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_ServiceHotWaterFlowPort" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_ServiceHotWaterFlowPort_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_ServiceHotWaterFlowPort_Water_In">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_ServiceHotWaterFlowPort_Water_InOrOut">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimDistributionPort_ServiceHotWaterFlowPort_Water_Out">
-<xs:complexContent>
-<xs:extension base="simres:SimDistributionPort_ServiceHotWaterFlowPort">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -4950,56 +4651,8 @@
 <xs:sequence>
 <xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimInternalLoad_Equipment_Electric_Elevators">
-<xs:complexContent>
-<xs:extension base="simres:SimInternalLoad_Equipment">
-<xs:sequence>
-<xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimInternalLoad_Equipment_Electric_Escalators">
-<xs:complexContent>
-<xs:extension base="simres:SimInternalLoad_Equipment">
-<xs:sequence>
-<xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimInternalLoad_Equipment_Electric_Process">
-<xs:complexContent>
-<xs:extension base="simres:SimInternalLoad_Equipment">
-<xs:sequence>
-<xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_WattsperZoneFloorArea" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_WattsperPerson" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
@@ -5015,29 +4668,12 @@
 <xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_CO2GenerationRate" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimInternalLoad_Equipment_Gas_Process">
-<xs:complexContent>
-<xs:extension base="simres:SimInternalLoad_Equipment">
-<xs:sequence>
-<xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_CO2GenerationRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -5048,12 +4684,12 @@
 <xs:sequence>
 <xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_WattsperPerson" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -5062,13 +4698,13 @@
 <xs:complexContent>
 <xs:extension base="simres:SimInternalLoad_Equipment">
 <xs:sequence>
-<xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_ZoneName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -5077,14 +4713,14 @@
 <xs:complexContent>
 <xs:extension base="simres:SimInternalLoad_Equipment">
 <xs:sequence>
-<xs:element ref="simres:SimInternalLoad_ZoneOrZoneListName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_ZoneName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_EndUseSubCat" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevel" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLatent" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracLost" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -5113,8 +4749,8 @@
 <xs:element ref="simres:SimInternalLoad_SchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_DesignLevelCalcMeth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_LightLevel" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerZoneFloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_PowerPerPerson" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_WattsperZoneFloorArea" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_WattsperPerson" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_RtnAirFrac" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracVisible" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_FracReplaceable" minOccurs="0" maxOccurs="1"/>
@@ -5151,8 +4787,6 @@
 <xs:element ref="simres:SimInternalLoad_MeanRadiantTempCalcType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_SurfName_AngFactListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_WorkEffSchedName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_ClothingInsulationCalculationMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_ClothingInsulationCalculationMethodSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_ClothingInsulSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_AirVelSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_ThermalComfortModel_1_5_Type" minOccurs="0" maxOccurs="1"/>
@@ -5182,7 +4816,7 @@
 <xs:sequence>
 <xs:element ref="simres:SimInternalLoad_SchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimInternalLoad_MassTransferCoefficient" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimInternalLoad_HenryAdsorpConstOrPartCoeff" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimInternalLoad_HenryAdsorptionConstantOrPartitionCoefficient" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -5449,14 +5083,6 @@
 <xs:element ref="simres:Site_Precipitation_DesignLevelTotalAnnualPrecip" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:Site_Precipitation_PrecipRatesSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:Site_Precipitation_AvgTotalAnnualPrecip" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SolarAndVisibleSpectrum_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SolarAndVisibleSpectrum_SpectrumDataMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SpectrumData_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SpectrumData_SpectrumDataType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SpectrumData_Value_1_107_Wavelength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Site_SpectrumData_Value_1_107_Spectrum" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -5552,161 +5178,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimMaterial_EquivGlazingMaterial" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterial">
-<xs:sequence>
-<xs:element ref="simres:SimMaterial_Name" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterial_EquivGlazingMaterial_Blind">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterial_EquivGlazingMaterial">
-<xs:sequence>
-<xs:element ref="simres:SimMaterial_SlatWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatAngle" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatOrientation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatSeparation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatCrown" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideSlatBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideSlatBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideSlatBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideSlatBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideSlatBeam_DiffuseVisibleTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideSlatBeam_DiffuseVisibleTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideSlatBeam_DiffuseVisibleReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideSlatBeam_DiffuseVisibleReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatDiffuse_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideSlatDiffuse_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideSlatDiffuse_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatDiffuse_DiffuseVisibleTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideSlatDiffuse_DiffuseVisibleReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideSlatDiffuse_DiffuseVisibleReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatInfraredTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideSlatInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideSlatInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SlatAngleCntrl" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterial_EquivGlazingMaterial_Drape">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterial_EquivGlazingMaterial">
-<xs:sequence>
-<xs:element ref="simres:SimMaterial_DrapeBeam_BeamSolarTransatNormalIncidence" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideDrapeBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideDrapeBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideDrapeBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideDrapeBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_DrapeBeam_BeamVisibleTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_DrapeBeam_DiffuseVisibleTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_DrapeBeam_DiffuseVisibleReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_DrapeMaterialInfraredTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideDrapeMaterialInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideDrapeMaterialInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_WidthofPleatedFabric" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_LengthofPleatedFabric" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterial_EquivGlazingMaterial_Gap">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterial_EquivGlazingMaterial">
-<xs:sequence>
-<xs:element ref="simres:SimMaterial_Thick" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_GasType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_CondCoefA" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_CondCoefB" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ConductivityCoeffC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ViscosityCoefA" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ViscosityCoefB" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ViscosityCoeffC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SpecificHeatCoefA" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SpecificHeatCoefB" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SpecificHeatCoeffC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_MolecularWeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_SpecificHeatRatio" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_GapVentType" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterial_EquivGlazingMaterial_Glazing">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterial_EquivGlazingMaterial">
-<xs:sequence>
-<xs:element ref="simres:SimMaterial_OpticalDataType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_WndwGlassSpectralDataSetName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_BeamSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_BeamSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_BeamSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_BeamSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_BeamVisibleSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_BeamVisibleSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_BeamVisibleSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_BeamVisibleSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_DiffuseVisibleSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_DiffuseVisibleSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideBeam_DiffuseVisibleSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideBeam_DiffuseVisibleSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_Diffuse_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideDiffuse_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideDiffuse_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_Diffuse_DiffuseVisibleSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideDiffuse_DiffuseVisibleSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideDiffuse_DiffuseVisibleSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_InfraredTrans_FrontAndBack" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterial_EquivGlazingMaterial_Screen">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterial_EquivGlazingMaterial">
-<xs:sequence>
-<xs:element ref="simres:SimMaterial_ScreenBeam_BeamSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenBeam_BeamVisibleTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenBeam_DiffuseVisibleTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenBeam_DiffuseVisibleReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenInfraredTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenWireSpacing" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ScreenWireDiameter" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterial_EquivGlazingMaterial_Shade">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterial_EquivGlazingMaterial">
-<xs:sequence>
-<xs:element ref="simres:SimMaterial_ShadeBeam_BeamSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideShadeBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideShadeBeam_DiffuseSolarTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideShadeBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideShadeBeam_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ShadeBeam_BeamVisibleTransatNormalIncidence" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ShadeBeam_DiffuseVisibleTransatNormalIncidence" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ShadeBeam_DiffuseVisibleReflectatNormalIncidence" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_ShadeMaterialInfraredTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontSideShadeMaterialInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BackSideShadeMaterialInfraredEmissivity" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimMaterial_GlazingMaterial" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterial">
@@ -5794,15 +5265,15 @@
 <xs:sequence>
 <xs:element ref="simres:SimMaterial_Thick" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_Cond" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_TopOpngMult" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_BotOpngMult" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_LayerType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_IRTransmit" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_FrontEmissivity" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_BackEmissivity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_LeftSideOpngMult_1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_RightSideOpngMult_1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_FrontOpeningMultiplier" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMaterial_TopOpeningMult" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMaterial_BottomOpeningMult" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMaterial_LeftSideOpeningMult" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMaterial_RightSideOpeningMult" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMaterial_FrontOpeningMult" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_SlatWidth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_SlatSpacing" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_SlatThick" minOccurs="0" maxOccurs="1"/>
@@ -5921,8 +5392,6 @@
 <xs:element ref="simres:SimMaterial_Cond" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_TopOpngMult" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_BotOpngMult" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_LeftSideOpngMult_1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMaterial_RightSideOpngMult_1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_ReflectedBeamTransAccountingMeth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_DiffuseSolarReflect" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_DiffuseVisReflect" minOccurs="0" maxOccurs="1"/>
@@ -5930,6 +5399,8 @@
 <xs:element ref="simres:SimMaterial_ScreenMatlSpacing" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_ScreenMatlDiam" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_ScreenToGlassDist" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMaterial_LeftSideOpngMult_1" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMaterial_RightSideOpngMult_1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMaterial_AngleResForScreenTransOutputMap" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
@@ -6148,23 +5619,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimMaterialLayer_EquivGlazingLayer" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterialLayer">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayer_MaterialLayerName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayer_MaterialName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayer_LayerThickness" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterialLayer_EquivGlazingLayer_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterialLayer_EquivGlazingLayer">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimMaterialLayer_GlazingMaterialLayer" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayer">
@@ -6254,15 +5708,36 @@
 <xs:element ref="simres:SimMatLayerSet_SolarOpticalComplexBackReflectMatrixName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_VisibleOpticalComplexFrontTransmitMatrixName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_VisibleOpticalComplexBackTransmitMatrixName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayerName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_OutsideLayerMatlName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_OutsideLayerDirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_OutsideLayerDirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_5_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_5_DirectFrontAbsorpMatrixName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_5_DirectBackAbsorpMatrixName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Gap_1_4_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Gap_1_4_DirectFrontAbsorpMatrixName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Gap_1_4_DirectBackAbsorpMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer2MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer2DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer2DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer3MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer3DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer3DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer4MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer4DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer4DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer5MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer5DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer5DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer6MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer6DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer6DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer7MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer7DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer7DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer8MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer8DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer8DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer9MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer9DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer9DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer10MatlName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer10DirectFrontAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer10DirectBackAbsoptMatrixName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:WindowThermalModel_Params_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:WindowThermalModel_Params_standard" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:WindowThermalModel_Params_ThermalModel" minOccurs="0" maxOccurs="1"/>
@@ -6275,18 +5750,6 @@
 <xs:element ref="simres:Matrix_TwoDimension_NumberofRows" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:Matrix_TwoDimension_NumberofColumns" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:Matrix_TwoDimension_Value_1_2500" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24AssmContext" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraCertMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24Diffusing" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraFrame" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraPanes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraProdType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraTint" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:GreenhouseGardenWindow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGCCenterOfGlass" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltCurb" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltGlaze" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -6294,20 +5757,6 @@
 <xs:complexType name="SimMaterialLayerSet_GlazingLayerSet_CurtainWall">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_GlazingLayerSet">
-<xs:sequence>
-<xs:element ref="simres:T24AssmContext" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraCertMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24Diffusing" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraFrame" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraPanes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraProdType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraTint" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:GreenhouseGardenWindow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGCCenterOfGlass" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltCurb" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltGlaze" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -6318,18 +5767,6 @@
 <xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24AssmContext" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraCertMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24Diffusing" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraFrame" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraPanes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraProdType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraTint" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:GreenhouseGardenWindow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGCCenterOfGlass" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltCurb" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltGlaze" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -6337,37 +5774,12 @@
 <xs:complexType name="SimMaterialLayerSet_GlazingLayerSet_GlassDoor">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_GlazingLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24DoorCertMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24DoorOpenType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24DoorType" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimMaterialLayerSet_GlazingLayerSet_Window">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_GlazingLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24AssmContext" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraCertMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24Diffusing" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraFrame" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraPanes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraProdType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraTint" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:GreenhouseGardenWindow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGCCenterOfGlass" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltCurb" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltGlaze" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -6377,29 +5789,6 @@
 <xs:sequence>
 <xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_FileName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24AssmContext" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraCertMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24Diffusing" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraFrame" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraPanes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraProdType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraTint" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:GreenhouseGardenWindow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SHGCCenterOfGlass" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltCurb" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FenestraSkyltGlaze" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimMaterialLayerSet_GlazingLayerSet_WindowEquivalentLayer">
-<xs:complexContent>
-<xs:extension base="simres:SimMaterialLayerSet_GlazingLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_WELayer_2_11" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -6408,7 +5797,6 @@
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet">
 <xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SurfProp_HeatTransAlg_Construct_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SurfProp_HeatTransAlg_Construct_Algorithm" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SurfProp_HeatTransAlg_Construct_ConstructionName" minOccurs="0" maxOccurs="1"/>
@@ -6419,25 +5807,6 @@
 <xs:complexType name="SimMaterialLayerSet_OpaqueLayerSet_Ceiling">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConsAssmNotes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialEmitance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcProductID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FieldAppliedCoating" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24RoofDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConstructInsulOrient" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabInsulThermResist" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SolarReflectanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ThermalEmittanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -6445,6 +5814,7 @@
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
 <xs:sequence>
+<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_CFactor" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_Ht" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -6455,6 +5825,7 @@
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
 <xs:sequence>
+<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -6464,13 +5835,6 @@
 <xs:complexType name="SimMaterialLayerSet_OpaqueLayerSet_Door">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24DoorCertMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24DoorOpenType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24DoorType" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -6478,21 +5842,10 @@
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
 <xs:sequence>
+<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_FFactor" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_Area" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_PerimeterExposed" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConsAssmNotes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialEmitance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcProductID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FieldAppliedCoating" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24RoofDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SolarReflectanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ThermalEmittanceASTMCertification" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -6500,25 +5853,6 @@
 <xs:complexType name="SimMaterialLayerSet_OpaqueLayerSet_Floor">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConsAssmNotes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialEmitance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcProductID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FieldAppliedCoating" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24RoofDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConstructInsulOrient" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabInsulThermResist" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SolarReflectanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ThermalEmittanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -6526,12 +5860,21 @@
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
 <xs:sequence>
+<xs:element ref="simres:SimMatLayerSet_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_SrcPresentAfterLayerNum" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_TempCalcRequestedAfterLayerNum" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_DimensionsForTheCTFCalc" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimMatLayerSet_TubeSpacing" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_ISLayer_2_10" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer2" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer3" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer4" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer5" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer6" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer7" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer8" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer9" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimMatLayerSet_Layer10" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -6539,72 +5882,18 @@
 <xs:complexType name="SimMaterialLayerSet_OpaqueLayerSet_Landing">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConsAssmNotes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialEmitance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcProductID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FieldAppliedCoating" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24RoofDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConstructInsulOrient" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabInsulThermResist" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SolarReflectanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ThermalEmittanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimMaterialLayerSet_OpaqueLayerSet_Roof">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConsAssmNotes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialEmitance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcProductID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FieldAppliedCoating" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24RoofDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConstructInsulOrient" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabInsulThermResist" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SlabType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SolarReflectanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ThermalEmittanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimMaterialLayerSet_OpaqueLayerSet_Wall">
 <xs:complexContent>
 <xs:extension base="simres:SimMaterialLayerSet_OpaqueLayerSet">
-<xs:sequence>
-<xs:element ref="simres:SimMatLayerSet_OutsideLayer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimMatLayerSet_Layer_2_10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ConsAssmNotes" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcAgedSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialEmitance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcInitialSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24CrrcProductID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24FieldAppliedCoating" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24RoofDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SolarReflectanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24ThermalEmittanceASTMCertification" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -7286,36 +6575,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimNode_DigitalControl_SHWLoop" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimNode">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_DigitalControl_SHWLoop_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_DigitalControl_SHWLoop_DigitalSignal_In">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_DigitalControl_SHWLoop_DigitalSignal_InOrOut">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_DigitalControl_SHWLoop_DigitalSignal_Out">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimNode_DigitalControl_STMLoop" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimNode">
@@ -7620,36 +6879,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimNode_ServiceHotWaterFlowPort" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimNode">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_ServiceHotWaterFlowPort_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_ServiceHotWaterFlowPort_Water_In">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_ServiceHotWaterFlowPort_Water_InOrOut">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimNode_ServiceHotWaterFlowPort_Water_Out">
-<xs:complexContent>
-<xs:extension base="simres:SimNode_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimNode_SetpointNode" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimNode">
@@ -7801,7 +7030,25 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
+<xs:complexType name="SimOrganization_Organization_Architect">
+<xs:complexContent>
+<xs:extension base="simres:SimOrganization_Organization">
+</xs:extension>
+</xs:complexContent>
+	</xs:complexType>
 <xs:complexType name="SimOrganization_Organization_Default">
+<xs:complexContent>
+<xs:extension base="simres:SimOrganization_Organization">
+</xs:extension>
+</xs:complexContent>
+	</xs:complexType>
+<xs:complexType name="SimOrganization_Organization_Engineer">
+<xs:complexContent>
+<xs:extension base="simres:SimOrganization_Organization">
+</xs:extension>
+</xs:complexContent>
+	</xs:complexType>
+<xs:complexType name="SimOrganization_Organization_Owner">
 <xs:complexContent>
 <xs:extension base="simres:SimOrganization_Organization">
 </xs:extension>
@@ -7970,25 +7217,7 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimPersonAndOrganization_PersonAndOrganization_DocumentAuthor">
-<xs:complexContent>
-<xs:extension base="simres:SimPersonAndOrganization_PersonAndOrganization">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPersonAndOrganization_PersonAndOrganization_EnergyConsultant">
-<xs:complexContent>
-<xs:extension base="simres:SimPersonAndOrganization_PersonAndOrganization">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimPersonAndOrganization_PersonAndOrganization_Engineer">
-<xs:complexContent>
-<xs:extension base="simres:SimPersonAndOrganization_PersonAndOrganization">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPersonAndOrganization_PersonAndOrganization_LightingDesigner">
 <xs:complexContent>
 <xs:extension base="simres:SimPersonAndOrganization_PersonAndOrganization">
 </xs:extension>
@@ -8300,36 +7529,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimPort_DigitalControl_SHWLoop" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_DigitalControl_SHWLoop_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_DigitalControl_SHWLoop_DigitalSignal_In">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_DigitalControl_SHWLoop_DigitalSignal_InOrOut">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_DigitalControl_SHWLoop_DigitalSignal_Out">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_DigitalControl_SHWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimPort_DigitalControl_STMLoop" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimPort">
@@ -8619,36 +7818,6 @@
 <xs:complexType name="SimPort_RefrigerationFlowPort_Refrigeration_Out">
 <xs:complexContent>
 <xs:extension base="simres:SimPort_RefrigerationFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_ServiceHotWaterFlowPort" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_ServiceHotWaterFlowPort_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_ServiceHotWaterFlowPort_Water_In">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_ServiceHotWaterFlowPort_Water_InOrOut">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_ServiceHotWaterFlowPort">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimPort_ServiceHotWaterFlowPort_Water_Out">
-<xs:complexContent>
-<xs:extension base="simres:SimPort_ServiceHotWaterFlowPort">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -9100,10 +8269,10 @@
 <xs:element ref="simres:AlternativeName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:ConfigurationName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:RunName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Unit.String" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:Unit" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:LegendText" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:Area" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:TimeStep.String" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:TimeStep" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -9460,7 +8629,7 @@
 <xs:element ref="simres:SimSimulaOutputRequest_DistHeatingEffic" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_DistCoolingCOP" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_SteamConversionEffic" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromN2O" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromN20" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromCH4" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromCO2" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -9695,7 +8864,7 @@
 <xs:element ref="simres:SimSimulaOutputRequest_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_FuelType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_KeyName_1_22" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimSimulaOutputRequest_OutVarOrMeterName_1_22" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimSimulaOutputRequest_ReportVarOrMeterName_1_22" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -9708,7 +8877,7 @@
 <xs:element ref="simres:SimSimulaOutputRequest_FuelType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_SourceMeterName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimSimulaOutputRequest_KeyName_1_22" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimSimulaOutputRequest_OutVarOrMeterName_1_22" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:SimSimulaOutputRequest_ReportVarOrMeterName_1_22" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -10260,45 +9429,15 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimSimulationRun_EPlusSimulation" abstract="true">
+<xs:complexType name="SimSimulationRun_Default" abstract="true">
 <xs:complexContent>
 <xs:extension base="simres:SimSimulationRun">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimSimulationRun_EPlusSimulation_Default">
+<xs:complexType name="SimSimulationRun_Default_Default">
 <xs:complexContent>
-<xs:extension base="simres:SimSimulationRun_EPlusSimulation">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSimulationRun_StandardsRun" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSimulationRun">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSimulationRun_StandardsRun_ASHRAE90_1">
-<xs:complexContent>
-<xs:extension base="simres:SimSimulationRun_StandardsRun">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSimulationRun_StandardsRun_LEED">
-<xs:complexContent>
-<xs:extension base="simres:SimSimulationRun_StandardsRun">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSimulationRun_StandardsRun_SBDH">
-<xs:complexContent>
-<xs:extension base="simres:SimSimulationRun_StandardsRun">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSimulationRun_StandardsRun_T24">
-<xs:complexContent>
-<xs:extension base="simres:SimSimulationRun_StandardsRun">
+<xs:extension base="simres:SimSimulationRun_Default">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -10485,38 +9624,7 @@
 <xs:element ref="simres:PhysicalOrVirtualBoundary" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:InternalOrExternalBoundary" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:OthersideSpaceBoundary" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:ChildSpaceBoundaries" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Ceiling" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Ceiling_InterzoneCeiling">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Ceiling">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Door" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Door_GlazedDoor">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Door">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Door_OpaqueDoor">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Door">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -10529,42 +9637,6 @@
 <xs:complexType name="SimSpaceBoundary_FirstLevel_Default">
 <xs:complexContent>
 <xs:extension base="simres:SimSpaceBoundary_FirstLevel">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Floor" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Floor_FloorOverAir">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Floor">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Floor_FloorOverEarth">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Floor">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Floor_InterzoneFloor">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Floor">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_RoofSlab" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_RoofSlab_RoofUnderAir">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_RoofSlab">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -10595,54 +9667,6 @@
 <xs:complexType name="SimSpaceBoundary_SecondLevel_SubTypeC">
 <xs:complexContent>
 <xs:extension base="simres:SimSpaceBoundary_SecondLevel">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Skylight" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Skylight_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Skylight">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Wall" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Wall_ExteriorAboveGrade">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Wall">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Wall_ExteriorBelowGrade">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Wall">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Wall_Interior">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Wall">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Window" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpaceBoundary_Window_Exterior">
-<xs:complexContent>
-<xs:extension base="simres:SimSpaceBoundary_Window">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -10831,18 +9855,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimTemplateDaylighting_Daylighting_Skylights">
-<xs:complexContent>
-<xs:extension base="simres:SimTemplateDaylighting_Daylighting">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimTemplateDaylighting_Daylighting_Windows">
-<xs:complexContent>
-<xs:extension base="simres:SimTemplateDaylighting_Daylighting">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimTemplateHvacZoneEquipment">
 <xs:complexContent>
 <xs:extension base="simcore:SimTemplate">
@@ -10893,49 +9905,6 @@
 <xs:complexType name="SimTemplateHvacZoneEquipment_HvacZoneEquipment_Default">
 <xs:complexContent>
 <xs:extension base="simres:SimTemplateHvacZoneEquipment_HvacZoneEquipment">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimTemplateInteriorLighting">
-<xs:complexContent>
-<xs:extension base="simcore:SimTemplate">
-<xs:sequence>
-<xs:element ref="simres:ContainingSpace" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:InteriorLightingSpecMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24Status" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:LumMountElevation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:FractionHeatToSpace" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:RadiantFractionOfSpaceHeat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire1Count" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire2Count" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire3" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire3Count" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire4Count" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire5" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:Luminaire5Count" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:AssignedDaylitZone" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:LightingControls" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:PowerAdjustFactor" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:LightingControlCount" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:AcceptanceTestRequired" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:AllowanceType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:AllowanceArea" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimTemplateInteriorLighting_InteriorLighting" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimTemplateInteriorLighting">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimTemplateInteriorLighting_InteriorLighting_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimTemplateInteriorLighting_InteriorLighting">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -11116,11 +10085,7 @@
 <xs:extension base="simcore:SimTemplate">
 <xs:sequence>
 <xs:element ref="simres:TemplateElectricalEquipment" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:TemplateElecEqmt_Elevators" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:TemplateElecEqmt_Escalators" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:TemplateElecEqmt_Process" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:TemplateGasEquipment" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:TemplateGasEqmt_Process" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:TemplateHotWaterEquipment" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:TemplateSteamEquipment" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:TemplateOtherEquipment" minOccurs="0" maxOccurs="1"/>
@@ -11202,7 +10167,6 @@
 <xs:sequence>
 <xs:element ref="simres:SimTimeSeriesSched_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_SchedTypeLimitsName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimTimeSeriesSched_TimeSeriesSchedType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_Field_1_4498" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
@@ -11220,7 +10184,6 @@
 <xs:sequence>
 <xs:element ref="simres:SimTimeSeriesSched_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_SchedTypeLimitsName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimTimeSeriesSched_TimeSeriesSchedType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_HourlyVal" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
@@ -11238,7 +10201,6 @@
 <xs:sequence>
 <xs:element ref="simres:SimTimeSeriesSched_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_SchedTypeLimitsName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimTimeSeriesSched_TimeSeriesSchedType" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -11280,7 +10242,6 @@
 <xs:sequence>
 <xs:element ref="simres:SimTimeSeriesSched_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_SchedTypeLimitsName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimTimeSeriesSched_TimeSeriesSchedType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_terpolateToTimestep" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_MinutesPerItem" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_FileName" minOccurs="0" maxOccurs="1"/>
@@ -11335,10 +10296,6 @@
 <xs:extension base="simres:SimTimeSeriesSchedule">
 <xs:sequence>
 <xs:element ref="simres:SimTimeSeriesSched_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimTimeSeriesSched_TimeSeriesSchedType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SchedDayAllDayRef" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SchedDayWkdaysRef" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:T24SchedDayWkEndsRef" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -11378,7 +10335,6 @@
 <xs:sequence>
 <xs:element ref="simres:SimTimeSeriesSched_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_SchedTypeLimitsName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simres:SimTimeSeriesSched_TimeSeriesSchedType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_Sched_WeekName_1_53" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_StartMonth_1_53" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:SimTimeSeriesSched_StartDay_1_53" minOccurs="0" maxOccurs="1"/>
@@ -11425,7 +10381,7 @@
 <xs:complexContent>
 <xs:extension base="simcore:SimResourceObject">
 <xs:sequence>
-<xs:element ref="simres:UnitType.String" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simres:UnitType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:DecimalPrecision" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -11436,7 +10392,6 @@
 <xs:complexContent>
 <xs:extension base="simcore:SimResourceObject">
 <xs:sequence>
-<xs:element ref="simres:RuleSetType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:ValidationDateTime" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:TopLevelSystem" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simres:FatalErrorMsgs" minOccurs="0" maxOccurs="1"/>
@@ -11616,18 +10571,6 @@
 <xs:complexType name="SimValidationResultsWater_MxWLoop_Default">
 <xs:complexContent>
 <xs:extension base="simres:SimValidationResultsWater_MxWLoop">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimValidationResultsWater_SHWLoop" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimValidationResultsWater">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimValidationResultsWater_SHWLoop_Default">
-<xs:complexContent>
-<xs:extension base="simres:SimValidationResultsWater_SHWLoop">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -11888,7 +10831,6 @@
 <xs:element name="Y3Dim"  type="xs:double" nillable ="true"/>
 <xs:element name="SiteElevation"  type="xs:double" nillable ="true"/>
 <xs:element name="ProfilePath"  type="xs:IDREF"/>
-<xs:element name="Language"  type="xs:string"/>
 <xs:element name="DefaultforLibraryType"  type="xs:string"/>
 <xs:element name="DefaultPreferenceIndex"  type="xs:int" nillable ="true"/>
 <xs:element name="LibraryLocation"  type="xs:string"/>
@@ -11900,10 +10842,8 @@
 <xs:element name="IndexType2"  type="xs:string"/>
 <xs:element name="LastUsedIndex1"  type="xs:string"/>
 <xs:element name="LastUsedIndex2"  type="xs:string"/>
-<xs:element name="CurrentUserInterfaceUnits"  type="xs:string"/>
 <xs:element name="AutoSave"  type="xs:boolean" nillable ="true"/>
 <xs:element name="AutoSaveInterval"  type="xs:int" nillable ="true"/>
-<xs:element name="MaxAutoSaveFiles"  type="xs:int" nillable ="true"/>
 <xs:element name="MonthlyChargeIsDecimal"  type="xs:boolean" nillable ="true"/>
 <xs:element name="MinMonthlyChargeIsDecimal"  type="xs:boolean" nillable ="true"/>
 <xs:element name="EPlusInstalVersion"  type="xs:string"/>
@@ -11925,12 +10865,8 @@
 <xs:element name="Length"  type="xs:double" nillable ="true"/>
 <xs:element name="TopOfBeamElev"  type="xs:double" nillable ="true"/>
 <xs:element name="DegreeOfNormal"  type="xs:double" nillable ="true"/>
-<xs:element name="ArrayAzimuth"  type="xs:double" nillable ="true"/>
-<xs:element name="ArrayElementTiltFromHorizontal"  type="xs:double" nillable ="true"/>
-<xs:element name="ArrayCountY"  type="xs:int" nillable ="true"/>
 <xs:element name="ArrayMinSpacingY"  type="xs:double" nillable ="true"/>
 <xs:element name="ArrayActualSpacingY"  type="xs:double" nillable ="true"/>
-<xs:element name="ArrayCountZ"  type="xs:int" nillable ="true"/>
 <xs:element name="ArrayMinSpacingZ"  type="xs:double" nillable ="true"/>
 <xs:element name="ArrayActualSpacingZ"  type="xs:double" nillable ="true"/>
 <xs:element name="BuildingName"  type="xs:string"/>
@@ -11948,11 +10884,9 @@
 <xs:element name="FloorToFloorHeight"  type="xs:double" nillable ="true"/>
 <xs:element name="CeilingBottomElevation"  type="xs:double" nillable ="true"/>
 <xs:element name="FinishFloorTopElevation"  type="xs:double" nillable ="true"/>
-<xs:element name="SpaceConfigOccupied"  type="xs:string"/>
-<xs:element name="PlenumConfiguration"  type="xs:string"/>
-<xs:element name="SpaceConfigAboveCeiling"  type="xs:string"/>
-<xs:element name="SpaceConfigBelowFloor"  type="xs:string"/>
+<xs:element name="ZoneConfiguration"  type="xs:string"/>
 <xs:element name="PerimeterZoneDepth"  type="xs:double" nillable ="true"/>
+<xs:element name="PlenumConfiguration"  type="xs:string"/>
 <xs:element name="WallProfilePathType"  type="xs:string"/>
 <xs:element name="BldgStoryProfilePath"  type="xs:IDREF"/>
 <xs:element name="PerimeterZoneOutsidePath"  type="xs:IDREF"/>
@@ -12052,16 +10986,7 @@
 <xs:element name="SimCntrlSchm_VentTempDiff"  type="xs:double" nillable ="true"/>
 <xs:element name="SimCntrlSchm_VentTempLowLimit"  type="xs:double" nillable ="true"/>
 <xs:element name="SimCntrlSchm_NightVentFlowFract"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_ZoneListName"  type="xs:IDREF"/>
-<xs:element name="SimCntrlSchm_MaxValueforOptStartTime"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_CntrlAlgorithm"  type="xs:string"/>
-<xs:element name="SimCntrlSchm_ConstTempGradDuringCool"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_ConstTempGradDuringHeat"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_InitTempGradDuringCool"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_InitTempGradDuringHeat"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_ConstStartTime"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_NumofPrevDays"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_SchedName"  type="xs:IDREF"/>
+<xs:element name="SimCntrlSchm_SchedName"  type="xs:string"/>
 <xs:element name="SimCntrlSchm_Eqmt_1_10_ObjectType">
 <xs:complexType>
 <xs:sequence maxOccurs="unbounded">
@@ -12120,8 +11045,6 @@
 <xs:element name="SimCntrlSchm_WetBulbTempDiffRange_1_10_LowLimit"  type="simcore:doubleList"/>
 <xs:element name="SimCntrlSchm_WetBulbTempDiffRange_1_10_UpLimit"  type="simcore:doubleList"/>
 <xs:element name="SimCntrlSchm_EquipmentListName"  type="xs:IDREF"/>
-<xs:element name="SimCntrlSchm_MainMdlProgCallingMngrName"  type="xs:IDREF"/>
-<xs:element name="SimCntrlSchm_InitProgramCallingMgrName"  type="xs:IDREF"/>
 <xs:element name="SimCntrlSchm_AvailSchedName"  type="xs:IDREF"/>
 <xs:element name="SimCntrlSchm_SelectionCntl"  type="xs:string"/>
 <xs:element name="SimCntrlSchm_RotationDuration"  type="xs:double" nillable ="true"/>
@@ -12222,10 +11145,6 @@
 <xs:element name="SimCntrlSchm_ZoneNodeName"  type="xs:string"/>
 <xs:element name="SimCntrlSchm_ZoneInletNodeName"  type="xs:string"/>
 <xs:element name="SimCntrlSchm_CntlZoneAirNodeName"  type="xs:string"/>
-<xs:element name="SimCntrlSchm_CoolStageOnSupplyAirSetptTemp"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_CoolStageOffSupplyAirSetptTemp"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_HeatStageOnSupplyAirSetptTemp"  type="xs:double" nillable ="true"/>
-<xs:element name="SimCntrlSchm_HeatStageOffSupplyAirSetptTemp"  type="xs:double" nillable ="true"/>
 <xs:element name="SimCntrlSchm_MinTurndownRatio"  type="xs:double" nillable ="true"/>
 <xs:element name="SimCntrlSchm_HeatingSetpointTempSchedName"  type="xs:IDREF"/>
 <xs:element name="SimCntrlSchm_CoolingSetpointTempSchedName"  type="xs:IDREF"/>
@@ -12288,7 +11207,7 @@
 <xs:element name="SimCost_EscalatStartYear"  type="xs:int" nillable ="true"/>
 <xs:element name="SimCost_EscalatStartMonth"  type="xs:string"/>
 <xs:element name="SimCost_Year_1_30_Escalat"  type="simcore:doubleList"/>
-<xs:element name="SimCost_TariffName"  type="xs:string"/>
+<xs:element name="SimCost_TariffName"  type="xs:IDREF"/>
 <xs:element name="SimCost_Season"  type="xs:string"/>
 <xs:element name="SimCost_ChargeVarName"  type="xs:string"/>
 <xs:element name="SimCost_SrcVar"  type="xs:string"/>
@@ -12338,7 +11257,7 @@
 <xs:element name="SimCost_GroupName"  type="xs:string"/>
 <xs:element name="SimCost_BuyOrSell"  type="xs:string"/>
 <xs:element name="UtilCost_Comp_Name"  type="xs:string"/>
-<xs:element name="UtilCost_Comp_TariffName"  type="xs:string"/>
+<xs:element name="UtilCost_Comp_TariffName"  type="xs:IDREF"/>
 <xs:element name="UtilCost_Comp_ComputeStep_1_30">
 <xs:complexType>
 <xs:sequence maxOccurs="unbounded">
@@ -12724,13 +11643,15 @@
 <xs:element name="SimInternalLoad_SchedName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_ZoneOrZoneListName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_DesignLevelCalcMeth"  type="xs:string"/>
-<xs:element name="SimInternalLoad_PowerPerZoneFloorArea"  type="xs:double" nillable ="true"/>
-<xs:element name="SimInternalLoad_PowerPerPerson"  type="xs:double" nillable ="true"/>
+<xs:element name="SimInternalLoad_WattsperZoneFloorArea"  type="xs:double" nillable ="true"/>
+<xs:element name="SimInternalLoad_WattsperPerson"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_EndUseSubCat"  type="xs:string"/>
 <xs:element name="SimInternalLoad_DesignLevel"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_FracLatent"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_FracLost"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_CO2GenerationRate"  type="xs:double" nillable ="true"/>
+<xs:element name="SimInternalLoad_PowerPerZoneFloorArea"  type="xs:double" nillable ="true"/>
+<xs:element name="SimInternalLoad_PowerPerPerson"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_CapacityAtLowTemp"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_LowTemp"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_CapacityAtHighTemp"  type="xs:double" nillable ="true"/>
@@ -12753,8 +11674,6 @@
 <xs:element name="SimInternalLoad_MeanRadiantTempCalcType"  type="xs:string"/>
 <xs:element name="SimInternalLoad_SurfName_AngFactListName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_WorkEffSchedName"  type="xs:IDREF"/>
-<xs:element name="SimInternalLoad_ClothingInsulationCalculationMethod"  type="xs:string"/>
-<xs:element name="SimInternalLoad_ClothingInsulationCalculationMethodSchedName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_ClothingInsulSchedName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_AirVelSchedName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_ThermalComfortModel_1_5_Type">
@@ -12766,7 +11685,7 @@
 </xs:element>
 <xs:element name="SimInternalLoad_SurfName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_MassTransferCoefficient"  type="xs:double" nillable ="true"/>
-<xs:element name="SimInternalLoad_HenryAdsorpConstOrPartCoeff"  type="xs:double" nillable ="true"/>
+<xs:element name="SimInternalLoad_HenryAdsorptionConstantOrPartitionCoefficient"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_DepositionVelocity"  type="xs:double" nillable ="true"/>
 <xs:element name="SimInternalLoad_GenerationSchedName"  type="xs:IDREF"/>
 <xs:element name="SimInternalLoad_DesignGenerationRateCoefficient"  type="xs:double" nillable ="true"/>
@@ -12889,14 +11808,6 @@
 <xs:element name="Site_Precipitation_DesignLevelTotalAnnualPrecip"  type="xs:double" nillable ="true"/>
 <xs:element name="Site_Precipitation_PrecipRatesSchedName"  type="xs:IDREF"/>
 <xs:element name="Site_Precipitation_AvgTotalAnnualPrecip"  type="xs:double" nillable ="true"/>
-<xs:element name="Site_SolarAndVisibleSpectrum_Name"  type="xs:string"/>
-<xs:element name="Site_SolarAndVisibleSpectrum_SpectrumDataMethod"  type="xs:string"/>
-<xs:element name="Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName"  type="xs:string"/>
-<xs:element name="Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName"  type="xs:string"/>
-<xs:element name="Site_SpectrumData_Name"  type="xs:string"/>
-<xs:element name="Site_SpectrumData_SpectrumDataType"  type="xs:string"/>
-<xs:element name="Site_SpectrumData_Value_1_107_Wavelength"  type="simcore:doubleList"/>
-<xs:element name="Site_SpectrumData_Value_1_107_Spectrum"  type="simcore:doubleList"/>
 <xs:element name="SimLocationAndWeather_DayOfWeekStartDay"  type="xs:string"/>
 <xs:element name="SimLocationAndWeather_UseWtherFileDylghtSavingPer"  type="xs:string"/>
 <xs:element name="SimLocationAndWeather_UseWtherFileRainAndSnowInd"  type="xs:string"/>
@@ -12913,104 +11824,6 @@
 <xs:element name="SimLocationAndWeather_CalcType"  type="xs:string"/>
 <xs:element name="SimLocationAndWeather_SchedName"  type="xs:IDREF"/>
 <xs:element name="SimMaterial_Name"  type="xs:string"/>
-<xs:element name="SimMaterial_SlatWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SlatAngle"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SlatOrientation"  type="xs:string"/>
-<xs:element name="SimMaterial_SlatSeparation"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SlatCrown"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideSlatBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideSlatBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideSlatBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideSlatBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideSlatBeam_DiffuseVisibleTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideSlatBeam_DiffuseVisibleTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideSlatBeam_DiffuseVisibleReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideSlatBeam_DiffuseVisibleReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SlatDiffuse_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideSlatDiffuse_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideSlatDiffuse_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SlatDiffuse_DiffuseVisibleTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideSlatDiffuse_DiffuseVisibleReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideSlatDiffuse_DiffuseVisibleReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SlatInfraredTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideSlatInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideSlatInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SlatAngleCntrl"  type="xs:string"/>
-<xs:element name="SimMaterial_DrapeBeam_BeamSolarTransatNormalIncidence"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideDrapeBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideDrapeBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideDrapeBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideDrapeBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_DrapeBeam_BeamVisibleTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_DrapeBeam_DiffuseVisibleTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_DrapeBeam_DiffuseVisibleReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_DrapeMaterialInfraredTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideDrapeMaterialInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideDrapeMaterialInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_WidthofPleatedFabric"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_LengthofPleatedFabric"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_Thick"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_GasType"  type="xs:string"/>
-<xs:element name="SimMaterial_CondCoefA"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_CondCoefB"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ConductivityCoeffC"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ViscosityCoefA"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ViscosityCoefB"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ViscosityCoeffC"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SpecificHeatCoefA"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SpecificHeatCoefB"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SpecificHeatCoeffC"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_MolecularWeight"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_SpecificHeatRatio"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_GapVentType"  type="xs:string"/>
-<xs:element name="SimMaterial_OpticalDataType"  type="xs:string"/>
-<xs:element name="SimMaterial_WndwGlassSpectralDataSetName"  type="xs:IDREF"/>
-<xs:element name="SimMaterial_FrontSideBeam_BeamSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_BeamSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideBeam_BeamSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_BeamSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideBeam_BeamVisibleSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_BeamVisibleSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideBeam_BeamVisibleSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_BeamVisibleSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideBeam_DiffuseVisibleSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_DiffuseVisibleSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideBeam_DiffuseVisibleSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideBeam_DiffuseVisibleSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_Diffuse_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideDiffuse_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideDiffuse_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_Diffuse_DiffuseVisibleSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideDiffuse_DiffuseVisibleSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideDiffuse_DiffuseVisibleSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_InfraredTrans_FrontAndBack"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenBeam_BeamSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenBeam_BeamVisibleTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenBeam_DiffuseVisibleTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenBeam_DiffuseVisibleReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenInfraredTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenWireSpacing"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ScreenWireDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ShadeBeam_BeamSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideShadeBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideShadeBeam_DiffuseSolarTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideShadeBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideShadeBeam_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ShadeBeam_BeamVisibleTransatNormalIncidence"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ShadeBeam_DiffuseVisibleTransatNormalIncidence"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ShadeBeam_DiffuseVisibleReflectatNormalIncidence"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_ShadeMaterialInfraredTrans"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontSideShadeMaterialInfraredEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BackSideShadeMaterialInfraredEmissivity"  type="xs:double" nillable ="true"/>
 <xs:element name="MatProp_MoistPeneDepth_Settings_Name"  type="xs:IDREF"/>
 <xs:element name="MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth"  type="xs:double" nillable ="true"/>
 <xs:element name="MatProp_MoistPeneDepth_Settings_MoistEquaCoefA"  type="xs:double" nillable ="true"/>
@@ -13047,8 +11860,12 @@
 <xs:element name="MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords"  type="xs:int" nillable ="true"/>
 <xs:element name="MatProp_Heat_MoistTrans_ThermCond_MoistCont_1_25"  type="simcore:doubleList"/>
 <xs:element name="MatProp_Heat_MoistTrans_ThermCond_ThermalCond_1_25"  type="simcore:doubleList"/>
+<xs:element name="SimMaterial_SlatWidth"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_SlatThick"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_SlatAngle"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_SlatCond"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_SlatOrientation"  type="xs:string"/>
+<xs:element name="SimMaterial_SlatSeparation"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_SlatBeamSolarTrans"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_FrontSideSlatBeamSolarReflect"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_BackSideSlatBeamSolarReflect"  type="xs:double" nillable ="true"/>
@@ -13071,16 +11888,17 @@
 <xs:element name="SimMaterial_BlindRightSideOpngMult"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_MinSlatAngle"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_MaxSlatAngle"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_Thick"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_Cond"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_TopOpngMult"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_BotOpngMult"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_LayerType"  type="xs:string"/>
 <xs:element name="SimMaterial_IRTransmit"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_FrontEmissivity"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_BackEmissivity"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_LeftSideOpngMult_1"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_RightSideOpngMult_1"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMaterial_FrontOpeningMultiplier"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_TopOpeningMult"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_BottomOpeningMult"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_LeftSideOpeningMult"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_RightSideOpeningMult"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_FrontOpeningMult"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_SlatSpacing"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_SlatCurve"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_GasOrGasMixture"  type="xs:IDREF"/>
@@ -13094,6 +11912,18 @@
 <xs:element name="WindowGap_DeflectionState_DeflectedThickness"  type="xs:double" nillable ="true"/>
 <xs:element name="WindowGap_DeflectionState_InitialTemperature"  type="xs:double" nillable ="true"/>
 <xs:element name="WindowGap_DeflectionState_InitialPressure"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_GasType"  type="xs:string"/>
+<xs:element name="SimMaterial_CondCoefA"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_CondCoefB"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_ConductivityCoeffC"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_ViscosityCoefA"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_ViscosityCoefB"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_ViscosityCoeffC"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_SpecificHeatCoefA"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_SpecificHeatCoefB"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_SpecificHeatCoeffC"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_MolecularWeight"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_SpecificHeatRatio"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_NumGasesMixture"  type="xs:int" nillable ="true"/>
 <xs:element name="SimMaterial_GasType_1_4">
 <xs:complexType>
@@ -13103,6 +11933,8 @@
 </xs:complexType>
 </xs:element>
 <xs:element name="SimMaterial_GasFract_1_4"  type="simcore:doubleList"/>
+<xs:element name="SimMaterial_OpticalDataType"  type="xs:string"/>
+<xs:element name="SimMaterial_WndwGlassSpectralDataSetName"  type="xs:IDREF"/>
 <xs:element name="SimMaterial_SolarTransAtNrmlIncent"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_FrontSideSolarReflectAtNrmlIncent"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_BackSideSolarReflectAtNrmlIncent"  type="xs:double" nillable ="true"/>
@@ -13126,6 +11958,8 @@
 <xs:element name="SimMaterial_VisdexRefract"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_VisExtinctCoef"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_InfraredHemisphEmis"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_TopOpngMult"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_BotOpngMult"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_ReflectedBeamTransAccountingMeth"  type="xs:string"/>
 <xs:element name="SimMaterial_DiffuseSolarReflect"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_DiffuseVisReflect"  type="xs:double" nillable ="true"/>
@@ -13133,6 +11967,8 @@
 <xs:element name="SimMaterial_ScreenMatlSpacing"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_ScreenMatlDiam"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_ScreenToGlassDist"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_LeftSideOpngMult_1"  type="xs:double" nillable ="true"/>
+<xs:element name="SimMaterial_RightSideOpngMult_1"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_AngleResForScreenTransOutputMap"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_VisTrans"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMaterial_SolarTrans"  type="xs:double" nillable ="true"/>
@@ -13198,15 +12034,36 @@
 <xs:element name="SimMatLayerSet_SolarOpticalComplexBackReflectMatrixName"  type="xs:IDREF"/>
 <xs:element name="SimMatLayerSet_VisibleOpticalComplexFrontTransmitMatrixName"  type="xs:IDREF"/>
 <xs:element name="SimMatLayerSet_VisibleOpticalComplexBackTransmitMatrixName"  type="xs:IDREF"/>
-<xs:element name="SimMatLayerSet_OutsideLayerName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_OutsideLayerMatlName"  type="xs:IDREF"/>
 <xs:element name="SimMatLayerSet_OutsideLayerDirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
 <xs:element name="SimMatLayerSet_OutsideLayerDirectBackAbsoptMatrixName"  type="xs:IDREF"/>
-<xs:element name="SimMatLayerSet_Layer_2_5_Name"  type="xs:IDREFS"/>
-<xs:element name="SimMatLayerSet_Layer_2_5_DirectFrontAbsorpMatrixName"  type="xs:IDREFS"/>
-<xs:element name="SimMatLayerSet_Layer_2_5_DirectBackAbsorpMatrixName"  type="xs:IDREFS"/>
-<xs:element name="SimMatLayerSet_Gap_1_4_Name"  type="xs:IDREFS"/>
-<xs:element name="SimMatLayerSet_Gap_1_4_DirectFrontAbsorpMatrixName"  type="xs:IDREFS"/>
-<xs:element name="SimMatLayerSet_Gap_1_4_DirectBackAbsorpMatrixName"  type="xs:IDREFS"/>
+<xs:element name="SimMatLayerSet_Layer2MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer2DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer2DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer3MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer3DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer3DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer4MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer4DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer4DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer5MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer5DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer5DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer6MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer6DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer6DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer7MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer7DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer7DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer8MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer8DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer8DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer9MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer9DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer9DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer10MatlName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer10DirectFrontAbsoptMatrixName"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer10DirectBackAbsoptMatrixName"  type="xs:IDREF"/>
 <xs:element name="WindowThermalModel_Params_Name"  type="xs:string"/>
 <xs:element name="WindowThermalModel_Params_standard"  type="xs:string"/>
 <xs:element name="WindowThermalModel_Params_ThermalModel"  type="xs:string"/>
@@ -13219,43 +12076,12 @@
 <xs:element name="Matrix_TwoDimension_NumberofRows"  type="xs:int" nillable ="true"/>
 <xs:element name="Matrix_TwoDimension_NumberofColumns"  type="xs:int" nillable ="true"/>
 <xs:element name="Matrix_TwoDimension_Value_1_2500"  type="simcore:doubleList"/>
-<xs:element name="T24AssmContext"  type="xs:string"/>
-<xs:element name="T24FenestraCertMethod"  type="xs:string"/>
-<xs:element name="T24Diffusing"  type="xs:int" nillable ="true"/>
-<xs:element name="T24FenestraFrame"  type="xs:string"/>
-<xs:element name="T24FenestraPanes"  type="xs:string"/>
-<xs:element name="T24FenestraProdType"  type="xs:string"/>
-<xs:element name="T24FenestraTint"  type="xs:string"/>
-<xs:element name="GreenhouseGardenWindow"  type="xs:int" nillable ="true"/>
-<xs:element name="T24SHGC"  type="xs:double" nillable ="true"/>
-<xs:element name="T24SHGCCenterOfGlass"  type="xs:double" nillable ="true"/>
-<xs:element name="T24FenestraSkyltCurb"  type="xs:string"/>
-<xs:element name="T24FenestraSkyltGlaze"  type="xs:string"/>
 <xs:element name="SimMatLayerSet_OutsideLayer"  type="xs:IDREF"/>
 <xs:element name="SimMatLayerSet_Layer_2_10"  type="xs:IDREFS"/>
-<xs:element name="T24DoorCertMethod"  type="xs:string"/>
-<xs:element name="T24DoorOpenType"  type="xs:string"/>
-<xs:element name="T24DoorType"  type="xs:string"/>
 <xs:element name="SimMatLayerSet_FileName"  type="xs:string"/>
-<xs:element name="SimMatLayerSet_WELayer_2_11"  type="xs:IDREFS"/>
 <xs:element name="SurfProp_HeatTransAlg_Construct_Name"  type="xs:string"/>
 <xs:element name="SurfProp_HeatTransAlg_Construct_Algorithm"  type="xs:string"/>
 <xs:element name="SurfProp_HeatTransAlg_Construct_ConstructionName"  type="xs:IDREF"/>
-<xs:element name="T24ConsAssmNotes"  type="xs:string"/>
-<xs:element name="T24CrrcAgedEmittance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CrrcAgedReflectance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CrrcAgedSRI"  type="xs:int" nillable ="true"/>
-<xs:element name="T24CrrcInitialEmitance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CrrcInitialReflectance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CrrcInitialSRI"  type="xs:int" nillable ="true"/>
-<xs:element name="T24CrrcProductID"  type="xs:string"/>
-<xs:element name="T24FieldAppliedCoating"  type="xs:int" nillable ="true"/>
-<xs:element name="T24RoofDensity"  type="xs:int" nillable ="true"/>
-<xs:element name="T24ConstructInsulOrient"  type="xs:string"/>
-<xs:element name="T24SlabInsulThermResist"  type="xs:string"/>
-<xs:element name="T24SlabType"  type="xs:string"/>
-<xs:element name="T24SolarReflectanceASTMCertification"  type="xs:int" nillable ="true"/>
-<xs:element name="T24ThermalEmittanceASTMCertification"  type="xs:int" nillable ="true"/>
 <xs:element name="SimMatLayerSet_CFactor"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMatLayerSet_Ht"  type="xs:double" nillable ="true"/>
 <xs:element name="SimMatLayerSet_FFactor"  type="xs:double" nillable ="true"/>
@@ -13265,7 +12091,15 @@
 <xs:element name="SimMatLayerSet_TempCalcRequestedAfterLayerNum"  type="xs:int" nillable ="true"/>
 <xs:element name="SimMatLayerSet_DimensionsForTheCTFCalc"  type="xs:int" nillable ="true"/>
 <xs:element name="SimMatLayerSet_TubeSpacing"  type="xs:double" nillable ="true"/>
-<xs:element name="SimMatLayerSet_ISLayer_2_10"  type="xs:IDREFS"/>
+<xs:element name="SimMatLayerSet_Layer2"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer3"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer4"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer5"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer6"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer7"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer8"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer9"  type="xs:IDREF"/>
+<xs:element name="SimMatLayerSet_Layer10"  type="xs:IDREF"/>
 <xs:element name="SimMeasureType_MonetaryUnit"  type="xs:string"/>
 <xs:element name="ProfileName"  type="xs:string"/>
 <xs:element name="ProfileDefinition"  type="xs:IDREF"/>
@@ -13396,10 +12230,8 @@
 <xs:element name="AlternativeName"  type="xs:string"/>
 <xs:element name="ConfigurationName"  type="xs:string"/>
 <xs:element name="RunName"  type="xs:string"/>
-<xs:element name="Unit.String"  type="xs:string"/>
 <xs:element name="LegendText"  type="xs:string"/>
 <xs:element name="Area"  type="xs:string"/>
-<xs:element name="TimeStep.String"  type="xs:string"/>
 <xs:element name="VariablesInView"  type="xs:IDREFS"/>
 <xs:element name="ViewType"  type="xs:string"/>
 <xs:element name="ChartOrTableType"  type="xs:string"/>
@@ -13475,7 +12307,7 @@
 <xs:element name="SimSimulaOutputRequest_DistHeatingEffic"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSimulaOutputRequest_DistCoolingCOP"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSimulaOutputRequest_SteamConversionEffic"  type="xs:double" nillable ="true"/>
-<xs:element name="SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromN2O"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromN20"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromCH4"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSimulaOutputRequest_TotalCarbonEquivEmissFactorFromCO2"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSimulaOutputRequest_ExistingFuelResourceName"  type="xs:string"/>
@@ -13561,7 +12393,7 @@
 </xs:sequence>
 </xs:complexType>
 </xs:element>
-<xs:element name="SimSimulaOutputRequest_OutVarOrMeterName_1_22">
+<xs:element name="SimSimulaOutputRequest_ReportVarOrMeterName_1_22">
 <xs:complexType>
 <xs:sequence maxOccurs="unbounded">
 <xs:element ref="simcore:stringItem"/>
@@ -13780,7 +12612,6 @@
 <xs:element name="PhysicalOrVirtualBoundary"  type="xs:string"/>
 <xs:element name="InternalOrExternalBoundary"  type="xs:string"/>
 <xs:element name="OthersideSpaceBoundary"  type="xs:IDREF"/>
-<xs:element name="ChildSpaceBoundaries"  type="xs:IDREFS"/>
 <xs:element name="SpaceOccOrgAbbrev"  type="xs:string"/>
 <xs:element name="SpaceOccOrgName"  type="xs:string"/>
 <xs:element name="ClassRef_SpaceOccOrgID"  type="xs:IDREF"/>
@@ -13866,29 +12697,6 @@
 <xs:element name="IncludesDedicatedSupplyPlenum"  type="xs:boolean" nillable ="true"/>
 <xs:element name="IncludesDedicatedReturnPlenum"  type="xs:boolean" nillable ="true"/>
 <xs:element name="IncludesSharedReturnPlenum"  type="xs:boolean" nillable ="true"/>
-<xs:element name="ContainingSpace"  type="xs:IDREF"/>
-<xs:element name="InteriorLightingSpecMethod"  type="xs:string"/>
-<xs:element name="T24Status"  type="xs:string"/>
-<xs:element name="LumMountElevation"  type="xs:double" nillable ="true"/>
-<xs:element name="FractionHeatToSpace"  type="xs:double" nillable ="true"/>
-<xs:element name="RadiantFractionOfSpaceHeat"  type="xs:double" nillable ="true"/>
-<xs:element name="Luminaire1"  type="xs:IDREF"/>
-<xs:element name="Luminaire1Count"  type="xs:int" nillable ="true"/>
-<xs:element name="Luminaire2"  type="xs:IDREF"/>
-<xs:element name="Luminaire2Count"  type="xs:int" nillable ="true"/>
-<xs:element name="Luminaire3"  type="xs:IDREF"/>
-<xs:element name="Luminaire3Count"  type="xs:int" nillable ="true"/>
-<xs:element name="Luminaire4"  type="xs:IDREF"/>
-<xs:element name="Luminaire4Count"  type="xs:int" nillable ="true"/>
-<xs:element name="Luminaire5"  type="xs:IDREF"/>
-<xs:element name="Luminaire5Count"  type="xs:int" nillable ="true"/>
-<xs:element name="AssignedDaylitZone"  type="xs:string"/>
-<xs:element name="LightingControls"  type="xs:string"/>
-<xs:element name="PowerAdjustFactor"  type="xs:double" nillable ="true"/>
-<xs:element name="LightingControlCount"  type="xs:int" nillable ="true"/>
-<xs:element name="AcceptanceTestRequired"  type="xs:boolean" nillable ="true"/>
-<xs:element name="AllowanceType"  type="xs:string"/>
-<xs:element name="AllowanceArea"  type="xs:double" nillable ="true"/>
 <xs:element name="TemplateLocationProperties"  type="xs:IDREF"/>
 <xs:element name="Terrain"  type="xs:string"/>
 <xs:element name="SolarDistribution"  type="xs:string"/>
@@ -13942,11 +12750,7 @@
 <xs:element name="TemplateInfilVentFloorInt"  type="xs:IDREF"/>
 <xs:element name="TemplateInfilVentFloorExt"  type="xs:IDREF"/>
 <xs:element name="TemplateElectricalEquipment"  type="xs:IDREFS"/>
-<xs:element name="TemplateElecEqmt_Elevators"  type="xs:IDREFS"/>
-<xs:element name="TemplateElecEqmt_Escalators"  type="xs:IDREFS"/>
-<xs:element name="TemplateElecEqmt_Process"  type="xs:IDREFS"/>
 <xs:element name="TemplateGasEquipment"  type="xs:IDREFS"/>
-<xs:element name="TemplateGasEqmt_Process"  type="xs:IDREFS"/>
 <xs:element name="TemplateHotWaterEquipment"  type="xs:IDREFS"/>
 <xs:element name="TemplateSteamEquipment"  type="xs:IDREFS"/>
 <xs:element name="TemplateOtherEquipment"  type="xs:IDREFS"/>
@@ -13966,7 +12770,6 @@
 <xs:element name="SimTimeSeriesSched_SpecialDaysDef_1_50"  type="xs:IDREFS"/>
 <xs:element name="SimTimeSeriesSched_Name"  type="xs:string"/>
 <xs:element name="SimTimeSeriesSched_SchedTypeLimitsName"  type="xs:IDREF"/>
-<xs:element name="SimTimeSeriesSched_TimeSeriesSchedType"  type="xs:string"/>
 <xs:element name="SimTimeSeriesSched_Field_1_4498">
 <xs:complexType>
 <xs:sequence maxOccurs="unbounded">
@@ -13997,9 +12800,6 @@
 <xs:element name="SimTimeSeriesSched_NumericType"  type="xs:string"/>
 <xs:element name="SimTimeSeriesSched_UnitType"  type="xs:string"/>
 <xs:element name="SimTimeSeriesSched_ValueInterval"  type="xs:double" nillable ="true"/>
-<xs:element name="T24SchedDayAllDayRef"  type="xs:IDREF"/>
-<xs:element name="T24SchedDayWkdaysRef"  type="xs:IDREF"/>
-<xs:element name="T24SchedDayWkEndsRef"  type="xs:IDREF"/>
 <xs:element name="SimTimeSeriesSched_DayType_1_5">
 <xs:complexType>
 <xs:sequence maxOccurs="unbounded">
@@ -14024,8 +12824,6 @@
 <xs:element name="SimTimeSeriesSched_StartDay_1_53"  type="simcore:integerList"/>
 <xs:element name="SimTimeSeriesSched_EndMonth_1_53"  type="simcore:integerList"/>
 <xs:element name="SimTimeSeriesSched_EndDay_1_53"  type="simcore:integerList"/>
-<xs:element name="UnitType.String"  type="xs:string"/>
-<xs:element name="RuleSetType"  type="xs:string"/>
 <xs:element name="ValidationDateTime"  type="xs:int" nillable ="true"/>
 <xs:element name="TopLevelSystem"  type="xs:IDREF"/>
 <xs:element name="FatalErrorMsgs">

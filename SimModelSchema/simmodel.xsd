@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://d-alchemy.com/schema/simxml/SimModel/" xmlns:simmodel="http://d-alchemy.com/schema/simxml/SimModel/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore/" xmlns:simres="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" xmlns:simgeom="http://d-alchemy.com/schema/simxml/ResourcesGeometry/" xmlns:simbldg="http://d-alchemy.com/schema/simxml/BuildingModel/" xmlns:simmep="http://d-alchemy.com/schema/simxml/MepModel/" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="http://www.lbl.gov/namespaces/Sim/Model" xmlns:simmodel="http://www.lbl.gov/namespaces/Sim/Model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://www.lbl.gov/namespaces/Sim/SimModelCore" xmlns:simres="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" xmlns:simgeom="http://www.lbl.gov/namespaces/Sim/ResourcesGeometry" xmlns:simbldg="http://www.lbl.gov/namespaces/Sim/BuildingModel" xmlns:simmep="http://www.lbl.gov/namespaces/Sim/MepModel" elementFormDefault="qualified" attributeFormDefault="unqualified">
 
-<xs:import namespace="http://d-alchemy.com/schema/simxml/SimModelCore/" schemaLocation="simcore.xsd"/>
-<xs:import namespace="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" schemaLocation="simres.xsd"/>
-<xs:import namespace="http://d-alchemy.com/schema/simxml/ResourcesGeometry/" schemaLocation="simgeom.xsd"/>
-<xs:import namespace="http://d-alchemy.com/schema/simxml/BuildingModel/" schemaLocation="simbldg.xsd"/>
-<xs:import namespace="http://d-alchemy.com/schema/simxml/MepModel/" schemaLocation="simmep.xsd"/>
+<xs:import namespace="http://www.lbl.gov/namespaces/Sim/SimModelCore" schemaLocation="simcore.xsd"/>
+<xs:import namespace="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" schemaLocation="simres.xsd"/>
+<xs:import namespace="http://www.lbl.gov/namespaces/Sim/ResourcesGeometry" schemaLocation="simgeom.xsd"/>
+<xs:import namespace="http://www.lbl.gov/namespaces/Sim/BuildingModel" schemaLocation="simbldg.xsd"/>
+<xs:import namespace="http://www.lbl.gov/namespaces/Sim/MepModel" schemaLocation="simmep.xsd"/>
 
 
-	<xs:element name="SimModel" >
+	<xs:element name="SimModel">
 		<xs:annotation>
 			<xs:documentation>XML representation of a SIM model</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
-		<xs:attribute name="SimModelVersion" type="xs:string"/>
-		<xs:attribute name="SimModelSchemaVersion" type="xs:string"/>
-		<xs:attribute name="SimModelUnitsVersion" type="xs:string"/>
-		<xs:attribute name="SimModelUnitDefaultsVersion" type="xs:string"/>
-		<xs:attribute name="SimModelSchemaIDKey" type="xs:string"/>	
 			<xs:sequence>
 				<xs:element name="SimActor_Actor_Default" type="simres:SimActor_Actor_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimActor_Actor_SpaceOccupant" type="simres:SimActor_Actor_SpaceOccupant" minOccurs="0" maxOccurs="unbounded"/>
@@ -30,17 +25,9 @@
 <xs:element name="SimAddress_Telecom_Default" type="simres:SimAddress_Telecom_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAdjacentSiteParams_AdjacentSite_Default" type="simres:SimAdjacentSiteParams_AdjacentSite_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAnalyticalRepresentation_AnalyticalRepresentation_Default" type="simgeom:SimAnalyticalRepresentation_AnalyticalRepresentation_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppLanguageDefault_AppLanguageDefault_Default" type="simres:SimAppLanguageDefault_AppLanguageDefault_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppLibraryDefault_AppLibraryDefault_EnterpriseLibrary" type="simres:SimAppLibraryDefault_AppLibraryDefault_EnterpriseLibrary" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary" type="simres:SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppLibraryDefault_AppLibraryDefault_UserLibrary" type="simres:SimAppLibraryDefault_AppLibraryDefault_UserLibrary" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Building" type="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Building" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_BuildingStory" type="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_BuildingStory" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_CustomOpenings" type="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_CustomOpenings" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_CustomSpaces" type="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_CustomSpaces" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Glazing" type="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Glazing" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_OtherSettings" type="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_OtherSettings" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Site" type="simres:SimAppMdlCreatorDefaults_AppMdlCreatorDefaults_Site" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_BldgComponentGroup_HvacComponent" type="simres:SimAppObjNameDefault_BldgComponentGroup_HvacComponent" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup" type="simres:SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_DistributionSystem_Default" type="simres:SimAppObjNameDefault_DistributionSystem_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -51,7 +38,6 @@
 <xs:element name="SimAppObjNameDefault_DistributionSystem_HvacSteamLoop" type="simres:SimAppObjNameDefault_DistributionSystem_HvacSteamLoop" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_DistributionSystem_MixedWaterLoop" type="simres:SimAppObjNameDefault_DistributionSystem_MixedWaterLoop" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_DistributionSystem_RefrigerationLoop" type="simres:SimAppObjNameDefault_DistributionSystem_RefrigerationLoop" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppObjNameDefault_DistributionSystem_ServiceHotWater" type="simres:SimAppObjNameDefault_DistributionSystem_ServiceHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_DistributionSystem_SitePowerDemand" type="simres:SimAppObjNameDefault_DistributionSystem_SitePowerDemand" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_DistributionSystem_SitePowerGeneration" type="simres:SimAppObjNameDefault_DistributionSystem_SitePowerGeneration" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppObjNameDefault_DistributionSystem_VarRefrigerantFlow" type="simres:SimAppObjNameDefault_DistributionSystem_VarRefrigerantFlow" minOccurs="0" maxOccurs="unbounded"/>
@@ -81,14 +67,6 @@
 <xs:element name="SimAppPreferences_AppPreferences_EPlusInstalVersion" type="simres:SimAppPreferences_AppPreferences_EPlusInstalVersion" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppPreferences_AppPreferences_MinMonthlyChargeType" type="simres:SimAppPreferences_AppPreferences_MinMonthlyChargeType" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppPreferences_AppPreferences_MonthlyChargeType" type="simres:SimAppPreferences_AppPreferences_MonthlyChargeType" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam" type="simres:SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdSbdDefaults_AppStdSbdDefaults_ExceptionalConditions" type="simres:SimAppStdSbdDefaults_AppStdSbdDefaults_ExceptionalConditions" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdSbdDefaults_AppStdSbdDefaults_NonComplyAnalysis" type="simres:SimAppStdSbdDefaults_AppStdSbdDefaults_NonComplyAnalysis" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdSbdDefaults_AppStdSbdDefaults_ProjectData" type="simres:SimAppStdSbdDefaults_AppStdSbdDefaults_ProjectData" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdT24Defaults_AppStdT24Defaults_DesignTeam" type="simres:SimAppStdT24Defaults_AppStdT24Defaults_DesignTeam" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdT24Defaults_AppStdT24Defaults_ExceptionalConditions" type="simres:SimAppStdT24Defaults_AppStdT24Defaults_ExceptionalConditions" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdT24Defaults_AppStdT24Defaults_NonComplyAnalysis" type="simres:SimAppStdT24Defaults_AppStdT24Defaults_NonComplyAnalysis" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimAppStdT24Defaults_AppStdT24Defaults_ProjectData" type="simres:SimAppStdT24Defaults_AppStdT24Defaults_ProjectData" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppUnitDefault_AppUnitDefault_DatabaseDefault" type="simres:SimAppUnitDefault_AppUnitDefault_DatabaseDefault" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimAppUnitDefault_AppUnitDefault_UserDisplayPreference" type="simres:SimAppUnitDefault_AppUnitDefault_UserDisplayPreference" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimArbitraryProfileDef_ArbitraryProfile_Closed" type="simgeom:SimArbitraryProfileDef_ArbitraryProfile_Closed" minOccurs="0" maxOccurs="unbounded"/>
@@ -192,8 +170,6 @@
 <xs:element name="SimConnection_MixedWaterFlow_CrossSystem" type="simres:SimConnection_MixedWaterFlow_CrossSystem" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimConnection_MixedWaterFlow_Default" type="simres:SimConnection_MixedWaterFlow_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimConnection_RefrigerantFlow_Default" type="simres:SimConnection_RefrigerantFlow_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimConnection_ServiceHotWaterFlow_CrossSystem" type="simres:SimConnection_ServiceHotWaterFlow_CrossSystem" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimConnection_ServiceHotWaterFlow_Default" type="simres:SimConnection_ServiceHotWaterFlow_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimConnection_SteamFlow_CrossSystem" type="simres:SimConnection_SteamFlow_CrossSystem" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimConnection_SteamFlow_Default" type="simres:SimConnection_SteamFlow_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimConnection_VarRefrigerantFlow_Default" type="simres:SimConnection_VarRefrigerantFlow_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -206,9 +182,7 @@
 <xs:element name="SimController_AvailabilityManager_AirLoop" type="simmep:SimController_AvailabilityManager_AirLoop" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_AvailabilityManager_PlantLoop" type="simmep:SimController_AvailabilityManager_PlantLoop" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_Daylighting_DELight" type="simmep:SimController_Daylighting_DELight" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimController_Daylighting_Skylights" type="simmep:SimController_Daylighting_Skylights" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_Daylighting_Standard" type="simmep:SimController_Daylighting_Standard" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimController_Daylighting_Windows" type="simmep:SimController_Daylighting_Windows" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_Default_Default" type="simmep:SimController_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_DemandManager_AirLoop" type="simmep:SimController_DemandManager_AirLoop" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_LightingControl_Continuous" type="simmep:SimController_LightingControl_Continuous" minOccurs="0" maxOccurs="unbounded"/>
@@ -236,7 +210,6 @@
 <xs:element name="SimController_ZoneControlHumidity_Humidistat1Zone" type="simmep:SimController_ZoneControlHumidity_Humidistat1Zone" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_ZoneControlTemperature_Thermostat" type="simmep:SimController_ZoneControlTemperature_Thermostat" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_ZoneControlTemperature_Thermostat1Zone" type="simmep:SimController_ZoneControlTemperature_Thermostat1Zone" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimController_ZoneControlTemperature_ThermostatStagedDual" type="simmep:SimController_ZoneControlTemperature_ThermostatStagedDual" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_ZoneControlTemperature_ThermostatThermalComfort" type="simmep:SimController_ZoneControlTemperature_ThermostatThermalComfort" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimController_ZoneControlTemperature_ThermostatThermalComfort1Zone" type="simmep:SimController_ZoneControlTemperature_ThermostatThermalComfort1Zone" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_AvailabilityManagerScheme_DifferentialThermostat" type="simres:SimControlScheme_AvailabilityManagerScheme_DifferentialThermostat" minOccurs="0" maxOccurs="unbounded"/>
@@ -247,7 +220,6 @@
 <xs:element name="SimControlScheme_AvailabilityManagerScheme_LowTemperatureTurnOn" type="simres:SimControlScheme_AvailabilityManagerScheme_LowTemperatureTurnOn" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_AvailabilityManagerScheme_NightCycle" type="simres:SimControlScheme_AvailabilityManagerScheme_NightCycle" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_AvailabilityManagerScheme_NightVentilation" type="simres:SimControlScheme_AvailabilityManagerScheme_NightVentilation" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimControlScheme_AvailabilityManagerScheme_OptimumStart" type="simres:SimControlScheme_AvailabilityManagerScheme_OptimumStart" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_AvailabilityManagerScheme_Scheduled" type="simres:SimControlScheme_AvailabilityManagerScheme_Scheduled" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_AvailabilityManagerScheme_ScheduledOff" type="simres:SimControlScheme_AvailabilityManagerScheme_ScheduledOff" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_AvailabilityManagerScheme_ScheduledOn" type="simres:SimControlScheme_AvailabilityManagerScheme_ScheduledOn" minOccurs="0" maxOccurs="unbounded"/>
@@ -263,7 +235,6 @@
 <xs:element name="SimControlScheme_ControlAndSequencingScheme_OutdoorWetBulb" type="simres:SimControlScheme_ControlAndSequencingScheme_OutdoorWetBulb" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_ControlAndSequencingScheme_OutdoorWetBulbDifference" type="simres:SimControlScheme_ControlAndSequencingScheme_OutdoorWetBulbDifference" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_ControlAndSequencingScheme_Uncontrolled" type="simres:SimControlScheme_ControlAndSequencingScheme_Uncontrolled" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimControlScheme_ControlAndSequencingScheme_UserDefined" type="simres:SimControlScheme_ControlAndSequencingScheme_UserDefined" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_DemandManagerScheme_ElectricEquipment" type="simres:SimControlScheme_DemandManagerScheme_ElectricEquipment" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_DemandManagerScheme_ExteriorLights" type="simres:SimControlScheme_DemandManagerScheme_ExteriorLights" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_DemandManagerScheme_Lights" type="simres:SimControlScheme_DemandManagerScheme_Lights" minOccurs="0" maxOccurs="unbounded"/>
@@ -320,8 +291,6 @@
 <xs:element name="SimControlScheme_SetpointManagerScheme_SingleZone_Heating" type="simres:SimControlScheme_SetpointManagerScheme_SingleZone_Heating" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_SetpointManagerScheme_SingleZone_Humidity_Maximum" type="simres:SimControlScheme_SetpointManagerScheme_SingleZone_Humidity_Maximum" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_SetpointManagerScheme_SingleZone_Humidity_Minimum" type="simres:SimControlScheme_SetpointManagerScheme_SingleZone_Humidity_Minimum" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimControlScheme_SetpointManagerScheme_SingleZone_OneStageCooling" type="simres:SimControlScheme_SetpointManagerScheme_SingleZone_OneStageCooling" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimControlScheme_SetpointManagerScheme_SingleZone_OneStageHeating" type="simres:SimControlScheme_SetpointManagerScheme_SingleZone_OneStageHeating" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_SetpointManagerScheme_SingleZone_Reheat" type="simres:SimControlScheme_SetpointManagerScheme_SingleZone_Reheat" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_SetpointManagerScheme_WarmestTemperatureFlow" type="simres:SimControlScheme_SetpointManagerScheme_WarmestTemperatureFlow" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimControlScheme_SetpointManagerScheme_WarmestZoneReset" type="simres:SimControlScheme_SetpointManagerScheme_WarmestZoneReset" minOccurs="0" maxOccurs="unbounded"/>
@@ -403,10 +372,6 @@
 <xs:element name="SimDistributionPort_DigitalControl_RFGLoop_DigitalSignal_In" type="simres:SimDistributionPort_DigitalControl_RFGLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_DigitalControl_RFGLoop_DigitalSignal_InOrOut" type="simres:SimDistributionPort_DigitalControl_RFGLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_DigitalControl_RFGLoop_DigitalSignal_Out" type="simres:SimDistributionPort_DigitalControl_RFGLoop_DigitalSignal_Out" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_DigitalControl_SHWLoop_Default" type="simres:SimDistributionPort_DigitalControl_SHWLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_In" type="simres:SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_InOrOut" type="simres:SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_Out" type="simres:SimDistributionPort_DigitalControl_SHWLoop_DigitalSignal_Out" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_DigitalControl_STMLoop_Default" type="simres:SimDistributionPort_DigitalControl_STMLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_DigitalControl_STMLoop_DigitalSignal_In" type="simres:SimDistributionPort_DigitalControl_STMLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_DigitalControl_STMLoop_DigitalSignal_InOrOut" type="simres:SimDistributionPort_DigitalControl_STMLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
@@ -441,10 +406,6 @@
 <xs:element name="SimDistributionPort_RefrigerationFlowPort_Refrigeration_In" type="simres:SimDistributionPort_RefrigerationFlowPort_Refrigeration_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_RefrigerationFlowPort_Refrigeration_InOrOut" type="simres:SimDistributionPort_RefrigerationFlowPort_Refrigeration_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_RefrigerationFlowPort_Refrigeration_Out" type="simres:SimDistributionPort_RefrigerationFlowPort_Refrigeration_Out" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_ServiceHotWaterFlowPort_Default" type="simres:SimDistributionPort_ServiceHotWaterFlowPort_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_ServiceHotWaterFlowPort_Water_In" type="simres:SimDistributionPort_ServiceHotWaterFlowPort_Water_In" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_ServiceHotWaterFlowPort_Water_InOrOut" type="simres:SimDistributionPort_ServiceHotWaterFlowPort_Water_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimDistributionPort_ServiceHotWaterFlowPort_Water_Out" type="simres:SimDistributionPort_ServiceHotWaterFlowPort_Water_Out" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_SteamFlowPort_Default" type="simres:SimDistributionPort_SteamFlowPort_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_SteamFlowPort_Steam_In" type="simres:SimDistributionPort_SteamFlowPort_Steam_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimDistributionPort_SteamFlowPort_Steam_InOrOut" type="simres:SimDistributionPort_SteamFlowPort_Steam_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
@@ -505,7 +466,6 @@
 <xs:element name="SimFlowCompoundEqmt_PurchasedSupply_Heating" type="simmep:SimFlowCompoundEqmt_PurchasedSupply_Heating" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryLoopEqmt_AC_VariableRefrigerantFlow" type="simmep:SimFlowCompoundEqmt_UnitaryLoopEqmt_AC_VariableRefrigerantFlow" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryLoopEqmt_CoolOnly" type="simmep:SimFlowCompoundEqmt_UnitaryLoopEqmt_CoolOnly" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowCompoundEqmt_UnitaryLoopEqmt_Default" type="simmep:SimFlowCompoundEqmt_UnitaryLoopEqmt_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryLoopEqmt_FurnaceHeatCool" type="simmep:SimFlowCompoundEqmt_UnitaryLoopEqmt_FurnaceHeatCool" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryLoopEqmt_FurnaceHeatOnly" type="simmep:SimFlowCompoundEqmt_UnitaryLoopEqmt_FurnaceHeatOnly" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryLoopEqmt_HeatCool" type="simmep:SimFlowCompoundEqmt_UnitaryLoopEqmt_HeatCool" minOccurs="0" maxOccurs="unbounded"/>
@@ -517,7 +477,6 @@
 <xs:element name="SimFlowCompoundEqmt_UnitaryZoneEqmt_AirConditionerWindow" type="simmep:SimFlowCompoundEqmt_UnitaryZoneEqmt_AirConditionerWindow" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryZoneEqmt_DehumidifierDX" type="simmep:SimFlowCompoundEqmt_UnitaryZoneEqmt_DehumidifierDX" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryZoneEqmt_EnergyRecoveryVentilator" type="simmep:SimFlowCompoundEqmt_UnitaryZoneEqmt_EnergyRecoveryVentilator" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowCompoundEqmt_UnitaryZoneEqmt_EvapCoolerUnit" type="simmep:SimFlowCompoundEqmt_UnitaryZoneEqmt_EvapCoolerUnit" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryZoneEqmt_ForcedAirUserDefined" type="simmep:SimFlowCompoundEqmt_UnitaryZoneEqmt_ForcedAirUserDefined" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryZoneEqmt_FourPipeFanCoil" type="simmep:SimFlowCompoundEqmt_UnitaryZoneEqmt_FourPipeFanCoil" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_UnitaryZoneEqmt_HP_WtrToAir_CW" type="simmep:SimFlowCompoundEqmt_UnitaryZoneEqmt_HP_WtrToAir_CW" minOccurs="0" maxOccurs="unbounded"/>
@@ -539,6 +498,7 @@
 <xs:element name="SimFlowCompoundEqmt_VirtualSupplySubsystems_CoilSystemHeatingDX" type="simmep:SimFlowCompoundEqmt_VirtualSupplySubsystems_CoilSystemHeatingDX" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_VirtualSupplySubsystems_HotWaterLoop" type="simmep:SimFlowCompoundEqmt_VirtualSupplySubsystems_HotWaterLoop" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowCompoundEqmt_VirtualSupplySubsystems_MixedWaterLoop" type="simmep:SimFlowCompoundEqmt_VirtualSupplySubsystems_MixedWaterLoop" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimFlowCompoundEqmt_WaterUse_Connections" type="simmep:SimFlowCompoundEqmt_WaterUse_Connections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowController_Damper_Default" type="simmep:SimFlowController_Damper_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowController_Damper_Exhaust" type="simmep:SimFlowController_Damper_Exhaust" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowController_Damper_FaceBypass" type="simmep:SimFlowController_Damper_FaceBypass" minOccurs="0" maxOccurs="unbounded"/>
@@ -561,7 +521,6 @@
 <xs:element name="SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXDefaultCoolingCoil" type="simmep:SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXDefaultCoolingCoil" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXMultiSpeed" type="simmep:SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXMultiSpeed" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXSingleSpeed" type="simmep:SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXSingleSpeed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXSingleSpeedThermalStorage" type="simmep:SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXSingleSpeedThermalStorage" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed" type="simmep:SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoStageWithHumidityControlMode" type="simmep:SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoStageWithHumidityControlMode" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDxVariableRefrigerantFlow" type="simmep:SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDxVariableRefrigerantFlow" minOccurs="0" maxOccurs="unbounded"/>
@@ -603,15 +562,8 @@
 <xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_CondenserToCondenser" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_CondenserToCondenser" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToCondenser" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToCondenser" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToHotWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToHotWater" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToMixedWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToMixedWater" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToServiceHotWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_HotWaterToServiceHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToCondenser" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToCondenser" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToHotWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToMixedWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToMixedWater" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToServiceHotWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_MixedWaterToServiceHotWater" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_ServiceHotWaterToHotWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_ServiceHotWaterToHotWater" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_ServiceHotWaterToMixedWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_ServiceHotWaterToMixedWater" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransfer_HeatExFluidToFluid_ServiceHotWaterToServiceHotWater" type="simmep:SimFlowEnergyTransfer_HeatExFluidToFluid_ServiceHotWaterToServiceHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_HeatExWaterToWater_Pond" type="simmep:SimFlowEnergyTransfer_HeatExWaterToWater_Pond" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDesuperheater" type="simmep:SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDesuperheater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXMultiSpeed" type="simmep:SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXMultiSpeed" minOccurs="0" maxOccurs="unbounded"/>
@@ -649,9 +601,7 @@
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_HeatPump" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_HeatPump" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_Mixed" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_Mixed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_MixedTank" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_MixedTank" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_Stratified" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_Stratified" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowFitting_Default_Default" type="simmep:SimFlowFitting_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowFitting_Difusser_Default" type="simmep:SimFlowFitting_Difusser_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowFitting_Electrical_Transformer" type="simmep:SimFlowFitting_Electrical_Transformer" minOccurs="0" maxOccurs="unbounded"/>
@@ -679,7 +629,6 @@
 <xs:element name="SimFlowFitting_Splitter_WaterSplitter" type="simmep:SimFlowFitting_Splitter_WaterSplitter" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowMover_Default_Default" type="simmep:SimFlowMover_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowMover_Fan_NightVentilation" type="simmep:SimFlowMover_Fan_NightVentilation" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowMover_Fan_Relief" type="simmep:SimFlowMover_Fan_Relief" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowMover_Fan_ZoneExhaust" type="simmep:SimFlowMover_Fan_ZoneExhaust" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowMover_Pump_ConstantSpeedReturn" type="simmep:SimFlowMover_Pump_ConstantSpeedReturn" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowMover_Pump_ConstantSpeedSupply" type="simmep:SimFlowMover_Pump_ConstantSpeedSupply" minOccurs="0" maxOccurs="unbounded"/>
@@ -719,7 +668,6 @@
 <xs:element name="SimFlowPlant_CoolingTower_TwoSpeed" type="simmep:SimFlowPlant_CoolingTower_TwoSpeed" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_CoolingTower_UserDefined" type="simmep:SimFlowPlant_CoolingTower_UserDefined" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_CoolingTower_VariableSpeed" type="simmep:SimFlowPlant_CoolingTower_VariableSpeed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowPlant_CoolingTower_VariableSpeed_Merkel" type="simmep:SimFlowPlant_CoolingTower_VariableSpeed_Merkel" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_ElectricalGenerator_CombustionTurbine" type="simmep:SimFlowPlant_ElectricalGenerator_CombustionTurbine" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_ElectricalGenerator_DefaultGenerator" type="simmep:SimFlowPlant_ElectricalGenerator_DefaultGenerator" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_ElectricalGenerator_FuelCell" type="simmep:SimFlowPlant_ElectricalGenerator_FuelCell" minOccurs="0" maxOccurs="unbounded"/>
@@ -739,7 +687,6 @@
 <xs:element name="SimFlowPlant_ElectricalGenerator_Photovoltaic" type="simmep:SimFlowPlant_ElectricalGenerator_Photovoltaic" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_ElectricalGenerator_WindTurbine" type="simmep:SimFlowPlant_ElectricalGenerator_WindTurbine" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_HeatAndPower_Default" type="simmep:SimFlowPlant_HeatAndPower_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowPlant_HeatExWaterToWater_Pond" type="simmep:SimFlowPlant_HeatExWaterToWater_Pond" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_HeatPump_AirToAir" type="simmep:SimFlowPlant_HeatPump_AirToAir" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_HeatPump_AirToAir_MultiSpeed" type="simmep:SimFlowPlant_HeatPump_AirToAir_MultiSpeed" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowPlant_HeatPump_CentralSystem" type="simmep:SimFlowPlant_HeatPump_CentralSystem" minOccurs="0" maxOccurs="unbounded"/>
@@ -776,7 +723,6 @@
 <xs:element name="SimFlowSegment_Pipe_Indoor" type="simmep:SimFlowSegment_Pipe_Indoor" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowSegment_Pipe_Outdoor" type="simmep:SimFlowSegment_Pipe_Outdoor" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowSegment_Pipe_Underground" type="simmep:SimFlowSegment_Pipe_Underground" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowSegment_Pipe_UndergroundPipeCircuit" type="simmep:SimFlowSegment_Pipe_UndergroundPipeCircuit" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowSegment_Pipe_UndergroundPipeSegment" type="simmep:SimFlowSegment_Pipe_UndergroundPipeSegment" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowSegment_Plenum_DedicatedReturn" type="simmep:SimFlowSegment_Plenum_DedicatedReturn" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowSegment_Plenum_DedicatedSupply" type="simmep:SimFlowSegment_Plenum_DedicatedSupply" minOccurs="0" maxOccurs="unbounded"/>
@@ -805,11 +751,9 @@
 <xs:element name="SimFlowTerminal_AirTerminal_CAV_PassiveCooledBeam" type="simmep:SimFlowTerminal_AirTerminal_CAV_PassiveCooledBeam" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_CAV_PassiveFourPipeInduction" type="simmep:SimFlowTerminal_AirTerminal_CAV_PassiveFourPipeInduction" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_ConstantVolume_Reheat" type="simmep:SimFlowTerminal_AirTerminal_ConstantVolume_Reheat" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_AirTerminal_InletSideMixer" type="simmep:SimFlowTerminal_AirTerminal_InletSideMixer" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_ParallelPIU_Reheat" type="simmep:SimFlowTerminal_AirTerminal_ParallelPIU_Reheat" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_SeriesPIU_Reheat" type="simmep:SimFlowTerminal_AirTerminal_SeriesPIU_Reheat" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_SingleDuctUserDefined" type="simmep:SimFlowTerminal_AirTerminal_SingleDuctUserDefined" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_AirTerminal_SupplySideMixer" type="simmep:SimFlowTerminal_AirTerminal_SupplySideMixer" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_Uncontrolled" type="simmep:SimFlowTerminal_AirTerminal_Uncontrolled" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_VAV_HeatAndCool_NoReheat" type="simmep:SimFlowTerminal_AirTerminal_VAV_HeatAndCool_NoReheat" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_VAV_HeatAndCool_Reheat" type="simmep:SimFlowTerminal_AirTerminal_VAV_HeatAndCool_Reheat" minOccurs="0" maxOccurs="unbounded"/>
@@ -817,12 +761,9 @@
 <xs:element name="SimFlowTerminal_AirTerminal_VAV_Reheat" type="simmep:SimFlowTerminal_AirTerminal_VAV_Reheat" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_AirTerminal_VAV_Reheat_VariableSpeedFan" type="simmep:SimFlowTerminal_AirTerminal_VAV_Reheat_VariableSpeedFan" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_Default_Default" type="simmep:SimFlowTerminal_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_ElectricalTerminalExterior_Default" type="simmep:SimFlowTerminal_ElectricalTerminalExterior_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_ElectricalTerminalExterior_ElectricalOutlet" type="simmep:SimFlowTerminal_ElectricalTerminalExterior_ElectricalOutlet" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_ElectricalTerminalExterior_LightingFixture" type="simmep:SimFlowTerminal_ElectricalTerminalExterior_LightingFixture" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_ElectricalTerminalInterior_Default" type="simmep:SimFlowTerminal_ElectricalTerminalInterior_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_ElectricalTerminalInterior_ElectricalOutlet" type="simmep:SimFlowTerminal_ElectricalTerminalInterior_ElectricalOutlet" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimFlowTerminal_ElectricalTerminalInterior_LightingFixture" type="simmep:SimFlowTerminal_ElectricalTerminalInterior_LightingFixture" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimFlowTerminal_ElectricalTerminal_Default" type="simmep:SimFlowTerminal_ElectricalTerminal_Default" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimFlowTerminal_ElectricalTerminal_ElectricalOutlet" type="simmep:SimFlowTerminal_ElectricalTerminal_ElectricalOutlet" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimFlowTerminal_ElectricalTerminal_LightingFixture" type="simmep:SimFlowTerminal_ElectricalTerminal_LightingFixture" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_PlumbingTerminal_DishWasher" type="simmep:SimFlowTerminal_PlumbingTerminal_DishWasher" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_PlumbingTerminal_HotWaterFixtureSet" type="simmep:SimFlowTerminal_PlumbingTerminal_HotWaterFixtureSet" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowTerminal_PlumbingTerminal_PlumbingFixture" type="simmep:SimFlowTerminal_PlumbingTerminal_PlumbingFixture" minOccurs="0" maxOccurs="unbounded"/>
@@ -908,7 +849,6 @@
 <xs:element name="SimGroup_ConnectorList_CondenserConnections" type="simcore:SimGroup_ConnectorList_CondenserConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_ConnectorList_ControllerConnections" type="simcore:SimGroup_ConnectorList_ControllerConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_ConnectorList_HotWaterConnections" type="simcore:SimGroup_ConnectorList_HotWaterConnections" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimGroup_ConnectorList_ServiceHotWaterConnections" type="simcore:SimGroup_ConnectorList_ServiceHotWaterConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_ConnectorList_SimConnections" type="simcore:SimGroup_ConnectorList_SimConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_ConnectorList_SteamConnections" type="simcore:SimGroup_ConnectorList_SteamConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_ControllerList_Default" type="simcore:SimGroup_ControllerList_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -922,7 +862,6 @@
 <xs:element name="SimGroup_EquipmentList_RefrigerationCompressor" type="simcore:SimGroup_EquipmentList_RefrigerationCompressor" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_EquipmentList_RefrigerationEquipment" type="simcore:SimGroup_EquipmentList_RefrigerationEquipment" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_EquipmentList_RefrigerationLoadTransfer" type="simcore:SimGroup_EquipmentList_RefrigerationLoadTransfer" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimGroup_EquipmentList_ServiceHotWater" type="simcore:SimGroup_EquipmentList_ServiceHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_EquipmentList_ZoneHvac" type="simcore:SimGroup_EquipmentList_ZoneHvac" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_HvacDemandGroup_AirSystem" type="simcore:SimGroup_HvacDemandGroup_AirSystem" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_HvacDemandGroup_RefrigerationSystem" type="simcore:SimGroup_HvacDemandGroup_RefrigerationSystem" minOccurs="0" maxOccurs="unbounded"/>
@@ -948,7 +887,6 @@
 <xs:element name="SimGroup_SchemeList_SingleZoneHumidityScheme" type="simcore:SimGroup_SchemeList_SingleZoneHumidityScheme" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_SchemeList_WaterTempControlScheme" type="simcore:SimGroup_SchemeList_WaterTempControlScheme" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_SpatialZoneGroup_Daylighting" type="simcore:SimGroup_SpatialZoneGroup_Daylighting" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimGroup_SpatialZoneGroup_Lighting" type="simcore:SimGroup_SpatialZoneGroup_Lighting" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_SpatialZoneGroup_NaturalVentilation" type="simcore:SimGroup_SpatialZoneGroup_NaturalVentilation" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_SpatialZoneGroup_PlenumZoneGroup" type="simcore:SimGroup_SpatialZoneGroup_PlenumZoneGroup" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimGroup_SpatialZoneGroup_ServiceHotWater" type="simcore:SimGroup_SpatialZoneGroup_ServiceHotWater" minOccurs="0" maxOccurs="unbounded"/>
@@ -986,11 +924,7 @@
 <xs:element name="SimInternalLoad_ComfortViewFactorAngles_Default" type="simres:SimInternalLoad_ComfortViewFactorAngles_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimInternalLoad_Default_Default" type="simres:SimInternalLoad_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimInternalLoad_Equipment_Electric" type="simres:SimInternalLoad_Equipment_Electric" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimInternalLoad_Equipment_Electric_Elevators" type="simres:SimInternalLoad_Equipment_Electric_Elevators" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimInternalLoad_Equipment_Electric_Escalators" type="simres:SimInternalLoad_Equipment_Electric_Escalators" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimInternalLoad_Equipment_Electric_Process" type="simres:SimInternalLoad_Equipment_Electric_Process" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimInternalLoad_Equipment_Gas" type="simres:SimInternalLoad_Equipment_Gas" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimInternalLoad_Equipment_Gas_Process" type="simres:SimInternalLoad_Equipment_Gas_Process" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimInternalLoad_Equipment_HotWater" type="simres:SimInternalLoad_Equipment_HotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimInternalLoad_Equipment_Other" type="simres:SimInternalLoad_Equipment_Other" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimInternalLoad_Equipment_Steam" type="simres:SimInternalLoad_Equipment_Steam" minOccurs="0" maxOccurs="unbounded"/>
@@ -1007,13 +941,11 @@
 <xs:element name="SimInternalLoad_ZoneContaminantSourceAndSink_GenericContaminantDepositionRateSink" type="simres:SimInternalLoad_ZoneContaminantSourceAndSink_GenericContaminantDepositionRateSink" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimIrregularTimeSeries_Irregular_Default" type="simres:SimIrregularTimeSeries_Irregular_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimIrregularTimeSeriesValue_TimeSeries_Irregular" type="simres:SimIrregularTimeSeriesValue_TimeSeries_Irregular" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimLightingFixtureType_LightingFixture_Default" type="simbldg:SimLightingFixtureType_LightingFixture_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ConnectorList_AirConnections" type="simbldg:SimList_ConnectorList_AirConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ConnectorList_ChilledWaterConnections" type="simbldg:SimList_ConnectorList_ChilledWaterConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ConnectorList_CondenserConnections" type="simbldg:SimList_ConnectorList_CondenserConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ConnectorList_ControllerConnections" type="simbldg:SimList_ConnectorList_ControllerConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ConnectorList_HotWaterConnections" type="simbldg:SimList_ConnectorList_HotWaterConnections" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimList_ConnectorList_ServiceHotWaterConnections" type="simbldg:SimList_ConnectorList_ServiceHotWaterConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ConnectorList_SimConnections" type="simbldg:SimList_ConnectorList_SimConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ConnectorList_SteamConnections" type="simbldg:SimList_ConnectorList_SteamConnections" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_ControllerList_Default" type="simbldg:SimList_ControllerList_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1026,7 +958,6 @@
 <xs:element name="SimList_EquipmentList_RefrigerationCompressor" type="simbldg:SimList_EquipmentList_RefrigerationCompressor" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_EquipmentList_RefrigerationEquipment" type="simbldg:SimList_EquipmentList_RefrigerationEquipment" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_EquipmentList_RefrigerationLoadTransfer" type="simbldg:SimList_EquipmentList_RefrigerationLoadTransfer" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimList_EquipmentList_ServiceHotWater" type="simbldg:SimList_EquipmentList_ServiceHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_EquipmentList_ZoneHvac" type="simbldg:SimList_EquipmentList_ZoneHvac" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_MaterialList_Default" type="simbldg:SimList_MaterialList_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimList_NodeList_Default" type="simbldg:SimList_NodeList_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1068,12 +999,6 @@
 <xs:element name="SimLoop_Loop_VertexLoop" type="simgeom:SimLoop_Loop_VertexLoop" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMappedRepresentationItem_Default_Default" type="simgeom:SimMappedRepresentationItem_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterial_Default_Default" type="simres:SimMaterial_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterial_EquivGlazingMaterial_Blind" type="simres:SimMaterial_EquivGlazingMaterial_Blind" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterial_EquivGlazingMaterial_Drape" type="simres:SimMaterial_EquivGlazingMaterial_Drape" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterial_EquivGlazingMaterial_Gap" type="simres:SimMaterial_EquivGlazingMaterial_Gap" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterial_EquivGlazingMaterial_Glazing" type="simres:SimMaterial_EquivGlazingMaterial_Glazing" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterial_EquivGlazingMaterial_Screen" type="simres:SimMaterial_EquivGlazingMaterial_Screen" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterial_EquivGlazingMaterial_Shade" type="simres:SimMaterial_EquivGlazingMaterial_Shade" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterial_GlazingMaterial_Blind" type="simres:SimMaterial_GlazingMaterial_Blind" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterial_GlazingMaterial_ComplexShade" type="simres:SimMaterial_GlazingMaterial_ComplexShade" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterial_GlazingMaterial_Gap" type="simres:SimMaterial_GlazingMaterial_Gap" minOccurs="0" maxOccurs="unbounded"/>
@@ -1094,7 +1019,6 @@
 <xs:element name="SimMaterial_OpaqueMaterial_NoMass" type="simres:SimMaterial_OpaqueMaterial_NoMass" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterial_OpaqueMaterial_Vegetation" type="simres:SimMaterial_OpaqueMaterial_Vegetation" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterial_VirtualBoundary_Default" type="simres:SimMaterial_VirtualBoundary_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterialLayer_EquivGlazingLayer_Default" type="simres:SimMaterialLayer_EquivGlazingLayer_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayer_GlazingMaterialLayer_Default" type="simres:SimMaterialLayer_GlazingMaterialLayer_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayer_OpaqueMaterialLayer_Default" type="simres:SimMaterialLayer_OpaqueMaterialLayer_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayer_VirtualBoundaryLayer_Default" type="simres:SimMaterialLayer_VirtualBoundaryLayer_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1105,7 +1029,6 @@
 <xs:element name="SimMaterialLayerSet_GlazingLayerSet_GlassDoor" type="simres:SimMaterialLayerSet_GlazingLayerSet_GlassDoor" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayerSet_GlazingLayerSet_Window" type="simres:SimMaterialLayerSet_GlazingLayerSet_Window" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayerSet_GlazingLayerSet_WindowDataFile" type="simres:SimMaterialLayerSet_GlazingLayerSet_WindowDataFile" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimMaterialLayerSet_GlazingLayerSet_WindowEquivalentLayer" type="simres:SimMaterialLayerSet_GlazingLayerSet_WindowEquivalentLayer" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayerSet_OpaqueLayerSet_Ceiling" type="simres:SimMaterialLayerSet_OpaqueLayerSet_Ceiling" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayerSet_OpaqueLayerSet_CfactorUndergroundWall" type="simres:SimMaterialLayerSet_OpaqueLayerSet_CfactorUndergroundWall" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimMaterialLayerSet_OpaqueLayerSet_Default" type="simres:SimMaterialLayerSet_OpaqueLayerSet_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1187,10 +1110,6 @@
 <xs:element name="SimNode_DigitalControl_RFGLoop_DigitalSignal_In" type="simres:SimNode_DigitalControl_RFGLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_DigitalControl_RFGLoop_DigitalSignal_InOrOut" type="simres:SimNode_DigitalControl_RFGLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_DigitalControl_RFGLoop_DigitalSignal_Out" type="simres:SimNode_DigitalControl_RFGLoop_DigitalSignal_Out" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_DigitalControl_SHWLoop_Default" type="simres:SimNode_DigitalControl_SHWLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_DigitalControl_SHWLoop_DigitalSignal_In" type="simres:SimNode_DigitalControl_SHWLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_DigitalControl_SHWLoop_DigitalSignal_InOrOut" type="simres:SimNode_DigitalControl_SHWLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_DigitalControl_SHWLoop_DigitalSignal_Out" type="simres:SimNode_DigitalControl_SHWLoop_DigitalSignal_Out" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_DigitalControl_STMLoop_Default" type="simres:SimNode_DigitalControl_STMLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_DigitalControl_STMLoop_DigitalSignal_In" type="simres:SimNode_DigitalControl_STMLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_DigitalControl_STMLoop_DigitalSignal_InOrOut" type="simres:SimNode_DigitalControl_STMLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
@@ -1230,10 +1149,6 @@
 <xs:element name="SimNode_RefrigerationFlowPort_Refrigeration_In" type="simres:SimNode_RefrigerationFlowPort_Refrigeration_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_RefrigerationFlowPort_Refrigeration_InOrOut" type="simres:SimNode_RefrigerationFlowPort_Refrigeration_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_RefrigerationFlowPort_Refrigeration_Out" type="simres:SimNode_RefrigerationFlowPort_Refrigeration_Out" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_ServiceHotWaterFlowPort_Default" type="simres:SimNode_ServiceHotWaterFlowPort_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_ServiceHotWaterFlowPort_Water_In" type="simres:SimNode_ServiceHotWaterFlowPort_Water_In" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_ServiceHotWaterFlowPort_Water_InOrOut" type="simres:SimNode_ServiceHotWaterFlowPort_Water_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimNode_ServiceHotWaterFlowPort_Water_Out" type="simres:SimNode_ServiceHotWaterFlowPort_Water_Out" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_SetpointNode_Default" type="simres:SimNode_SetpointNode_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_SteamFlowPort_Default" type="simres:SimNode_SteamFlowPort_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimNode_SteamFlowPort_Steam_In" type="simres:SimNode_SteamFlowPort_Steam_In" minOccurs="0" maxOccurs="unbounded"/>
@@ -1248,7 +1163,10 @@
 <xs:element name="SimNode_ZoneAirNode_Default" type="simres:SimNode_ZoneAirNode_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimObjectOutputRequestSet_Default_Default" type="simres:SimObjectOutputRequestSet_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimOpeningType_Opening_Default" type="simbldg:SimOpeningType_Opening_Default" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimOrganization_Organization_Architect" type="simres:SimOrganization_Organization_Architect" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimOrganization_Organization_Default" type="simres:SimOrganization_Organization_Default" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimOrganization_Organization_Engineer" type="simres:SimOrganization_Organization_Engineer" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimOrganization_Organization_Owner" type="simres:SimOrganization_Organization_Owner" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimOwnerHistory_Default_Default" type="simres:SimOwnerHistory_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPanel_Default_Default" type="simbldg:SimPanel_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPanelArrayParams_PanelArrayParams_Default" type="simres:SimPanelArrayParams_PanelArrayParams_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1290,10 +1208,7 @@
 <xs:element name="SimPerson_Person_Default" type="simres:SimPerson_Person_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPersonAndOrganization_PersonAndOrganization_Architect" type="simres:SimPersonAndOrganization_PersonAndOrganization_Architect" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPersonAndOrganization_PersonAndOrganization_Default" type="simres:SimPersonAndOrganization_PersonAndOrganization_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPersonAndOrganization_PersonAndOrganization_DocumentAuthor" type="simres:SimPersonAndOrganization_PersonAndOrganization_DocumentAuthor" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPersonAndOrganization_PersonAndOrganization_EnergyConsultant" type="simres:SimPersonAndOrganization_PersonAndOrganization_EnergyConsultant" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPersonAndOrganization_PersonAndOrganization_Engineer" type="simres:SimPersonAndOrganization_PersonAndOrganization_Engineer" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPersonAndOrganization_PersonAndOrganization_LightingDesigner" type="simres:SimPersonAndOrganization_PersonAndOrganization_LightingDesigner" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPersonAndOrganization_PersonAndOrganization_Owner" type="simres:SimPersonAndOrganization_PersonAndOrganization_Owner" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPlacement_Axis1Placement_Default" type="simgeom:SimPlacement_Axis1Placement_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPlacement_Axis2Placement2D_Default" type="simgeom:SimPlacement_Axis2Placement2D_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1338,10 +1253,6 @@
 <xs:element name="SimPort_DigitalControl_RFGLoop_DigitalSignal_In" type="simres:SimPort_DigitalControl_RFGLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_DigitalControl_RFGLoop_DigitalSignal_InOrOut" type="simres:SimPort_DigitalControl_RFGLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_DigitalControl_RFGLoop_DigitalSignal_Out" type="simres:SimPort_DigitalControl_RFGLoop_DigitalSignal_Out" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_DigitalControl_SHWLoop_Default" type="simres:SimPort_DigitalControl_SHWLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_DigitalControl_SHWLoop_DigitalSignal_In" type="simres:SimPort_DigitalControl_SHWLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_DigitalControl_SHWLoop_DigitalSignal_InOrOut" type="simres:SimPort_DigitalControl_SHWLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_DigitalControl_SHWLoop_DigitalSignal_Out" type="simres:SimPort_DigitalControl_SHWLoop_DigitalSignal_Out" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_DigitalControl_STMLoop_Default" type="simres:SimPort_DigitalControl_STMLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_DigitalControl_STMLoop_DigitalSignal_In" type="simres:SimPort_DigitalControl_STMLoop_DigitalSignal_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_DigitalControl_STMLoop_DigitalSignal_InOrOut" type="simres:SimPort_DigitalControl_STMLoop_DigitalSignal_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
@@ -1379,10 +1290,6 @@
 <xs:element name="SimPort_RefrigerationFlowPort_Refrigeration_In" type="simres:SimPort_RefrigerationFlowPort_Refrigeration_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_RefrigerationFlowPort_Refrigeration_InOrOut" type="simres:SimPort_RefrigerationFlowPort_Refrigeration_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_RefrigerationFlowPort_Refrigeration_Out" type="simres:SimPort_RefrigerationFlowPort_Refrigeration_Out" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_ServiceHotWaterFlowPort_Default" type="simres:SimPort_ServiceHotWaterFlowPort_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_ServiceHotWaterFlowPort_Water_In" type="simres:SimPort_ServiceHotWaterFlowPort_Water_In" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_ServiceHotWaterFlowPort_Water_InOrOut" type="simres:SimPort_ServiceHotWaterFlowPort_Water_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimPort_ServiceHotWaterFlowPort_Water_Out" type="simres:SimPort_ServiceHotWaterFlowPort_Water_Out" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_SteamFlowPort_Default" type="simres:SimPort_SteamFlowPort_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_SteamFlowPort_Steam_In" type="simres:SimPort_SteamFlowPort_Steam_In" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPort_SteamFlowPort_Steam_InOrOut" type="simres:SimPort_SteamFlowPort_Steam_InOrOut" minOccurs="0" maxOccurs="unbounded"/>
@@ -1396,10 +1303,7 @@
 <xs:element name="SimPresentationLayerAssignment_Default_Default" type="simres:SimPresentationLayerAssignment_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimProfileParams_Member_Default" type="simres:SimProfileParams_Member_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimProfileParams_ProfileParams_Default" type="simres:SimProfileParams_ProfileParams_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimProject_Project_Backpack" type="simbldg:SimProject_Project_Backpack" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimProject_Project_DesignAlternative" type="simbldg:SimProject_Project_DesignAlternative" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimProject_Project_SBD_View" type="simbldg:SimProject_Project_SBD_View" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimProject_Project_T24_View" type="simbldg:SimProject_Project_T24_View" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPropertyListValue_SimpleProp_ListValue" type="simres:SimPropertyListValue_SimpleProp_ListValue" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPropertySet_PropertySet_Default" type="simres:SimPropertySet_PropertySet_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimPropertySingleValue_SimpleProp_SingleValue" type="simres:SimPropertySingleValue_SimpleProp_SingleValue" minOccurs="0" maxOccurs="unbounded"/>
@@ -1536,11 +1440,7 @@
 <xs:element name="SimSimulationParameters_SiteWindPressure_WindPressureValues" type="simres:SimSimulationParameters_SiteWindPressure_WindPressureValues" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSimulationParameters_SurfaceProperties_Default" type="simres:SimSimulationParameters_SurfaceProperties_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSimulationParameters_SurfaceProperties_VaporCoefficients" type="simres:SimSimulationParameters_SurfaceProperties_VaporCoefficients" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSimulationRun_EPlusSimulation_Default" type="simres:SimSimulationRun_EPlusSimulation_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSimulationRun_StandardsRun_ASHRAE90_1" type="simres:SimSimulationRun_StandardsRun_ASHRAE90_1" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSimulationRun_StandardsRun_LEED" type="simres:SimSimulationRun_StandardsRun_LEED" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSimulationRun_StandardsRun_SBDH" type="simres:SimSimulationRun_StandardsRun_SBDH" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSimulationRun_StandardsRun_T24" type="simres:SimSimulationRun_StandardsRun_T24" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimSimulationRun_Default_Default" type="simres:SimSimulationRun_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSite_AdjacentSite_Default" type="simbldg:SimSite_AdjacentSite_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSite_BuildingSite_Default" type="simbldg:SimSite_BuildingSite_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSiteAssembly_SiteAssembly_ExteriorEquipmentWater" type="simbldg:SimSiteAssembly_SiteAssembly_ExteriorEquipmentWater" minOccurs="0" maxOccurs="unbounded"/>
@@ -1609,23 +1509,11 @@
 <xs:element name="SimSpace_Unoccupied_FloorPlenum" type="simbldg:SimSpace_Unoccupied_FloorPlenum" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpace_Unoccupied_FloorVoid" type="simbldg:SimSpace_Unoccupied_FloorVoid" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpace_Unoccupied_Plenum" type="simbldg:SimSpace_Unoccupied_Plenum" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Ceiling_InterzoneCeiling" type="simres:SimSpaceBoundary_Ceiling_InterzoneCeiling" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Door_GlazedDoor" type="simres:SimSpaceBoundary_Door_GlazedDoor" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Door_OpaqueDoor" type="simres:SimSpaceBoundary_Door_OpaqueDoor" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceBoundary_FirstLevel_Default" type="simres:SimSpaceBoundary_FirstLevel_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Floor_FloorOverAir" type="simres:SimSpaceBoundary_Floor_FloorOverAir" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Floor_FloorOverEarth" type="simres:SimSpaceBoundary_Floor_FloorOverEarth" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Floor_InterzoneFloor" type="simres:SimSpaceBoundary_Floor_InterzoneFloor" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_RoofSlab_RoofUnderAir" type="simres:SimSpaceBoundary_RoofSlab_RoofUnderAir" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceBoundary_SecondLevel_Default" type="simres:SimSpaceBoundary_SecondLevel_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceBoundary_SecondLevel_SubTypeA" type="simres:SimSpaceBoundary_SecondLevel_SubTypeA" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceBoundary_SecondLevel_SubTypeB" type="simres:SimSpaceBoundary_SecondLevel_SubTypeB" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceBoundary_SecondLevel_SubTypeC" type="simres:SimSpaceBoundary_SecondLevel_SubTypeC" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Skylight_Default" type="simres:SimSpaceBoundary_Skylight_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Wall_ExteriorAboveGrade" type="simres:SimSpaceBoundary_Wall_ExteriorAboveGrade" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Wall_ExteriorBelowGrade" type="simres:SimSpaceBoundary_Wall_ExteriorBelowGrade" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Wall_Interior" type="simres:SimSpaceBoundary_Wall_Interior" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpaceBoundary_Window_Exterior" type="simres:SimSpaceBoundary_Window_Exterior" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceOccupant_Actor_SpaceOccupant" type="simres:SimSpaceOccupant_Actor_SpaceOccupant" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceParams_Space_Default" type="simres:SimSpaceParams_Space_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpaceType_Space_Default" type="simbldg:SimSpaceType_Space_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1637,9 +1525,8 @@
 <xs:element name="SimSpatialZone_SecurityZone_Security" type="simbldg:SimSpatialZone_SecurityZone_Security" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpatialZone_SecurityZone_StaffOnly" type="simbldg:SimSpatialZone_SecurityZone_StaffOnly" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpatialZone_ThermalZone_AboveCeilingVoid" type="simbldg:SimSpatialZone_ThermalZone_AboveCeilingVoid" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpatialZone_ThermalZone_BelowFloorVoid" type="simbldg:SimSpatialZone_ThermalZone_BelowFloorVoid" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSpatialZone_ThermalZone_Default" type="simbldg:SimSpatialZone_ThermalZone_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSpatialZone_ThermalZone_TemplateForZoneGroup" type="simbldg:SimSpatialZone_ThermalZone_TemplateForZoneGroup" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimSpatialZone_ThermalZone_UnderFloorVoid" type="simbldg:SimSpatialZone_ThermalZone_UnderFloorVoid" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimStair_Stair_Default" type="simbldg:SimStair_Stair_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimStairFlight_Default_Default" type="simbldg:SimStairFlight_Default_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimStairFlightParams_StairFlight_Default" type="simres:SimStairFlightParams_StairFlight_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1740,11 +1627,6 @@
 <xs:element name="SimSystem_RefrigerationTranscritical_Demand" type="simbldg:SimSystem_RefrigerationTranscritical_Demand" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSystem_RefrigerationTranscritical_FullSystem" type="simbldg:SimSystem_RefrigerationTranscritical_FullSystem" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSystem_RefrigerationTranscritical_Supply" type="simbldg:SimSystem_RefrigerationTranscritical_Supply" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ServiceHotWater_Control" type="simbldg:SimSystem_ServiceHotWater_Control" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ServiceHotWater_Demand" type="simbldg:SimSystem_ServiceHotWater_Demand" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ServiceHotWater_FullSystem" type="simbldg:SimSystem_ServiceHotWater_FullSystem" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ServiceHotWater_Supply" type="simbldg:SimSystem_ServiceHotWater_Supply" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ServiceHotWater_WaterBranch" type="simbldg:SimSystem_ServiceHotWater_WaterBranch" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSystem_SitePowerDemand_ElectricityConsuming" type="simbldg:SimSystem_SitePowerDemand_ElectricityConsuming" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSystem_SitePowerDemand_FuelConsuming" type="simbldg:SimSystem_SitePowerDemand_FuelConsuming" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSystem_SitePowerDemand_WaterConsuming" type="simbldg:SimSystem_SitePowerDemand_WaterConsuming" minOccurs="0" maxOccurs="unbounded"/>
@@ -1768,15 +1650,9 @@
 <xs:element name="SimSystem_ZoneHvacGroup_DemandSideZoneHvac" type="simbldg:SimSystem_ZoneHvacGroup_DemandSideZoneHvac" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSystem_ZoneHvacGroup_FullSystem" type="simbldg:SimSystem_ZoneHvacGroup_FullSystem" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimSystem_ZoneHvacGroup_Supply" type="simbldg:SimSystem_ZoneHvacGroup_Supply" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ZoneShwGroup_Demand" type="simbldg:SimSystem_ZoneShwGroup_Demand" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ZoneShwGroup_FullSystem" type="simbldg:SimSystem_ZoneShwGroup_FullSystem" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimSystem_ZoneShwGroup_Supply" type="simbldg:SimSystem_ZoneShwGroup_Supply" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimTemplateConstructions_Constructions_Default" type="simres:SimTemplateConstructions_Constructions_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimTemplateDaylighting_Daylighting_Default" type="simres:SimTemplateDaylighting_Daylighting_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimTemplateDaylighting_Daylighting_Skylights" type="simres:SimTemplateDaylighting_Daylighting_Skylights" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimTemplateDaylighting_Daylighting_Windows" type="simres:SimTemplateDaylighting_Daylighting_Windows" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimTemplateHvacZoneEquipment_HvacZoneEquipment_Default" type="simres:SimTemplateHvacZoneEquipment_HvacZoneEquipment_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimTemplateInteriorLighting_InteriorLighting_Default" type="simres:SimTemplateInteriorLighting_InteriorLighting_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimTemplateLocation_Location_Default" type="simres:SimTemplateLocation_Location_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimTemplateNaturalVentilation_NaturalVentilation_Default" type="simres:SimTemplateNaturalVentilation_NaturalVentilation_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimTemplateOutputFormatSet_OutputFormatSet_Default" type="simres:SimTemplateOutputFormatSet_OutputFormatSet_Default" minOccurs="0" maxOccurs="unbounded"/>
@@ -1813,7 +1689,6 @@
 <xs:element name="SimValidationResultsWater_CWLoop_Default" type="simres:SimValidationResultsWater_CWLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimValidationResultsWater_HWLoop_Default" type="simres:SimValidationResultsWater_HWLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimValidationResultsWater_MxWLoop_Default" type="simres:SimValidationResultsWater_MxWLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimValidationResultsWater_SHWLoop_Default" type="simres:SimValidationResultsWater_SHWLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimValidationResultsWater_STMLoop_Default" type="simres:SimValidationResultsWater_STMLoop_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimValidationResultsZoneHvac_ZoneHvac_Default" type="simres:SimValidationResultsZoneHvac_ZoneHvac_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimVentilationAssembly_VentilationAssembly_CoolTower_Shower" type="simbldg:SimVentilationAssembly_VentilationAssembly_CoolTower_Shower" minOccurs="0" maxOccurs="unbounded"/>
@@ -1838,27 +1713,24 @@
 <xs:element name="SimWall_OtherSideConditionsModel_Detailed" type="simbldg:SimWall_OtherSideConditionsModel_Detailed" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWall_OtherSideConditionsModel_DetailedFloor" type="simbldg:SimWall_OtherSideConditionsModel_DetailedFloor" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWall_OtherSideConditionsModel_DetailedRoofCeiling" type="simbldg:SimWall_OtherSideConditionsModel_DetailedRoofCeiling" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_Adiabatic" type="simbldg:SimWall_Wall_Adiabatic" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_Default" type="simbldg:SimWall_Wall_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_ExteriorAboveGrade" type="simbldg:SimWall_Wall_ExteriorAboveGrade" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_ExteriorAboveGradeDetailed" type="simbldg:SimWall_Wall_ExteriorAboveGradeDetailed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_ExteriorAboveGradeStandard" type="simbldg:SimWall_Wall_ExteriorAboveGradeStandard" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_ExteriorBelowGrade" type="simbldg:SimWall_Wall_ExteriorBelowGrade" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_ExteriorBelowGradeDetailed" type="simbldg:SimWall_Wall_ExteriorBelowGradeDetailed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_ExteriorBelowGradeStandard" type="simbldg:SimWall_Wall_ExteriorBelowGradeStandard" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_Interior" type="simbldg:SimWall_Wall_Interior" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_InteriorDetailed" type="simbldg:SimWall_Wall_InteriorDetailed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_InteriorStandard" type="simbldg:SimWall_Wall_InteriorStandard" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWall_Wall_OpeningFiller" type="simbldg:SimWall_Wall_OpeningFiller" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_Adiabatic" type="simbldg:SimWall_TypicalWall_Adiabatic" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_Default" type="simbldg:SimWall_TypicalWall_Default" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_ExteriorAboveGrade" type="simbldg:SimWall_TypicalWall_ExteriorAboveGrade" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_ExteriorAboveGradeDetailed" type="simbldg:SimWall_TypicalWall_ExteriorAboveGradeDetailed" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_ExteriorAboveGradeStandard" type="simbldg:SimWall_TypicalWall_ExteriorAboveGradeStandard" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_ExteriorBelowGrade" type="simbldg:SimWall_TypicalWall_ExteriorBelowGrade" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_ExteriorBelowGradeDetailed" type="simbldg:SimWall_TypicalWall_ExteriorBelowGradeDetailed" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_ExteriorBelowGradeStandard" type="simbldg:SimWall_TypicalWall_ExteriorBelowGradeStandard" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_Interior" type="simbldg:SimWall_TypicalWall_Interior" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_InteriorDetailed" type="simbldg:SimWall_TypicalWall_InteriorDetailed" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWall_TypicalWall_InteriorStandard" type="simbldg:SimWall_TypicalWall_InteriorStandard" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWallParams_Wall_Default" type="simres:SimWallParams_Wall_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWallType_Wall_Default" type="simbldg:SimWallType_Wall_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWindow_ComplexFenestration_ThermoChromic" type="simbldg:SimWindow_ComplexFenestration_ThermoChromic" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWindow_Skylight_Exterior" type="simbldg:SimWindow_Skylight_Exterior" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWindow_Skylight_ExteriorDetailed" type="simbldg:SimWindow_Skylight_ExteriorDetailed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWindow_Window_Default" type="simbldg:SimWindow_Window_Default" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWindow_Window_Exterior" type="simbldg:SimWindow_Window_Exterior" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWindow_Window_ExteriorDetailed" type="simbldg:SimWindow_Window_ExteriorDetailed" minOccurs="0" maxOccurs="unbounded"/>
-<xs:element name="SimWindow_Window_Interior" type="simbldg:SimWindow_Window_Interior" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWindow_TypicalWindow_Default" type="simbldg:SimWindow_TypicalWindow_Default" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWindow_TypicalWindow_Exterior" type="simbldg:SimWindow_TypicalWindow_Exterior" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWindow_TypicalWindow_ExteriorDetailed" type="simbldg:SimWindow_TypicalWindow_ExteriorDetailed" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimWindow_TypicalWindow_Interior" type="simbldg:SimWindow_TypicalWindow_Interior" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWindowArrayParams_WindowArray_Default" type="simres:SimWindowArrayParams_WindowArray_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWindowLiningProps_WindowLiningProps_Default" type="simres:SimWindowLiningProps_WindowLiningProps_Default" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimWindowPanelProps_WindowPanelProps_Default" type="simres:SimWindowPanelProps_WindowPanelProps_Default" minOccurs="0" maxOccurs="unbounded"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://d-alchemy.com/schema/simxml/BuildingModel/" xmlns:simbldg="http://d-alchemy.com/schema/simxml/BuildingModel/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore/" elementFormDefault="qualified" attributeFormDefault="unqualified" >
+<xs:schema targetNamespace="http://www.lbl.gov/namespaces/Sim/BuildingModel" xmlns:simbldg="http://www.lbl.gov/namespaces/Sim/BuildingModel" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://www.lbl.gov/namespaces/Sim/SimModelCore" elementFormDefault="qualified" attributeFormDefault="unqualified">
 
-    <xs:import namespace="http://d-alchemy.com/schema/simxml/SimModelCore/" schemaLocation="simcore.xsd"/>
+    <xs:import namespace="http://www.lbl.gov/namespaces/Sim/SimModelCore" schemaLocation="simcore.xsd"/>
 
 
 	<!-- Entity elements -->
@@ -303,22 +303,6 @@
 <xs:element ref="simbldg:RoofIrrigation_IrrigationModelType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:RoofIrrigation_IrrigationRateSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:RoofIrrigation_IrrigationMaxSaturatThreshold" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AboveGradeStoryCountAltered" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AboveGradeStoryCountExists" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AboveGradeStoryCountNew" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CoilCoolingCapacity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CoilHeatingCapacity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FunctionClassificationMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HighRiseResidentialLivingUnitCount" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:LivingUnitCountAltered" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:LivingUnitCountExisting" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:LivingUnitCountNew" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24PlantCoolingCapacity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24PlantHeatingCapacity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:RelocatablePublicSchoolBuilding" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TotalStoryCountAltered" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TotalStoryCountExisting" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TotalStoryCountNew" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -342,214 +326,6 @@
 <xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:CompositionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AHUHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AHUWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AirFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AirflowReturn" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AirflowSupply" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AirPressure" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AirwayLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AlternatorVoltage" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Ang" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ApparentLoad" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ApparentLoadPhaseA" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ApparentLoadPhaseB" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ApparentLoadPhaseC" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AverageSolarTransmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AverageVisibleTransmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Azimuth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:BaseHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:BaseLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Buildingstoreyname" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C1Offset1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C1Offset2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C2Offset1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C2Offset2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C3Offset1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C4Offset2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C5Offset1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C5Offset2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C6Offset1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:C6Offset2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ChilledWaterFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ChilledWaterPressureDrop" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CircuitNaming" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Color" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Connectionoffset" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ContainerName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ContainerType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolAirFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolAirInletDiameter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolAirInletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolAirPressureDrop" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolingCoilInletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolingCoilOutletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolingWaterDiameter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolingWaterFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolingWaterPressureDrop" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CoolingWaterRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Diameter1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Distance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Distance1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Distance2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DrainFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DrainOffset1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DrainRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DuctHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DuctWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ElectricalCircuitName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ElectricalData" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Enclosure" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ExternalStaticPressure" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ExternalTotalPressure" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:FanAirFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:FanDiameter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:FanRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:GeneratorHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:GeneratorLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:GeneratorWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:GroupName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HalfAirOutletHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HalfAirOutletWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HalfOverallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HalfOverallWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HalfWidth4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HeatAirFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HeatAirInletDiameter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HeatAirInletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HeatAirPressureDrop" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HeatLoss" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HeatingCoilInletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HeatingCoilOutletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height3" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height5" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height6" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height7" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height8" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Height9" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Host" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HotWaterFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HotWaterPressureDrop" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Inclination" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:InletDiameter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:InletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length3" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length5" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length6" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length7" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length8" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length9" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length10" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length11" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length12" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Length13" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Level" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:LoadClassification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MakeUpWaterFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MakeUpWaterPressureDrop" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MakeUpWaterRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ManufacturerArticleNumber" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ManufacturerModelName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ManufacturerModelNumber" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ManufacturerName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ManufacturerYearofProduction" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Mark" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Material" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Max1PoleBreakers" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaxFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MinFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Model" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MotorHP" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:NumberOfFans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:NumberOfPoles" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ObjectClassName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Offset" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OmniclassNumber" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OmniclassTitle" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OutletDiameter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OutletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OverallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OverallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OverallWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PanelHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Partshape" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhaseCreated" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PipeRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PrimaryNumberofPoles" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PrimaryVoltage" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PumpHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PumpLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PumpWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Radius1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Radius2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Radius3" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Radius4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Radius5" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Radius6" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Reference" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Reflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ReturnAirInletFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ReturnAirInletHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ReturnAirInletWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ReturnDuctHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ReturnDuctWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Returnheight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Returnwidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ReturnY_Offset" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ReturnZ_Offset" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Roughness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ShadingDeviceType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirInletDiameter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirInletFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirInletHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirInletRadius" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirInletWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirOutletFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirOutletHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirOutletWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyAirPressureDrop" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyDuctHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyDuctWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Supplyheight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Supplywidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Supply_ReturnSymbols" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyY_Offset" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SupplyZ_Offset" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SystemClassification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SystemName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TiltRange" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TotalConnected" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TotalDemandFactor" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TotalEstimatedDemand" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TowerHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TowerLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TowerWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TransformerHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TransformerLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TransformerWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:UniformatClassification" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Unitdepth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:UnitHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:UnitLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:UnitWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Visible1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Visible2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Voltage" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WaterFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WaterPressure" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Width1" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Width2" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Width3" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Width4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Width5" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Width6" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Width7" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -1079,10 +855,6 @@
 <xs:element ref="simbldg:SimDoor_VertexXCoord_1_4" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimDoor_VertexYCoord_1_4" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimDoor_VertexZCoord_1_4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_FenestrationSurface" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_Layer_1_5_SolarRadAbsorbedSchedName" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -1204,8 +976,9 @@
 <xs:element ref="simbldg:PanelProperties" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:MaterialList" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:RepresentationMaps" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:GeometricRepresentations" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:VoidsInDoor" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:RepresentationMaps" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -1299,31 +1072,6 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimLightingFixtureType">
-<xs:complexContent>
-<xs:extension base="simcore:SimObjectTypeDefinition">
-<xs:sequence>
-<xs:element ref="simbldg:RepresentationMaps" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Tag" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ElementType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PredefinedType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:InteriorOrExterior" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimLightingFixtureType_LightingFixture" abstract="true">
-<xs:complexContent>
-<xs:extension base="simbldg:SimLightingFixtureType">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimLightingFixtureType_LightingFixture_Default">
-<xs:complexContent>
-<xs:extension base="simbldg:SimLightingFixtureType_LightingFixture">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimList">
 <xs:complexContent>
 <xs:extension base="simcore:SimGroup">
@@ -1382,15 +1130,13 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimList_ConnectorList_ServiceHotWaterConnections">
-<xs:complexContent>
-<xs:extension base="simbldg:SimList_ConnectorList">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimList_ConnectorList_SimConnections">
 <xs:complexContent>
 <xs:extension base="simbldg:SimList_ConnectorList">
+<xs:sequence>
+<xs:element ref="simbldg:SimList_ConnectorObjectType_1_2" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimList_ConnectorName_1_2" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1511,12 +1257,6 @@
 <xs:sequence>
 <xs:element ref="simbldg:SimList_CascadeCndnsrNameOrSecndSysName_1_9" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimList_EquipmentList_ServiceHotWater">
-<xs:complexContent>
-<xs:extension base="simbldg:SimList_EquipmentList">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1871,11 +1611,26 @@
 <xs:extension base="simcore:SimSpatialStructureElement">
 <xs:sequence>
 <xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ProjectPhase" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ProjectClientOwner" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ProjectArchitect" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ProjectUnits" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:_3DModelRepresentationContexts" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:_2DModelRepresentationContexts" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:UnitsInContext" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ProjectTeam" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ParentDesignAltForViews" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DesAltViewDateTime" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:WeatherLocationRegion" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:WeatherLocationCity" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:WeatherLocationID" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:EnergyStd_MinsReqs" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_1" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_2" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_3" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_4" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_5" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_6" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_7" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Use_MinReg_Category_8" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -1886,33 +1641,7 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimProject_Project_Backpack">
-<xs:complexContent>
-<xs:extension base="simbldg:SimProject_Project">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimProject_Project_DesignAlternative">
-<xs:complexContent>
-<xs:extension base="simbldg:SimProject_Project">
-<xs:sequence>
-<xs:element ref="simbldg:ProjectPhase" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ProjectClientOwner" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ProjectArchitect" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ProjectUnits" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:_3DModelRepresentationContexts" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:_2DModelRepresentationContexts" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProject_Project_SBD_View">
-<xs:complexContent>
-<xs:extension base="simbldg:SimProject_Project">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProject_Project_T24_View">
 <xs:complexContent>
 <xs:extension base="simbldg:SimProject_Project">
 </xs:extension>
@@ -2386,10 +2115,6 @@
 <xs:element ref="simbldg:SimSlab_Vertex_1_120_X_Coord" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Vertex_1_120_Y_Coord" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Vertex_1_120_Z_Coord" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_SurfName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -2493,7 +2218,6 @@
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Algorithm" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -2542,7 +2266,6 @@
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Algorithm" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -2588,10 +2311,6 @@
 <xs:element ref="simbldg:SimSlab_StartZCoord" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Length" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Width" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_SurfName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Algorithm" minOccurs="0" maxOccurs="1"/>
@@ -2640,10 +2359,6 @@
 <xs:element ref="simbldg:SimSlab_StartZCoord" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Length" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Width" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_SurfName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -3027,17 +2742,6 @@
 <xs:element ref="simbldg:SimSlab_StartZCoord" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Length" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSlab_Width" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CRRCAgedEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CRRCAgedReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CRRCAgedSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CRRCInitialEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CRRCInitialReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CRRCInitialSRI" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CRRCProductID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FieldAppliedCoating" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24RoofAgedSolarReflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24RoofAgedThermalEmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -3130,12 +2834,12 @@
 <xs:element ref="simbldg:SolarShadeObjectType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ShadingDeviceType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Azimuth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Inclination.MeasureValue" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:TiltRange.MeasureValue" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Inclination" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:TiltRange" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:AverageSolarTransmittance" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:AverageVisibleTransmittance" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Reflectance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Roughness.MeasureValue" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Roughness" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Color" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:MaterialList" minOccurs="0" maxOccurs="1"/>
@@ -3187,7 +2891,6 @@
 <xs:sequence>
 <xs:element ref="simbldg:SimSolarShade_LeftDepth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSolarShade_RightDepth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus2" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -3239,7 +2942,6 @@
 <xs:element ref="simbldg:ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ShadingProp_Reflectance_GlazingConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus2" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -3385,43 +3087,6 @@
 <xs:complexType name="SimSpace_Occupied" abstract="true">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSpace">
-<xs:sequence>
-<xs:element ref="simbldg:T24BaselineCommercialRefrigerationEPD" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24BaselineCommercialRefrigerationEquipmentScheduleReference" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24BaselineGasEquipmentPowerDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24BaselineGasEquipmentScheduleReference" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24BaselineReceptaclePowerDensity" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24BaselineReceptacleScheduleReference" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CommRefrigEPD" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CommercialRefrigerationEPDExceptionalCondition" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CommRefrigEqmtSchedRef" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CommRefrigLatentFraction" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CommRefrigLostFraction" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CommRefrigRadFraction" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24EnvelopeStatus" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ExhaustAirChangesPerHour" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ExhaustPerArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ExhaustPerSpace" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24IntLightingSpecMethod" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24KitchExhHoodDutyList" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24KitchExhHoodFlow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24KitchExhHoodLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24KitchExhHoodStyleList" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24LabExhRateType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24LightingStatus" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlCntRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlDescRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlAccepReqRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlIsAutoShOffCntrlRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlIsDayltngCntrlRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlIsDmndRespCntrlRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlIsManAreaCntrlRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24MandLightCntrlIsMultLvlCntrlRpt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24SkylightRqmtExcep" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24SpaceFunction" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -3479,8 +3144,6 @@
 <xs:sequence>
 <xs:element ref="simbldg:RepresentationMaps" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Tag" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FuncSchedGrp" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24InfiltrMthd" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -3502,7 +3165,6 @@
 <xs:extension base="simcore:SimGroup">
 <xs:sequence>
 <xs:element ref="simbldg:ZoneColorIndex" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SHWFixtureSets" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ContainingBuilding" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ZoneTemplates" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:OverrideTemplates" minOccurs="0" maxOccurs="1"/>
@@ -3601,66 +3263,24 @@
 <xs:complexType name="SimSpatialZone_ThermalZone" abstract="true">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSpatialZone">
+<xs:sequence>
+<xs:element ref="simbldg:ZoneConditioningRequirement" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:HVACSystemType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:UserDefinedHVACSystemType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:InfiltrationRate" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:IsDaylitZone" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:NumberOfDaylightingSensors" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:DesignIlluminance" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:LightingControlsType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ClassRef_ZoneTypeEnergy" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:AssignedSchedule" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimSpatialZone_ThermalZone_AboveCeilingVoid">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSpatialZone_ThermalZone">
-<xs:sequence>
-<xs:element ref="simbldg:ZoneConditioningRequirement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HVACSystemType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:UserDefinedHVACSystemType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:InfiltrationRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:IsDaylitZone" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:NumberOfDaylightingSensors" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DesignIlluminance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:LightingControlsType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_ZoneTypeEnergy" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AssignedSchedule" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_DirRelNorth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_XOrigin" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_YOrigin" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_ZOrigin" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_Type" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_Mult" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_CeilingHt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_Volume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_FloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_ZoneInsideConvAlgo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_ZoneOutsdConvAlgo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_PartTotalFlrArea" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSpatialZone_ThermalZone_BelowFloorVoid">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSpatialZone_ThermalZone">
-<xs:sequence>
-<xs:element ref="simbldg:ZoneConditioningRequirement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HVACSystemType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:UserDefinedHVACSystemType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:InfiltrationRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:IsDaylitZone" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:NumberOfDaylightingSensors" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DesignIlluminance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:LightingControlsType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_ZoneTypeEnergy" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AssignedSchedule" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_DirRelNorth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_XOrigin" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_YOrigin" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_ZOrigin" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_Type" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_Mult" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_CeilingHt" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_Volume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_FloorArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_ZoneInsideConvAlgo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_ZoneOutsdConvAlgo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSpatialZone_PartTotalFlrArea" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -3668,16 +3288,6 @@
 <xs:complexContent>
 <xs:extension base="simbldg:SimSpatialZone_ThermalZone">
 <xs:sequence>
-<xs:element ref="simbldg:ZoneConditioningRequirement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:HVACSystemType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:UserDefinedHVACSystemType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:InfiltrationRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:IsDaylitZone" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:NumberOfDaylightingSensors" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:DesignIlluminance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:LightingControlsType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_ZoneTypeEnergy" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:AssignedSchedule" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSpatialZone_DirRelNorth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSpatialZone_XOrigin" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSpatialZone_YOrigin" minOccurs="0" maxOccurs="1"/>
@@ -3691,9 +3301,9 @@
 <xs:element ref="simbldg:SimSpatialZone_ZoneOutsdConvAlgo" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSpatialZone_PartTotalFlrArea" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ZoneProp_UserViewFactors_bySurfName_ZoneName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ZoneProp_UserViewFactors_bySurfName_FromSurface_1_121" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ZoneProp_UserViewFactors_bySurfName_ToSurface_1_121" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ZoneProp_UserViewFactors_bySurfName_ViewFactor_1_121" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ZoneProp_UserViewFactors_bySurfName_FromSurface_1_121_" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ZoneProp_UserViewFactors_bySurfName_ToSurface_1_121_" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:ZoneProp_UserViewFactors_bySurfName_ViewFactor_1_121_" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:RmAirModelType_ZoneName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:RmAirModelType_RoomAirModType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:RmAirModelType_AirTempCplngStrat" minOccurs="0" maxOccurs="1"/>
@@ -3711,7 +3321,7 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimSpatialZone_ThermalZone_TemplateForZoneGroup">
+<xs:complexType name="SimSpatialZone_ThermalZone_UnderFloorVoid">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSpatialZone_ThermalZone">
 </xs:extension>
@@ -3983,32 +3593,6 @@
 <xs:element ref="simbldg:SimSys_DemandSideOutNodeName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_DemandSideInNodeNames" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_SupSideOutNodeNames" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24AcceptTestReq" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24AirSysCntrlSysType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24DuctInsul" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24DuctLoc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24AirSysExhCtrlMthd" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24AirSysExhSysType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24HERSDuctReq" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch03A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch04A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch05A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch09A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch15A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch17A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24AHUSubType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch02A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch06A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch07A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch08A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch10A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch11A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch12A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch13A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch14A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch16A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch18A" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -4016,34 +3600,12 @@
 <xs:complexType name="SimSystem_HvacAir_FullSystemDual">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSystem_HvacAir">
-<xs:sequence>
-<xs:element ref="simbldg:SimSys_ContListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_AvailMngrListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DesignSupAirFlowRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_BranchListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_ConnListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_SupSideInNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideOutNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideInNodeNames" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_SupSideOutNodeNames" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimSystem_HvacAir_FullSystemTriple">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSystem_HvacAir">
-<xs:sequence>
-<xs:element ref="simbldg:SimSys_ContListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_AvailMngrListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DesignSupAirFlowRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_BranchListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_ConnListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_SupSideInNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideOutNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideInNodeNames" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_SupSideOutNodeNames" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -4168,19 +3730,6 @@
 <xs:element ref="simbldg:SimSys_PlantLoopDemandCalcScheme" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_CommonPipeSim" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_PresSimType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Brand" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CollectorType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FluidSysCntrlType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Manufacturer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch08A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch09A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch10A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch11A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch15A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch17A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch18A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ModelNo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -4298,19 +3847,6 @@
 <xs:element ref="simbldg:SimSys_CndnsrSideConnListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_CndnsrDemandSideBranchListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_CndnsrDemandSideConnListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Brand" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CollectorType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FluidSysCntrlType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Manufacturer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch08A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch09A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch10A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch11A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch15A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch17A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch18A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ModelNo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -4401,19 +3937,6 @@
 <xs:element ref="simbldg:SimSys_PlantLoopDemandCalcScheme" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_CommonPipeSim" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_PresSimType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Brand" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CollectorType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FluidSysCntrlType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Manufacturer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch08A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch09A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch10A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch11A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch15A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch17A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch18A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ModelNo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -4519,19 +4042,6 @@
 <xs:element ref="simbldg:SimSys_PlantLoopDemandCalcScheme" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_CommonPipeSim" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_PresSimType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Brand" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CollectorType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FluidSysCntrlType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Manufacturer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch08A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch09A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch10A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch11A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch15A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch17A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch18A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ModelNo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -4728,6 +4238,22 @@
 <xs:complexType name="SimSystem_Plumbing_UndergroundPipingCircuit">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSystem_Plumbing">
+<xs:sequence>
+<xs:element ref="simbldg:SimSys_PipeThermalCond" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_PipeDensity" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_PipeSpecificHeat" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_PipeInnerDiameter" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_PipeOuterDiameter" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_DesignFlowRate" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_CircInletNode" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_CircOutletNode" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_ConvergCritInnerRadialIterationLoop" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_MaxIterationsinInnerRadialIterationLoop" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_NumberSoilNodesinInnerRadialNearPipeMeshRegion" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_RadialThicknessInnerRadialNearPipeMeshRegion" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_NumberPipeSegmentsEnteredthisPipeCirc" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_PipeSeg_1_6" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -4882,7 +4408,7 @@
 <xs:element ref="simbldg:SimSys_MediumTempRefrigCaseorWalkinOrCaseAndWalkInListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_LowTempRefrigCaseorWalkinOrCaseAndWalkInListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_RefrigerationGasCoolerName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_HighPressCompressOrCompressListName" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:SimSys_HighPressureCompressOrCompressListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_LowPressureCompressOrCompressListName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_ReceiverPressure" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimSys_SubcoolerEffectiveness" minOccurs="0" maxOccurs="1"/>
@@ -4897,100 +4423,6 @@
 <xs:complexType name="SimSystem_RefrigerationTranscritical_Supply">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSystem_RefrigerationTranscritical">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ServiceHotWater" abstract="true">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ServiceHotWater_Control">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ServiceHotWater">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ServiceHotWater_Demand">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ServiceHotWater">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ServiceHotWater_FullSystem">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ServiceHotWater">
-<xs:sequence>
-<xs:element ref="simbldg:SimSys_AvailMngrListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideOutNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_FluidType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_UserDefFluidType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PlantEqmtOpSchemeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_LoopTempSetpntNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_MaxLoopTemp" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_MinLoopTemp" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_MaxLoopFlowRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_MinLoopFlowRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PlantLoopVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PlantSideInNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PlantSideOutNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PlantSideBranchListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PlantSideConnListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideInNodeName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideBranchListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_DemandSideConnListName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_LoadDistScheme" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PlantLoopDemandCalcScheme" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_CommonPipeSim" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PresSimType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24FluidSysCntrlType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch08A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch09A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch10A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch11A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch15A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch17A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch18A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ModelNo" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Brand" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24CollectorType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24DistribType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Fluid" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Manufacturer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ModelNumber" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24SimModelName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24PipeExtraInsul" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24PipeLocs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24RecircDhwType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24UseDefaultPipeLps" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Version" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ServiceHotWater_Supply">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ServiceHotWater">
-<xs:sequence>
-<xs:element ref="simbldg:SimSys_Branch_1_500_Name" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ServiceHotWater_WaterBranch">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ServiceHotWater">
-<xs:sequence>
-<xs:element ref="simbldg:SimSys_MaxFlowRate" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_PresDropCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_ComponentObjectType_1_11" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_ComponentName_1_11" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_ComponentInNodeName_1_11" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_ComponentOutNodeName_1_11" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimSys_ComponentBranchContType_1_11" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -5156,48 +4588,12 @@
 <xs:complexType name="SimSystem_ZoneHvacGroup_FullSystem">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSystem_ZoneHvacGroup">
-<xs:sequence>
-<xs:element ref="simbldg:T24AcceptTestReq" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ExhCntrlMeth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ExhSysType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch03A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch04A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch02A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch09A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch15A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24Mch17A" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimSystem_ZoneHvacGroup_Supply">
 <xs:complexContent>
 <xs:extension base="simbldg:SimSystem_ZoneHvacGroup">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ZoneShwGroup" abstract="true">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ZoneShwGroup_Demand">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ZoneShwGroup">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ZoneShwGroup_FullSystem">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ZoneShwGroup">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimSystem_ZoneShwGroup_Supply">
-<xs:complexContent>
-<xs:extension base="simbldg:SimSystem_ZoneShwGroup">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -5819,15 +5215,9 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall" abstract="true">
+<xs:complexType name="SimWall_TypicalWall" abstract="true">
 <xs:complexContent>
 <xs:extension base="simbldg:SimWall">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimWall_Wall_Adiabatic">
-<xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
 <xs:sequence>
 <xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
@@ -5847,6 +5237,14 @@
 <xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+	</xs:complexType>
+<xs:complexType name="SimWall_TypicalWall_Adiabatic">
+<xs:complexContent>
+<xs:extension base="simbldg:SimWall_TypicalWall">
+<xs:sequence>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ZoneName" minOccurs="0" maxOccurs="1"/>
@@ -5861,54 +5259,16 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_Default">
+<xs:complexType name="SimWall_TypicalWall_Default">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
-<xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
+<xs:extension base="simbldg:SimWall_TypicalWall">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_ExteriorAboveGrade">
+<xs:complexType name="SimWall_TypicalWall_ExteriorAboveGrade">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
@@ -5925,33 +5285,14 @@
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Algorithm" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_ExteriorAboveGradeDetailed">
+<xs:complexType name="SimWall_TypicalWall_ExteriorAboveGradeDetailed">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ZoneName" minOccurs="0" maxOccurs="1"/>
@@ -5971,28 +5312,10 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_ExteriorAboveGradeStandard">
+<xs:complexType name="SimWall_TypicalWall_ExteriorAboveGradeStandard">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ZoneName" minOccurs="0" maxOccurs="1"/>
@@ -6010,28 +5333,10 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_ExteriorBelowGrade">
+<xs:complexType name="SimWall_TypicalWall_ExteriorBelowGrade">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
@@ -6048,33 +5353,14 @@
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Algorithm" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_ExteriorBelowGradeDetailed">
+<xs:complexType name="SimWall_TypicalWall_ExteriorBelowGradeDetailed">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ZoneName" minOccurs="0" maxOccurs="1"/>
@@ -6094,28 +5380,10 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_ExteriorBelowGradeStandard">
+<xs:complexType name="SimWall_TypicalWall_ExteriorBelowGradeStandard">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ZoneName" minOccurs="0" maxOccurs="1"/>
@@ -6133,28 +5401,10 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_Interior">
+<xs:complexType name="SimWall_TypicalWall_Interior">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
@@ -6168,40 +5418,17 @@
 <xs:element ref="simbldg:SimWall_Vertex_1_120_X_Coord" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Vertex_1_120_Y_Coord" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Vertex_1_120_Z_Coord" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_SurfName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Algorithm" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_InteriorDetailed">
+<xs:complexType name="SimWall_TypicalWall_InteriorDetailed">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ZoneName" minOccurs="0" maxOccurs="1"/>
@@ -6221,28 +5448,10 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWall_Wall_InteriorStandard">
+<xs:complexType name="SimWall_TypicalWall_InteriorStandard">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
+<xs:extension base="simbldg:SimWall_TypicalWall">
 <xs:sequence>
-<xs:element ref="simbldg:ContainedBldgElementArrays" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTrans" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:PhotoVotaicArrayOnElement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallLength" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetSideArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallGrossVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WallNetVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialLayerSet" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedSlabs" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ConnectedWalls" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ConstructionName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWall_ZoneName" minOccurs="0" maxOccurs="1"/>
@@ -6258,12 +5467,6 @@
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_SurfType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfProp_HeatTransAlg_MultSurf_Algorithm" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimWall_Wall_OpeningFiller">
-<xs:complexContent>
-<xs:extension base="simbldg:SimWall_Wall">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -6296,17 +5499,6 @@
 <xs:extension base="simcore:SimBuildingElement">
 <xs:sequence>
 <xs:element ref="simbldg:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OverallHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OverallWidth" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimWindow_ComplexFenestration" abstract="true">
-<xs:complexContent>
-<xs:extension base="simbldg:SimWindow">
-<xs:sequence>
 <xs:element ref="simbldg:WindowTypeTag" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:WindowOperationType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:WindowConstructionType" minOccurs="0" maxOccurs="1"/>
@@ -6322,6 +5514,9 @@
 <xs:element ref="simbldg:MaterialList" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:VoidsInWindow" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:OpeningFilledByWindow" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:Representation" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:OverallHeight" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simbldg:OverallWidth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName" minOccurs="0" maxOccurs="1"/>
@@ -6438,6 +5633,12 @@
 <xs:element ref="simbldg:SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
+</xs:extension>
+</xs:complexContent>
+	</xs:complexType>
+<xs:complexType name="SimWindow_ComplexFenestration" abstract="true">
+<xs:complexContent>
+<xs:extension base="simbldg:SimWindow">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -6447,199 +5648,21 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWindow_Skylight" abstract="true">
+<xs:complexType name="SimWindow_TypicalWindow" abstract="true">
 <xs:complexContent>
 <xs:extension base="simbldg:SimWindow">
-<xs:sequence>
-<xs:element ref="simbldg:SimWindow_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_BldgSurfName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_ShadingContName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_FrmAndDivName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_Mult" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWindow_Skylight_Exterior">
+<xs:complexType name="SimWindow_TypicalWindow_Default">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWindow_Skylight">
-<xs:sequence>
-<xs:element ref="simbldg:SimWindow_StartXCoord" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_StartZCoord" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_Length" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_Ht" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus2" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
+<xs:extension base="simbldg:SimWindow_TypicalWindow">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWindow_Skylight_ExteriorDetailed">
+<xs:complexType name="SimWindow_TypicalWindow_Exterior">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWindow_Skylight">
-<xs:sequence>
-<xs:element ref="simbldg:SimWindow_SurfType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_OutsdBndCondObject" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_ViewFactToGnd" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_NumbVerts" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_VertexXCoord_1_4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_VertexYCoord_1_4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SimWindow_VertexZCoord_1_4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_FenestrationSurface" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_Layer_1_5_SolarRadAbsorbedSchedName" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimWindow_Window" abstract="true">
-<xs:complexContent>
-<xs:extension base="simbldg:SimWindow">
-<xs:sequence>
-<xs:element ref="simbldg:WindowTypeTag" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowOperationType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowConstructionType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowIsExternal" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:CompositeThermalTransmittance" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowPerimeter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowFrameDepth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:WindowFrameThickness" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ClassRef_UniFormat" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:MaterialList" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:VoidsInWindow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:OpeningFilledByWindow" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_UserCurve_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_UserCurve_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimWindow_Window_Default">
-<xs:complexContent>
-<xs:extension base="simbldg:SimWindow_Window">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimWindow_Window_Exterior">
-<xs:complexContent>
-<xs:extension base="simbldg:SimWindow_Window">
+<xs:extension base="simbldg:SimWindow_TypicalWindow">
 <xs:sequence>
 <xs:element ref="simbldg:SimWindow_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWindow_ConstructionName" minOccurs="0" maxOccurs="1"/>
@@ -6667,18 +5690,13 @@
 <xs:element ref="simbldg:Airflow_MZone_Comp_SmplOpng_AirMassFlowExpWhenOpngClosed" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Airflow_MZone_Comp_SmplOpng_MinDensityDiffForTwoWayFlow" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:Airflow_MZone_Comp_SmplOpng_DischargeCoef" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24EnableWindowShades" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24LeftFinTransmittanceOption" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24OverhangTransmittanceOption" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24RightFinTransmittanceOption" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:T24ConstructStatus3" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWindow_Window_ExteriorDetailed">
+<xs:complexType name="SimWindow_TypicalWindow_ExteriorDetailed">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWindow_Window">
+<xs:extension base="simbldg:SimWindow_TypicalWindow">
 <xs:sequence>
 <xs:element ref="simbldg:SimWindow_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWindow_SurfType" minOccurs="0" maxOccurs="1"/>
@@ -6693,10 +5711,6 @@
 <xs:element ref="simbldg:SimWindow_VertexXCoord_1_4" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWindow_VertexYCoord_1_4" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWindow_VertexZCoord_1_4" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_FenestrationSurface" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_ConstructionName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simbldg:ComplexFenestrationProperty_SolarAbsorbedLayers_Layer_1_5_SolarRadAbsorbedSchedName" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:WindowProp_AirflowControl_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:WindowProp_AirflowControl_AirflowSrc" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:WindowProp_AirflowControl_AirflowDestination" minOccurs="0" maxOccurs="1"/>
@@ -6736,9 +5750,9 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimWindow_Window_Interior">
+<xs:complexType name="SimWindow_TypicalWindow_Interior">
 <xs:complexContent>
-<xs:extension base="simbldg:SimWindow_Window">
+<xs:extension base="simbldg:SimWindow_TypicalWindow">
 <xs:sequence>
 <xs:element ref="simbldg:SimWindow_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simbldg:SimWindow_ConstructionName" minOccurs="0" maxOccurs="1"/>
@@ -6866,231 +5880,7 @@
 <xs:element name="RoofIrrigation_IrrigationModelType"  type="xs:string"/>
 <xs:element name="RoofIrrigation_IrrigationRateSchedName"  type="xs:IDREF"/>
 <xs:element name="RoofIrrigation_IrrigationMaxSaturatThreshold"  type="xs:double" nillable ="true"/>
-<xs:element name="AboveGradeStoryCountAltered"  type="xs:int" nillable ="true"/>
-<xs:element name="AboveGradeStoryCountExists"  type="xs:int" nillable ="true"/>
-<xs:element name="AboveGradeStoryCountNew"  type="xs:int" nillable ="true"/>
-<xs:element name="T24CoilCoolingCapacity"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CoilHeatingCapacity"  type="xs:double" nillable ="true"/>
-<xs:element name="T24FunctionClassificationMethod"  type="xs:string"/>
-<xs:element name="HighRiseResidentialLivingUnitCount"  type="xs:int" nillable ="true"/>
-<xs:element name="LivingUnitCountAltered"  type="xs:int" nillable ="true"/>
-<xs:element name="LivingUnitCountExisting"  type="xs:int" nillable ="true"/>
-<xs:element name="LivingUnitCountNew"  type="xs:int" nillable ="true"/>
-<xs:element name="T24PlantCoolingCapacity"  type="xs:double" nillable ="true"/>
-<xs:element name="T24PlantHeatingCapacity"  type="xs:double" nillable ="true"/>
-<xs:element name="RelocatablePublicSchoolBuilding"  type="xs:int" nillable ="true"/>
-<xs:element name="TotalStoryCountAltered"  type="xs:int" nillable ="true"/>
-<xs:element name="TotalStoryCountExisting"  type="xs:int" nillable ="true"/>
-<xs:element name="TotalStoryCountNew"  type="xs:int" nillable ="true"/>
 <xs:element name="CompositionType"  type="xs:string"/>
-<xs:element name="AHUHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="AHUWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="AirFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="AirflowReturn"  type="xs:double" nillable ="true"/>
-<xs:element name="AirflowSupply"  type="xs:double" nillable ="true"/>
-<xs:element name="AirPressure"  type="xs:double" nillable ="true"/>
-<xs:element name="AirwayLength"  type="xs:double" nillable ="true"/>
-<xs:element name="AlternatorVoltage"  type="xs:double" nillable ="true"/>
-<xs:element name="Ang"  type="xs:double" nillable ="true"/>
-<xs:element name="ApparentLoad"  type="xs:double" nillable ="true"/>
-<xs:element name="ApparentLoadPhaseA"  type="xs:double" nillable ="true"/>
-<xs:element name="ApparentLoadPhaseB"  type="xs:double" nillable ="true"/>
-<xs:element name="ApparentLoadPhaseC"  type="xs:double" nillable ="true"/>
-<xs:element name="AverageSolarTransmittance"  type="xs:double" nillable ="true"/>
-<xs:element name="AverageVisibleTransmittance"  type="xs:double" nillable ="true"/>
-<xs:element name="Azimuth"  type="xs:double" nillable ="true"/>
-<xs:element name="BaseHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="BaseLength"  type="xs:double" nillable ="true"/>
-<xs:element name="Buildingstoreyname"  type="xs:string"/>
-<xs:element name="C1Offset1"  type="xs:double" nillable ="true"/>
-<xs:element name="C1Offset2"  type="xs:double" nillable ="true"/>
-<xs:element name="C2Offset1"  type="xs:double" nillable ="true"/>
-<xs:element name="C2Offset2"  type="xs:double" nillable ="true"/>
-<xs:element name="C3Offset1"  type="xs:double" nillable ="true"/>
-<xs:element name="C4Offset2"  type="xs:double" nillable ="true"/>
-<xs:element name="C5Offset1"  type="xs:double" nillable ="true"/>
-<xs:element name="C5Offset2"  type="xs:double" nillable ="true"/>
-<xs:element name="C6Offset1"  type="xs:double" nillable ="true"/>
-<xs:element name="C6Offset2"  type="xs:double" nillable ="true"/>
-<xs:element name="ChilledWaterFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="ChilledWaterPressureDrop"  type="xs:double" nillable ="true"/>
-<xs:element name="CircuitNaming"  type="xs:string"/>
-<xs:element name="Color"  type="xs:string"/>
-<xs:element name="Connectionoffset"  type="xs:double" nillable ="true"/>
-<xs:element name="ContainerName"  type="xs:string"/>
-<xs:element name="ContainerType"  type="xs:string"/>
-<xs:element name="CoolAirFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolAirInletDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolAirInletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolAirPressureDrop"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolingCoilInletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolingCoilOutletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolingWaterDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolingWaterFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolingWaterPressureDrop"  type="xs:double" nillable ="true"/>
-<xs:element name="CoolingWaterRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="Diameter1"  type="xs:double" nillable ="true"/>
-<xs:element name="Distance"  type="xs:double" nillable ="true"/>
-<xs:element name="Distance1"  type="xs:double" nillable ="true"/>
-<xs:element name="Distance2"  type="xs:double" nillable ="true"/>
-<xs:element name="DrainFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="DrainOffset1"  type="xs:double" nillable ="true"/>
-<xs:element name="DrainRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="DuctHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="DuctWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="ElectricalCircuitName"  type="xs:string"/>
-<xs:element name="ElectricalData"  type="xs:string"/>
-<xs:element name="Enclosure"  type="xs:string"/>
-<xs:element name="ExternalStaticPressure"  type="xs:double" nillable ="true"/>
-<xs:element name="ExternalTotalPressure"  type="xs:double" nillable ="true"/>
-<xs:element name="FanAirFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="FanDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="FanRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="GeneratorHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="GeneratorLength"  type="xs:double" nillable ="true"/>
-<xs:element name="GeneratorWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="GroupName"  type="xs:string"/>
-<xs:element name="HalfAirOutletHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="HalfAirOutletWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="HalfOverallHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="HalfOverallWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="HalfWidth4"  type="xs:double" nillable ="true"/>
-<xs:element name="HeatAirFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="HeatAirInletDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="HeatAirInletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="HeatAirPressureDrop"  type="xs:double" nillable ="true"/>
-<xs:element name="HeatLoss"  type="xs:double" nillable ="true"/>
-<xs:element name="HeatingCoilInletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="HeatingCoilOutletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="Height1"  type="xs:double" nillable ="true"/>
-<xs:element name="Height2"  type="xs:double" nillable ="true"/>
-<xs:element name="Height3"  type="xs:double" nillable ="true"/>
-<xs:element name="Height4"  type="xs:double" nillable ="true"/>
-<xs:element name="Height5"  type="xs:double" nillable ="true"/>
-<xs:element name="Height6"  type="xs:double" nillable ="true"/>
-<xs:element name="Height7"  type="xs:double" nillable ="true"/>
-<xs:element name="Height8"  type="xs:double" nillable ="true"/>
-<xs:element name="Height9"  type="xs:double" nillable ="true"/>
-<xs:element name="Host"  type="xs:string"/>
-<xs:element name="HotWaterFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="HotWaterPressureDrop"  type="xs:double" nillable ="true"/>
-<xs:element name="Inclination"  type="xs:double" nillable ="true"/>
-<xs:element name="InletDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="InletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="Length1"  type="xs:double" nillable ="true"/>
-<xs:element name="Length2"  type="xs:double" nillable ="true"/>
-<xs:element name="Length3"  type="xs:double" nillable ="true"/>
-<xs:element name="Length4"  type="xs:double" nillable ="true"/>
-<xs:element name="Length5"  type="xs:double" nillable ="true"/>
-<xs:element name="Length6"  type="xs:double" nillable ="true"/>
-<xs:element name="Length7"  type="xs:double" nillable ="true"/>
-<xs:element name="Length8"  type="xs:double" nillable ="true"/>
-<xs:element name="Length9"  type="xs:double" nillable ="true"/>
-<xs:element name="Length10"  type="xs:double" nillable ="true"/>
-<xs:element name="Length11"  type="xs:double" nillable ="true"/>
-<xs:element name="Length12"  type="xs:double" nillable ="true"/>
-<xs:element name="Length13"  type="xs:double" nillable ="true"/>
-<xs:element name="Level"  type="xs:string"/>
-<xs:element name="LoadClassification"  type="xs:string"/>
-<xs:element name="MakeUpWaterFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="MakeUpWaterPressureDrop"  type="xs:double" nillable ="true"/>
-<xs:element name="MakeUpWaterRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="ManufacturerArticleNumber"  type="xs:string"/>
-<xs:element name="ManufacturerModelName"  type="xs:string"/>
-<xs:element name="ManufacturerModelNumber"  type="xs:string"/>
-<xs:element name="ManufacturerName"  type="xs:string"/>
-<xs:element name="ManufacturerYearofProduction"  type="xs:string"/>
-<xs:element name="Mark"  type="xs:string"/>
-<xs:element name="Material"  type="xs:string"/>
-<xs:element name="Max1PoleBreakers"  type="xs:int" nillable ="true"/>
-<xs:element name="MaxFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="MinFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="Model"  type="xs:string"/>
-<xs:element name="MotorHP"  type="xs:double" nillable ="true"/>
-<xs:element name="NumberOfFans"  type="xs:double" nillable ="true"/>
-<xs:element name="NumberOfPoles"  type="xs:int" nillable ="true"/>
-<xs:element name="ObjectClassName"  type="xs:string"/>
-<xs:element name="Offset"  type="xs:double" nillable ="true"/>
-<xs:element name="OmniclassNumber"  type="xs:string"/>
-<xs:element name="OmniclassTitle"  type="xs:string"/>
-<xs:element name="OutletDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="OutletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="OverallHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="OverallLength"  type="xs:double" nillable ="true"/>
-<xs:element name="OverallWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="PanelHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="Partshape"  type="xs:string"/>
-<xs:element name="PhaseCreated"  type="xs:string"/>
-<xs:element name="PipeRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="PrimaryNumberofPoles"  type="xs:int" nillable ="true"/>
-<xs:element name="PrimaryVoltage"  type="xs:double" nillable ="true"/>
-<xs:element name="PumpHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="PumpLength"  type="xs:double" nillable ="true"/>
-<xs:element name="PumpWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="Radius1"  type="xs:double" nillable ="true"/>
-<xs:element name="Radius2"  type="xs:double" nillable ="true"/>
-<xs:element name="Radius3"  type="xs:double" nillable ="true"/>
-<xs:element name="Radius4"  type="xs:double" nillable ="true"/>
-<xs:element name="Radius5"  type="xs:double" nillable ="true"/>
-<xs:element name="Radius6"  type="xs:double" nillable ="true"/>
-<xs:element name="Reference"  type="xs:string"/>
-<xs:element name="Reflectance"  type="xs:double" nillable ="true"/>
-<xs:element name="ReturnAirInletFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="ReturnAirInletHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="ReturnAirInletWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="ReturnDuctHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="ReturnDuctWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="Returnheight"  type="xs:double" nillable ="true"/>
-<xs:element name="Returnwidth"  type="xs:double" nillable ="true"/>
-<xs:element name="ReturnY_Offset"  type="xs:double" nillable ="true"/>
-<xs:element name="ReturnZ_Offset"  type="xs:double" nillable ="true"/>
-<xs:element name="Roughness"  type="xs:double" nillable ="true"/>
-<xs:element name="ShadingDeviceType"  type="xs:string"/>
-<xs:element name="SupplyAirInletDiameter"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirInletFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirInletHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirInletRadius"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirInletWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirOutletFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirOutletHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirOutletWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyAirPressureDrop"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyDuctHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyDuctWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="Supplyheight"  type="xs:double" nillable ="true"/>
-<xs:element name="Supplywidth"  type="xs:double" nillable ="true"/>
-<xs:element name="Supply_ReturnSymbols"  type="xs:boolean" nillable ="true"/>
-<xs:element name="SupplyY_Offset"  type="xs:double" nillable ="true"/>
-<xs:element name="SupplyZ_Offset"  type="xs:double" nillable ="true"/>
-<xs:element name="SystemClassification"  type="xs:string"/>
-<xs:element name="SystemName"  type="xs:string"/>
-<xs:element name="TiltRange"  type="xs:double" nillable ="true"/>
-<xs:element name="TotalConnected"  type="xs:double" nillable ="true"/>
-<xs:element name="TotalDemandFactor"  type="xs:double" nillable ="true"/>
-<xs:element name="TotalEstimatedDemand"  type="xs:double" nillable ="true"/>
-<xs:element name="TowerHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="TowerLength"  type="xs:double" nillable ="true"/>
-<xs:element name="TowerWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="TransformerHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="TransformerLength"  type="xs:double" nillable ="true"/>
-<xs:element name="TransformerWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="UniformatClassification"  type="xs:string"/>
-<xs:element name="Unitdepth"  type="xs:double" nillable ="true"/>
-<xs:element name="UnitHeight"  type="xs:double" nillable ="true"/>
-<xs:element name="UnitLength"  type="xs:double" nillable ="true"/>
-<xs:element name="UnitWidth"  type="xs:double" nillable ="true"/>
-<xs:element name="Visible1"  type="xs:boolean" nillable ="true"/>
-<xs:element name="Visible2"  type="xs:boolean" nillable ="true"/>
-<xs:element name="Voltage"  type="xs:double" nillable ="true"/>
-<xs:element name="WaterFlow"  type="xs:double" nillable ="true"/>
-<xs:element name="WaterPressure"  type="xs:double" nillable ="true"/>
-<xs:element name="Width1"  type="xs:double" nillable ="true"/>
-<xs:element name="Width2"  type="xs:double" nillable ="true"/>
-<xs:element name="Width3"  type="xs:double" nillable ="true"/>
-<xs:element name="Width4"  type="xs:double" nillable ="true"/>
-<xs:element name="Width5"  type="xs:double" nillable ="true"/>
-<xs:element name="Width6"  type="xs:double" nillable ="true"/>
-<xs:element name="Width7"  type="xs:double" nillable ="true"/>
 <xs:element name="SiteContextObjectType"  type="xs:string"/>
 <xs:element name="SimBuildingElementProxy_Name"  type="xs:string"/>
 <xs:element name="SimBuildingElementProxy_AzimuthAng"  type="xs:double" nillable ="true"/>
@@ -7188,6 +5978,8 @@
 <xs:element name="SimDaylightingAssembly_PerimeterBotWell"  type="xs:double" nillable ="true"/>
 <xs:element name="SimDaylightingAssembly_AreaBotWell"  type="xs:double" nillable ="true"/>
 <xs:element name="SimDaylightingAssembly_VisReflectWellWalls"  type="xs:double" nillable ="true"/>
+<xs:element name="OverallHeight"  type="xs:double" nillable ="true"/>
+<xs:element name="OverallWidth"  type="xs:double" nillable ="true"/>
 <xs:element name="DoorTypeTag"  type="xs:string"/>
 <xs:element name="DoorPanelOperation"  type="xs:string"/>
 <xs:element name="DoorConstructionType"  type="xs:string"/>
@@ -7235,10 +6027,6 @@
 <xs:element name="SimDoor_VertexXCoord_1_4"  type="simcore:doubleList"/>
 <xs:element name="SimDoor_VertexYCoord_1_4"  type="simcore:doubleList"/>
 <xs:element name="SimDoor_VertexZCoord_1_4"  type="simcore:doubleList"/>
-<xs:element name="ComplexFenestrationProperty_SolarAbsorbedLayers_Name"  type="xs:string"/>
-<xs:element name="ComplexFenestrationProperty_SolarAbsorbedLayers_FenestrationSurface"  type="xs:IDREF"/>
-<xs:element name="ComplexFenestrationProperty_SolarAbsorbedLayers_ConstructionName"  type="xs:IDREF"/>
-<xs:element name="ComplexFenestrationProperty_SolarAbsorbedLayers_Layer_1_5_SolarRadAbsorbedSchedName"  type="xs:IDREFS"/>
 <xs:element name="Airflow_MZone_Comp_HorzOpng_Name"  type="xs:string"/>
 <xs:element name="Airflow_MZone_Comp_HorzOpng_AirMassFlowCoefWhenOpngClosed"  type="xs:double" nillable ="true"/>
 <xs:element name="Airflow_MZone_Comp_HorzOpng_AirMassFlowExpWhenOpngClosed"  type="xs:double" nillable ="true"/>
@@ -7251,8 +6039,8 @@
 <xs:element name="DoorTypeSizeable"  type="xs:boolean" nillable ="true"/>
 <xs:element name="LiningProperties"  type="xs:IDREFS"/>
 <xs:element name="PanelProperties"  type="xs:IDREFS"/>
+<xs:element name="GeometricRepresentations"  type="xs:IDREFS"/>
 <xs:element name="AssemblyPlace"  type="xs:string"/>
-<xs:element name="InteriorOrExterior"  type="xs:string"/>
 <xs:element name="SimList_ConnectorObjectType_1_2">
 <xs:complexType>
 <xs:sequence maxOccurs="unbounded">
@@ -7366,16 +6154,25 @@
 <xs:element name="SimList_ZoneTermUnitListName"  type="xs:string"/>
 <xs:element name="SimList_ZoneTermUnitName_1_20"  type="xs:IDREFS"/>
 <xs:element name="ContainingBldgElementTypeDef"  type="xs:IDREF"/>
-<xs:element name="UnitsInContext"  type="xs:IDREF"/>
-<xs:element name="T24ProjectTeam"  type="xs:IDREFS"/>
-<xs:element name="ParentDesignAltForViews"  type="xs:IDREF"/>
-<xs:element name="DesAltViewDateTime"  type="xs:int" nillable ="true"/>
 <xs:element name="ProjectPhase"  type="xs:string"/>
 <xs:element name="ProjectClientOwner"  type="xs:IDREF"/>
 <xs:element name="ProjectArchitect"  type="xs:IDREF"/>
 <xs:element name="ProjectUnits"  type="xs:IDREFS"/>
 <xs:element name="_3DModelRepresentationContexts"  type="xs:IDREFS"/>
 <xs:element name="_2DModelRepresentationContexts"  type="xs:IDREFS"/>
+<xs:element name="UnitsInContext"  type="xs:IDREF"/>
+<xs:element name="WeatherLocationRegion"  type="xs:string"/>
+<xs:element name="WeatherLocationCity"  type="xs:string"/>
+<xs:element name="WeatherLocationID"  type="xs:string"/>
+<xs:element name="EnergyStd_MinsReqs"  type="xs:string"/>
+<xs:element name="Use_MinReg_Category_1"  type="xs:boolean" nillable ="true"/>
+<xs:element name="Use_MinReg_Category_2"  type="xs:boolean" nillable ="true"/>
+<xs:element name="Use_MinReg_Category_3"  type="xs:boolean" nillable ="true"/>
+<xs:element name="Use_MinReg_Category_4"  type="xs:boolean" nillable ="true"/>
+<xs:element name="Use_MinReg_Category_5"  type="xs:boolean" nillable ="true"/>
+<xs:element name="Use_MinReg_Category_6"  type="xs:boolean" nillable ="true"/>
+<xs:element name="Use_MinReg_Category_7"  type="xs:boolean" nillable ="true"/>
+<xs:element name="Use_MinReg_Category_8"  type="xs:boolean" nillable ="true"/>
 <xs:element name="RailingLength"  type="xs:double" nillable ="true"/>
 <xs:element name="RailingHeight"  type="xs:double" nillable ="true"/>
 <xs:element name="RailingGrossSideArea"  type="xs:double" nillable ="true"/>
@@ -7399,13 +6196,9 @@
 <xs:element name="SiteGrossLandArea"  type="xs:double" nillable ="true"/>
 <xs:element name="SiteExcavationCutVolume"  type="xs:double" nillable ="true"/>
 <xs:element name="SiteExcavationBackfillVolume"  type="xs:double" nillable ="true"/>
-<xs:element name="GeometricRepresentations"  type="xs:IDREFS"/>
 <xs:element name="SiteInSpatialContainer"  type="xs:IDREF"/>
 <xs:element name="LandTitleNumber"  type="xs:string"/>
 <xs:element name="SiteAddress"  type="xs:IDREF"/>
-<xs:element name="WeatherLocationRegion"  type="xs:string"/>
-<xs:element name="WeatherLocationCity"  type="xs:string"/>
-<xs:element name="WeatherLocationID"  type="xs:string"/>
 <xs:element name="WeatherLocationIDType"  type="xs:string"/>
 <xs:element name="DesignDays"  type="xs:IDREFS"/>
 <xs:element name="TimeZone"  type="xs:double" nillable ="true"/>
@@ -7563,11 +6356,6 @@
 <xs:element name="SimSlab_Vertex_1_120_X_Coord"  type="simcore:doubleList"/>
 <xs:element name="SimSlab_Vertex_1_120_Y_Coord"  type="simcore:doubleList"/>
 <xs:element name="SimSlab_Vertex_1_120_Z_Coord"  type="simcore:doubleList"/>
-<xs:element name="SurfaceProperty_SolarIncidentInside_Name"  type="xs:string"/>
-<xs:element name="SurfaceProperty_SolarIncidentInside_SurfName"  type="xs:IDREF"/>
-<xs:element name="SurfaceProperty_SolarIncidentInside_ConstructionName"  type="xs:IDREF"/>
-<xs:element name="SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName"  type="xs:IDREF"/>
-<xs:element name="T24ConstructStatus3"  type="xs:string"/>
 <xs:element name="SimSlab_VertexXCoord_1_10"  type="simcore:doubleList"/>
 <xs:element name="SimSlab_VertexYCoord_1_10"  type="simcore:doubleList"/>
 <xs:element name="SimSlab_VertexZCoord_1_10"  type="simcore:doubleList"/>
@@ -7587,20 +6375,16 @@
 <xs:element name="SurfProp_OtherSideCoeffs_MaxOtherSideTempLimit"  type="xs:double" nillable ="true"/>
 <xs:element name="SurfProp_OtherSideCondsModel_Name"  type="xs:string"/>
 <xs:element name="SurfProp_OtherSideCondsModel_TypeOfModeling"  type="xs:string"/>
-<xs:element name="T24CRRCAgedEmittance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CRRCAgedReflectance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CRRCAgedSRI"  type="xs:int" nillable ="true"/>
-<xs:element name="T24CRRCInitialEmittance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CRRCInitialReflectance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CRRCInitialSRI"  type="xs:int" nillable ="true"/>
-<xs:element name="T24CRRCProductID"  type="xs:string"/>
-<xs:element name="T24FieldAppliedCoating"  type="xs:int" nillable ="true"/>
-<xs:element name="T24RoofAgedSolarReflectance"  type="xs:double" nillable ="true"/>
-<xs:element name="T24RoofAgedThermalEmittance"  type="xs:double" nillable ="true"/>
 <xs:element name="SolarShadeObjectType"  type="xs:string"/>
-<xs:element name="Inclination.MeasureValue"  type="xs:double" nillable ="true"/>
-<xs:element name="TiltRange.MeasureValue"  type="xs:double" nillable ="true"/>
-<xs:element name="Roughness.MeasureValue"  type="xs:double" nillable ="true"/>
+<xs:element name="ShadingDeviceType"  type="xs:string"/>
+<xs:element name="Azimuth"  type="xs:double" nillable ="true"/>
+<xs:element name="Inclination"  type="xs:double" nillable ="true"/>
+<xs:element name="TiltRange"  type="xs:double" nillable ="true"/>
+<xs:element name="AverageSolarTransmittance"  type="xs:double" nillable ="true"/>
+<xs:element name="AverageVisibleTransmittance"  type="xs:double" nillable ="true"/>
+<xs:element name="Reflectance"  type="xs:double" nillable ="true"/>
+<xs:element name="Roughness"  type="xs:double" nillable ="true"/>
+<xs:element name="Color"  type="xs:string"/>
 <xs:element name="ShadedElement"  type="xs:IDREF"/>
 <xs:element name="SimSolarShade_Name"  type="xs:string"/>
 <xs:element name="SimSolarShade_WindOrDoorName"  type="xs:IDREF"/>
@@ -7614,7 +6398,6 @@
 <xs:element name="SimSolarShade_RightTiltAngFromWind_Door"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSolarShade_LeftDepth"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSolarShade_RightDepth"  type="xs:double" nillable ="true"/>
-<xs:element name="T24ConstructStatus2"  type="xs:string"/>
 <xs:element name="SimSolarShade_LeftDepthAsFracWind_DoorWidth"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSolarShade_RightDepthAsFracWind_DoorWidth"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSolarShade_TransSchedName"  type="xs:IDREF"/>
@@ -7673,104 +6456,7 @@
 <xs:element name="SpaceInSpatialContainer"  type="xs:IDREF"/>
 <xs:element name="AssociatedPlena"  type="xs:IDREFS"/>
 <xs:element name="AssociatedElements"  type="xs:IDREFS"/>
-<xs:element name="T24BaselineCommercialRefrigerationEPD"  type="xs:double" nillable ="true"/>
-<xs:element name="T24BaselineCommercialRefrigerationEquipmentScheduleReference"  type="xs:IDREF"/>
-<xs:element name="T24BaselineGasEquipmentPowerDensity"  type="xs:double" nillable ="true"/>
-<xs:element name="T24BaselineGasEquipmentScheduleReference"  type="xs:IDREF"/>
-<xs:element name="T24BaselineReceptaclePowerDensity"  type="xs:double" nillable ="true"/>
-<xs:element name="T24BaselineReceptacleScheduleReference"  type="xs:IDREF"/>
-<xs:element name="T24CommRefrigEPD"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CommercialRefrigerationEPDExceptionalCondition"  type="xs:int" nillable ="true"/>
-<xs:element name="T24CommRefrigEqmtSchedRef"  type="xs:IDREF"/>
-<xs:element name="T24CommRefrigLatentFraction"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CommRefrigLostFraction"  type="xs:double" nillable ="true"/>
-<xs:element name="T24CommRefrigRadFraction"  type="xs:double" nillable ="true"/>
-<xs:element name="T24EnvelopeStatus"  type="xs:string"/>
-<xs:element name="T24ExhaustAirChangesPerHour"  type="xs:double" nillable ="true"/>
-<xs:element name="T24ExhaustPerArea"  type="xs:double" nillable ="true"/>
-<xs:element name="T24ExhaustPerSpace"  type="xs:double" nillable ="true"/>
-<xs:element name="T24IntLightingSpecMethod"  type="xs:string"/>
-<xs:element name="T24KitchExhHoodDutyList">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24KitchExhHoodFlow"  type="simcore:doubleList"/>
-<xs:element name="T24KitchExhHoodLength"  type="simcore:doubleList"/>
-<xs:element name="T24KitchExhHoodStyleList">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24LabExhRateType"  type="xs:string"/>
-<xs:element name="T24LightingStatus"  type="xs:string"/>
-<xs:element name="T24MandLightCntrlCntRpt"  type="simcore:integerList"/>
-<xs:element name="T24MandLightCntrlDescRpt">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24MandLightCntrlRpt">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24MandLightCntrlAccepReqRpt">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24MandLightCntrlIsAutoShOffCntrlRpt">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24MandLightCntrlIsDayltngCntrlRpt">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24MandLightCntrlIsDmndRespCntrlRpt">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24MandLightCntrlIsManAreaCntrlRpt">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24MandLightCntrlIsMultLvlCntrlRpt"  type="simcore:integerList"/>
-<xs:element name="T24SkylightRqmtExcep"  type="xs:string"/>
-<xs:element name="T24SpaceFunction"  type="xs:string"/>
-<xs:element name="T24FuncSchedGrp"  type="xs:string"/>
-<xs:element name="T24InfiltrMthd">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
 <xs:element name="ZoneColorIndex"  type="xs:int" nillable ="true"/>
-<xs:element name="SHWFixtureSets"  type="xs:IDREFS"/>
 <xs:element name="ContainingBuilding"  type="xs:IDREF"/>
 <xs:element name="ZoneTemplates"  type="xs:IDREFS"/>
 <xs:element name="OverrideTemplates"  type="xs:IDREFS"/>
@@ -7799,9 +6485,9 @@
 <xs:element name="ClassRef_ZoneTypeOwner"  type="xs:IDREF"/>
 <xs:element name="ClassRef_SecurityTypeOwner"  type="xs:IDREF"/>
 <xs:element name="ZoneProp_UserViewFactors_bySurfName_ZoneName"  type="xs:IDREF"/>
-<xs:element name="ZoneProp_UserViewFactors_bySurfName_FromSurface_1_121"  type="xs:IDREFS"/>
-<xs:element name="ZoneProp_UserViewFactors_bySurfName_ToSurface_1_121"  type="xs:IDREFS"/>
-<xs:element name="ZoneProp_UserViewFactors_bySurfName_ViewFactor_1_121"  type="simcore:doubleList"/>
+<xs:element name="ZoneProp_UserViewFactors_bySurfName_FromSurface_1_121_"  type="xs:IDREFS"/>
+<xs:element name="ZoneProp_UserViewFactors_bySurfName_ToSurface_1_121_"  type="xs:IDREFS"/>
+<xs:element name="ZoneProp_UserViewFactors_bySurfName_ViewFactor_1_121_"  type="simcore:doubleList"/>
 <xs:element name="RmAirModelType_ZoneName"  type="xs:IDREF"/>
 <xs:element name="RmAirModelType_RoomAirModType"  type="xs:string"/>
 <xs:element name="RmAirModelType_AirTempCplngStrat"  type="xs:string"/>
@@ -7892,31 +6578,6 @@
 <xs:element name="SimSys_DemandSideOutNodeName"  type="xs:string"/>
 <xs:element name="SimSys_DemandSideInNodeNames"  type="xs:string"/>
 <xs:element name="SimSys_SupSideOutNodeNames"  type="xs:string"/>
-<xs:element name="T24AcceptTestReq"  type="xs:int" nillable ="true"/>
-<xs:element name="T24AirSysCntrlSysType"  type="xs:string"/>
-<xs:element name="T24DuctInsul"  type="xs:double" nillable ="true"/>
-<xs:element name="T24DuctLoc"  type="xs:string"/>
-<xs:element name="T24AirSysExhCtrlMthd"  type="xs:string"/>
-<xs:element name="T24AirSysExhSysType"  type="xs:string"/>
-<xs:element name="T24HERSDuctReq"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch03A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch04A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch05A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch09A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch15A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch17A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24AHUSubType"  type="xs:string"/>
-<xs:element name="T24Mch02A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch06A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch07A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch08A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch10A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch11A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch12A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch13A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch14A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch16A"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Mch18A"  type="xs:int" nillable ="true"/>
 <xs:element name="SimSys_OutdrAirEqmtListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_Branch_1_500_Name"  type="xs:IDREFS"/>
 <xs:element name="SimSys_FluidType"  type="xs:string"/>
@@ -7939,11 +6600,6 @@
 <xs:element name="SimSys_PlantLoopDemandCalcScheme"  type="xs:string"/>
 <xs:element name="SimSys_CommonPipeSim"  type="xs:string"/>
 <xs:element name="SimSys_PresSimType"  type="xs:string"/>
-<xs:element name="T24Brand"  type="xs:string"/>
-<xs:element name="T24CollectorType"  type="xs:string"/>
-<xs:element name="T24FluidSysCntrlType"  type="xs:string"/>
-<xs:element name="T24Manufacturer"  type="xs:string"/>
-<xs:element name="T24ModelNo"  type="xs:string"/>
 <xs:element name="SimSys_CndnsrEqmtOpSchemeName"  type="xs:IDREF"/>
 <xs:element name="SimSys_CondLoopTempSetPtNodeName"  type="xs:string"/>
 <xs:element name="SimSys_CndnsrLoopVol"  type="xs:double" nillable ="true"/>
@@ -7953,6 +6609,20 @@
 <xs:element name="SimSys_CndnsrSideConnListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_CndnsrDemandSideBranchListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_CndnsrDemandSideConnListName"  type="xs:IDREF"/>
+<xs:element name="SimSys_PipeThermalCond"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_PipeDensity"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_PipeSpecificHeat"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_PipeInnerDiameter"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_PipeOuterDiameter"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_DesignFlowRate"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_CircInletNode"  type="xs:string"/>
+<xs:element name="SimSys_CircOutletNode"  type="xs:string"/>
+<xs:element name="SimSys_ConvergCritInnerRadialIterationLoop"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_MaxIterationsinInnerRadialIterationLoop"  type="xs:int" nillable ="true"/>
+<xs:element name="SimSys_NumberSoilNodesinInnerRadialNearPipeMeshRegion"  type="xs:int" nillable ="true"/>
+<xs:element name="SimSys_RadialThicknessInnerRadialNearPipeMeshRegion"  type="xs:double" nillable ="true"/>
+<xs:element name="SimSys_NumberPipeSegmentsEnteredthisPipeCirc"  type="xs:int" nillable ="true"/>
+<xs:element name="SimSys_PipeSeg_1_6"  type="xs:IDREFS"/>
 <xs:element name="SimSys_RefrigCaseWalkinCaseAndWalkInListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_RefrigTransLoadOrTransLoadListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_RefrigCndnsrName"  type="xs:IDREF"/>
@@ -7993,7 +6663,7 @@
 <xs:element name="SimSys_MediumTempRefrigCaseorWalkinOrCaseAndWalkInListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_LowTempRefrigCaseorWalkinOrCaseAndWalkInListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_RefrigerationGasCoolerName"  type="xs:IDREF"/>
-<xs:element name="SimSys_HighPressCompressOrCompressListName"  type="xs:IDREF"/>
+<xs:element name="SimSys_HighPressureCompressOrCompressListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_LowPressureCompressOrCompressListName"  type="xs:IDREF"/>
 <xs:element name="SimSys_ReceiverPressure"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSys_SubcoolerEffectiveness"  type="xs:double" nillable ="true"/>
@@ -8001,23 +6671,6 @@
 <xs:element name="SimSys_MediumTempSuctionPipingZoneName"  type="xs:IDREF"/>
 <xs:element name="SimSys_SumUASuctionPipingforLowTempLoads"  type="xs:double" nillable ="true"/>
 <xs:element name="SimSys_LowTempSuctionPipingZoneName"  type="xs:IDREF"/>
-<xs:element name="T24DistribType"  type="xs:string"/>
-<xs:element name="T24Fluid"  type="xs:string"/>
-<xs:element name="T24ModelNumber"  type="xs:string"/>
-<xs:element name="T24SimModelName"  type="xs:string"/>
-<xs:element name="T24PipeExtraInsul"  type="xs:int" nillable ="true"/>
-<xs:element name="T24PipeLocs">
-<xs:complexType>
-<xs:sequence maxOccurs="unbounded">
-<xs:element ref="simcore:stringItem"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="T24RecircDhwType"  type="xs:string"/>
-<xs:element name="T24UseDefaultPipeLps"  type="xs:int" nillable ="true"/>
-<xs:element name="T24Version"  type="xs:string"/>
-<xs:element name="T24ExhCntrlMeth"  type="xs:string"/>
-<xs:element name="T24ExhSysType"  type="xs:string"/>
 <xs:element name="OperationType"  type="xs:string"/>
 <xs:element name="CapacityByWeight"  type="xs:double" nillable ="true"/>
 <xs:element name="CapacityByNumber"  type="xs:double" nillable ="true"/>
@@ -8151,10 +6804,6 @@
 <xs:element name="SimWindow_VertexXCoord_1_4"  type="simcore:doubleList"/>
 <xs:element name="SimWindow_VertexYCoord_1_4"  type="simcore:doubleList"/>
 <xs:element name="SimWindow_VertexZCoord_1_4"  type="simcore:doubleList"/>
-<xs:element name="T24EnableWindowShades"  type="xs:int" nillable ="true"/>
-<xs:element name="T24LeftFinTransmittanceOption"  type="xs:string"/>
-<xs:element name="T24OverhangTransmittanceOption"  type="xs:string"/>
-<xs:element name="T24RightFinTransmittanceOption"  type="xs:string"/>
 <xs:element name="WindowProp_AirflowControl_Name"  type="xs:IDREF"/>
 <xs:element name="WindowProp_AirflowControl_AirflowSrc"  type="xs:string"/>
 <xs:element name="WindowProp_AirflowControl_AirflowDestination"  type="xs:string"/>
