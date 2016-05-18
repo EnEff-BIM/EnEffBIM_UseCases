@@ -20,3 +20,6 @@ stat
 status
 stop
 success
+
+# Ignore some other files
+*.ifc.log
