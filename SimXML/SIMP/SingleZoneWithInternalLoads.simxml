@@ -18733,7 +18733,7 @@
 		<simres:FrameThickness>40</simres:FrameThickness>
 		<simres:FrameDepth>292.399999974092</simres:FrameDepth>
 		<simres:WinPanelProfiles>ID2036</simres:WinPanelProfiles>
-		<simres:WinFrameProfiles>ID2034 ID2035</simres:WinFrameProfiles>
+		<simres:WinFramefProfiles>ID2034 ID2035</simres:WinFrameProfiles>
 		<simres:OpeningProfilePath>ID2033</simres:OpeningProfilePath>
 	</SimWindowParams_Window_Default>
 	<SimWindowParams_Window_Default RefId="ID1171">
