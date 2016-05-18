@@ -4,3 +4,6 @@ This repository uses submodules, so you have to use the switch `--recursive` whe
 ```
 git clone --recursive https://github.com/EnEff-BIM/EnEffBIM_UseCases.git
 ```
+
+## License
+This repository is licensed under the [MIT license](https://github.com/EnEff-BIM/EnEffBIM_UseCases/blob/master/License.md)
