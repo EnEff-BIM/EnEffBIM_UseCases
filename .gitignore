@@ -14,11 +14,9 @@ dymosim.exe
 dymosim.exp
 dymosim.lib
 empty.txt
+modelDescription.xml
 request
 stat
 status
 stop
 success
-
-# ignore BuildingSystems public Beta
-BSgithub_Beta/
