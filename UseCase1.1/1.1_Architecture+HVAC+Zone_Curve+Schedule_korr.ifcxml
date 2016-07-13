@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ifcXML xmlns:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 IFC4_ADD1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1" xmlns="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1">
 <IfcProject GlobalId="0olGgR0sL7ePSmMc1aGvIp" Name="Projektnummer" LongName="Projektname" Phase="Projektstatus">
  <OwnerHistory id="i1" ChangeAction="nochange" CreationDate="1464945263">
@@ -182,7 +182,7 @@
                     <IfcSpaceHeater id="i3615" GlobalId="0LMbjl8XfFaui1YxJs_D1K" Name="EnEff_Radiator:600/800/100 D15:908064" ObjectType="600/800/100 D15" Tag="908064">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="2E9WoIV_z61hyu3KXBFSbO">
+                      <IfcRelNests GlobalId="1O4CxT2ZLA1PYnqNhxeBiI">
                        <RelatedObjects>
                         <IfcDistributionPort id="i3643" GlobalId="0D8zSVlwb129nKIVL41R1D" Name="InPort_908064" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
@@ -326,7 +326,7 @@
                     <IfcValve id="i3616" GlobalId="0LMbjl8XfFaui1YxJs_D1L" Name="EnEff_ThermostaticValve:DN15:908065" ObjectType="DN15" Tag="908065">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="0C2KIHchb2ewAlT7dhuZFH">
+                      <IfcRelNests GlobalId="0a4KdUrGv75RfSx14ZGAnp">
                        <RelatedObjects>
                         <IfcDistributionPort id="i3645" GlobalId="1ONJWl1d52L8X8r2boKWYA" Name="InPort_908065" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
@@ -17372,7 +17372,7 @@
                     <IfcPipeFitting id="i3619" GlobalId="0LMbjl8XfFaui1YxJs_D1I" Name="EnEff_PipeFittingBend:Standard:908070" ObjectType="Standard" Tag="908070">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="36R0MDlfj9kuyVpNoZiv8p">
+                      <IfcRelNests GlobalId="3zeHOFiyH7Jx4lIZqFJDGF">
                        <RelatedObjects>
                         <IfcDistributionPort id="i3650" GlobalId="0n4vYo35b5JRwqh3ut30Xs" Name="OutPort_908070" Description="Flow" FlowDirection="source">
                          <OwnerHistory xsi:nil="true" href="i1" />
@@ -19747,7 +19747,7 @@
                     <IfcPipeFitting id="i3665" GlobalId="0LMbjl8XfFaui1YxJs_D1O" Name="EnEff_PipeFittingBend:Standard:908076" ObjectType="Standard" Tag="908076">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="3FH3GI2cjBvPh_mG1B2RFr">
+                      <IfcRelNests GlobalId="2odZyJ4kLDrO8pCMSzkGk8">
                        <RelatedObjects>
                         <IfcDistributionPort id="i3693" GlobalId="3XmdSRzzv3lB8Tiv_ud98S" Name="InPort_908076" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
@@ -19805,7 +19805,7 @@
                     <IfcPipeFitting id="i3666" GlobalId="0LMbjl8XfFaui1YxJs_D1Q" Name="EnEff_PipeFittingBend:Standard:908078" ObjectType="Standard" Tag="908078">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="0Ct9VJBHrBNBez4c97RvMy">
+                      <IfcRelNests GlobalId="2r2DUCiyXEcwECvbqbh3Th">
                        <RelatedObjects>
                         <IfcDistributionPort id="i3697" GlobalId="38zA$CcY92twOA7yPJ6fOY" Name="InPort_908078" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
@@ -19892,7 +19892,7 @@
                 <IfcBoiler id="i3605" GlobalId="0LMbjl8XfFaui1YxJs_D66" Name="EnEff_Boiler:Standard:908018" ObjectType="Standard" Tag="908018">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3Fp_bHMEz278$cPCdNHhPy">
+                  <IfcRelNests GlobalId="0dc3qkWzf3svB10kp4OSjZ">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3622" GlobalId="13UhRNCnX1rAwEBMyxljsq" Name="OutPort_908018" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -20070,7 +20070,7 @@
                 <IfcPipeSegment id="i3606" GlobalId="0LMbjl8XfFaui1YxJs_D67" Name="Rohrtypen:Kupfer - Hartgelötet:908019" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908019">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0O9P8DxgD3XOpxCDPUcouW">
+                  <IfcRelNests GlobalId="3RP9urwEfFFOn5DTBqUvkG">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3626" GlobalId="39k06$HSP6gQ3WoRr0DirE" Name="OutPort_908019" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -20208,7 +20208,7 @@
                 <IfcPipeSegment id="i3607" GlobalId="0LMbjl8XfFaui1YxJs_D63" Name="Rohrtypen:Kupfer - Hartgelötet:908023" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908023">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1hyktUTR1CePcvFKHS4mo7">
+                  <IfcRelNests GlobalId="22o4pHY2r0LBx_MAxWHzHU">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3629" GlobalId="24xN6UJWf2rgxzSRr4jmX$" Name="InPort_908023" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -20346,7 +20346,7 @@
                 <IfcPipeSegment id="i3608" GlobalId="0LMbjl8XfFaui1YxJs_D6D" Name="Rohrtypen:Kupfer - Hartgelötet:908025" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908025">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0C6csZ0PH1i8BPVWYi_VD5">
+                  <IfcRelNests GlobalId="2q00gMtb52z8UfdiIxUoyc">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3632" GlobalId="1a5meud$DCPOBQD1vrPCFy" Name="OutPort_908025" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -20482,7 +20482,7 @@
                 <IfcPipeFitting id="i3609" GlobalId="0LMbjl8XfFaui1YxJs_D6F" Name="EnEff_PipeFittingBend:Standard:908027" ObjectType="Standard" Tag="908027">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3_yo8kRt58pgipL2JBV4pE">
+                  <IfcRelNests GlobalId="1bO3HKUQj9nwEm1PUBJz9R">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3631" GlobalId="3mJZc$z594IfdQpbAKBQkZ" Name="InPort_908027" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -20540,7 +20540,7 @@
                 <IfcValve id="i3610" GlobalId="0LMbjl8XfFaui1YxJs_D6B" Name="EnEff_Valve:Standard:908031" ObjectType="Standard" Tag="908031">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3KImrzY4bACBVzptgJgE0B">
+                  <IfcRelNests GlobalId="1lTJXnAU1DuBo3pm47ji1M">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3634" GlobalId="3ltNKoHIf0z9Ht63STWeJC" Name="OutPort_908031" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -34505,7 +34505,7 @@
                 <IfcPump id="i3611" GlobalId="0LMbjl8XfFaui1YxJs_D1q" Name="EnEff_Pump:Standard:908032" ObjectType="Standard" Tag="908032">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0xt3sPISH6GBItydQzr9tY">
+                  <IfcRelNests GlobalId="2GfEP2jLr9jwPtxiaWhcHx">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3638" GlobalId="2wSjSYCtb4WPUjI447iBdA" Name="OutPort_908032" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -43922,7 +43922,7 @@
                 <IfcPipeSegment id="i3612" GlobalId="0LMbjl8XfFaui1YxJs_D1r" Name="Rohrtypen:Kupfer - Hartgelötet:908033" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908033">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="01UOv9kWj0lQCmmqM0x8G9">
+                  <IfcRelNests GlobalId="3x7lnONCn38e347P2frVlW">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3636" GlobalId="3bOFjSFijCsRuvXt7zFT3d" Name="OutPort_908033" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -44060,7 +44060,7 @@
                 <IfcValve id="i3613" GlobalId="0LMbjl8XfFaui1YxJs_D1t" Name="EnEff_Valve:Standard:908035" ObjectType="Standard" Tag="908035">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0fiWgfbz16ffYX364nRvak">
+                  <IfcRelNests GlobalId="1kk7BHYu16hPBD4k5o$LiD">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3642" GlobalId="0FBAS7LcLDtPKCwYp5$KU4" Name="OutPort_908035" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -44116,7 +44116,7 @@
                 <IfcPipeSegment id="i3614" GlobalId="0LMbjl8XfFaui1YxJs_D1m" Name="Rohrtypen:Kupfer - Hartgelötet:908036" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908036">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0GEC_fFxD5QwGnoCpR15M1">
+                  <IfcRelNests GlobalId="1oOQZCeGj7uu5B7QUgCXoU">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3640" GlobalId="182Ex1C6b1w849aqtwAD$T" Name="OutPort_908036" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -44254,7 +44254,7 @@
                 <IfcPipeSegment id="i3652" GlobalId="0LMbjl8XfFaui1YxJs_D1o" Name="Rohrtypen:Kupfer - Hartgelötet:908038" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908038">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0u_Q$T4Cn7yvDshogCz3an">
+                  <IfcRelNests GlobalId="0I_JJp8I59yh48VE5VxpAu">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3672" GlobalId="0Wqjvtg_L4$gzwbFcZyfxD" Name="OutPort_908038" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -44392,7 +44392,7 @@
                 <IfcPipeSegment id="i3653" GlobalId="0LMbjl8XfFaui1YxJs_D1y" Name="Rohrtypen:Kupfer - Hartgelötet:908040" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908040">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2JqIz3UAP5jgUjZiyTdfFc">
+                  <IfcRelNests GlobalId="36XYWK0OnE2gh6bpeks_qp">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3673" GlobalId="2EuOFRboL2y9bL6adm_e5r" Name="InPort_908040" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -44528,7 +44528,7 @@
                 <IfcPipeFitting id="i3654" GlobalId="0LMbjl8XfFaui1YxJs_D1_" Name="EnEff_PipeFittingBend:Standard:908042" ObjectType="Standard" Tag="908042">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2C0maeLZj0wxXpKOdqH238">
+                  <IfcRelNests GlobalId="0KA9RFO8z6GvnHGYMUkN0y">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3674" GlobalId="1vp7wk2LL5Q8745mWke$lb" Name="OutPort_908042" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -44586,7 +44586,7 @@
                 <IfcTank id="i3655" GlobalId="0LMbjl8XfFaui1YxJs_D1u" Name="EnEff_Vessel:ND 25:908044" ObjectType="ND 25" Tag="908044">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2TBFZY0Kb8lQSHSmQ64w_V">
+                  <IfcRelNests GlobalId="0C364lhS1C2Bza$84ltW5u">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3675" GlobalId="0AUK5fjw907ALf6KzhfhUO" Name="InPort_908044" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -54610,7 +54610,7 @@
                 <IfcPipeSegment id="i3656" GlobalId="0LMbjl8XfFaui1YxJs_D1v" Name="Rohrtypen:Kupfer - Hartgelötet:908045" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908045">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3QZGznk2b0hOcsnW5el1B0">
+                  <IfcRelNests GlobalId="3FNW7DeVH4svXG2m9K2v0O">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3677" GlobalId="2qx8_WZ4j0GPPQ_pDcJDJA" Name="InPort_908045" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -54748,7 +54748,7 @@
                 <IfcPipeSegment id="i3657" GlobalId="0LMbjl8XfFaui1YxJs_D1x" Name="Rohrtypen:Kupfer - Hartgelötet:908047" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908047">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="38k2_beyXEOwPuOFws_vfd">
+                  <IfcRelNests GlobalId="1PStXu4Vz3EwWLzAsWrFSI">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3681" GlobalId="34vMM6wnjE7unBCQ1tZmGu" Name="InPort_908047" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -54886,7 +54886,7 @@
                 <IfcPipeSegment id="i3658" GlobalId="0LMbjl8XfFaui1YxJs_D1b" Name="Rohrtypen:Kupfer - Hartgelötet:908049" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908049">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1O2LPufBfC_9Wz$eDM4MzA">
+                  <IfcRelNests GlobalId="3Ae9czrSTABe4rmJUOJKWa">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3685" GlobalId="1JKhYNh354dxFsmODU1QSr" Name="InPort_908049" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -55022,7 +55022,7 @@
                 <IfcPipeFitting id="i3659" GlobalId="0LMbjl8XfFaui1YxJs_D1d" Name="EnEff_PipeFittingJunction:Standard:908051" ObjectType="Standard" Tag="908051">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2m0y4n4K58KQLbTgK4lvnH">
+                  <IfcRelNests GlobalId="3detvnc$XFNvdb31vu7pCG">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3687" GlobalId="22cPssZX11$hMkaVaeK0rO" Name="InPort_908051" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58128,7 +58128,7 @@
                 <IfcPipeSegment id="i3660" GlobalId="0LMbjl8XfFaui1YxJs_D1W" Name="Rohrtypen:Kupfer - Hartgelötet:908052" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908052">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2hv4uRBoP84QFv5C18y$3q">
+                  <IfcRelNests GlobalId="30MVVNdWPB9xRBYps956u5">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3689" GlobalId="3BdZR7tEf6zAVU_ULydQTs" Name="InPort_908052" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58266,7 +58266,7 @@
                 <IfcPipeFitting id="i3661" GlobalId="0LMbjl8XfFaui1YxJs_D1Z" Name="EnEff_PipeFittingBend:Standard:908055" ObjectType="Standard" Tag="908055">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2lG0xkKD5ApxM0HwcrrX9A">
+                  <IfcRelNests GlobalId="2szS8KiuL5ggmqHoQd3KZu">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3686" GlobalId="1ymbgu3sD6uw9vCyB2KBw_" Name="OutPort_908055" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58324,7 +58324,7 @@
                 <IfcPipeFitting id="i3662" GlobalId="0LMbjl8XfFaui1YxJs_D1j" Name="EnEff_PipeFittingBend:Standard:908057" ObjectType="Standard" Tag="908057">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2HmVc7U$f5FwAv8rCotVTd">
+                  <IfcRelNests GlobalId="0IqOulr258COcRfg70aX9K">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3680" GlobalId="0d4HNNeu51MxTsgicXECgc" Name="OutPort_908057" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58382,7 +58382,7 @@
                 <IfcPipeSegment id="i3617" GlobalId="0LMbjl8XfFaui1YxJs_D1M" Name="Rohrtypen:Kupfer - Hartgelötet:908066" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908066">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1k2g47t1DDFP0f9ppg6lVv">
+                  <IfcRelNests GlobalId="0Fk7Iy1sr8b8WpeAvMy9Pp">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3648" GlobalId="0IwyfZqU52NAVkJENbG4pp" Name="OutPort_908066" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58520,7 +58520,7 @@
                 <IfcPipeSegment id="i3618" GlobalId="0LMbjl8XfFaui1YxJs_D1G" Name="Rohrtypen:Kupfer - Hartgelötet:908068" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908068">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1DYhUF1kP2Vu_m_H_Wi4Md">
+                  <IfcRelNests GlobalId="3tlrx7_j1CEwW7TkZKuXOZ">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3649" GlobalId="1DlzREUMj6xvAzzcE$3MGN" Name="InPort_908068" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58656,7 +58656,7 @@
                 <IfcPipeSegment id="i3663" GlobalId="0LMbjl8XfFaui1YxJs_D1S" Name="Rohrtypen:Kupfer - Hartgelötet:908072" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908072">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2DDVzUwv5ClOlVmdn9$Hna">
+                  <IfcRelNests GlobalId="03j0BwvVDBWvI2slVYdZBC">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3695" GlobalId="13l1TEH9r3hfL2Z1h3mfIe" Name="InPort_908072" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58794,7 +58794,7 @@
                 <IfcPipeSegment id="i3664" GlobalId="0LMbjl8XfFaui1YxJs_D1U" Name="Rohrtypen:Kupfer - Hartgelötet:908074" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908074">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0yylcmfuPFSOlWDbdKV$L2">
+                  <IfcRelNests GlobalId="0moNKCLT53X9P1SqjrTuek">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3698" GlobalId="0fddgX5oL7YO7cSdJBASHb" Name="OutPort_908074" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -58930,7 +58930,7 @@
                 <IfcPipeFitting id="i3620" GlobalId="1tDPbdBSHCbuhhpltlQZsB" Name="EnEff_PipeFittingBend:Standard:1104309" ObjectType="Standard" Tag="1104309">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3zjU158Nf3hPouj$p$yLrB">
+                  <IfcRelNests GlobalId="2LPmAOHZv1G9p8kXYzuMFR">
                    <RelatedObjects>
                     <IfcDistributionPort id="i3627" GlobalId="3MvSjDFJzCox2qLC7__Ql2" Name="InPort_1104309" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
@@ -59847,7 +59847,7 @@
   </Units>
  </UnitsInContext>
  <Declares>
-  <IfcRelDeclares GlobalId="1WCtUEXbLFiBE_udAoURUM">
+  <IfcRelDeclares GlobalId="2uyVrKij55SB0Rvgm8i4lQ">
    <RelatedDefinitions>
     <IfcZone id="i3603" GlobalId="2ZBTbFX$f0mACYyGlm4STs" Name="1C:1123516" ObjectType="">
      <OwnerHistory xsi:nil="true" href="i1" />
