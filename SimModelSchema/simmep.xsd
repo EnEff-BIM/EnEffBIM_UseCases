@@ -115,6 +115,13 @@
 <xs:element ref="simmep:ElementType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simmep:PredefinedType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simmep:ControllerSchemeList" minOccurs="0" maxOccurs="1"/>
+
+<xs:element ref="simmep:ConstantSetpointValue" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simmep:ControllerType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simmep:ControllerVariable" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simmep:MeasuredVariable" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simmep:ScheduledSetpointValue" minOccurs="0" maxOccurs="1"/>
+
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -8793,7 +8800,12 @@
 
 	
 	<!-- Property elements -->
-	<xs:element name="Representation"  type="xs:IDREF"/>
+<xs:element name="ScheduledSetpointValue"  type="xs:IDREF"/>
+<xs:element name="ConstantSetpointValue"  type="xs:double" nillable ="true"/>
+<xs:element name="ControllerType"  type="xs:string"/>
+<xs:element name="ControllerVariable"  type="xs:string"/>
+<xs:element name="MeasuredVariable"  type="xs:string"/>
+<xs:element name="Representation"  type="xs:IDREF"/>
 <xs:element name="ApplicableOccurrence"  type="xs:string"/>
 <xs:element name="HasPropertySets"  type="xs:IDREFS"/>
 <xs:element name="RepresentationMaps"  type="xs:IDREFS"/>
