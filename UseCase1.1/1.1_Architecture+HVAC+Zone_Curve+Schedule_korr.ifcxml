@@ -20,7 +20,7 @@
       <IfcRelAggregates GlobalId="1rPbJEhTbDe8SltKGTcimY">
        <OwnerHistory xsi:nil="true" href="i1" />
        <RelatedObjects>
-        <IfcBuilding id="i3780" GlobalId="0olGgR0sL7ePSmMc1aGvIo" Name="" LongName="" CompositionType="element">
+        <IfcBuilding id="i3781" GlobalId="0olGgR0sL7ePSmMc1aGvIo" Name="" LongName="" CompositionType="element">
          <OwnerHistory xsi:nil="true" href="i1" />
          <IsDecomposedBy>
           <IfcRelAggregates GlobalId="27PCKGLxT4mxtV9cw6mgBW">
@@ -32,7 +32,7 @@
               <IfcRelAggregates GlobalId="11zlqEoYb6yx0osewctFmG">
                <OwnerHistory xsi:nil="true" href="i1" />
                <RelatedObjects>
-                <IfcSpace id="i3602" GlobalId="2ZBTbFX$f0mACYyGlm4STy" Name="00.01" LongName="VDI 6020" CompositionType="element" PredefinedType="space">
+                <IfcSpace id="i3605" GlobalId="2ZBTbFX$f0mACYyGlm4STy" Name="00.01" LongName="VDI 6020" CompositionType="element" PredefinedType="space">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="1wp3Jn_4123gCssLPI_BFn">
@@ -97,7 +97,7 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3601" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3604" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" id="i7" ContextIdentifier="Body" ContextType="Model" CoordinateSpaceDimension="0" TargetView="model_view" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="3000">
@@ -156,7 +156,7 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3604" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3607" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="3000">
@@ -179,12 +179,12 @@
                   <IfcRelContainedInSpatialStructure GlobalId="2qPspSAbbF_QpAaxm$qBN8">
                    <OwnerHistory xsi:nil="true" href="i1" />
                    <RelatedElements>
-                    <IfcSpaceHeater id="i3615" GlobalId="0LMbjl8XfFaui1YxJs_D1K" Name="EnEff_Radiator:600/800/100 D15:908064" ObjectType="600/800/100 D15" Tag="908064">
+                    <IfcSpaceHeater id="i3618" GlobalId="0LMbjl8XfFaui1YxJs_D1K" Name="EnEff_Radiator:600/800/100 D15:908064" ObjectType="600/800/100 D15" Tag="908064">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="1O4CxT2ZLA1PYnqNhxeBiI">
+                      <IfcRelNests GlobalId="1YeVYuK2H2duQGoUODPkk$">
                        <RelatedObjects>
-                        <IfcDistributionPort id="i3643" GlobalId="0D8zSVlwb129nKIVL41R1D" Name="InPort_908064" Description="Flow" FlowDirection="sink">
+                        <IfcDistributionPort id="i3646" GlobalId="0D8zSVlwb129nKIVL41R1D" Name="InPort_908064" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" id="i10">
@@ -206,7 +206,7 @@
                           </RelativePlacement>
                          </ObjectPlacement>
                         </IfcDistributionPort>
-                        <IfcDistributionPort id="i3692" GlobalId="1erT_ZevT3geJE5rild3l1" Name="OutPort_908064" Description="Flow" FlowDirection="source">
+                        <IfcDistributionPort id="i3694" GlobalId="1erT_ZevT3geJE5rild3l1" Name="OutPort_908064" Description="Flow" FlowDirection="source">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i10" />
@@ -225,17 +225,17 @@
                      <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i10" />
                      <Representation xsi:type="IfcProductDefinitionShape">
                       <Representations>
-                       <IfcShapeRepresentation id="i3707" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                       <IfcShapeRepresentation id="i3708" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcMappedItem>
-                          <MappingSource id="i3589">
+                          <MappingSource id="i3590">
                            <MappingOrigin>
                             <IfcAxis2Placement3D>
                              <Location xsi:nil="true" href="i2" />
                             </IfcAxis2Placement3D>
                            </MappingOrigin>
-                           <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3706" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                           <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3707" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                             <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                             <Items>
                              <IfcExtrudedAreaSolid Depth="2.00000000000489">
@@ -243,7 +243,7 @@
                                <Styles>
                                 <IfcPresentationStyleAssignment id="i11">
                                  <Styles>
-                                  <IfcSurfaceStyle id="i3710" Name="White Color" Side="both">
+                                  <IfcSurfaceStyle id="i3711" Name="White Color" Side="both">
                                    <Styles>
                                     <IfcSurfaceStyleRendering Transparency="0" ReflectanceMethod="notdefined">
                                      <SurfaceColour Red="0.917647058823529" Green="0.917647058823529" Blue="0.917647058823529" />
@@ -323,12 +323,12 @@
                       </Representations>
                      </Representation>
                     </IfcSpaceHeater>
-                    <IfcValve id="i3616" GlobalId="0LMbjl8XfFaui1YxJs_D1L" Name="EnEff_ThermostaticValve:DN15:908065" ObjectType="DN15" Tag="908065">
+                    <IfcValve id="i3619" GlobalId="0LMbjl8XfFaui1YxJs_D1L" Name="EnEff_ThermostaticValve:DN15:908065" ObjectType="DN15" Tag="908065">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="0a4KdUrGv75RfSx14ZGAnp">
+                      <IfcRelNests GlobalId="1FUTCjA5H4hAFqOaWEFfFk">
                        <RelatedObjects>
-                        <IfcDistributionPort id="i3645" GlobalId="1ONJWl1d52L8X8r2boKWYA" Name="InPort_908065" Description="Flow" FlowDirection="sink">
+                        <IfcDistributionPort id="i3648" GlobalId="1ONJWl1d52L8X8r2boKWYA" Name="InPort_908065" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" id="i15">
@@ -350,7 +350,7 @@
                           </RelativePlacement>
                          </ObjectPlacement>
                         </IfcDistributionPort>
-                        <IfcDistributionPort id="i3644" GlobalId="1rVK1i29PCtBz6z2Hh7scM" Name="OutPort_908065" Description="Flow" FlowDirection="source">
+                        <IfcDistributionPort id="i3647" GlobalId="1rVK1i29PCtBz6z2Hh7scM" Name="OutPort_908065" Description="Flow" FlowDirection="source">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i15" />
@@ -386,17 +386,17 @@
                      <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i15" />
                      <Representation xsi:type="IfcProductDefinitionShape">
                       <Representations>
-                       <IfcShapeRepresentation id="i3733" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                       <IfcShapeRepresentation id="i3734" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcMappedItem>
-                          <MappingSource id="i3590">
+                          <MappingSource id="i3591">
                            <MappingOrigin>
                             <IfcAxis2Placement3D>
                              <Location xsi:nil="true" href="i2" />
                             </IfcAxis2Placement3D>
                            </MappingOrigin>
-                           <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3732" RepresentationIdentifier="Body" RepresentationType="SurfaceModel">
+                           <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3733" RepresentationIdentifier="Body" RepresentationType="SurfaceModel">
                             <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                             <Items>
                              <IfcFaceBasedSurfaceModel>
@@ -17369,12 +17369,12 @@
                       </Representations>
                      </Representation>
                     </IfcValve>
-                    <IfcPipeFitting id="i3619" GlobalId="0LMbjl8XfFaui1YxJs_D1I" Name="EnEff_PipeFittingBend:Standard:908070" ObjectType="Standard" Tag="908070">
+                    <IfcPipeFitting id="i3622" GlobalId="0LMbjl8XfFaui1YxJs_D1I" Name="EnEff_PipeFittingBend:Standard:908070" ObjectType="Standard" Tag="908070">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="3zeHOFiyH7Jx4lIZqFJDGF">
+                      <IfcRelNests GlobalId="1k2_8leC9C$OxbPk7OZL_B">
                        <RelatedObjects>
-                        <IfcDistributionPort id="i3650" GlobalId="0n4vYo35b5JRwqh3ut30Xs" Name="OutPort_908070" Description="Flow" FlowDirection="source">
+                        <IfcDistributionPort id="i3653" GlobalId="0n4vYo35b5JRwqh3ut30Xs" Name="OutPort_908070" Description="Flow" FlowDirection="source">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1350">
@@ -17396,7 +17396,7 @@
                           </RelativePlacement>
                          </ObjectPlacement>
                         </IfcDistributionPort>
-                        <IfcDistributionPort id="i3647" GlobalId="28BUjYWj55CvUajQ0KGBMt" Name="InPort_908070" Description="Flow" FlowDirection="sink">
+                        <IfcDistributionPort id="i3650" GlobalId="28BUjYWj55CvUajQ0KGBMt" Name="InPort_908070" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1350" />
@@ -17415,7 +17415,7 @@
                      <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1350" />
                      <Representation xsi:type="IfcProductDefinitionShape">
                       <Representations>
-                       <IfcShapeRepresentation id="i3736" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                       <IfcShapeRepresentation id="i3737" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcMappedItem>
@@ -17425,7 +17425,7 @@
                              <Location xsi:nil="true" href="i2" />
                             </IfcAxis2Placement3D>
                            </MappingOrigin>
-                           <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3714" RepresentationIdentifier="Body" RepresentationType="Brep">
+                           <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3715" RepresentationIdentifier="Body" RepresentationType="Brep">
                             <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                             <Items>
                              <IfcFacetedBrep>
@@ -19744,12 +19744,12 @@
                       </Representations>
                      </Representation>
                     </IfcPipeFitting>
-                    <IfcPipeFitting id="i3665" GlobalId="0LMbjl8XfFaui1YxJs_D1O" Name="EnEff_PipeFittingBend:Standard:908076" ObjectType="Standard" Tag="908076">
+                    <IfcPipeFitting id="i3667" GlobalId="0LMbjl8XfFaui1YxJs_D1O" Name="EnEff_PipeFittingBend:Standard:908076" ObjectType="Standard" Tag="908076">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="2odZyJ4kLDrO8pCMSzkGk8">
+                      <IfcRelNests GlobalId="30l$a$SDP1OwH1HCNqxyOK">
                        <RelatedObjects>
-                        <IfcDistributionPort id="i3693" GlobalId="3XmdSRzzv3lB8Tiv_ud98S" Name="InPort_908076" Description="Flow" FlowDirection="sink">
+                        <IfcDistributionPort id="i3695" GlobalId="3XmdSRzzv3lB8Tiv_ud98S" Name="InPort_908076" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1530">
@@ -19771,7 +19771,7 @@
                           </RelativePlacement>
                          </ObjectPlacement>
                         </IfcDistributionPort>
-                        <IfcDistributionPort id="i3690" GlobalId="0AC1ggreb818c885BxhHn0" Name="OutPort_908076" Description="Flow" FlowDirection="source">
+                        <IfcDistributionPort id="i3692" GlobalId="0AC1ggreb818c885BxhHn0" Name="OutPort_908076" Description="Flow" FlowDirection="source">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1530" />
@@ -19790,7 +19790,7 @@
                      <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1530" />
                      <Representation xsi:type="IfcProductDefinitionShape">
                       <Representations>
-                       <IfcShapeRepresentation id="i3739" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                       <IfcShapeRepresentation id="i3740" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcMappedItem>
@@ -19802,12 +19802,12 @@
                       </Representations>
                      </Representation>
                     </IfcPipeFitting>
-                    <IfcPipeFitting id="i3666" GlobalId="0LMbjl8XfFaui1YxJs_D1Q" Name="EnEff_PipeFittingBend:Standard:908078" ObjectType="Standard" Tag="908078">
+                    <IfcPipeFitting id="i3668" GlobalId="0LMbjl8XfFaui1YxJs_D1Q" Name="EnEff_PipeFittingBend:Standard:908078" ObjectType="Standard" Tag="908078">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <IsNestedBy>
-                      <IfcRelNests GlobalId="2r2DUCiyXEcwECvbqbh3Th">
+                      <IfcRelNests GlobalId="1UcJ6_c3T6K8lMYfTnT23d">
                        <RelatedObjects>
-                        <IfcDistributionPort id="i3697" GlobalId="38zA$CcY92twOA7yPJ6fOY" Name="InPort_908078" Description="Flow" FlowDirection="sink">
+                        <IfcDistributionPort id="i3699" GlobalId="38zA$CcY92twOA7yPJ6fOY" Name="InPort_908078" Description="Flow" FlowDirection="sink">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1532">
@@ -19829,7 +19829,7 @@
                           </RelativePlacement>
                          </ObjectPlacement>
                         </IfcDistributionPort>
-                        <IfcDistributionPort id="i3696" GlobalId="2Xil3lEhfD9BFqriYw1NNK" Name="OutPort_908078" Description="Flow" FlowDirection="source">
+                        <IfcDistributionPort id="i3698" GlobalId="2Xil3lEhfD9BFqriYw1NNK" Name="OutPort_908078" Description="Flow" FlowDirection="source">
                          <OwnerHistory xsi:nil="true" href="i1" />
                          <ObjectPlacement xsi:type="IfcLocalPlacement">
                           <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1532" />
@@ -19848,7 +19848,7 @@
                      <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1532" />
                      <Representation xsi:type="IfcProductDefinitionShape">
                       <Representations>
-                       <IfcShapeRepresentation id="i3740" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                       <IfcShapeRepresentation id="i3741" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcMappedItem>
@@ -19889,12 +19889,12 @@
               <IfcRelContainedInSpatialStructure GlobalId="11zlqEoYb6yx0osesctFmG">
                <OwnerHistory xsi:nil="true" href="i1" />
                <RelatedElements>
-                <IfcBoiler id="i3605" GlobalId="0LMbjl8XfFaui1YxJs_D66" Name="EnEff_Boiler:Standard:908018" ObjectType="Standard" Tag="908018">
+                <IfcBoiler id="i3608" GlobalId="0LMbjl8XfFaui1YxJs_D66" Name="EnEff_Boiler:Standard:908018" ObjectType="Standard" Tag="908018">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0dc3qkWzf3svB10kp4OSjZ">
+                  <IfcRelNests GlobalId="2BjLo9eaT2XwIlkIPkDFr5">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3622" GlobalId="13UhRNCnX1rAwEBMyxljsq" Name="OutPort_908018" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3625" GlobalId="13UhRNCnX1rAwEBMyxljsq" Name="OutPort_908018" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1533">
@@ -19916,7 +19916,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3667" GlobalId="0fjWAxxg1F4vVZuvXm8O85" Name="InPort_908018" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3669" GlobalId="0fjWAxxg1F4vVZuvXm8O85" Name="InPort_908018" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1533" />
@@ -19933,17 +19933,17 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1533" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3701" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3702" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
-                      <MappingSource id="i3591">
+                      <MappingSource id="i3592">
                        <MappingOrigin>
                         <IfcAxis2Placement3D>
                          <Location xsi:nil="true" href="i2" />
                         </IfcAxis2Placement3D>
                        </MappingOrigin>
-                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3700" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3701" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcExtrudedAreaSolid Depth="1.99999999999931">
@@ -20067,12 +20067,12 @@
                   </Representations>
                  </Representation>
                 </IfcBoiler>
-                <IfcPipeSegment id="i3606" GlobalId="0LMbjl8XfFaui1YxJs_D67" Name="Rohrtypen:Kupfer - Hartgelötet:908019" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908019">
+                <IfcPipeSegment id="i3609" GlobalId="0LMbjl8XfFaui1YxJs_D67" Name="Rohrtypen:Kupfer - Hartgelötet:908019" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908019">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3RP9urwEfFFOn5DTBqUvkG">
+                  <IfcRelNests GlobalId="3OwQGKKhTDivvciTmqmC2g">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3626" GlobalId="39k06$HSP6gQ3WoRr0DirE" Name="OutPort_908019" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3629" GlobalId="39k06$HSP6gQ3WoRr0DirE" Name="OutPort_908019" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1535">
@@ -20092,7 +20092,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3623" GlobalId="2yEnEkU_bFLf4y3vG65EGa" Name="InPort_908019" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3626" GlobalId="2yEnEkU_bFLf4y3vG65EGa" Name="InPort_908019" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1535" />
@@ -20183,7 +20183,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1535" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3711" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3712" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="872.62350009716">
@@ -20205,12 +20205,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3607" GlobalId="0LMbjl8XfFaui1YxJs_D63" Name="Rohrtypen:Kupfer - Hartgelötet:908023" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908023">
+                <IfcPipeSegment id="i3610" GlobalId="0LMbjl8XfFaui1YxJs_D63" Name="Rohrtypen:Kupfer - Hartgelötet:908023" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908023">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="22o4pHY2r0LBx_MAxWHzHU">
+                  <IfcRelNests GlobalId="2TVU84uNjADBiqBzE2ClUu">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3629" GlobalId="24xN6UJWf2rgxzSRr4jmX$" Name="InPort_908023" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3632" GlobalId="24xN6UJWf2rgxzSRr4jmX$" Name="InPort_908023" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1536">
@@ -20230,7 +20230,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3628" GlobalId="2kDAeVuU1B6Ap2TEZbeGMs" Name="OutPort_908023" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3631" GlobalId="2kDAeVuU1B6Ap2TEZbeGMs" Name="OutPort_908023" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1536" />
@@ -20321,7 +20321,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1536" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3712" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3713" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="373.037533244192">
@@ -20343,12 +20343,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3608" GlobalId="0LMbjl8XfFaui1YxJs_D6D" Name="Rohrtypen:Kupfer - Hartgelötet:908025" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908025">
+                <IfcPipeSegment id="i3611" GlobalId="0LMbjl8XfFaui1YxJs_D6D" Name="Rohrtypen:Kupfer - Hartgelötet:908025" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908025">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2q00gMtb52z8UfdiIxUoyc">
+                  <IfcRelNests GlobalId="3oOjLEoBX0MBJr2urKc1Tt">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3632" GlobalId="1a5meud$DCPOBQD1vrPCFy" Name="OutPort_908025" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3635" GlobalId="1a5meud$DCPOBQD1vrPCFy" Name="OutPort_908025" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1537">
@@ -20368,7 +20368,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3621" GlobalId="3zs117w1n5lwSRidPGhKht" Name="InPort_908025" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3624" GlobalId="3zs117w1n5lwSRidPGhKht" Name="InPort_908025" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1537" />
@@ -20459,7 +20459,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1537" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3713" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3714" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="41.0000000000301">
@@ -20479,12 +20479,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeFitting id="i3609" GlobalId="0LMbjl8XfFaui1YxJs_D6F" Name="EnEff_PipeFittingBend:Standard:908027" ObjectType="Standard" Tag="908027">
+                <IfcPipeFitting id="i3612" GlobalId="0LMbjl8XfFaui1YxJs_D6F" Name="EnEff_PipeFittingBend:Standard:908027" ObjectType="Standard" Tag="908027">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1bO3HKUQj9nwEm1PUBJz9R">
+                  <IfcRelNests GlobalId="3KDNT6YUP9fwS$jvKf22kS">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3631" GlobalId="3mJZc$z594IfdQpbAKBQkZ" Name="InPort_908027" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3634" GlobalId="3mJZc$z594IfdQpbAKBQkZ" Name="InPort_908027" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1538">
@@ -20506,7 +20506,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3630" GlobalId="06yIBmpsz1bhDmJHqhcNYH" Name="OutPort_908027" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3633" GlobalId="06yIBmpsz1bhDmJHqhcNYH" Name="OutPort_908027" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1538" />
@@ -20525,7 +20525,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1538" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3715" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3716" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
@@ -20537,12 +20537,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeFitting>
-                <IfcValve id="i3610" GlobalId="0LMbjl8XfFaui1YxJs_D6B" Name="EnEff_Valve:Standard:908031" ObjectType="Standard" Tag="908031">
+                <IfcValve id="i3613" GlobalId="0LMbjl8XfFaui1YxJs_D6B" Name="EnEff_Valve:Standard:908031" ObjectType="Standard" Tag="908031">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1lTJXnAU1DuBo3pm47ji1M">
+                  <IfcRelNests GlobalId="17BfMGuM19a8TK0oRBeltw">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3634" GlobalId="3ltNKoHIf0z9Ht63STWeJC" Name="OutPort_908031" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3637" GlobalId="3ltNKoHIf0z9Ht63STWeJC" Name="OutPort_908031" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i1539">
@@ -20564,7 +20564,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3625" GlobalId="3H26X$ZNb3j9xaEHANie3F" Name="InPort_908031" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3628" GlobalId="3H26X$ZNb3j9xaEHANie3F" Name="InPort_908031" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1539" />
@@ -20583,7 +20583,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i1539" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3717" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3718" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
@@ -20593,7 +20593,7 @@
                          <Location xsi:nil="true" href="i2" />
                         </IfcAxis2Placement3D>
                        </MappingOrigin>
-                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3716" RepresentationIdentifier="Body" RepresentationType="Brep">
+                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3717" RepresentationIdentifier="Body" RepresentationType="Brep">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcFacetedBrep>
@@ -34502,12 +34502,12 @@
                   </Representations>
                  </Representation>
                 </IfcValve>
-                <IfcPump id="i3611" GlobalId="0LMbjl8XfFaui1YxJs_D1q" Name="EnEff_Pump:Standard:908032" ObjectType="Standard" Tag="908032">
+                <IfcPump id="i3614" GlobalId="0LMbjl8XfFaui1YxJs_D1q" Name="EnEff_Pump:Standard:908032" ObjectType="Standard" Tag="908032">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2GfEP2jLr9jwPtxiaWhcHx">
+                  <IfcRelNests GlobalId="2QD$EIMNDDjeS0TxLPAYF6">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3638" GlobalId="2wSjSYCtb4WPUjI447iBdA" Name="OutPort_908032" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3641" GlobalId="2wSjSYCtb4WPUjI447iBdA" Name="OutPort_908032" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2251">
@@ -34529,7 +34529,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3635" GlobalId="3rjNuVSynEi910t5EJPQAH" Name="InPort_908032" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3638" GlobalId="3rjNuVSynEi910t5EJPQAH" Name="InPort_908032" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2251" />
@@ -34548,17 +34548,17 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2251" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3703" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3704" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
-                      <MappingSource id="i3595">
+                      <MappingSource id="i3596">
                        <MappingOrigin>
                         <IfcAxis2Placement3D>
                          <Location xsi:nil="true" href="i2" />
                         </IfcAxis2Placement3D>
                        </MappingOrigin>
-                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3702" RepresentationIdentifier="Body" RepresentationType="Brep">
+                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3703" RepresentationIdentifier="Body" RepresentationType="Brep">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcFacetedBrep>
@@ -43919,12 +43919,12 @@
                   </Representations>
                  </Representation>
                 </IfcPump>
-                <IfcPipeSegment id="i3612" GlobalId="0LMbjl8XfFaui1YxJs_D1r" Name="Rohrtypen:Kupfer - Hartgelötet:908033" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908033">
+                <IfcPipeSegment id="i3615" GlobalId="0LMbjl8XfFaui1YxJs_D1r" Name="Rohrtypen:Kupfer - Hartgelötet:908033" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908033">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3x7lnONCn38e347P2frVlW">
+                  <IfcRelNests GlobalId="1$WX_o$Dr7tufdMiY6bXzb">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3636" GlobalId="3bOFjSFijCsRuvXt7zFT3d" Name="OutPort_908033" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3639" GlobalId="3bOFjSFijCsRuvXt7zFT3d" Name="OutPort_908033" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2861">
@@ -43944,7 +43944,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3633" GlobalId="0LbsoncorFSRGrJhKyDxZ_" Name="InPort_908033" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3636" GlobalId="0LbsoncorFSRGrJhKyDxZ_" Name="InPort_908033" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2861" />
@@ -44035,7 +44035,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2861" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3718" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3719" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="107.9565">
@@ -44057,12 +44057,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcValve id="i3613" GlobalId="0LMbjl8XfFaui1YxJs_D1t" Name="EnEff_Valve:Standard:908035" ObjectType="Standard" Tag="908035">
+                <IfcValve id="i3616" GlobalId="0LMbjl8XfFaui1YxJs_D1t" Name="EnEff_Valve:Standard:908035" ObjectType="Standard" Tag="908035">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1kk7BHYu16hPBD4k5o$LiD">
+                  <IfcRelNests GlobalId="1hjRzGMer4We13kP5fKFcH">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3642" GlobalId="0FBAS7LcLDtPKCwYp5$KU4" Name="OutPort_908035" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3645" GlobalId="0FBAS7LcLDtPKCwYp5$KU4" Name="OutPort_908035" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2862">
@@ -44082,7 +44082,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3639" GlobalId="35ZmY$W5bBaRpQ91fJqTQi" Name="InPort_908035" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3642" GlobalId="35ZmY$W5bBaRpQ91fJqTQi" Name="InPort_908035" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2862" />
@@ -44101,7 +44101,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2862" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3719" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3720" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
@@ -44113,12 +44113,12 @@
                   </Representations>
                  </Representation>
                 </IfcValve>
-                <IfcPipeSegment id="i3614" GlobalId="0LMbjl8XfFaui1YxJs_D1m" Name="Rohrtypen:Kupfer - Hartgelötet:908036" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908036">
+                <IfcPipeSegment id="i3617" GlobalId="0LMbjl8XfFaui1YxJs_D1m" Name="Rohrtypen:Kupfer - Hartgelötet:908036" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908036">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1oOQZCeGj7uu5B7QUgCXoU">
+                  <IfcRelNests GlobalId="37cgnSXiL0XPaKPMM4lW3$">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3640" GlobalId="182Ex1C6b1w849aqtwAD$T" Name="OutPort_908036" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3643" GlobalId="182Ex1C6b1w849aqtwAD$T" Name="OutPort_908036" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2864">
@@ -44138,7 +44138,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3637" GlobalId="33nBUduLz51hdNIeiWSZUB" Name="InPort_908036" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3640" GlobalId="33nBUduLz51hdNIeiWSZUB" Name="InPort_908036" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2864" />
@@ -44229,7 +44229,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2864" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3720" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3721" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="105.79957063376">
@@ -44251,12 +44251,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3652" GlobalId="0LMbjl8XfFaui1YxJs_D1o" Name="Rohrtypen:Kupfer - Hartgelötet:908038" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908038">
+                <IfcPipeSegment id="i3654" GlobalId="0LMbjl8XfFaui1YxJs_D1o" Name="Rohrtypen:Kupfer - Hartgelötet:908038" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908038">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0I_JJp8I59yh48VE5VxpAu">
+                  <IfcRelNests GlobalId="2pfs7GfNjDEhJmeLZxYqIu">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3672" GlobalId="0Wqjvtg_L4$gzwbFcZyfxD" Name="OutPort_908038" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3674" GlobalId="0Wqjvtg_L4$gzwbFcZyfxD" Name="OutPort_908038" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2865">
@@ -44276,7 +44276,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3669" GlobalId="0vdMh5TyD5qgqUP5WkfiUW" Name="InPort_908038" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3671" GlobalId="0vdMh5TyD5qgqUP5WkfiUW" Name="InPort_908038" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2865" />
@@ -44367,7 +44367,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2865" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3721" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3722" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="1202.45931892816">
@@ -44389,12 +44389,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3653" GlobalId="0LMbjl8XfFaui1YxJs_D1y" Name="Rohrtypen:Kupfer - Hartgelötet:908040" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908040">
+                <IfcPipeSegment id="i3655" GlobalId="0LMbjl8XfFaui1YxJs_D1y" Name="Rohrtypen:Kupfer - Hartgelötet:908040" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908040">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="36XYWK0OnE2gh6bpeks_qp">
+                  <IfcRelNests GlobalId="3FCfkOA9H9pBjon9ss4sXr">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3673" GlobalId="2EuOFRboL2y9bL6adm_e5r" Name="InPort_908040" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3675" GlobalId="2EuOFRboL2y9bL6adm_e5r" Name="InPort_908040" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2866">
@@ -44414,7 +44414,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3668" GlobalId="1T_nbEbPn98QDe1d1YDBg6" Name="OutPort_908040" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3670" GlobalId="1T_nbEbPn98QDe1d1YDBg6" Name="OutPort_908040" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2866" />
@@ -44505,7 +44505,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2866" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3722" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3723" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="41.0000000000165">
@@ -44525,12 +44525,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeFitting id="i3654" GlobalId="0LMbjl8XfFaui1YxJs_D1_" Name="EnEff_PipeFittingBend:Standard:908042" ObjectType="Standard" Tag="908042">
+                <IfcPipeFitting id="i3656" GlobalId="0LMbjl8XfFaui1YxJs_D1_" Name="EnEff_PipeFittingBend:Standard:908042" ObjectType="Standard" Tag="908042">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0KA9RFO8z6GvnHGYMUkN0y">
+                  <IfcRelNests GlobalId="2hS_p8qFz308bc9N6SjBba">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3674" GlobalId="1vp7wk2LL5Q8745mWke$lb" Name="OutPort_908042" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3676" GlobalId="1vp7wk2LL5Q8745mWke$lb" Name="OutPort_908042" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2867">
@@ -44552,7 +44552,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3671" GlobalId="2X$rUSZY14oBAxy3nTDwLW" Name="InPort_908042" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3673" GlobalId="2X$rUSZY14oBAxy3nTDwLW" Name="InPort_908042" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2867" />
@@ -44571,7 +44571,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2867" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3723" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3724" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
@@ -44583,12 +44583,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeFitting>
-                <IfcTank id="i3655" GlobalId="0LMbjl8XfFaui1YxJs_D1u" Name="EnEff_Vessel:ND 25:908044" ObjectType="ND 25" Tag="908044">
+                <IfcTank id="i3657" GlobalId="0LMbjl8XfFaui1YxJs_D1u" Name="EnEff_Vessel:ND 25:908044" ObjectType="ND 25" Tag="908044">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0C364lhS1C2Bza$84ltW5u">
+                  <IfcRelNests GlobalId="1JDVfONnH0X905J$p2g8fo">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3675" GlobalId="0AUK5fjw907ALf6KzhfhUO" Name="InPort_908044" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3677" GlobalId="0AUK5fjw907ALf6KzhfhUO" Name="InPort_908044" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i2868">
@@ -44612,17 +44612,17 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i2868" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3705" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3706" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
-                      <MappingSource id="i3597">
+                      <MappingSource id="i3598">
                        <MappingOrigin>
                         <IfcAxis2Placement3D>
                          <Location xsi:nil="true" href="i2" />
                         </IfcAxis2Placement3D>
                        </MappingOrigin>
-                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3704" RepresentationIdentifier="Body" RepresentationType="Brep">
+                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3705" RepresentationIdentifier="Body" RepresentationType="Brep">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcFacetedBrep>
@@ -54607,12 +54607,12 @@
                   </Representations>
                  </Representation>
                 </IfcTank>
-                <IfcPipeSegment id="i3656" GlobalId="0LMbjl8XfFaui1YxJs_D1v" Name="Rohrtypen:Kupfer - Hartgelötet:908045" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908045">
+                <IfcPipeSegment id="i3658" GlobalId="0LMbjl8XfFaui1YxJs_D1v" Name="Rohrtypen:Kupfer - Hartgelötet:908045" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908045">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3FNW7DeVH4svXG2m9K2v0O">
+                  <IfcRelNests GlobalId="0MTOmmUbj6HvSYMDREeWN$">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3677" GlobalId="2qx8_WZ4j0GPPQ_pDcJDJA" Name="InPort_908045" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3679" GlobalId="2qx8_WZ4j0GPPQ_pDcJDJA" Name="InPort_908045" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3316">
@@ -54632,7 +54632,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3676" GlobalId="07NjgznqD5swTueWH3IjlR" Name="OutPort_908045" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3678" GlobalId="07NjgznqD5swTueWH3IjlR" Name="OutPort_908045" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3316" />
@@ -54723,7 +54723,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3316" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3724" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3725" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="38.1342435976294">
@@ -54745,12 +54745,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3657" GlobalId="0LMbjl8XfFaui1YxJs_D1x" Name="Rohrtypen:Kupfer - Hartgelötet:908047" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908047">
+                <IfcPipeSegment id="i3659" GlobalId="0LMbjl8XfFaui1YxJs_D1x" Name="Rohrtypen:Kupfer - Hartgelötet:908047" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908047">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="1PStXu4Vz3EwWLzAsWrFSI">
+                  <IfcRelNests GlobalId="2Fwc4mciX2UvlVAOb87BZQ">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3681" GlobalId="34vMM6wnjE7unBCQ1tZmGu" Name="InPort_908047" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3683" GlobalId="34vMM6wnjE7unBCQ1tZmGu" Name="InPort_908047" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3317">
@@ -54770,7 +54770,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3679" GlobalId="1ZwXL01SP6LgPm0ufh5D5q" Name="InPort_908047" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3681" GlobalId="1ZwXL01SP6LgPm0ufh5D5q" Name="InPort_908047" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3317" />
@@ -54861,7 +54861,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3317" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3725" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3726" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="172.379809950296">
@@ -54883,12 +54883,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3658" GlobalId="0LMbjl8XfFaui1YxJs_D1b" Name="Rohrtypen:Kupfer - Hartgelötet:908049" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908049">
+                <IfcPipeSegment id="i3660" GlobalId="0LMbjl8XfFaui1YxJs_D1b" Name="Rohrtypen:Kupfer - Hartgelötet:908049" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908049">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3Ae9czrSTABe4rmJUOJKWa">
+                  <IfcRelNests GlobalId="06wVsJBjD7ox_sSyzRESvc">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3685" GlobalId="1JKhYNh354dxFsmODU1QSr" Name="InPort_908049" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3687" GlobalId="1JKhYNh354dxFsmODU1QSr" Name="InPort_908049" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3318">
@@ -54906,7 +54906,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3683" GlobalId="35gmfocYDCGOAS24WQBzzy" Name="InPort_908049" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3685" GlobalId="35gmfocYDCGOAS24WQBzzy" Name="InPort_908049" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3318" />
@@ -54997,7 +54997,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3318" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3726" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3727" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="298.634243597586">
@@ -55019,12 +55019,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeFitting id="i3659" GlobalId="0LMbjl8XfFaui1YxJs_D1d" Name="EnEff_PipeFittingJunction:Standard:908051" ObjectType="Standard" Tag="908051">
+                <IfcPipeFitting id="i3661" GlobalId="0LMbjl8XfFaui1YxJs_D1d" Name="EnEff_PipeFittingJunction:Standard:908051" ObjectType="Standard" Tag="908051">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3detvnc$XFNvdb31vu7pCG">
+                  <IfcRelNests GlobalId="0EOcWBgjD9CxnqlP3v6WaZ">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3687" GlobalId="22cPssZX11$hMkaVaeK0rO" Name="InPort_908051" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3689" GlobalId="22cPssZX11$hMkaVaeK0rO" Name="InPort_908051" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3319">
@@ -55046,7 +55046,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3684" GlobalId="3p76r9APPEO9afc_GmiX7Z" Name="OutPort_908051" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3686" GlobalId="3p76r9APPEO9afc_GmiX7Z" Name="OutPort_908051" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3319" />
@@ -55059,7 +55059,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3670" GlobalId="0pfczDFH56FBjyU4B4Tu7q" Name="OutPort_908051" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3672" GlobalId="0pfczDFH56FBjyU4B4Tu7q" Name="OutPort_908051" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3319" />
@@ -55078,17 +55078,17 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3319" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3728" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3729" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
-                      <MappingSource id="i3599">
+                      <MappingSource id="i3600">
                        <MappingOrigin>
                         <IfcAxis2Placement3D>
                          <Location xsi:nil="true" href="i2" />
                         </IfcAxis2Placement3D>
                        </MappingOrigin>
-                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3727" RepresentationIdentifier="Body" RepresentationType="Brep">
+                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3728" RepresentationIdentifier="Body" RepresentationType="Brep">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcFacetedBrep>
@@ -58125,12 +58125,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeFitting>
-                <IfcPipeSegment id="i3660" GlobalId="0LMbjl8XfFaui1YxJs_D1W" Name="Rohrtypen:Kupfer - Hartgelötet:908052" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908052">
+                <IfcPipeSegment id="i3662" GlobalId="0LMbjl8XfFaui1YxJs_D1W" Name="Rohrtypen:Kupfer - Hartgelötet:908052" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908052">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="30MVVNdWPB9xRBYps956u5">
+                  <IfcRelNests GlobalId="0Y3xPNZWH8Ex_loTMdwAeL">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3689" GlobalId="3BdZR7tEf6zAVU_ULydQTs" Name="InPort_908052" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3691" GlobalId="3BdZR7tEf6zAVU_ULydQTs" Name="InPort_908052" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3562">
@@ -58150,7 +58150,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3688" GlobalId="1Dk1wdTpP9NQvmiRkaZ_pT" Name="OutPort_908052" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3690" GlobalId="1Dk1wdTpP9NQvmiRkaZ_pT" Name="OutPort_908052" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3562" />
@@ -58241,7 +58241,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3562" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3729" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3730" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="945.534612630295">
@@ -58263,12 +58263,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeFitting id="i3661" GlobalId="0LMbjl8XfFaui1YxJs_D1Z" Name="EnEff_PipeFittingBend:Standard:908055" ObjectType="Standard" Tag="908055">
+                <IfcPipeFitting id="i3663" GlobalId="0LMbjl8XfFaui1YxJs_D1Z" Name="EnEff_PipeFittingBend:Standard:908055" ObjectType="Standard" Tag="908055">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2szS8KiuL5ggmqHoQd3KZu">
+                  <IfcRelNests GlobalId="1siL7ur4PAdx314hZWeaKp">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3686" GlobalId="1ymbgu3sD6uw9vCyB2KBw_" Name="OutPort_908055" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3688" GlobalId="1ymbgu3sD6uw9vCyB2KBw_" Name="OutPort_908055" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3563">
@@ -58290,7 +58290,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3682" GlobalId="1E1u2obBL6gR$1EmBQNmuG" Name="OutPort_908055" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3684" GlobalId="1E1u2obBL6gR$1EmBQNmuG" Name="OutPort_908055" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3563" />
@@ -58309,7 +58309,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3563" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3730" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3731" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
@@ -58321,12 +58321,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeFitting>
-                <IfcPipeFitting id="i3662" GlobalId="0LMbjl8XfFaui1YxJs_D1j" Name="EnEff_PipeFittingBend:Standard:908057" ObjectType="Standard" Tag="908057">
+                <IfcPipeFitting id="i3664" GlobalId="0LMbjl8XfFaui1YxJs_D1j" Name="EnEff_PipeFittingBend:Standard:908057" ObjectType="Standard" Tag="908057">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0IqOulr258COcRfg70aX9K">
+                  <IfcRelNests GlobalId="1Ls33o8c128e9mC$8MBt54">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3680" GlobalId="0d4HNNeu51MxTsgicXECgc" Name="OutPort_908057" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3682" GlobalId="0d4HNNeu51MxTsgicXECgc" Name="OutPort_908057" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3564">
@@ -58348,7 +58348,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3678" GlobalId="0LKfta5Pj8cxyY316mkQm2" Name="OutPort_908057" Description="Flow" FlowDirection="sourceandsink">
+                    <IfcDistributionPort id="i3680" GlobalId="0LKfta5Pj8cxyY316mkQm2" Name="OutPort_908057" Description="Flow" FlowDirection="sourceandsink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3564" />
@@ -58367,7 +58367,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3564" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3731" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3732" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
@@ -58379,12 +58379,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeFitting>
-                <IfcPipeSegment id="i3617" GlobalId="0LMbjl8XfFaui1YxJs_D1M" Name="Rohrtypen:Kupfer - Hartgelötet:908066" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908066">
+                <IfcPipeSegment id="i3620" GlobalId="0LMbjl8XfFaui1YxJs_D1M" Name="Rohrtypen:Kupfer - Hartgelötet:908066" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908066">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0Fk7Iy1sr8b8WpeAvMy9Pp">
+                  <IfcRelNests GlobalId="0LYDKCOC1EtRUahI2RCA9F">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3648" GlobalId="0IwyfZqU52NAVkJENbG4pp" Name="OutPort_908066" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3651" GlobalId="0IwyfZqU52NAVkJENbG4pp" Name="OutPort_908066" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3565">
@@ -58404,7 +58404,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3641" GlobalId="2XLnc9stf488nh0TkAdYr_" Name="InPort_908066" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3644" GlobalId="2XLnc9stf488nh0TkAdYr_" Name="InPort_908066" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3565" />
@@ -58495,7 +58495,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3565" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3734" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3735" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="669.369849892528">
@@ -58517,12 +58517,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3618" GlobalId="0LMbjl8XfFaui1YxJs_D1G" Name="Rohrtypen:Kupfer - Hartgelötet:908068" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908068">
+                <IfcPipeSegment id="i3621" GlobalId="0LMbjl8XfFaui1YxJs_D1G" Name="Rohrtypen:Kupfer - Hartgelötet:908068" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908068">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="3tlrx7_j1CEwW7TkZKuXOZ">
+                  <IfcRelNests GlobalId="1n_QVJhyvCjwtoPRVRD1Ag">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3649" GlobalId="1DlzREUMj6xvAzzcE$3MGN" Name="InPort_908068" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3652" GlobalId="1DlzREUMj6xvAzzcE$3MGN" Name="InPort_908068" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3566">
@@ -58542,7 +58542,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3646" GlobalId="18NApB_DXClvkQBXdGTHcl" Name="OutPort_908068" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3649" GlobalId="18NApB_DXClvkQBXdGTHcl" Name="OutPort_908068" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3566" />
@@ -58633,7 +58633,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3566" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3735" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3736" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="582.999999553018">
@@ -58653,12 +58653,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3663" GlobalId="0LMbjl8XfFaui1YxJs_D1S" Name="Rohrtypen:Kupfer - Hartgelötet:908072" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908072">
+                <IfcPipeSegment id="i3665" GlobalId="0LMbjl8XfFaui1YxJs_D1S" Name="Rohrtypen:Kupfer - Hartgelötet:908072" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908072">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="03j0BwvVDBWvI2slVYdZBC">
+                  <IfcRelNests GlobalId="1z6Vz7MCjDlw7qi6DedVUP">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3695" GlobalId="13l1TEH9r3hfL2Z1h3mfIe" Name="InPort_908072" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3697" GlobalId="13l1TEH9r3hfL2Z1h3mfIe" Name="InPort_908072" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3567">
@@ -58678,7 +58678,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3694" GlobalId="2b$CGVod56K8W$awYKqCjA" Name="OutPort_908072" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3696" GlobalId="2b$CGVod56K8W$awYKqCjA" Name="OutPort_908072" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3567" />
@@ -58769,7 +58769,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3567" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3737" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3738" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="505.546896424728">
@@ -58791,12 +58791,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeSegment id="i3664" GlobalId="0LMbjl8XfFaui1YxJs_D1U" Name="Rohrtypen:Kupfer - Hartgelötet:908074" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908074">
+                <IfcPipeSegment id="i3666" GlobalId="0LMbjl8XfFaui1YxJs_D1U" Name="Rohrtypen:Kupfer - Hartgelötet:908074" ObjectType="Rohrtypen:Kupfer - Hartgelötet:142438" Tag="908074">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="0moNKCLT53X9P1SqjrTuek">
+                  <IfcRelNests GlobalId="0lynsgTXD4AeOCdUKREtIM">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3698" GlobalId="0fddgX5oL7YO7cSdJBASHb" Name="OutPort_908074" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3700" GlobalId="0fddgX5oL7YO7cSdJBASHb" Name="OutPort_908074" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3568">
@@ -58816,7 +58816,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3691" GlobalId="3kPuR36O9DWPWDAfqZx32n" Name="InPort_908074" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3693" GlobalId="3kPuR36O9DWPWDAfqZx32n" Name="InPort_908074" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3568" />
@@ -58907,7 +58907,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3568" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3738" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3739" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="46.0000000000156">
@@ -58927,12 +58927,12 @@
                   </Representations>
                  </Representation>
                 </IfcPipeSegment>
-                <IfcPipeFitting id="i3620" GlobalId="1tDPbdBSHCbuhhpltlQZsB" Name="EnEff_PipeFittingBend:Standard:1104309" ObjectType="Standard" Tag="1104309">
+                <IfcPipeFitting id="i3623" GlobalId="1tDPbdBSHCbuhhpltlQZsB" Name="EnEff_PipeFittingBend:Standard:1104309" ObjectType="Standard" Tag="1104309">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsNestedBy>
-                  <IfcRelNests GlobalId="2LPmAOHZv1G9p8kXYzuMFR">
+                  <IfcRelNests GlobalId="0x93GOb$n9UhYNTaEXKNuE">
                    <RelatedObjects>
-                    <IfcDistributionPort id="i3627" GlobalId="3MvSjDFJzCox2qLC7__Ql2" Name="InPort_1104309" Description="Flow" FlowDirection="sink">
+                    <IfcDistributionPort id="i3630" GlobalId="3MvSjDFJzCox2qLC7__Ql2" Name="InPort_1104309" Description="Flow" FlowDirection="sink">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3569">
@@ -58952,7 +58952,7 @@
                       </RelativePlacement>
                      </ObjectPlacement>
                     </IfcDistributionPort>
-                    <IfcDistributionPort id="i3624" GlobalId="39CM7ORU903PFWa$liiSqS" Name="OutPort_1104309" Description="Flow" FlowDirection="source">
+                    <IfcDistributionPort id="i3627" GlobalId="39CM7ORU903PFWa$liiSqS" Name="OutPort_1104309" Description="Flow" FlowDirection="source">
                      <OwnerHistory xsi:nil="true" href="i1" />
                      <ObjectPlacement xsi:type="IfcLocalPlacement">
                       <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3569" />
@@ -58971,7 +58971,7 @@
                  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3569" />
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3741" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3742" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
@@ -58983,7 +58983,7 @@
                   </Representations>
                  </Representation>
                 </IfcPipeFitting>
-                <IfcWallStandardCase id="i3752" GlobalId="2ihFYl6O5D2gWs_3Zjewyt" Name="Basiswand:External Wall:1123462" ObjectType="Basiswand:External Wall:1121871" Tag="1123462" PredefinedType="notdefined">
+                <IfcWallStandardCase id="i3753" GlobalId="2ihFYl6O5D2gWs_3Zjewyt" Name="Basiswand:External Wall:1123462" ObjectType="Basiswand:External Wall:1121871" Tag="1123462" PredefinedType="notdefined">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="0lK37xYoHC08Oe5pnSZVPv">
@@ -59032,7 +59032,7 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3750" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
+                   <IfcShapeRepresentation id="i3751" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" id="i3573" ContextIdentifier="Axis" ContextType="Model" CoordinateSpaceDimension="0" TargetView="graph_view" />
                     <Items>
                      <IfcPolyline>
@@ -59043,7 +59043,7 @@
                      </IfcPolyline>
                     </Items>
                    </IfcShapeRepresentation>
-                   <IfcShapeRepresentation id="i3751" RepresentationIdentifier="Body" RepresentationType="Clipping">
+                   <IfcShapeRepresentation id="i3752" RepresentationIdentifier="Body" RepresentationType="Clipping">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcBooleanClippingResult Operator="difference">
@@ -59053,7 +59053,7 @@
                          <Styles>
                           <IfcPresentationStyleAssignment>
                            <Styles>
-                            <IfcSurfaceStyle id="i3753" Name="Facade Slab" Side="both">
+                            <IfcSurfaceStyle id="i3754" Name="Facade Slab" Side="both">
                              <Styles>
                               <IfcSurfaceStyleRendering Transparency="0" ReflectanceMethod="notdefined">
                                <SurfaceColour Red="0.313725490196078" Green="0.313725490196078" Blue="0.313725490196078" />
@@ -59113,7 +59113,7 @@
                   </Representations>
                  </Representation>
                 </IfcWallStandardCase>
-                <IfcWallStandardCase id="i3766" GlobalId="2ihFYl6O5D2gWs_3Zjewys" Name="Basiswand:Internal Wall:1123463" ObjectType="Basiswand:Internal Wall:1121872" Tag="1123463" PredefinedType="notdefined">
+                <IfcWallStandardCase id="i3767" GlobalId="2ihFYl6O5D2gWs_3Zjewys" Name="Basiswand:Internal Wall:1123463" ObjectType="Basiswand:Internal Wall:1121872" Tag="1123463" PredefinedType="notdefined">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="1hWdW2lx99LB_lInerYFzz">
@@ -59152,7 +59152,7 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3760" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
+                   <IfcShapeRepresentation id="i3761" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i3573" />
                     <Items>
                      <IfcPolyline>
@@ -59163,7 +59163,7 @@
                      </IfcPolyline>
                     </Items>
                    </IfcShapeRepresentation>
-                   <IfcShapeRepresentation id="i3761" RepresentationIdentifier="Body" RepresentationType="Clipping">
+                   <IfcShapeRepresentation id="i3762" RepresentationIdentifier="Body" RepresentationType="Clipping">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcBooleanClippingResult Operator="difference">
@@ -59173,7 +59173,7 @@
                          <Styles>
                           <IfcPresentationStyleAssignment id="i3576">
                            <Styles>
-                            <IfcSurfaceStyle id="i3767" Name="Cavity blocks" Side="both">
+                            <IfcSurfaceStyle id="i3768" Name="Cavity blocks" Side="both">
                              <Styles>
                               <IfcSurfaceStyleRendering Transparency="0" ReflectanceMethod="notdefined">
                                <SurfaceColour Red="0.705882352941177" Green="0.705882352941177" Blue="0.705882352941177" />
@@ -59232,7 +59232,7 @@
                   </Representations>
                  </Representation>
                 </IfcWallStandardCase>
-                <IfcWallStandardCase id="i3768" GlobalId="2ihFYl6O5D2gWs_3Zjewyv" Name="Basiswand:Internal Wall:1123464" ObjectType="Basiswand:Internal Wall:1121872" Tag="1123464" PredefinedType="notdefined">
+                <IfcWallStandardCase id="i3769" GlobalId="2ihFYl6O5D2gWs_3Zjewyv" Name="Basiswand:Internal Wall:1123464" ObjectType="Basiswand:Internal Wall:1121872" Tag="1123464" PredefinedType="notdefined">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="3tTUIiMo57guvpfxOkufI3">
@@ -59265,7 +59265,7 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3762" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
+                   <IfcShapeRepresentation id="i3763" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i3573" />
                     <Items>
                      <IfcPolyline>
@@ -59276,7 +59276,7 @@
                      </IfcPolyline>
                     </Items>
                    </IfcShapeRepresentation>
-                   <IfcShapeRepresentation id="i3763" RepresentationIdentifier="Body" RepresentationType="Clipping">
+                   <IfcShapeRepresentation id="i3764" RepresentationIdentifier="Body" RepresentationType="Clipping">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcBooleanClippingResult Operator="difference">
@@ -59329,7 +59329,7 @@
                   </Representations>
                  </Representation>
                 </IfcWallStandardCase>
-                <IfcWallStandardCase id="i3769" GlobalId="2ihFYl6O5D2gWs_3Zjewyu" Name="Basiswand:Internal Wall:1123465" ObjectType="Basiswand:Internal Wall:1121872" Tag="1123465" PredefinedType="notdefined">
+                <IfcWallStandardCase id="i3770" GlobalId="2ihFYl6O5D2gWs_3Zjewyu" Name="Basiswand:Internal Wall:1123465" ObjectType="Basiswand:Internal Wall:1121872" Tag="1123465" PredefinedType="notdefined">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="0AiK_pdwPCnfJl3S3RTkL6">
@@ -59364,7 +59364,7 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3764" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
+                   <IfcShapeRepresentation id="i3765" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i3573" />
                     <Items>
                      <IfcPolyline>
@@ -59375,7 +59375,7 @@
                      </IfcPolyline>
                     </Items>
                    </IfcShapeRepresentation>
-                   <IfcShapeRepresentation id="i3765" RepresentationIdentifier="Body" RepresentationType="Clipping">
+                   <IfcShapeRepresentation id="i3766" RepresentationIdentifier="Body" RepresentationType="Clipping">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcBooleanClippingResult Operator="difference">
@@ -59427,7 +59427,7 @@
                   </Representations>
                  </Representation>
                 </IfcWallStandardCase>
-                <IfcWindow id="i3759" GlobalId="2ihFYl6O5D2gWs_3Zjewyx" Name="Fenster 1-flg:Fenster 1-flg:1123466" ObjectType="Fenster 1-flg" Tag="1123466" OverallHeight="2499.99999999999" OverallWidth="2800" PredefinedType="window" PartitioningType="notdefined">
+                <IfcWindow id="i3760" GlobalId="2ihFYl6O5D2gWs_3Zjewyx" Name="Fenster 1-flg:Fenster 1-flg:1123466" ObjectType="Fenster 1-flg" Tag="1123466" OverallHeight="2499.99999999999" OverallWidth="2800" PredefinedType="window" PartitioningType="notdefined">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="2sytOvMnr5sRj5GCrYln2A">
@@ -59453,7 +59453,7 @@
                   </IfcRelDefinesByProperties>
                  </IsDefinedBy>
                  <ObjectPlacement xsi:type="IfcLocalPlacement">
-                  <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3756">
+                  <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3757">
                    <PlacementRelTo xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3578" />
                    <RelativePlacement>
                     <IfcAxis2Placement3D>
@@ -59471,17 +59471,17 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3773" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
+                   <IfcShapeRepresentation id="i3774" RepresentationIdentifier="Body" RepresentationType="MappedRepresentation">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcMappedItem>
-                      <MappingSource id="i3600">
+                      <MappingSource id="i3601">
                        <MappingOrigin>
                         <IfcAxis2Placement3D>
                          <Location xsi:nil="true" href="i2" />
                         </IfcAxis2Placement3D>
                        </MappingOrigin>
-                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3772" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                       <MappedRepresentation xsi:type="IfcShapeRepresentation" id="i3773" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                         <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                         <Items>
                          <IfcExtrudedAreaSolid Depth="60.0000000000075">
@@ -59489,7 +59489,7 @@
                            <Styles>
                             <IfcPresentationStyleAssignment>
                              <Styles>
-                              <IfcSurfaceStyle id="i3774" Name="Farbe Grau" Side="both">
+                              <IfcSurfaceStyle id="i3775" Name="Farbe Grau" Side="both">
                                <Styles>
                                 <IfcSurfaceStyleRendering Transparency="0" ReflectanceMethod="notdefined">
                                  <SurfaceColour Red="0.333333333333333" Green="0.333333333333333" Blue="0.333333333333333" />
@@ -59540,7 +59540,7 @@
                            <Styles>
                             <IfcPresentationStyleAssignment>
                              <Styles>
-                              <IfcSurfaceStyle id="i3775" Name="Glas" Side="both">
+                              <IfcSurfaceStyle id="i3776" Name="Glas" Side="both">
                                <Styles>
                                 <IfcSurfaceStyleRendering Transparency="0.75" ReflectanceMethod="notdefined">
                                  <SurfaceColour Red="0" Green="0.501960784313725" Blue="0.752941176470588" />
@@ -59611,7 +59611,7 @@
               <IfcRelContainedInSpatialStructure GlobalId="11zlqEoYb6yx0osesctFmU">
                <OwnerHistory xsi:nil="true" href="i1" />
                <RelatedElements>
-                <IfcSlab id="i3778" GlobalId="2ihFYl6O5D2gWs_3Zjewyy" Name="Geschossdecke:Floor:1123469" ObjectType="Geschossdecke:Floor" Tag="1123469" PredefinedType="floor">
+                <IfcSlab id="i3779" GlobalId="2ihFYl6O5D2gWs_3Zjewyy" Name="Geschossdecke:Floor:1123469" ObjectType="Geschossdecke:Floor" Tag="1123469" PredefinedType="floor">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="3LyKvi$GfCBxKvY1$sGReA">
@@ -59652,7 +59652,7 @@
                  </ObjectPlacement>
                  <Representation xsi:type="IfcProductDefinitionShape">
                   <Representations>
-                   <IfcShapeRepresentation id="i3777" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                   <IfcShapeRepresentation id="i3778" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
                     <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
                     <Items>
                      <IfcExtrudedAreaSolid Depth="209">
@@ -59660,7 +59660,7 @@
                        <Styles>
                         <IfcPresentationStyleAssignment>
                          <Styles>
-                          <IfcSurfaceStyle id="i3779" Name="Concrete Floor" Side="both">
+                          <IfcSurfaceStyle id="i3780" Name="Concrete Floor" Side="both">
                            <Styles>
                             <IfcSurfaceStyleRendering Transparency="0" ReflectanceMethod="notdefined">
                              <SurfaceColour Red="0.470588235294118" Green="0.470588235294118" Blue="0.470588235294118" />
@@ -59739,7 +59739,7 @@
   </IfcRelAggregates>
  </IsDecomposedBy>
  <RepresentationContexts>
-  <IfcGeometricRepresentationContext id="i3709" ContextType="Model" CoordinateSpaceDimension="3" Precision="0.01">
+  <IfcGeometricRepresentationContext id="i3710" ContextType="Model" CoordinateSpaceDimension="3" Precision="0.01">
    <WorldCoordinateSystem>
     <IfcAxis2Placement3D>
      <Location xsi:nil="true" href="i2" />
@@ -59847,10 +59847,20 @@
   </Units>
  </UnitsInContext>
  <Declares>
-  <IfcRelDeclares GlobalId="2uyVrKij55SB0Rvgm8i4lQ">
+  <IfcRelDeclares GlobalId="1ywdDUKvTAY8kGtjOUhyeR">
    <RelatedDefinitions>
-    <IfcZone id="i3603" GlobalId="2ZBTbFX$f0mACYyGlm4STs" Name="1C:1123516" ObjectType="">
+    <IfcZone id="i3606" GlobalId="2ZBTbFX$f0mACYyGlm4STs" Name="1C:1123516" ObjectType="">
      <OwnerHistory xsi:nil="true" href="i1" />
+     <IsDecomposedBy>
+      <IfcRelAggregates GlobalId="2ZBTbFX$f0mACYyGhm4STs">
+       <OwnerHistory xsi:nil="true" href="i1" />
+       <RelatedObjects>
+        <IfcGroup id="i3589" GlobalId="2ZBTbFX$f0mACYyGlm4STd" Name="ZoneList1" ObjectType="ZoneList">
+         <OwnerHistory xsi:nil="true" href="i1" />
+        </IfcGroup>
+       </RelatedObjects>
+      </IfcRelAggregates>
+     </IsDecomposedBy>
      <IsDefinedBy>
       <IfcRelDefinesByProperties GlobalId="0ut527$bzEmwAhxPYJkwMe">
        <OwnerHistory xsi:nil="true" href="i1" />
@@ -59870,13 +59880,14 @@
       </IfcRelDefinesByProperties>
      </IsDefinedBy>
     </IfcZone>
-    <IfcSystem id="i3699" GlobalId="0LMbjl8XfFaui1YxJs_D11" Name="H_Rücklauf 2" ObjectType="DS_HEATING_Ruecklauf">
+    <IfcSystem id="i3602" GlobalId="0LMbjl8XfFaui1YxJs_D11" Name="H_Rücklauf 2" ObjectType="DS_HEATING_Ruecklauf">
      <OwnerHistory xsi:nil="true" href="i1" />
     </IfcSystem>
-    <IfcSystem id="i3651" GlobalId="0LMbjl8XfFaui1YxJs_D10" Name="H_Vorlauf 2" ObjectType="DS_HEATING_Vorlauf">
+    <IfcSystem id="i3603" GlobalId="0LMbjl8XfFaui1YxJs_D10" Name="H_Vorlauf 2" ObjectType="DS_HEATING_Vorlauf">
      <OwnerHistory xsi:nil="true" href="i1" />
     </IfcSystem>
-    <IfcSpaceHeaterType id="i3708" GlobalId="03NsQSc3n8Ugdbp$xvXxyN" Name="600/800/100 D15" Tag="1057622" PredefinedType="radiator">
+    <IfcGroup xsi:nil="true" href="i3589" />
+    <IfcSpaceHeaterType id="i3709" GlobalId="03NsQSc3n8Ugdbp$xvXxyN" Name="600/800/100 D15" Tag="1057622" PredefinedType="radiator">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="3JyrNbkMXCBehwhtoOk70_" Name="Pset_SpaceHeaterTypeRadiator">
@@ -60011,16 +60022,16 @@
       </IfcPropertySet>
      </HasPropertySets>
      <RepresentationMaps>
-      <IfcRepresentationMap xsi:nil="true" href="i3589" />
+      <IfcRepresentationMap xsi:nil="true" href="i3590" />
      </RepresentationMaps>
     </IfcSpaceHeaterType>
-    <IfcValveType id="i3742" GlobalId="03NsQSc3n8Ugdbp$xvXuFb" Name="DN15" Tag="1056676" PredefinedType="regulating">
+    <IfcValveType id="i3743" GlobalId="03NsQSc3n8Ugdbp$xvXuFb" Name="DN15" Tag="1056676" PredefinedType="regulating">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="0Qj0ZveivBG8Oo$8sY3J7c" Name="PSim_Valve">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue id="i3592" Name="SystemeReference">
+        <IfcPropertySingleValue id="i3593" Name="SystemeReference">
          <NominalValue>
           <IfcText-wrapper></IfcText-wrapper>
          </NominalValue>
@@ -60030,7 +60041,7 @@
       <IfcPropertySet GlobalId="3BI1QBqGb8mfaTFM1s07Vy" Name="Pset_ValvePHistory">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue id="i3593" Name="MeasuredPressureDrop">
+        <IfcPropertySingleValue id="i3594" Name="MeasuredPressureDrop">
          <NominalValue>
           <IfcReal-wrapper>0</IfcReal-wrapper>
          </NominalValue>
@@ -60104,16 +60115,16 @@
       </IfcPropertySet>
      </HasPropertySets>
      <RepresentationMaps>
-      <IfcRepresentationMap xsi:nil="true" href="i3590" />
+      <IfcRepresentationMap xsi:nil="true" href="i3591" />
      </RepresentationMaps>
     </IfcValveType>
-    <IfcPipeFittingType id="i3743" GlobalId="2ihFYl6O5D2gWs_3Zjednf" Name="Standard" Tag="1112024" PredefinedType="bend">
+    <IfcPipeFittingType id="i3744" GlobalId="2ihFYl6O5D2gWs_3Zjednf" Name="Standard" Tag="1112024" PredefinedType="bend">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="3zDE2sMTL7MuZ52_rvLfco" Name="PSim_PipeFitting">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue id="i3598" Name="SystemReference">
+        <IfcPropertySingleValue id="i3599" Name="SystemReference">
          <NominalValue>
           <IfcText-wrapper></IfcText-wrapper>
          </NominalValue>
@@ -60123,7 +60134,7 @@
       <IfcPropertySet GlobalId="2KlpmTrUL8pvpEt0sno3of" Name="Pset_PipeFittingTypeCommon">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue id="i3596" Name="Reference">
+        <IfcPropertySingleValue id="i3597" Name="Reference">
          <NominalValue>
           <IfcIdentifier-wrapper></IfcIdentifier-wrapper>
          </NominalValue>
@@ -60205,7 +60216,7 @@
       <IfcRepresentationMap xsi:nil="true" href="i1531" />
      </RepresentationMaps>
     </IfcPipeFittingType>
-    <IfcBoilerType id="i3744" GlobalId="06m5ENao926Avl6KnCa2rd" Name="Standard" Tag="1128791" PredefinedType="water">
+    <IfcBoilerType id="i3745" GlobalId="06m5ENao926Avl6KnCa2rd" Name="Standard" Tag="1128791" PredefinedType="water">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="3tO_8hTpz5NBJOkianFE9T" Name="PSim_Controller">
@@ -60484,19 +60495,19 @@
       </IfcPropertySet>
      </HasPropertySets>
      <RepresentationMaps>
-      <IfcRepresentationMap xsi:nil="true" href="i3591" />
+      <IfcRepresentationMap xsi:nil="true" href="i3592" />
      </RepresentationMaps>
     </IfcBoilerType>
-    <IfcPipeSegmentType id="i3745" GlobalId="1UQxgjFRn7IR740odrfVLS" Name="Rohrtypen:Kupfer - Hartgelötet" ApplicableOccurrence="" Tag="142438" PredefinedType="notdefined">
+    <IfcPipeSegmentType id="i3746" GlobalId="1UQxgjFRn7IR740odrfVLS" Name="Rohrtypen:Kupfer - Hartgelötet" ApplicableOccurrence="" Tag="142438" PredefinedType="notdefined">
      <OwnerHistory xsi:nil="true" href="i1" />
     </IfcPipeSegmentType>
-    <IfcValveType id="i3746" GlobalId="2ihFYl6O5D2gWs_3Zjev83" Name="Standard" Tag="1120690" PredefinedType="isolating">
+    <IfcValveType id="i3747" GlobalId="2ihFYl6O5D2gWs_3Zjev83" Name="Standard" Tag="1120690" PredefinedType="isolating">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="0xmVFHuif1ReeFnHJpJm_q" Name="PSim_Valve">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue xsi:nil="true" href="i3592" />
+        <IfcPropertySingleValue xsi:nil="true" href="i3593" />
        </HasProperties>
       </IfcPropertySet>
       <IfcPropertySet GlobalId="1psRBoEoXE4O6L7WTeY7FX" Name="Pset_ValvePHistory">
@@ -60512,7 +60523,7 @@
           <IfcReal-wrapper>0.02</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
-        <IfcPropertySingleValue xsi:nil="true" href="i3593" />
+        <IfcPropertySingleValue xsi:nil="true" href="i3594" />
        </HasProperties>
       </IfcPropertySet>
       <IfcPropertySet GlobalId="02Y1Y571n5HugI2hO0aToV" Name="Pset_ValveTypeCommon">
@@ -60590,7 +60601,7 @@
       <IfcRepresentationMap xsi:nil="true" href="i2863" />
      </RepresentationMaps>
     </IfcValveType>
-    <IfcPumpType id="i3747" GlobalId="03NsQSc3n8Ugdbp$xvXvJ4" Name="Standard" Tag="1050757" PredefinedType="circulator">
+    <IfcPumpType id="i3748" GlobalId="03NsQSc3n8Ugdbp$xvXvJ4" Name="Standard" Tag="1050757" PredefinedType="circulator">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="0_Np3pGODE9BAAthG3LVmS" Name="Pset_PumpOccurrence">
@@ -60698,7 +60709,7 @@
       <IfcPropertySet GlobalId="1GkJsoJan35Q9a$iNuDfQ3" Name="PSim_Pump">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue id="i3594" Name="IsVariableSpeed">
+        <IfcPropertySingleValue id="i3595" Name="IsVariableSpeed">
          <NominalValue>
           <IfcBoolean-wrapper>true</IfcBoolean-wrapper>
          </NominalValue>
@@ -60748,7 +60759,7 @@
       <IfcPropertySet GlobalId="1QEdATDpr8e9uoU3nye__9" Name="PSim_Controller">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue xsi:nil="true" href="i3594" />
+        <IfcPropertySingleValue xsi:nil="true" href="i3595" />
         <IfcPropertySingleValue Name="ControllerType">
          <NominalValue>
           <IfcText-wrapper>OnOff</IfcText-wrapper>
@@ -60758,16 +60769,16 @@
       </IfcPropertySet>
      </HasPropertySets>
      <RepresentationMaps>
-      <IfcRepresentationMap xsi:nil="true" href="i3595" />
+      <IfcRepresentationMap xsi:nil="true" href="i3596" />
      </RepresentationMaps>
     </IfcPumpType>
-    <IfcTankType id="i3748" GlobalId="03NsQSc3n8Ugdbp$xvXxgm" Name="ND 25" Tag="1058545" PredefinedType="expansion">
+    <IfcTankType id="i3749" GlobalId="03NsQSc3n8Ugdbp$xvXxgm" Name="ND 25" Tag="1058545" PredefinedType="expansion">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="2G3nIAn0PF5gPUOhLKiyIq" Name="Pset_TankTypeCommon">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue xsi:nil="true" href="i3596" />
+        <IfcPropertySingleValue xsi:nil="true" href="i3597" />
         <IfcPropertySingleValue Name="Status">
          <NominalValue>
           <IfcLabel-wrapper></IfcLabel-wrapper>
@@ -60857,16 +60868,16 @@
       </IfcPropertySet>
      </HasPropertySets>
      <RepresentationMaps>
-      <IfcRepresentationMap xsi:nil="true" href="i3597" />
+      <IfcRepresentationMap xsi:nil="true" href="i3598" />
      </RepresentationMaps>
     </IfcTankType>
-    <IfcPipeFittingType id="i3749" GlobalId="2ihFYl6O5D2gWs_3Zjed0W" Name="Standard" Tag="1112977" PredefinedType="junction">
+    <IfcPipeFittingType id="i3750" GlobalId="2ihFYl6O5D2gWs_3Zjed0W" Name="Standard" Tag="1112977" PredefinedType="junction">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcPropertySet GlobalId="0Yk3BODYP3mgvOm5gG8AG8" Name="PSim_PipeFitting">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue xsi:nil="true" href="i3598" />
+        <IfcPropertySingleValue xsi:nil="true" href="i3599" />
        </HasProperties>
       </IfcPropertySet>
       <IfcPropertySet GlobalId="3pEQEF2N5BKg8WUrQESEtK" Name="Pset_PipeFittingTypeJunction">
@@ -60892,7 +60903,7 @@
       <IfcPropertySet GlobalId="0elesnt9P9tg_W9IUEwW37" Name="Pset_PipeFittingTypeCommon">
        <OwnerHistory xsi:nil="true" href="i1" />
        <HasProperties>
-        <IfcPropertySingleValue xsi:nil="true" href="i3596" />
+        <IfcPropertySingleValue xsi:nil="true" href="i3597" />
         <IfcPropertySingleValue Name="Status">
          <NominalValue>
           <IfcLabel-wrapper>NEW</IfcLabel-wrapper>
@@ -60937,16 +60948,16 @@
       </IfcPropertySet>
      </HasPropertySets>
      <RepresentationMaps>
-      <IfcRepresentationMap xsi:nil="true" href="i3599" />
+      <IfcRepresentationMap xsi:nil="true" href="i3600" />
      </RepresentationMaps>
     </IfcPipeFittingType>
-    <IfcWallType id="i3754" GlobalId="2ihFYl6O5D2gWs_3ZjevN_" Name="Basiswand:External Wall" Tag="1121871" PredefinedType="notdefined">
+    <IfcWallType id="i3755" GlobalId="2ihFYl6O5D2gWs_3ZjevN_" Name="Basiswand:External Wall" Tag="1121871" PredefinedType="notdefined">
      <OwnerHistory xsi:nil="true" href="i1" />
     </IfcWallType>
-    <IfcWallType id="i3770" GlobalId="2ihFYl6O5D2gWs_3ZjevNX" Name="Basiswand:Internal Wall" Tag="1121872" PredefinedType="notdefined">
+    <IfcWallType id="i3771" GlobalId="2ihFYl6O5D2gWs_3ZjevNX" Name="Basiswand:Internal Wall" Tag="1121872" PredefinedType="notdefined">
      <OwnerHistory xsi:nil="true" href="i1" />
     </IfcWallType>
-    <IfcWindowType id="i3776" GlobalId="2ihFYl6O5D2gWs_2tjew$S" Name="Fenster 1-flg" Tag="1121874" PredefinedType="window" PartitioningType="notdefined">
+    <IfcWindowType id="i3777" GlobalId="2ihFYl6O5D2gWs_2tjew$S" Name="Fenster 1-flg" Tag="1121874" PredefinedType="window" PartitioningType="notdefined">
      <OwnerHistory xsi:nil="true" href="i1" />
      <HasPropertySets>
       <IfcWindowLiningProperties GlobalId="2uvOccbuD228iaDnEYRr8c" Name="Fenster 1-flg:Fenster 1-flg:1123466">
@@ -60954,9 +60965,21 @@
       </IfcWindowLiningProperties>
      </HasPropertySets>
      <RepresentationMaps>
-      <IfcRepresentationMap xsi:nil="true" href="i3600" />
+      <IfcRepresentationMap xsi:nil="true" href="i3601" />
      </RepresentationMaps>
     </IfcWindowType>
+    <IfcSystem id="i3782" GlobalId="0LMbjl8XfFaui1YxJs_D11" Name="H_Full_System" ObjectType="DS_HEATING">
+     <OwnerHistory xsi:nil="true" href="i1" />
+     <IsDecomposedBy>
+      <IfcRelAggregates GlobalId="1PV_Zo0yP9v8zSorZWlgZV">
+       <OwnerHistory xsi:nil="true" href="i1" />
+       <RelatedObjects>
+        <IfcSystem xsi:nil="true" href="i3602" />
+        <IfcSystem xsi:nil="true" href="i3603" />
+       </RelatedObjects>
+      </IfcRelAggregates>
+     </IsDecomposedBy>
+    </IfcSystem>
    </RelatedDefinitions>
   </IfcRelDeclares>
  </Declares>
@@ -60964,46 +60987,43 @@
 
 <IfcPresentationLayerAssignment Name="M-AREA-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3601" />
+  <IfcShapeRepresentation xsi:nil="true" href="i3604" />
  </AssignedItems>
 </IfcPresentationLayerAssignment>
 
 <IfcRelAssignsToGroup GlobalId="2ZBTbFX$f0mACYyGhm4STs">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcSpace xsi:nil="true" href="i3602" />
+  <IfcSpace xsi:nil="true" href="i3605" />
  </RelatedObjects>
- <RelatingGroup xsi:type="IfcZone" xsi:nil="true" href="i3603" />
+ <RelatingGroup xsi:type="IfcZone" xsi:nil="true" href="i3606" />
 </IfcRelAssignsToGroup>
 
 <IfcPresentationLayerAssignment Name="A-AREA-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3604" />
+  <IfcShapeRepresentation xsi:nil="true" href="i3607" />
  </AssignedItems>
 </IfcPresentationLayerAssignment>
 
 <IfcRelAssignsToGroup GlobalId="3Brfe2UcHC5P05G90qE8vw">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcBoiler xsi:nil="true" href="i3605" />
-  <IfcPipeSegment xsi:nil="true" href="i3606" />
-  <IfcPipeSegment xsi:nil="true" href="i3607" />
-  <IfcPipeSegment xsi:nil="true" href="i3608" />
-  <IfcPipeFitting xsi:nil="true" href="i3609" />
-  <IfcValve xsi:nil="true" href="i3610" />
-  <IfcPump xsi:nil="true" href="i3611" />
-  <IfcPipeSegment xsi:nil="true" href="i3612" />
+  <IfcBoiler xsi:nil="true" href="i3608" />
+  <IfcPipeSegment xsi:nil="true" href="i3609" />
+  <IfcPipeSegment xsi:nil="true" href="i3610" />
+  <IfcPipeSegment xsi:nil="true" href="i3611" />
+  <IfcPipeFitting xsi:nil="true" href="i3612" />
   <IfcValve xsi:nil="true" href="i3613" />
-  <IfcPipeSegment xsi:nil="true" href="i3614" />
-  <IfcSpaceHeater xsi:nil="true" href="i3615" />
+  <IfcPump xsi:nil="true" href="i3614" />
+  <IfcPipeSegment xsi:nil="true" href="i3615" />
   <IfcValve xsi:nil="true" href="i3616" />
   <IfcPipeSegment xsi:nil="true" href="i3617" />
-  <IfcPipeSegment xsi:nil="true" href="i3618" />
-  <IfcPipeFitting xsi:nil="true" href="i3619" />
-  <IfcPipeFitting xsi:nil="true" href="i3620" />
-  <IfcDistributionPort xsi:nil="true" href="i3621" />
-  <IfcDistributionPort xsi:nil="true" href="i3622" />
-  <IfcDistributionPort xsi:nil="true" href="i3623" />
+  <IfcSpaceHeater xsi:nil="true" href="i3618" />
+  <IfcValve xsi:nil="true" href="i3619" />
+  <IfcPipeSegment xsi:nil="true" href="i3620" />
+  <IfcPipeSegment xsi:nil="true" href="i3621" />
+  <IfcPipeFitting xsi:nil="true" href="i3622" />
+  <IfcPipeFitting xsi:nil="true" href="i3623" />
   <IfcDistributionPort xsi:nil="true" href="i3624" />
   <IfcDistributionPort xsi:nil="true" href="i3625" />
   <IfcDistributionPort xsi:nil="true" href="i3626" />
@@ -61031,32 +61051,33 @@
   <IfcDistributionPort xsi:nil="true" href="i3648" />
   <IfcDistributionPort xsi:nil="true" href="i3649" />
   <IfcDistributionPort xsi:nil="true" href="i3650" />
+  <IfcDistributionPort xsi:nil="true" href="i3651" />
+  <IfcDistributionPort xsi:nil="true" href="i3652" />
+  <IfcDistributionPort xsi:nil="true" href="i3653" />
  </RelatedObjects>
- <RelatingGroup xsi:type="IfcSystem" xsi:nil="true" href="i3651" />
+ <RelatingGroup xsi:type="IfcSystem" xsi:nil="true" href="i3603" />
 </IfcRelAssignsToGroup>
 
 <IfcRelAssignsToGroup GlobalId="2meSUTVzD4LQKVgnTg9VLm">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcBoiler xsi:nil="true" href="i3605" />
-  <IfcPipeSegment xsi:nil="true" href="i3652" />
-  <IfcPipeSegment xsi:nil="true" href="i3653" />
-  <IfcPipeFitting xsi:nil="true" href="i3654" />
-  <IfcTank xsi:nil="true" href="i3655" />
-  <IfcPipeSegment xsi:nil="true" href="i3656" />
-  <IfcPipeSegment xsi:nil="true" href="i3657" />
+  <IfcBoiler xsi:nil="true" href="i3608" />
+  <IfcPipeSegment xsi:nil="true" href="i3654" />
+  <IfcPipeSegment xsi:nil="true" href="i3655" />
+  <IfcPipeFitting xsi:nil="true" href="i3656" />
+  <IfcTank xsi:nil="true" href="i3657" />
   <IfcPipeSegment xsi:nil="true" href="i3658" />
-  <IfcPipeFitting xsi:nil="true" href="i3659" />
+  <IfcPipeSegment xsi:nil="true" href="i3659" />
   <IfcPipeSegment xsi:nil="true" href="i3660" />
   <IfcPipeFitting xsi:nil="true" href="i3661" />
-  <IfcPipeFitting xsi:nil="true" href="i3662" />
-  <IfcSpaceHeater xsi:nil="true" href="i3615" />
-  <IfcPipeSegment xsi:nil="true" href="i3663" />
-  <IfcPipeSegment xsi:nil="true" href="i3664" />
-  <IfcPipeFitting xsi:nil="true" href="i3665" />
-  <IfcPipeFitting xsi:nil="true" href="i3666" />
-  <IfcDistributionPort xsi:nil="true" href="i3667" />
-  <IfcDistributionPort xsi:nil="true" href="i3668" />
+  <IfcPipeSegment xsi:nil="true" href="i3662" />
+  <IfcPipeFitting xsi:nil="true" href="i3663" />
+  <IfcPipeFitting xsi:nil="true" href="i3664" />
+  <IfcSpaceHeater xsi:nil="true" href="i3618" />
+  <IfcPipeSegment xsi:nil="true" href="i3665" />
+  <IfcPipeSegment xsi:nil="true" href="i3666" />
+  <IfcPipeFitting xsi:nil="true" href="i3667" />
+  <IfcPipeFitting xsi:nil="true" href="i3668" />
   <IfcDistributionPort xsi:nil="true" href="i3669" />
   <IfcDistributionPort xsi:nil="true" href="i3670" />
   <IfcDistributionPort xsi:nil="true" href="i3671" />
@@ -61087,19 +61108,20 @@
   <IfcDistributionPort xsi:nil="true" href="i3696" />
   <IfcDistributionPort xsi:nil="true" href="i3697" />
   <IfcDistributionPort xsi:nil="true" href="i3698" />
+  <IfcDistributionPort xsi:nil="true" href="i3699" />
+  <IfcDistributionPort xsi:nil="true" href="i3700" />
  </RelatedObjects>
- <RelatingGroup xsi:type="IfcSystem" xsi:nil="true" href="i3699" />
+ <RelatingGroup xsi:type="IfcSystem" xsi:nil="true" href="i3602" />
 </IfcRelAssignsToGroup>
 
 <IfcRelConnectsPorts GlobalId="3$p35CawrFJw5pp0C0J6SQ" Name="3kPuR36O9DWPWDAfqZx32n|1erT_ZevT3geJE5rild3l1" Description="Flow">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3691" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3692" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3693" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3694" />
 </IfcRelConnectsPorts>
 
 <IfcPresentationLayerAssignment Name="M-EQPM-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3700" />
   <IfcShapeRepresentation xsi:nil="true" href="i3701" />
   <IfcShapeRepresentation xsi:nil="true" href="i3702" />
   <IfcShapeRepresentation xsi:nil="true" href="i3703" />
@@ -61107,27 +61129,28 @@
   <IfcShapeRepresentation xsi:nil="true" href="i3705" />
   <IfcShapeRepresentation xsi:nil="true" href="i3706" />
   <IfcShapeRepresentation xsi:nil="true" href="i3707" />
+  <IfcShapeRepresentation xsi:nil="true" href="i3708" />
  </AssignedItems>
 </IfcPresentationLayerAssignment>
 
 <IfcRelAssociatesMaterial GlobalId="2VVCOdnCb7Jwx_F$k7$Kc5">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcSpaceHeaterType xsi:nil="true" href="i3708" />
-  <IfcSpaceHeater xsi:nil="true" href="i3615" />
+  <IfcSpaceHeaterType xsi:nil="true" href="i3709" />
+  <IfcSpaceHeater xsi:nil="true" href="i3618" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterial Name="White Color">
    <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
     <Representations>
      <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-      <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+      <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
       <Items>
        <IfcStyledItem>
         <Styles>
          <IfcPresentationStyleAssignment>
           <Styles>
-           <IfcSurfaceStyle xsi:nil="true" href="i3710" />
+           <IfcSurfaceStyle xsi:nil="true" href="i3711" />
           </Styles>
          </IfcPresentationStyleAssignment>
         </Styles>
@@ -61140,23 +61163,30 @@
  </RelatingMaterial>
 </IfcRelAssociatesMaterial>
 
+<IfcRelAssignsToGroup GlobalId="2ZBTbFX$f0mACYyGhm4STs">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatedObjects>
+  <IfcSpaceHeater xsi:nil="true" href="i3618" />
+ </RelatedObjects>
+ <RelatingGroup xsi:nil="true" href="i3589" />
+</IfcRelAssignsToGroup>
+
 <IfcRelDefinesByType GlobalId="04xfYMdmT0H8W$MyC0IU_5">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcSpaceHeater xsi:nil="true" href="i3615" />
+  <IfcSpaceHeater xsi:nil="true" href="i3618" />
  </RelatedObjects>
- <RelatingType xsi:type="IfcSpaceHeaterType" xsi:nil="true" href="i3708" />
+ <RelatingType xsi:type="IfcSpaceHeaterType" xsi:nil="true" href="i3709" />
 </IfcRelDefinesByType>
 
 <IfcRelConnectsPorts GlobalId="0eoRDaEtT4Kf46cy6JvfHG" Name="0D8zSVlwb129nKIVL41R1D|1rVK1i29PCtBz6z2Hh7scM" Description="Flow">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3643" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3644" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3646" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3647" />
 </IfcRelConnectsPorts>
 
 <IfcPresentationLayerAssignment Name="P-PIPE-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3711" />
   <IfcShapeRepresentation xsi:nil="true" href="i3712" />
   <IfcShapeRepresentation xsi:nil="true" href="i3713" />
   <IfcShapeRepresentation xsi:nil="true" href="i3714" />
@@ -61187,274 +61217,275 @@
   <IfcShapeRepresentation xsi:nil="true" href="i3739" />
   <IfcShapeRepresentation xsi:nil="true" href="i3740" />
   <IfcShapeRepresentation xsi:nil="true" href="i3741" />
+  <IfcShapeRepresentation xsi:nil="true" href="i3742" />
  </AssignedItems>
 </IfcPresentationLayerAssignment>
 
 <IfcRelDefinesByType GlobalId="1qVKz7u1b4$xTMTnjauYrR">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcValve xsi:nil="true" href="i3616" />
+  <IfcValve xsi:nil="true" href="i3619" />
  </RelatedObjects>
- <RelatingType xsi:type="IfcValveType" xsi:nil="true" href="i3742" />
+ <RelatingType xsi:type="IfcValveType" xsi:nil="true" href="i3743" />
 </IfcRelDefinesByType>
 
 <IfcRelConnectsPorts GlobalId="3a_l4w78b4H9x9YCA1516w" Name="1DlzREUMj6xvAzzcE$3MGN|0n4vYo35b5JRwqh3ut30Xs" Description="Flow">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3649" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3650" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3652" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3653" />
 </IfcRelConnectsPorts>
 
 <IfcRelDefinesByType GlobalId="0$4_AFDqDFSB_g58E_2ygz">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcPipeFitting xsi:nil="true" href="i3609" />
-  <IfcPipeFitting xsi:nil="true" href="i3654" />
-  <IfcPipeFitting xsi:nil="true" href="i3661" />
-  <IfcPipeFitting xsi:nil="true" href="i3662" />
-  <IfcPipeFitting xsi:nil="true" href="i3619" />
-  <IfcPipeFitting xsi:nil="true" href="i3665" />
-  <IfcPipeFitting xsi:nil="true" href="i3666" />
-  <IfcPipeFitting xsi:nil="true" href="i3620" />
+  <IfcPipeFitting xsi:nil="true" href="i3612" />
+  <IfcPipeFitting xsi:nil="true" href="i3656" />
+  <IfcPipeFitting xsi:nil="true" href="i3663" />
+  <IfcPipeFitting xsi:nil="true" href="i3664" />
+  <IfcPipeFitting xsi:nil="true" href="i3622" />
+  <IfcPipeFitting xsi:nil="true" href="i3667" />
+  <IfcPipeFitting xsi:nil="true" href="i3668" />
+  <IfcPipeFitting xsi:nil="true" href="i3623" />
  </RelatedObjects>
- <RelatingType xsi:type="IfcPipeFittingType" xsi:nil="true" href="i3743" />
+ <RelatingType xsi:type="IfcPipeFittingType" xsi:nil="true" href="i3744" />
 </IfcRelDefinesByType>
 
 <IfcRelConnectsPorts GlobalId="0YWg75yC9Bzf_BFBMLkM0q" Name="3BdZR7tEf6zAVU_ULydQTs|0AC1ggreb818c885BxhHn0" Description="Flow">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3689" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3690" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3691" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3692" />
 </IfcRelConnectsPorts>
 
 <IfcRelConnectsPorts GlobalId="1RCWSJbC10TOcuKSecpgUC" Name="13l1TEH9r3hfL2Z1h3mfIe|2Xil3lEhfD9BFqriYw1NNK" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3695" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3696" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="0C8SNtmXH3HeQk9XXrtR6Q" Name="3zs117w1n5lwSRidPGhKht|13UhRNCnX1rAwEBMyxljsq" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3621" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3622" />
-</IfcRelConnectsPorts>
-
-<IfcRelDefinesByType GlobalId="0qKQ1aXMXBlASAa6xJzB0f">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatedObjects>
-  <IfcBoiler xsi:nil="true" href="i3605" />
- </RelatedObjects>
- <RelatingType xsi:type="IfcBoilerType" xsi:nil="true" href="i3744" />
-</IfcRelDefinesByType>
-
-<IfcRelConnectsPorts GlobalId="3SxoEDkHjDyPVEyUWQ5ru0" Name="3H26X$ZNb3j9xaEHANie3F|39k06$HSP6gQ3WoRr0DirE" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3625" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3626" />
-</IfcRelConnectsPorts>
-
-<IfcRelDefinesByType GlobalId="1Zux6zcOnEThRCJtKYi4dl">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatedObjects>
-  <IfcPipeSegment xsi:nil="true" href="i3606" />
-  <IfcPipeSegment xsi:nil="true" href="i3607" />
-  <IfcPipeSegment xsi:nil="true" href="i3608" />
-  <IfcPipeSegment xsi:nil="true" href="i3612" />
-  <IfcPipeSegment xsi:nil="true" href="i3614" />
-  <IfcPipeSegment xsi:nil="true" href="i3652" />
-  <IfcPipeSegment xsi:nil="true" href="i3653" />
-  <IfcPipeSegment xsi:nil="true" href="i3656" />
-  <IfcPipeSegment xsi:nil="true" href="i3657" />
-  <IfcPipeSegment xsi:nil="true" href="i3658" />
-  <IfcPipeSegment xsi:nil="true" href="i3660" />
-  <IfcPipeSegment xsi:nil="true" href="i3617" />
-  <IfcPipeSegment xsi:nil="true" href="i3618" />
-  <IfcPipeSegment xsi:nil="true" href="i3663" />
-  <IfcPipeSegment xsi:nil="true" href="i3664" />
- </RelatedObjects>
- <RelatingType xsi:type="IfcPipeSegmentType" xsi:nil="true" href="i3745" />
-</IfcRelDefinesByType>
-
-<IfcRelConnectsPorts GlobalId="0tv5V9KWD028uy2zcVURa5" Name="3MvSjDFJzCox2qLC7__Ql2|2kDAeVuU1B6Ap2TEZbeGMs" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3627" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3628" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="0_aQzdOG10tvuPpFqvnQaV" Name="3mJZc$z594IfdQpbAKBQkZ|1a5meud$DCPOBQD1vrPCFy" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3631" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3632" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="3c$g9qufrDdRz3QNxVB1WW" Name="24xN6UJWf2rgxzSRr4jmX$|06yIBmpsz1bhDmJHqhcNYH" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3629" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3630" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="3DOmtWZjDCueDHHfAzdXGj" Name="0LbsoncorFSRGrJhKyDxZ_|3ltNKoHIf0z9Ht63STWeJC" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3633" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3634" />
-</IfcRelConnectsPorts>
-
-<IfcRelDefinesByType GlobalId="0dRcA34tz3Su5uhQnEwAxR">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatedObjects>
-  <IfcValve xsi:nil="true" href="i3610" />
-  <IfcValve xsi:nil="true" href="i3613" />
- </RelatedObjects>
- <RelatingType xsi:type="IfcValveType" xsi:nil="true" href="i3746" />
-</IfcRelDefinesByType>
-
-<IfcRelConnectsPorts GlobalId="3J$STeyH9FheQeFO1xzq4h" Name="33nBUduLz51hdNIeiWSZUB|2wSjSYCtb4WPUjI447iBdA" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3637" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3638" />
-</IfcRelConnectsPorts>
-
-<IfcRelDefinesByType GlobalId="0TKVF4L6DCsBSB3lvdGkKW">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatedObjects>
-  <IfcPump xsi:nil="true" href="i3611" />
- </RelatedObjects>
- <RelatingType xsi:type="IfcPumpType" xsi:nil="true" href="i3747" />
-</IfcRelDefinesByType>
-
-<IfcRelConnectsPorts GlobalId="0BvmvYonL5QhSpr0worR7x" Name="3rjNuVSynEi910t5EJPQAH|3bOFjSFijCsRuvXt7zFT3d" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3635" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3636" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="3hj$MRFO17mQ7TmJXNe9Wv" Name="2XLnc9stf488nh0TkAdYr_|0FBAS7LcLDtPKCwYp5$KU4" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3641" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3642" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="2lM51PliTE09O6pVebykA3" Name="35ZmY$W5bBaRpQ91fJqTQi|182Ex1C6b1w849aqtwAD$T" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3639" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3640" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="0iDd02bnv0fBlJfp4BRMAF" Name="2X$rUSZY14oBAxy3nTDwLW|0Wqjvtg_L4$gzwbFcZyfxD" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3671" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3672" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="30$jWNNtH1LvdDHxOOdQmv" Name="0fjWAxxg1F4vVZuvXm8O85|1T_nbEbPn98QDe1d1YDBg6" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3667" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3668" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="2RGHurhXvEKR7SeZZiADMW" Name="2EuOFRboL2y9bL6adm_e5r|1vp7wk2LL5Q8745mWke$lb" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3673" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3674" />
-</IfcRelConnectsPorts>
-
-<IfcRelDefinesByType GlobalId="1aqZpykmv7fgiVFWL5EQS2">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatedObjects>
-  <IfcTank xsi:nil="true" href="i3655" />
- </RelatedObjects>
- <RelatingType xsi:type="IfcTankType" xsi:nil="true" href="i3748" />
-</IfcRelDefinesByType>
-
-<IfcRelConnectsPorts GlobalId="0iE8xBZnfDYwyAv7lrcD14" Name="0AUK5fjw907ALf6KzhfhUO|07NjgznqD5swTueWH3IjlR" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3675" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3676" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="1_I3p3IarAewiZJurICVKz" Name="35gmfocYDCGOAS24WQBzzy|3p76r9APPEO9afc_GmiX7Z" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3683" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3684" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="3v_cy2$S13wv2WPGqykg52" Name="0vdMh5TyD5qgqUP5WkfiUW|0pfczDFH56FBjyU4B4Tu7q" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3669" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3670" />
-</IfcRelConnectsPorts>
-
-<IfcRelDefinesByType GlobalId="35W3C6uv14jx9_fBMxcxJh">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatedObjects>
-  <IfcPipeFitting xsi:nil="true" href="i3659" />
- </RelatedObjects>
- <RelatingType xsi:type="IfcPipeFittingType" xsi:nil="true" href="i3749" />
-</IfcRelDefinesByType>
-
-<IfcRelConnectsPorts GlobalId="0Wah9arxjABATpCgM1YfOR" Name="22cPssZX11$hMkaVaeK0rO|1Dk1wdTpP9NQvmiRkaZ_pT" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3687" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3688" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="3r4tTlOB13CO1ZCSYWiKho" Name="1JKhYNh354dxFsmODU1QSr|1ymbgu3sD6uw9vCyB2KBw_" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3685" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3686" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="0TbGSCbyf4efkR4rMy5S$F" Name="34vMM6wnjE7unBCQ1tZmGu|1E1u2obBL6gR$1EmBQNmuG" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3681" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3682" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="0J2SZygf98Pf2eedaQdnt$" Name="1ZwXL01SP6LgPm0ufh5D5q|0d4HNNeu51MxTsgicXECgc" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3679" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3680" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="3P$9P562r4WBX4FF66aEE9" Name="2qx8_WZ4j0GPPQ_pDcJDJA|0LKfta5Pj8cxyY316mkQm2" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3677" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3678" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="2gfEWsaszCOBCqApWhiAIS" Name="28BUjYWj55CvUajQ0KGBMt|0IwyfZqU52NAVkJENbG4pp" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3647" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3648" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="0aLn8$xw9AggjKf6IM2MuL" Name="1ONJWl1d52L8X8r2boKWYA|18NApB_DXClvkQBXdGTHcl" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3645" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3646" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="2bc5CCyOr47QmnacOtnH7T" Name="3XmdSRzzv3lB8Tiv_ud98S|2b$CGVod56K8W$awYKqCjA" Description="Flow">
- <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3693" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3694" />
-</IfcRelConnectsPorts>
-
-<IfcRelConnectsPorts GlobalId="0bAFeUuLD1TfpvnqDjewyh" Name="38zA$CcY92twOA7yPJ6fOY|0fddgX5oL7YO7cSdJBASHb" Description="Flow">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3697" />
  <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3698" />
 </IfcRelConnectsPorts>
 
+<IfcRelConnectsPorts GlobalId="0C8SNtmXH3HeQk9XXrtR6Q" Name="3zs117w1n5lwSRidPGhKht|13UhRNCnX1rAwEBMyxljsq" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3624" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3625" />
+</IfcRelConnectsPorts>
+
+<IfcRelDefinesByType GlobalId="0qKQ1aXMXBlASAa6xJzB0f">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatedObjects>
+  <IfcBoiler xsi:nil="true" href="i3608" />
+ </RelatedObjects>
+ <RelatingType xsi:type="IfcBoilerType" xsi:nil="true" href="i3745" />
+</IfcRelDefinesByType>
+
+<IfcRelConnectsPorts GlobalId="3SxoEDkHjDyPVEyUWQ5ru0" Name="3H26X$ZNb3j9xaEHANie3F|39k06$HSP6gQ3WoRr0DirE" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3628" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3629" />
+</IfcRelConnectsPorts>
+
+<IfcRelDefinesByType GlobalId="1Zux6zcOnEThRCJtKYi4dl">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatedObjects>
+  <IfcPipeSegment xsi:nil="true" href="i3609" />
+  <IfcPipeSegment xsi:nil="true" href="i3610" />
+  <IfcPipeSegment xsi:nil="true" href="i3611" />
+  <IfcPipeSegment xsi:nil="true" href="i3615" />
+  <IfcPipeSegment xsi:nil="true" href="i3617" />
+  <IfcPipeSegment xsi:nil="true" href="i3654" />
+  <IfcPipeSegment xsi:nil="true" href="i3655" />
+  <IfcPipeSegment xsi:nil="true" href="i3658" />
+  <IfcPipeSegment xsi:nil="true" href="i3659" />
+  <IfcPipeSegment xsi:nil="true" href="i3660" />
+  <IfcPipeSegment xsi:nil="true" href="i3662" />
+  <IfcPipeSegment xsi:nil="true" href="i3620" />
+  <IfcPipeSegment xsi:nil="true" href="i3621" />
+  <IfcPipeSegment xsi:nil="true" href="i3665" />
+  <IfcPipeSegment xsi:nil="true" href="i3666" />
+ </RelatedObjects>
+ <RelatingType xsi:type="IfcPipeSegmentType" xsi:nil="true" href="i3746" />
+</IfcRelDefinesByType>
+
+<IfcRelConnectsPorts GlobalId="0tv5V9KWD028uy2zcVURa5" Name="3MvSjDFJzCox2qLC7__Ql2|2kDAeVuU1B6Ap2TEZbeGMs" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3630" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3631" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="0_aQzdOG10tvuPpFqvnQaV" Name="3mJZc$z594IfdQpbAKBQkZ|1a5meud$DCPOBQD1vrPCFy" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3634" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3635" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="3c$g9qufrDdRz3QNxVB1WW" Name="24xN6UJWf2rgxzSRr4jmX$|06yIBmpsz1bhDmJHqhcNYH" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3632" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3633" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="3DOmtWZjDCueDHHfAzdXGj" Name="0LbsoncorFSRGrJhKyDxZ_|3ltNKoHIf0z9Ht63STWeJC" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3636" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3637" />
+</IfcRelConnectsPorts>
+
+<IfcRelDefinesByType GlobalId="0dRcA34tz3Su5uhQnEwAxR">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatedObjects>
+  <IfcValve xsi:nil="true" href="i3613" />
+  <IfcValve xsi:nil="true" href="i3616" />
+ </RelatedObjects>
+ <RelatingType xsi:type="IfcValveType" xsi:nil="true" href="i3747" />
+</IfcRelDefinesByType>
+
+<IfcRelConnectsPorts GlobalId="3J$STeyH9FheQeFO1xzq4h" Name="33nBUduLz51hdNIeiWSZUB|2wSjSYCtb4WPUjI447iBdA" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3640" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3641" />
+</IfcRelConnectsPorts>
+
+<IfcRelDefinesByType GlobalId="0TKVF4L6DCsBSB3lvdGkKW">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatedObjects>
+  <IfcPump xsi:nil="true" href="i3614" />
+ </RelatedObjects>
+ <RelatingType xsi:type="IfcPumpType" xsi:nil="true" href="i3748" />
+</IfcRelDefinesByType>
+
+<IfcRelConnectsPorts GlobalId="0BvmvYonL5QhSpr0worR7x" Name="3rjNuVSynEi910t5EJPQAH|3bOFjSFijCsRuvXt7zFT3d" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3638" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3639" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="3hj$MRFO17mQ7TmJXNe9Wv" Name="2XLnc9stf488nh0TkAdYr_|0FBAS7LcLDtPKCwYp5$KU4" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3644" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3645" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="2lM51PliTE09O6pVebykA3" Name="35ZmY$W5bBaRpQ91fJqTQi|182Ex1C6b1w849aqtwAD$T" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3642" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3643" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="0iDd02bnv0fBlJfp4BRMAF" Name="2X$rUSZY14oBAxy3nTDwLW|0Wqjvtg_L4$gzwbFcZyfxD" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3673" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3674" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="30$jWNNtH1LvdDHxOOdQmv" Name="0fjWAxxg1F4vVZuvXm8O85|1T_nbEbPn98QDe1d1YDBg6" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3669" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3670" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="2RGHurhXvEKR7SeZZiADMW" Name="2EuOFRboL2y9bL6adm_e5r|1vp7wk2LL5Q8745mWke$lb" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3675" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3676" />
+</IfcRelConnectsPorts>
+
+<IfcRelDefinesByType GlobalId="1aqZpykmv7fgiVFWL5EQS2">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatedObjects>
+  <IfcTank xsi:nil="true" href="i3657" />
+ </RelatedObjects>
+ <RelatingType xsi:type="IfcTankType" xsi:nil="true" href="i3749" />
+</IfcRelDefinesByType>
+
+<IfcRelConnectsPorts GlobalId="0iE8xBZnfDYwyAv7lrcD14" Name="0AUK5fjw907ALf6KzhfhUO|07NjgznqD5swTueWH3IjlR" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3677" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3678" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="1_I3p3IarAewiZJurICVKz" Name="35gmfocYDCGOAS24WQBzzy|3p76r9APPEO9afc_GmiX7Z" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3685" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3686" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="3v_cy2$S13wv2WPGqykg52" Name="0vdMh5TyD5qgqUP5WkfiUW|0pfczDFH56FBjyU4B4Tu7q" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3671" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3672" />
+</IfcRelConnectsPorts>
+
+<IfcRelDefinesByType GlobalId="35W3C6uv14jx9_fBMxcxJh">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatedObjects>
+  <IfcPipeFitting xsi:nil="true" href="i3661" />
+ </RelatedObjects>
+ <RelatingType xsi:type="IfcPipeFittingType" xsi:nil="true" href="i3750" />
+</IfcRelDefinesByType>
+
+<IfcRelConnectsPorts GlobalId="0Wah9arxjABATpCgM1YfOR" Name="22cPssZX11$hMkaVaeK0rO|1Dk1wdTpP9NQvmiRkaZ_pT" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3689" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3690" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="3r4tTlOB13CO1ZCSYWiKho" Name="1JKhYNh354dxFsmODU1QSr|1ymbgu3sD6uw9vCyB2KBw_" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3687" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3688" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="0TbGSCbyf4efkR4rMy5S$F" Name="34vMM6wnjE7unBCQ1tZmGu|1E1u2obBL6gR$1EmBQNmuG" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3683" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3684" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="0J2SZygf98Pf2eedaQdnt$" Name="1ZwXL01SP6LgPm0ufh5D5q|0d4HNNeu51MxTsgicXECgc" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3681" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3682" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="3P$9P562r4WBX4FF66aEE9" Name="2qx8_WZ4j0GPPQ_pDcJDJA|0LKfta5Pj8cxyY316mkQm2" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3679" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3680" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="2gfEWsaszCOBCqApWhiAIS" Name="28BUjYWj55CvUajQ0KGBMt|0IwyfZqU52NAVkJENbG4pp" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3650" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3651" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="0aLn8$xw9AggjKf6IM2MuL" Name="1ONJWl1d52L8X8r2boKWYA|18NApB_DXClvkQBXdGTHcl" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3648" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3649" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="2bc5CCyOr47QmnacOtnH7T" Name="3XmdSRzzv3lB8Tiv_ud98S|2b$CGVod56K8W$awYKqCjA" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3695" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3696" />
+</IfcRelConnectsPorts>
+
+<IfcRelConnectsPorts GlobalId="0bAFeUuLD1TfpvnqDjewyh" Name="38zA$CcY92twOA7yPJ6fOY|0fddgX5oL7YO7cSdJBASHb" Description="Flow">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3699" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3700" />
+</IfcRelConnectsPorts>
+
 <IfcRelConnectsPorts GlobalId="0rWn0nynvB4Pdsvf1LtEv6" Name="2yEnEkU_bFLf4y3vG65EGa|39CM7ORU903PFWa$liiSqS" Description="Flow">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3623" />
- <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3624" />
+ <RelatingPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3626" />
+ <RelatedPort xsi:type="IfcDistributionPort" xsi:nil="true" href="i3627" />
 </IfcRelConnectsPorts>
 
 <IfcPresentationLayerAssignment Name="A-WALL-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3750" />
   <IfcShapeRepresentation xsi:nil="true" href="i3751" />
-  <IfcShapeRepresentation id="i3757" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+  <IfcShapeRepresentation xsi:nil="true" href="i3752" />
+  <IfcShapeRepresentation id="i3758" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
    <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" href="i7" />
    <Items>
     <IfcExtrudedAreaSolid Depth="327">
@@ -61479,24 +61510,24 @@
 <IfcRelAssociatesMaterial GlobalId="1chOniNQ97rhAUy0D_RViU">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallStandardCase xsi:nil="true" href="i3752" />
+  <IfcWallStandardCase xsi:nil="true" href="i3753" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterialLayerSetUsage LayerSetDirection="axis2" DirectionSense="positive" OffsetFromReferenceLine="-163.5">
-   <ForLayerSet id="i3781" LayerSetName="Basiswand:External Wall">
+   <ForLayerSet id="i3783" LayerSetName="Basiswand:External Wall">
     <MaterialLayers>
      <IfcMaterialLayer LayerThickness="25">
       <Material Name="Facade Slab">
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
              <IfcPresentationStyleAssignment>
               <Styles>
-               <IfcSurfaceStyle xsi:nil="true" href="i3753" />
+               <IfcSurfaceStyle xsi:nil="true" href="i3754" />
               </Styles>
              </IfcPresentationStyleAssignment>
             </Styles>
@@ -61512,7 +61543,7 @@
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
@@ -61546,7 +61577,7 @@
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
@@ -61584,17 +61615,17 @@
 <IfcRelDefinesByType GlobalId="01RqKvTKn828e0AywefgFu">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallStandardCase xsi:nil="true" href="i3752" />
+  <IfcWallStandardCase xsi:nil="true" href="i3753" />
  </RelatedObjects>
- <RelatingType xsi:type="IfcWallType" xsi:nil="true" href="i3754" />
+ <RelatingType xsi:type="IfcWallType" xsi:nil="true" href="i3755" />
 </IfcRelDefinesByType>
 
 <IfcRelSpaceBoundary GlobalId="3V_McwFRPBYxQZGK4O159W" Name="2ndLevel" PhysicalOrVirtualBoundary="physical" InternalOrExternalBoundary="external">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatingSpace>
-  <IfcSpace xsi:nil="true" href="i3602" />
+  <IfcSpace xsi:nil="true" href="i3605" />
  </RelatingSpace>
- <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3752" />
+ <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3753" />
  <ConnectionGeometry xsi:type="IfcConnectionSurfaceGeometry">
   <SurfaceOnRelatingElement>
    <IfcCurveBoundedPlane>
@@ -61617,11 +61648,11 @@
     <InnerBoundaries>
      <IfcPolyline>
       <Points>
-       <IfcCartesianPoint id="i3755" Coordinates="470 250" />
+       <IfcCartesianPoint id="i3756" Coordinates="470 250" />
        <IfcCartesianPoint Coordinates="3270 250" />
        <IfcCartesianPoint Coordinates="3270 2750" />
        <IfcCartesianPoint Coordinates="470 2750" />
-       <IfcCartesianPoint xsi:nil="true" href="i3755" />
+       <IfcCartesianPoint xsi:nil="true" href="i3756" />
       </Points>
      </IfcPolyline>
     </InnerBoundaries>
@@ -61632,13 +61663,13 @@
 
 <IfcRelVoidsElement GlobalId="2ihFYl6O5D2gWs_2pjewyx">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3752" />
- <RelatedOpeningElement xsi:type="IfcOpeningElement" id="i3758" GlobalId="2ihFYl6O5D2gWs_2ljewyx" Name="Fenster 1-flg:Fenster 1-flg:1123466:1" ObjectType="Opening" PredefinedType="opening">
+ <RelatingBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3753" />
+ <RelatedOpeningElement xsi:type="IfcOpeningElement" id="i3759" GlobalId="2ihFYl6O5D2gWs_2ljewyx" Name="Fenster 1-flg:Fenster 1-flg:1123466:1" ObjectType="Opening" PredefinedType="opening">
   <OwnerHistory xsi:nil="true" href="i1" />
-  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3756" />
+  <ObjectPlacement xsi:type="IfcLocalPlacement" xsi:nil="true" href="i3757" />
   <Representation xsi:type="IfcProductDefinitionShape">
    <Representations>
-    <IfcShapeRepresentation xsi:nil="true" href="i3757" />
+    <IfcShapeRepresentation xsi:nil="true" href="i3758" />
    </Representations>
   </Representation>
  </RelatedOpeningElement>
@@ -61646,42 +61677,42 @@
 
 <IfcRelFillsElement GlobalId="1ci10$5jj1PwOyJhei3VYt">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingOpeningElement xsi:nil="true" href="i3758" />
- <RelatedBuildingElement xsi:type="IfcWindow" xsi:nil="true" href="i3759" />
+ <RelatingOpeningElement xsi:nil="true" href="i3759" />
+ <RelatedBuildingElement xsi:type="IfcWindow" xsi:nil="true" href="i3760" />
 </IfcRelFillsElement>
 
 <IfcPresentationLayerAssignment Name="I-WALL-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3760" />
   <IfcShapeRepresentation xsi:nil="true" href="i3761" />
   <IfcShapeRepresentation xsi:nil="true" href="i3762" />
   <IfcShapeRepresentation xsi:nil="true" href="i3763" />
   <IfcShapeRepresentation xsi:nil="true" href="i3764" />
   <IfcShapeRepresentation xsi:nil="true" href="i3765" />
+  <IfcShapeRepresentation xsi:nil="true" href="i3766" />
  </AssignedItems>
 </IfcPresentationLayerAssignment>
 
 <IfcRelAssociatesMaterial GlobalId="3CZi$k95L8zOFVwsRXXVe6">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallStandardCase xsi:nil="true" href="i3766" />
+  <IfcWallStandardCase xsi:nil="true" href="i3767" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterialLayerSetUsage LayerSetDirection="axis2" DirectionSense="negative" OffsetFromReferenceLine="120">
-   <ForLayerSet id="i3771" LayerSetName="Basiswand:Internal Wall">
+   <ForLayerSet id="i3772" LayerSetName="Basiswand:Internal Wall">
     <MaterialLayers>
      <IfcMaterialLayer LayerThickness="240">
       <Material Name="Cavity blocks">
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
              <IfcPresentationStyleAssignment>
               <Styles>
-               <IfcSurfaceStyle xsi:nil="true" href="i3767" />
+               <IfcSurfaceStyle xsi:nil="true" href="i3768" />
               </Styles>
              </IfcPresentationStyleAssignment>
             </Styles>
@@ -61701,25 +61732,25 @@
 <IfcRelDefinesByType GlobalId="1DGoQSq4P999svcqzewRmi">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallStandardCase xsi:nil="true" href="i3766" />
-  <IfcWallStandardCase xsi:nil="true" href="i3768" />
+  <IfcWallStandardCase xsi:nil="true" href="i3767" />
   <IfcWallStandardCase xsi:nil="true" href="i3769" />
+  <IfcWallStandardCase xsi:nil="true" href="i3770" />
  </RelatedObjects>
- <RelatingType xsi:type="IfcWallType" xsi:nil="true" href="i3770" />
+ <RelatingType xsi:type="IfcWallType" xsi:nil="true" href="i3771" />
 </IfcRelDefinesByType>
 
 <IfcRelConnectsPathElements GlobalId="1gqyd_i_16QfExWg1ietib" Name="2ihFYl6O5D2gWs_3Zjewyt|2ihFYl6O5D2gWs_3Zjewys" Description="Structural" RelatedConnectionType="atstart" RelatingConnectionType="atstart">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3752" />
- <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3766" />
+ <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3753" />
+ <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3767" />
 </IfcRelConnectsPathElements>
 
 <IfcRelSpaceBoundary GlobalId="1BMoIqjBH8tg8DmZwP0Ibe" Name="2ndLevel" PhysicalOrVirtualBoundary="physical" InternalOrExternalBoundary="internal">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatingSpace>
-  <IfcSpace xsi:nil="true" href="i3602" />
+  <IfcSpace xsi:nil="true" href="i3605" />
  </RelatingSpace>
- <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3766" />
+ <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3767" />
  <ConnectionGeometry xsi:type="IfcConnectionSurfaceGeometry">
   <SurfaceOnRelatingElement>
    <IfcCurveBoundedPlane>
@@ -61747,27 +61778,27 @@
 <IfcRelAssociatesMaterial GlobalId="0iczSOgvr5N8SKqX9CAAaq">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallStandardCase xsi:nil="true" href="i3768" />
+  <IfcWallStandardCase xsi:nil="true" href="i3769" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterialLayerSetUsage LayerSetDirection="axis2" DirectionSense="negative" OffsetFromReferenceLine="120">
-   <ForLayerSet xsi:nil="true" href="i3771" />
+   <ForLayerSet xsi:nil="true" href="i3772" />
   </IfcMaterialLayerSetUsage>
  </RelatingMaterial>
 </IfcRelAssociatesMaterial>
 
 <IfcRelConnectsPathElements GlobalId="1CqS6MtoH18PkqH5Y2RtzX" Name="2ihFYl6O5D2gWs_3Zjewys|2ihFYl6O5D2gWs_3Zjewyv" Description="Structural" RelatedConnectionType="atstart" RelatingConnectionType="atend">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3766" />
- <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3768" />
+ <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3767" />
+ <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3769" />
 </IfcRelConnectsPathElements>
 
 <IfcRelSpaceBoundary GlobalId="3I99sccXfC7ekee1NPmocs" Name="2ndLevel" PhysicalOrVirtualBoundary="physical" InternalOrExternalBoundary="internal">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatingSpace>
-  <IfcSpace xsi:nil="true" href="i3602" />
+  <IfcSpace xsi:nil="true" href="i3605" />
  </RelatingSpace>
- <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3768" />
+ <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3769" />
  <ConnectionGeometry xsi:type="IfcConnectionSurfaceGeometry">
   <SurfaceOnRelatingElement>
    <IfcCurveBoundedPlane>
@@ -61795,33 +61826,33 @@
 <IfcRelAssociatesMaterial GlobalId="3Y0cI_IqH6983sOJV60$3s">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallStandardCase xsi:nil="true" href="i3769" />
+  <IfcWallStandardCase xsi:nil="true" href="i3770" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterialLayerSetUsage LayerSetDirection="axis2" DirectionSense="negative" OffsetFromReferenceLine="120">
-   <ForLayerSet xsi:nil="true" href="i3771" />
+   <ForLayerSet xsi:nil="true" href="i3772" />
   </IfcMaterialLayerSetUsage>
  </RelatingMaterial>
 </IfcRelAssociatesMaterial>
 
 <IfcRelConnectsPathElements GlobalId="2w2eGw8p12UA4Y5fnGt1nW" Name="2ihFYl6O5D2gWs_3Zjewyt|2ihFYl6O5D2gWs_3Zjewyu" Description="Structural" RelatedConnectionType="atend" RelatingConnectionType="atend">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3752" />
- <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3769" />
+ <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3753" />
+ <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3770" />
 </IfcRelConnectsPathElements>
 
 <IfcRelConnectsPathElements GlobalId="2qpOSt9Tf8IQgBFs5kyEl6" Name="2ihFYl6O5D2gWs_3Zjewyv|2ihFYl6O5D2gWs_3Zjewyu" Description="Structural" RelatedConnectionType="atstart" RelatingConnectionType="atend">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3768" />
- <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3769" />
+ <RelatingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3769" />
+ <RelatedElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3770" />
 </IfcRelConnectsPathElements>
 
 <IfcRelSpaceBoundary GlobalId="2FAg2zU9L0Xwn3mJHBtS6y" Name="2ndLevel" PhysicalOrVirtualBoundary="physical" InternalOrExternalBoundary="internal">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatingSpace>
-  <IfcSpace xsi:nil="true" href="i3602" />
+  <IfcSpace xsi:nil="true" href="i3605" />
  </RelatingSpace>
- <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3769" />
+ <RelatedBuildingElement xsi:type="IfcWallStandardCase" xsi:nil="true" href="i3770" />
  <ConnectionGeometry xsi:type="IfcConnectionSurfaceGeometry">
   <SurfaceOnRelatingElement>
    <IfcCurveBoundedPlane>
@@ -61848,30 +61879,30 @@
 
 <IfcPresentationLayerAssignment Name="A-GLAZ-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3772" />
   <IfcShapeRepresentation xsi:nil="true" href="i3773" />
+  <IfcShapeRepresentation xsi:nil="true" href="i3774" />
  </AssignedItems>
 </IfcPresentationLayerAssignment>
 
 <IfcRelAssociatesMaterial GlobalId="3Qie1zzwT12e5RmVeL1GWZ">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWindow xsi:nil="true" href="i3759" />
+  <IfcWindow xsi:nil="true" href="i3760" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterialList>
    <Materials>
-    <IfcMaterial id="i3782" Name="Farbe Grau">
+    <IfcMaterial id="i3784" Name="Farbe Grau">
      <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
       <Representations>
        <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-        <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+        <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
         <Items>
          <IfcStyledItem>
           <Styles>
            <IfcPresentationStyleAssignment>
             <Styles>
-             <IfcSurfaceStyle xsi:nil="true" href="i3774" />
+             <IfcSurfaceStyle xsi:nil="true" href="i3775" />
             </Styles>
            </IfcPresentationStyleAssignment>
           </Styles>
@@ -61881,17 +61912,17 @@
       </Representations>
      </HasRepresentation>
     </IfcMaterial>
-    <IfcMaterial id="i3783" Name="Glas">
+    <IfcMaterial id="i3785" Name="Glas">
      <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
       <Representations>
        <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-        <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+        <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
         <Items>
          <IfcStyledItem>
           <Styles>
            <IfcPresentationStyleAssignment>
             <Styles>
-             <IfcSurfaceStyle xsi:nil="true" href="i3775" />
+             <IfcSurfaceStyle xsi:nil="true" href="i3776" />
             </Styles>
            </IfcPresentationStyleAssignment>
           </Styles>
@@ -61909,17 +61940,17 @@
 <IfcRelDefinesByType GlobalId="1QxeRsuNL9m8hffJL1t7Gp">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWindow xsi:nil="true" href="i3759" />
+  <IfcWindow xsi:nil="true" href="i3760" />
  </RelatedObjects>
- <RelatingType xsi:type="IfcWindowType" xsi:nil="true" href="i3776" />
+ <RelatingType xsi:type="IfcWindowType" xsi:nil="true" href="i3777" />
 </IfcRelDefinesByType>
 
 <IfcRelSpaceBoundary GlobalId="14eUgl$7fFC8ribbQ1jKk1" Name="2ndLevel" PhysicalOrVirtualBoundary="physical" InternalOrExternalBoundary="external">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatingSpace>
-  <IfcSpace xsi:nil="true" href="i3602" />
+  <IfcSpace xsi:nil="true" href="i3605" />
  </RelatingSpace>
- <RelatedBuildingElement xsi:type="IfcWindow" xsi:nil="true" href="i3759" />
+ <RelatedBuildingElement xsi:type="IfcWindow" xsi:nil="true" href="i3760" />
  <ConnectionGeometry xsi:type="IfcConnectionSurfaceGeometry">
   <SurfaceOnRelatingElement>
    <IfcCurveBoundedPlane>
@@ -61946,14 +61977,14 @@
 
 <IfcPresentationLayerAssignment Name="A-FLOR-____-OTLN">
  <AssignedItems>
-  <IfcShapeRepresentation xsi:nil="true" href="i3777" />
+  <IfcShapeRepresentation xsi:nil="true" href="i3778" />
  </AssignedItems>
 </IfcPresentationLayerAssignment>
 
 <IfcRelAssociatesMaterial GlobalId="0hodTADS58nBrQEF8J8ODJ">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcSlab xsi:nil="true" href="i3778" />
+  <IfcSlab xsi:nil="true" href="i3779" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterialLayerSetUsage LayerSetDirection="axis3" DirectionSense="positive" OffsetFromReferenceLine="0">
@@ -61964,7 +61995,7 @@
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
@@ -61998,7 +62029,7 @@
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
@@ -62032,7 +62063,7 @@
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
@@ -62066,13 +62097,13 @@
        <HasRepresentation xsi:type="IfcMaterialDefinitionRepresentation">
         <Representations>
          <IfcStyledRepresentation RepresentationIdentifier="Style" RepresentationType="Material">
-          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3709" />
+          <ContextOfItems xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" href="i3710" />
           <Items>
            <IfcStyledItem>
             <Styles>
              <IfcPresentationStyleAssignment>
               <Styles>
-               <IfcSurfaceStyle xsi:nil="true" href="i3779" />
+               <IfcSurfaceStyle xsi:nil="true" href="i3780" />
               </Styles>
              </IfcPresentationStyleAssignment>
             </Styles>
@@ -62092,9 +62123,9 @@
 <IfcRelSpaceBoundary GlobalId="0tfzfTvO5A1Pf05sCamIKt" Name="2ndLevel" PhysicalOrVirtualBoundary="physical" InternalOrExternalBoundary="internal">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatingSpace>
-  <IfcSpace xsi:nil="true" href="i3602" />
+  <IfcSpace xsi:nil="true" href="i3605" />
  </RelatingSpace>
- <RelatedBuildingElement xsi:type="IfcSlab" xsi:nil="true" href="i3778" />
+ <RelatedBuildingElement xsi:type="IfcSlab" xsi:nil="true" href="i3779" />
  <ConnectionGeometry xsi:type="IfcConnectionSurfaceGeometry">
   <SurfaceOnRelatingElement>
    <IfcCurveBoundedPlane>
@@ -62121,50 +62152,58 @@
 
 <IfcRelServicesBuildings GlobalId="2soXRg8A59XeKnk4332TYI">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingSystem xsi:nil="true" href="i3699" />
+ <RelatingSystem xsi:nil="true" href="i3602" />
  <RelatedBuildings>
-  <IfcBuilding xsi:nil="true" href="i3780" />
+  <IfcBuilding xsi:nil="true" href="i3781" />
  </RelatedBuildings>
 </IfcRelServicesBuildings>
 
 <IfcRelServicesBuildings GlobalId="3naYki5VX7dOwIJbvpuE0B">
  <OwnerHistory xsi:nil="true" href="i1" />
- <RelatingSystem xsi:nil="true" href="i3651" />
+ <RelatingSystem xsi:nil="true" href="i3603" />
  <RelatedBuildings>
-  <IfcBuilding xsi:nil="true" href="i3780" />
+  <IfcBuilding xsi:nil="true" href="i3781" />
+ </RelatedBuildings>
+</IfcRelServicesBuildings>
+
+<IfcRelServicesBuildings GlobalId="2soXRg8A59XeKnk4332TYA">
+ <OwnerHistory xsi:nil="true" href="i1" />
+ <RelatingSystem xsi:nil="true" href="i3782" />
+ <RelatedBuildings>
+  <IfcBuilding xsi:nil="true" href="i3781" />
  </RelatedBuildings>
 </IfcRelServicesBuildings>
 
 <IfcRelAssociatesMaterial GlobalId="0LZobD$DX0IuaFwWTBUeAJ">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallType xsi:nil="true" href="i3754" />
+  <IfcWallType xsi:nil="true" href="i3755" />
  </RelatedObjects>
  <RelatingMaterial>
-  <IfcMaterialLayerSet xsi:nil="true" href="i3781" />
+  <IfcMaterialLayerSet xsi:nil="true" href="i3783" />
  </RelatingMaterial>
 </IfcRelAssociatesMaterial>
 
 <IfcRelAssociatesMaterial GlobalId="3Jizfz0af8LRe5hWOwzi6B">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWallType xsi:nil="true" href="i3770" />
+  <IfcWallType xsi:nil="true" href="i3771" />
  </RelatedObjects>
  <RelatingMaterial>
-  <IfcMaterialLayerSet xsi:nil="true" href="i3771" />
+  <IfcMaterialLayerSet xsi:nil="true" href="i3772" />
  </RelatingMaterial>
 </IfcRelAssociatesMaterial>
 
 <IfcRelAssociatesMaterial GlobalId="2GhgcqVfP8BADUZVm9DC97">
  <OwnerHistory xsi:nil="true" href="i1" />
  <RelatedObjects>
-  <IfcWindowType xsi:nil="true" href="i3776" />
+  <IfcWindowType xsi:nil="true" href="i3777" />
  </RelatedObjects>
  <RelatingMaterial>
   <IfcMaterialList>
    <Materials>
-    <IfcMaterial xsi:nil="true" href="i3782" />
-    <IfcMaterial xsi:nil="true" href="i3783" />
+    <IfcMaterial xsi:nil="true" href="i3784" />
+    <IfcMaterial xsi:nil="true" href="i3785" />
    </Materials>
   </IfcMaterialList>
  </RelatingMaterial>
