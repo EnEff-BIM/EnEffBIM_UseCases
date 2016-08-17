@@ -4680,6 +4680,15 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
+<xs:complexType name="SimFlowEnergyTransferStorage_HotWaterTank_Expansion">
+<xs:complexContent>
+<xs:extension base="simmep:SimFlowEnergyTransferStorage_HotWaterTank">
+<xs:sequence>
+<xs:element ref="simmep:EffectiveCapacity" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+	</xs:complexType>
 <xs:complexType name="SimFlowEnergyTransferStorage_HotWaterTank_MixedTank">
 <xs:complexContent>
 <xs:extension base="simmep:SimFlowEnergyTransferStorage_HotWaterTank">
@@ -4838,6 +4847,9 @@
 <xs:complexType name="SimFlowFitting_Default_Default">
 <xs:complexContent>
 <xs:extension base="simmep:SimFlowFitting_Default">
+<xs:sequence>
+<xs:element ref="simmep:InteriorRoughnessCoeff" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -10606,6 +10618,7 @@
 <xs:element name="T24RecEff"  type="xs:double" nillable ="true"/>
 <xs:element name="T24StdbyLossFrac"  type="xs:double" nillable ="true"/>
 <xs:element name="T24WtrHtrType"  type="xs:string"/>
+<xs:element name="EffectiveCapacity"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFlowEnergyTransSto_EndUseSubCat"  type="xs:string"/>
 <xs:element name="SimFlowEnergyTransSto_TankHeight"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFlowEnergyTransSto_TankShape"  type="xs:string"/>
@@ -10630,6 +10643,7 @@
 <xs:element name="SimFlowEnergyTransSto_AddDestratCond"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFlowEnergyTransSto_NodeAddLossCoef_1_10"  type="simcore:doubleList"/>
 <xs:element name="SimFlowFitting_Name"  type="xs:string"/>
+<xs:element name="InteriorRoughnessCoeff"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFlowFitting_LoopType"  type="xs:string"/>
 <xs:element name="SimFlowFitting_InletCount"  type="xs:int" nillable ="true"/>
 <xs:element name="SimFlowFitting_OutletCount"  type="xs:int" nillable ="true"/>

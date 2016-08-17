@@ -652,6 +652,7 @@
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_HeatPump" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_HeatPump" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_Mixed" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_Mixed" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_Expansion" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_Expansion" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_MixedDual" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_MixedDual" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_MixedTank" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_MixedTank" minOccurs="0" maxOccurs="unbounded"/>
 <xs:element name="SimFlowEnergyTransferStorage_HotWaterTank_Stratified" type="simmep:SimFlowEnergyTransferStorage_HotWaterTank_Stratified" minOccurs="0" maxOccurs="unbounded"/>
