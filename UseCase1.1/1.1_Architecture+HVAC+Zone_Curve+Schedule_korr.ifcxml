@@ -60968,7 +60968,7 @@
       <IfcRepresentationMap xsi:nil="true" href="i3601" />
      </RepresentationMaps>
     </IfcWindowType>
-    <IfcSystem id="i3782" GlobalId="0LMbjl8XfFaui1YxJs_D11" Name="H_Full_System" ObjectType="DS_HEATING">
+    <IfcSystem id="i3782" GlobalId="0LMbjl8XfFaui1YxJs_D12" Name="H_Full_System" ObjectType="DS_HEATING">
      <OwnerHistory xsi:nil="true" href="i1" />
      <IsDecomposedBy>
       <IfcRelAggregates GlobalId="1PV_Zo0yP9v8zSorZWlgZV">
