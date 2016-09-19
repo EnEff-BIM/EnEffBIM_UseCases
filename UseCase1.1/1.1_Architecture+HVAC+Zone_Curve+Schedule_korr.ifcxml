@@ -60106,9 +60106,14 @@
           <IfcText-wrapper>PID</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
-        <IfcPropertySingleValue Name="ControllerVariable">
+		<IfcPropertySingleValue Name="ConstantSetpointValue">
          <NominalValue>
           <IfcThermodynamicTemperatureMeasure-wrapper>-253.15</IfcThermodynamicTemperatureMeasure-wrapper>
+         </NominalValue>
+        </IfcPropertySingleValue>
+        <IfcPropertySingleValue Name="ControllerVariable">
+         <NominalValue>
+          <IfcText-wrapper>FLOW</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
        </HasProperties>
@@ -60227,14 +60232,9 @@
           <IfcThermodynamicTemperatureMeasure-wrapper>70</IfcThermodynamicTemperatureMeasure-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
-        <IfcPropertySingleValue Name="ControllerVariable.Flow">
+        <IfcPropertySingleValue Name="ControllerVariable">
          <NominalValue>
-          <IfcText-wrapper>0.03</IfcText-wrapper>
-         </NominalValue>
-        </IfcPropertySingleValue>
-        <IfcPropertySingleValue Name="ControllerVariable.Temperature">
-         <NominalValue>
-          <IfcThermodynamicTemperatureMeasure-wrapper>70</IfcThermodynamicTemperatureMeasure-wrapper>
+          <IfcText-wrapper>FLOW</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="ControllerType">
@@ -60589,9 +60589,14 @@
           <IfcText-wrapper>MANUAL</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
-        <IfcPropertySingleValue Name="ControllerVariable">
+		<IfcPropertySingleValue Name="ConstantSetpointValue">
          <NominalValue>
           <IfcThermodynamicTemperatureMeasure-wrapper>-10</IfcThermodynamicTemperatureMeasure-wrapper>
+         </NominalValue>
+        </IfcPropertySingleValue>
+        <IfcPropertySingleValue Name="ControllerVariable">
+         <NominalValue>
+          <IfcText-wrapper>FLOW</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
        </HasProperties>
