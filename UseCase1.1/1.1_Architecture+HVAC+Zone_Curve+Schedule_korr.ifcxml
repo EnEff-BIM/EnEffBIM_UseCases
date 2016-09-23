@@ -32,94 +32,7 @@
               <IfcRelAggregates GlobalId="11zlqEoYb6yx0osewctFmG">
                <OwnerHistory xsi:nil="true" href="i1" />
                <RelatedObjects>
-                <IfcSpace id="i3605" GlobalId="2ZBTbFX$f0mACYyGlm4STy" Name="00.01" LongName="VDI 6020" CompositionType="element" PredefinedType="space">
-                 <OwnerHistory xsi:nil="true" href="i1" />
-                 <IsDefinedBy>
-                  <IfcRelDefinesByProperties GlobalId="1wp3Jn_4123gCssLPI_BFn">
-                   <OwnerHistory xsi:nil="true" href="i1" />
-                   <RelatingPropertyDefinition>
-                    <IfcElementQuantity GlobalId="2hwYl8Q6jFIfw7PbY1QR7A" Name="GSA Space Areas" MethodOfMeasurement="GSA BIM Area">
-                     <OwnerHistory xsi:nil="true" href="i1" />
-                     <Quantities>
-                      <IfcQuantityArea Name="GSA Space Areas" AreaValue="17.5" />
-                     </Quantities>
-                    </IfcElementQuantity>
-                   </RelatingPropertyDefinition>
-                  </IfcRelDefinesByProperties>
-                  <IfcRelDefinesByProperties GlobalId="2hUxuNWb9BYuckFGgvBbbK">
-                   <OwnerHistory xsi:nil="true" href="i1" />
-                   <RelatingPropertyDefinition>
-                    <IfcPropertySet GlobalId="2wi1IcVVf8W9PJyUpaW1Dt" Name="Pset_SpaceCommon">
-                     <OwnerHistory xsi:nil="true" href="i1" />
-                     <HasProperties>
-                      <IfcPropertySingleValue id="i4" Name="Reference">
-                       <NominalValue>
-                        <IfcIdentifier-wrapper>VDI 6020 00.01</IfcIdentifier-wrapper>
-                       </NominalValue>
-                      </IfcPropertySingleValue>
-                      <IfcPropertySingleValue id="i5" Name="IsExternal">
-                       <NominalValue>
-                        <IfcBoolean-wrapper>false</IfcBoolean-wrapper>
-                       </NominalValue>
-                      </IfcPropertySingleValue>
-                     </HasProperties>
-                    </IfcPropertySet>
-                   </RelatingPropertyDefinition>
-                  </IfcRelDefinesByProperties>
-                 </IsDefinedBy>
-                 <ObjectPlacement xsi:type="IfcLocalPlacement">
-                  <PlacementRelTo xsi:type="IfcLocalPlacement" id="i6">
-                   <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3582">
-                    <PlacementRelTo xsi:type="IfcLocalPlacement" id="i3584">
-                     <RelativePlacement>
-                      <IfcAxis2Placement3D>
-                       <Location id="i2" Coordinates="0 0 0" />
-                      </IfcAxis2Placement3D>
-                     </RelativePlacement>
-                    </PlacementRelTo>
-                    <RelativePlacement>
-                     <IfcAxis2Placement3D>
-                      <Location xsi:nil="true" href="i2" />
-                     </IfcAxis2Placement3D>
-                    </RelativePlacement>
-                   </PlacementRelTo>
-                   <RelativePlacement>
-                    <IfcAxis2Placement3D>
-                     <Location xsi:nil="true" href="i2" />
-                    </IfcAxis2Placement3D>
-                   </RelativePlacement>
-                  </PlacementRelTo>
-                  <RelativePlacement>
-                   <IfcAxis2Placement3D>
-                    <Location xsi:nil="true" href="i2" />
-                   </IfcAxis2Placement3D>
-                  </RelativePlacement>
-                 </ObjectPlacement>
-                 <Representation xsi:type="IfcProductDefinitionShape">
-                  <Representations>
-                   <IfcShapeRepresentation id="i3604" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
-                    <ContextOfItems xsi:type="IfcGeometricRepresentationSubContext" id="i7" ContextIdentifier="Body" ContextType="Model" CoordinateSpaceDimension="0" TargetView="model_view" />
-                    <Items>
-                     <IfcExtrudedAreaSolid Depth="3000">
-                      <SweptArea xsi:type="IfcRectangleProfileDef" ProfileType="area" XDim="5000" YDim="3500">
-                       <Position>
-                        <Location Coordinates="-6.82121026329696E-13 0" />
-                        <RefDirection id="i8" DirectionRatios="1 0" />
-                       </Position>
-                      </SweptArea>
-                      <Position>
-                       <Location Coordinates="-3916.815125 -3698.74520848775 0" />
-                       <Axis id="i3" DirectionRatios="0 0 1" />
-                       <RefDirection id="i12" DirectionRatios="0 1 0" />
-                      </Position>
-                      <ExtrudedDirection xsi:nil="true" href="i3" />
-                     </IfcExtrudedAreaSolid>
-                    </Items>
-                   </IfcShapeRepresentation>
-                  </Representations>
-                 </Representation>
-                </IfcSpace>
-                <IfcSpace GlobalId="2ihFYl6O5D2gWs_3Zjewya" Name="00.01" LongName="VDI 6020" CompositionType="element" PredefinedType="space">
+                <IfcSpace id="i3605" GlobalId="2ihFYl6O5D2gWs_3Zjewya" Name="00.01" LongName="VDI 6020" CompositionType="element" PredefinedType="space">
                  <OwnerHistory xsi:nil="true" href="i1" />
                  <IsDefinedBy>
                   <IfcRelDefinesByProperties GlobalId="2nBzQ6htjDUeWjkymcXv40">
@@ -60113,7 +60026,7 @@
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="ControllerVariable">
          <NominalValue>
-          <IfcText-wrapper>FLOW</IfcText-wrapper>
+          <IfcText-wrapper>TEMPERATURE</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
        </HasProperties>
@@ -60234,7 +60147,7 @@
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="ControllerVariable">
          <NominalValue>
-          <IfcText-wrapper>FLOW</IfcText-wrapper>
+          <IfcText-wrapper>TEMPERATURE</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="ControllerType">
@@ -60581,26 +60494,6 @@
         </IfcPropertySingleValue>
        </HasProperties>
       </IfcPropertySet>
-      <IfcPropertySet GlobalId="3H6zCIEt9E08F6NK3YNiaY" Name="PSim_Controller">
-       <OwnerHistory xsi:nil="true" href="i1" />
-       <HasProperties>
-        <IfcPropertySingleValue Name="ControllerType">
-         <NominalValue>
-          <IfcText-wrapper>MANUAL</IfcText-wrapper>
-         </NominalValue>
-        </IfcPropertySingleValue>
-		<IfcPropertySingleValue Name="ConstantSetpointValue">
-         <NominalValue>
-          <IfcThermodynamicTemperatureMeasure-wrapper>-10</IfcThermodynamicTemperatureMeasure-wrapper>
-         </NominalValue>
-        </IfcPropertySingleValue>
-        <IfcPropertySingleValue Name="ControllerVariable">
-         <NominalValue>
-          <IfcText-wrapper>FLOW</IfcText-wrapper>
-         </NominalValue>
-        </IfcPropertySingleValue>
-       </HasProperties>
-      </IfcPropertySet>
      </HasPropertySets>
      <RepresentationMaps>
       <IfcRepresentationMap xsi:nil="true" href="i2863" />
@@ -60757,17 +60650,6 @@
         <IfcPropertySingleValue Name="SimModelType">
          <NominalValue>
           <IfcText-wrapper>Pump</IfcText-wrapper>
-         </NominalValue>
-        </IfcPropertySingleValue>
-       </HasProperties>
-      </IfcPropertySet>
-      <IfcPropertySet GlobalId="1QEdATDpr8e9uoU3nye__9" Name="PSim_Controller">
-       <OwnerHistory xsi:nil="true" href="i1" />
-       <HasProperties>
-        <IfcPropertySingleValue xsi:nil="true" href="i3595" />
-        <IfcPropertySingleValue Name="ControllerType">
-         <NominalValue>
-          <IfcText-wrapper>OnOff</IfcText-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
        </HasProperties>
