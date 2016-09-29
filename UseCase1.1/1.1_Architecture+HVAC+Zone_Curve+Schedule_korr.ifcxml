@@ -60284,65 +60284,65 @@
          <HasProperties>
           <IfcPropertySingleValue Name="CurveType">
            <NominalValue>
-            <IfcText-wrapper>BICUBIC</IfcText-wrapper>
+            <IfcText-wrapper>CUBIC</IfcText-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
-          <IfcPropertySingleValue Name="Coeff_A0">
+          <IfcPropertySingleValue Name="CubicCoeff_A0">
            <NominalValue>
             <IfcReal-wrapper>0.1</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
-          <IfcPropertySingleValue Name="Coeff_A1">
+          <IfcPropertySingleValue Name="CubicCoeff_A1">
            <NominalValue>
             <IfcReal-wrapper>0.2</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
-          <IfcPropertySingleValue Name="Coeff_A2">
+          <IfcPropertySingleValue Name="CubicCoeff_A2">
            <NominalValue>
             <IfcReal-wrapper>0.3</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
-          <IfcPropertySingleValue Name="Coeff_A3">
+          <IfcPropertySingleValue Name="CubicCoeff_A3">
            <NominalValue>
             <IfcReal-wrapper>0.4</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
-          <IfcPropertySingleValue Name="Coeff_A4">
+          <!--<IfcPropertySingleValue Name="Coeff_A4">
            <NominalValue>
-            <IfcReal-wrapper>0.5</IfcReal-wrapper>
+            <IfcReal-wrapper>0.0</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="Coeff_A5">
            <NominalValue>
-            <IfcReal-wrapper>0.6</IfcReal-wrapper>
+            <IfcReal-wrapper>0.0</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="Coeff_A6">
            <NominalValue>
-            <IfcReal-wrapper>0.7</IfcReal-wrapper>
+            <IfcReal-wrapper>0.4</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="Coeff_A7">
            <NominalValue>
-            <IfcReal-wrapper>0.8</IfcReal-wrapper>
+            <IfcReal-wrapper>0.0</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="Coeff_A8">
            <NominalValue>
-            <IfcReal-wrapper>0.8</IfcReal-wrapper>
+            <IfcReal-wrapper>0.0</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="Coeff_A9">
            <NominalValue>
-            <IfcReal-wrapper>0.8</IfcReal-wrapper>
+            <IfcReal-wrapper>0.0</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="Coeff_A10">
            <NominalValue>
-            <IfcReal-wrapper>0.8</IfcReal-wrapper>
+            <IfcReal-wrapper>0.0</IfcReal-wrapper>
            </NominalValue>
-          </IfcPropertySingleValue>
-          <IfcPropertySingleValue Name="MinimumX">
+          </IfcPropertySingleValue>-->
+          <!--<IfcPropertySingleValue Name="MinimumX">
            <NominalValue>
             <IfcReal-wrapper>0</IfcReal-wrapper>
            </NominalValue>
@@ -60351,15 +60351,25 @@
            <NominalValue>
             <IfcReal-wrapper>1</IfcReal-wrapper>
            </NominalValue>
+          </IfcPropertySingleValue>-->
+          <IfcPropertySingleValue Name="CubicMinimumX">
+           <NominalValue>
+            <IfcReal-wrapper>0</IfcReal-wrapper>
+           </NominalValue>
           </IfcPropertySingleValue>
-          <IfcPropertySingleValue Name="MinimumY">
+          <IfcPropertySingleValue Name="CubicMaximumX">
+           <NominalValue>
+            <IfcReal-wrapper>1</IfcReal-wrapper>
+           </NominalValue>
+          </IfcPropertySingleValue>
+          <!--<IfcPropertySingleValue Name="MinimumY">
            <NominalValue>
             <IfcReal-wrapper>0</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="MaximumY">
            <NominalValue>
-            <IfcReal-wrapper>1</IfcReal-wrapper>
+            <IfcReal-wrapper>0</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="MinimumOutput">
@@ -60370,6 +60380,16 @@
           <IfcPropertySingleValue Name="MaximumOutput">
            <NominalValue>
             <IfcReal-wrapper>1</IfcReal-wrapper>
+           </NominalValue>
+          </IfcPropertySingleValue>-->
+		  <IfcPropertySingleValue Name="InputUnitTypeForX">
+           <NominalValue>
+            <IfcText-wrapper>Dimensionless</IfcText-wrapper>
+           </NominalValue>
+          </IfcPropertySingleValue>
+		  <IfcPropertySingleValue Name="OutputUnitType">
+           <NominalValue>
+            <IfcText-wrapper>Dimensionless</IfcText-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
          </HasProperties>
@@ -60624,17 +60644,17 @@
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="PartLoadPerfCurve2">
          <NominalValue>
-          <IfcReal-wrapper>0</IfcReal-wrapper>
+          <IfcReal-wrapper>0.5</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="PartLoadPerfCurve3">
          <NominalValue>
-          <IfcReal-wrapper>0</IfcReal-wrapper>
+          <IfcReal-wrapper>0.4</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="PartLoadPerfCurve4">
          <NominalValue>
-          <IfcReal-wrapper>0</IfcReal-wrapper>
+          <IfcReal-wrapper>0.3</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="ControlType">
