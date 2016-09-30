@@ -896,7 +896,7 @@
 		<simgeom:SimPerfCurve_InputUnitTypeForX>Dimensionless</simgeom:SimPerfCurve_InputUnitTypeForX>
 		<simgeom:SimPerfCurve_OutputUnitType>Dimensionless</simgeom:SimPerfCurve_OutputUnitType>
 		<simgeom:SimPerfCurve_Coef_3_X_2>0.3</simgeom:SimPerfCurve_Coef_3_X_2>
-		<simgeom:SimPerfCurve_Coeff4_X_3>0.4</simgeom:SimPerfCurve_Coeff4_X_3>
+		<simgeom:SimPerfCurve_Coef_4_X_3>0.4</simgeom:SimPerfCurve_Coef_4_X_3>
 	</SimPerformanceCurve_Mathematical_Cubic>
 	<!-- <SimPerformanceCurve_Mathematical_Bicubic RefId="ID_cp_0LMbjl8XfFaui1YxJs_D66">
 		<simgeom:SimPerfCurve_MinCurveOutput>0</simgeom:SimPerfCurve_MinCurveOutput>
