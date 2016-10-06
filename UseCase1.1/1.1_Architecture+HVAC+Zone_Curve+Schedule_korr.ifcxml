@@ -60289,22 +60289,22 @@
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="CubicCoeff_A0">
            <NominalValue>
-            <IfcReal-wrapper>0.1</IfcReal-wrapper>
+            <IfcReal-wrapper>0.78</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="CubicCoeff_A1">
            <NominalValue>
-            <IfcReal-wrapper>0.2</IfcReal-wrapper>
+            <IfcReal-wrapper>0.002</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="CubicCoeff_A2">
            <NominalValue>
-            <IfcReal-wrapper>0.3</IfcReal-wrapper>
+            <IfcReal-wrapper>0.07</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <IfcPropertySingleValue Name="CubicCoeff_A3">
            <NominalValue>
-            <IfcReal-wrapper>0.4</IfcReal-wrapper>
+            <IfcReal-wrapper>0.059</IfcReal-wrapper>
            </NominalValue>
           </IfcPropertySingleValue>
           <!--<IfcPropertySingleValue Name="Coeff_A4">
