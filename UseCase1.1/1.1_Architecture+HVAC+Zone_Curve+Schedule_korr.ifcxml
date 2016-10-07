@@ -60639,22 +60639,22 @@
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="PartLoadPerfCurve1">
          <NominalValue>
-          <IfcReal-wrapper>0.78</IfcReal-wrapper>
+          <IfcReal-wrapper>5</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="PartLoadPerfCurve2">
          <NominalValue>
-          <IfcReal-wrapper>0.5</IfcReal-wrapper>
+          <IfcReal-wrapper>-0.6</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="PartLoadPerfCurve3">
          <NominalValue>
-          <IfcReal-wrapper>0.4</IfcReal-wrapper>
+          <IfcReal-wrapper>-0.1</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="PartLoadPerfCurve4">
          <NominalValue>
-          <IfcReal-wrapper>0.3</IfcReal-wrapper>
+          <IfcReal-wrapper>-0.001</IfcReal-wrapper>
          </NominalValue>
         </IfcPropertySingleValue>
         <IfcPropertySingleValue Name="ControlType">
