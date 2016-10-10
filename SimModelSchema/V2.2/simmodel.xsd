@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ******************************************************************************* 
+ * COPYRIGHT/IP NOTICE
+ * ___________________
+ * 
+ *  [2009] - [2016] Digital Alchemy, Incorporated 
+ *  All Rights Reserved.
+ * 
+ * NOTICE:  All information contained herein is, and remains the property of 
+ * Digital Alchemy, Incorporated and its suppliers, if any.  The intellectual 
+ * and technical concepts contained herein are proprietary to Digital Alchemy, 
+ * Incorporated and its suppliers and may be covered by U.S. and Foreign 
+ * Patents, patents in process, and are protected by trade secret or 
+ * copyright law.
+ * Dissemination of this information, or reproduction of this material
+ * is allowed so long as this copyright/IP notice is not removed. Modifications
+ * to this schema are possible, but only in collaboration with Digital Alchemy.
+ ******************************************************************************
+-->
 <xs:schema targetNamespace="http://d-alchemy.com/schema/simxml/Model" xmlns:simmodel="http://d-alchemy.com/schema/simxml/Model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore" xmlns:simres="http://d-alchemy.com/schema/simxml/ResourcesGeneral" xmlns:simgeom="http://d-alchemy.com/schema/simxml/ResourcesGeometry" xmlns:simbldg="http://d-alchemy.com/schema/simxml/BuildingModel" xmlns:simmep="http://d-alchemy.com/schema/simxml/MepModel" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.160130">
 
 <xs:import namespace="http://d-alchemy.com/schema/simxml/SimModelCore" schemaLocation="simcore.xsd"/>
